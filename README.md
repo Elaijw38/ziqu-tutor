@@ -31,6 +31,8 @@ curl http://127.0.0.1:8770/api/health
 ```
 src/build_kb.py   从字趣只读导出 → data/kb.jsonl（每条带 source）
 src/retrieval.py  中文检索：字 1-gram + 2-gram + TF-IDF（零依赖，可解释）
+src/learner.py    学情存取与诊断
+src/quiz.py       出题与评阅
 src/ask.py        问答编排：检索 → 去重 → 组织 → 附出处；带拒答与反问
 src/server.py     标准库 HTTP 服务：/api/ask、/api/health、静态页
 web/index.html    助教聊天界面
@@ -58,7 +60,9 @@ ZQ_LLM_KEY / ZQ_LLM_BASE / ZQ_LLM_MODEL
 
 ## 下一步（按 A2 验收点）
 
-- [ ] `/api/diagnose` 学情诊断：读前端的本地进度 → 输出薄弱构件的画像
-- [ ] `/api/quiz` 按薄弱点自动组卷
-- [ ] `/api/grade` 评阅并回写画像
-- [ ] 前端加"画像卡 + 一键出题"，形成"问 → 诊 → 练 → 评"闭环
+- [x] `/api/diagnose` 学情诊断：覆盖率、分片掌握、构件短板、错题、给建议
+- [x] `/api/quiz` 按学情自动组卷（题型轮转：构件 / 字义 / 打法，错题优先）
+- [x] `/api/grade` 评阅 + 逐题讲解 + 回写 attempts
+- [x] 前端三页签：问答 / 学情 / 练习，形成"问 → 诊 → 练 → 评"闭环
+- [ ] 接入大模型（可选，接口已留：ZQ_LLM_KEY / ZQ_LLM_BASE / ZQ_LLM_MODEL）
+- [ ] 教师端班级汇总（A2 提到的"AI 通识实验室"改造方向）
