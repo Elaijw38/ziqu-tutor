@@ -126,11 +126,26 @@ class Handler(BaseHTTPRequestHandler):
                 return True
         return False
 
+    def _client_ip(self):
+        """限流要按真实访客分桶。
+
+        走 cloudflared/反代时 client_address 恒为 127.0.0.1，全班会共用一个桶，
+        60 次/小时几秒钟就打满；真实来源在 CF-Connecting-IP / X-Forwarded-For。
+        只在本机转发进来时才采信这些头，否则外部随手伪造一个 IP 就绕过限流了。
+        """
+        peer = self.client_address[0]
+        if peer in ("127.0.0.1", "::1", "::ffff:127.0.0.1"):
+            for h in ("CF-Connecting-IP", "X-Forwarded-For"):
+                v = (self.headers.get(h) or "").strip()
+                if v:
+                    return v.split(",")[0].strip()
+        return peer
+
     def _rate_ok(self):
         """单 IP 每小时提问上限，防止公开链接被刷模型额度。"""
         if not RATE_LIMIT:
             return True
-        ip = self.client_address[0]
+        ip = self._client_ip()
         now = time.time()
         q = [t for t in _HITS.get(ip, []) if now - t < 3600]
         if len(q) >= RATE_LIMIT:
