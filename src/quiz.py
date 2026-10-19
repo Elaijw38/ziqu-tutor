@@ -134,23 +134,23 @@ def grade(quiz, submitted):
     import learner
     by_char = {q["char"]: q for q in quiz.get("items") or []}
     results, correct = [], 0
-    d = learner.load()
-    attempts = d.setdefault("attempts", [])
-    for s in submitted or []:
-        q = by_char.get(s.get("char"))
-        if not q:
-            continue
-        idx = s.get("choice")
-        ok = (idx == q["answer_index"])
-        correct += 1 if ok else 0
-        results.append({
-            "char": q["char"], "type": q["type"], "ok": ok,
-            "your": q["options"][idx] if isinstance(idx, int) and 0 <= idx < len(q["options"]) else "未作答",
-            "right": q["answer"],
-            "why": _explain(q),
-        })
-        attempts.append({"char": q["char"], "ok": ok, "kind": q["type"]})
-    learner.save(d)
+    # 读-改-写整体上锁：两个人同时交卷时，后写的那份不会覆盖掉先写的结果
+    with learner.transaction() as d:
+        attempts = d.setdefault("attempts", [])
+        for s in submitted or []:
+            q = by_char.get(s.get("char"))
+            if not q:
+                continue
+            idx = s.get("choice")
+            ok = (idx == q["answer_index"])
+            correct += 1 if ok else 0
+            results.append({
+                "char": q["char"], "type": q["type"], "ok": ok,
+                "your": q["options"][idx] if isinstance(idx, int) and 0 <= idx < len(q["options"]) else "未作答",
+                "right": q["answer"],
+                "why": _explain(q),
+            })
+            attempts.append({"char": q["char"], "ok": ok, "kind": q["type"]})
 
     total = len(results) or 1
     score = round(correct * 100 / total)

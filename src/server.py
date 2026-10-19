@@ -150,11 +150,21 @@ class Handler(BaseHTTPRequestHandler):
                 ds = dify_mod.status()
             except Exception:
                 ds = {"ready": False, "base": ""}
+            # 学情文件损坏会静默清零，必须在自检里看得见
+            try:
+                import learner as learner_mod
+                ld = learner_mod.load()
+                store = {"attempts": len(ld.get("attempts") or []),
+                         "learned": len(learner_mod.learned_chars(ld)),
+                         "error": learner_mod.LAST_LOAD_ERROR}
+            except Exception as e:
+                store = {"error": str(e)[:120]}
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
                         "llm": st["ready"], "model": st["model"],
                         "llm_base": st["base"],
                         "dify": ds["ready"], "dify_base": ds["base"],
-                        "dify_error": getattr(dify_mod, "LAST_ERROR", "")})
+                        "dify_error": getattr(dify_mod, "LAST_ERROR", ""),
+                        "store": store})
             return
         # 首页要过邀请码；校徽/龟宝等静态图放行（页面本身拿不到就没意义）
         if p.path in ("/", "/index.html") and not self._code_ok():

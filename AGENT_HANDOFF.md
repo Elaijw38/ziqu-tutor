@@ -71,7 +71,7 @@ out/
 
 | 方法 | 路径 | request | response 关键字段 |
 |---|---|---|---|
-| GET | `/api/health` | — | `kb_rows, chars, llm, model, dify, dify_error` |
+| GET | `/api/health` | — | `kb_rows, chars, llm, model, dify, dify_error, store{attempts,learned,error}` |
 | GET | `/api/diagnose` | — | `coverage, level, zones[], weak_comps[], wrong_top[], suggestions[]` |
 | POST | `/api/ask` | `{question, history?, conversation_id?, session_id?}` | `answer, citations[{id,source,title?,snippet?}], status(answer/refuse/clarify), refused, trace[], rounds, mode(dify/agent/extractive/refuse)` |
 | POST | `/api/quiz` | `{n,seed}` | `items[{char,type,question,options[],answer,answer_index}]` |
@@ -97,6 +97,9 @@ out/
 | Dify 出处显示文件名 | 折叠条里写着 `dify-kb-merged.md`，等于没署名 | `dify.py::_split_segment` 取分段末尾 `出处：` 行作 source，标题/摘录/相似度另存 |
 | Dify 拒答仍报未拒答 | `refused=false`，还挂着无关出处 | `_looks_refused()` 认固定拒答句 → `refused=true` 且清空 citations |
 | 出题后下一句评阅不上 | 模型下一轮手里没有 `quiz_id`（它在上一轮的工具返回里） | `llm.py::_SESSION_QUIZ` 按 `session_id` 记住本会话最近一套题；`submit_answers` 的 `quiz_id` 改为可省略 |
+| 并发交卷丢记录 | 两个人几乎同时提交，先交的那份记录消失 | 学情是「读-改-写」，服务多线程且无锁（实测 8 并发只剩 1 条）。写路径必须走 `learner.transaction()`，不要自己 `load()` 改完再 `save()` |
+| 学情突然全空且无报错 | 覆盖度归零，`learner.json` 内容只剩半截 | `save` 直接覆写，崩在中途就留下半截 JSON，`load` 捕获异常后静默返回空。现改为 `.tmp` + `os.replace` 原子写；损坏时留 `.corrupt` 并写 `LAST_LOAD_ERROR`，`/api/health` 的 `store.error` 可见 |
+| 作答记录无限增长 | 一学期后 `learner.json` 持续变大、诊断变慢 | `learner.MAX_ATTEMPTS` 保留最近 500 条（只用于错题排行，不需要全量） |
 | 上下文被前端塞脏 | 有人往 `history` 里塞 `system` 或超长文本 | `_history_messages()` 只认 `user/assistant`，最多 6 条、每条 600 字；`server.py` 再校验一次类型 |
 | agent 说“知识库里没有”却报 `refused=false` | 前端显示成“答了但不给出处” | `ask.py::_classify` 统一 answer/refuse/clarify 三态，非 answer 一律清空出处 |
 | 工具轮次用尽后整段降级 | 答案质量突然掉到抽取式，用户无感 | `agent_answer` 收口时再要一次纯文本回答（不带 tools），尽量不出降级 |

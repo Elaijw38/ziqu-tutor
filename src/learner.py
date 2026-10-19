@@ -14,9 +14,14 @@
      "bossCleared": [0,1],
      "attempts": [{"char": "日", "ok": false, "kind": "form", "ts": 0}]}
 """
+import contextlib
 import io
 import json
 import os
+import shutil
+import tempfile
+import threading
+import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -24,21 +29,76 @@ LEARNER = os.path.join(ROOT, "data", "learner.json")
 
 _EMPTY = {"done": {}, "bossCleared": [], "attempts": []}
 
+# 服务是多线程的（ThreadingHTTPServer），而「读-改-写」不是原子操作：
+# 两人同时交卷会互相覆盖。所有写路径必须走 transaction()。
+_LOCK = threading.RLock()
+
+# attempts 只用于算错题排行，保留最近若干条足够；无上限会随学期无限膨胀
+MAX_ATTEMPTS = 500
+
+# 最近一次读档失败的原因（半截文件/权限问题），供 /api/health 暴露，不再静默清零
+LAST_LOAD_ERROR = ""
+
 
 def load():
+    global LAST_LOAD_ERROR
     try:
         d = json.loads(io.open(LEARNER, encoding="utf-8").read())
-    except Exception:
-        d = dict(_EMPTY)
+    except FileNotFoundError:
+        d = {}
+    except Exception as e:
+        # 文件损坏时先留证据：直接返回空会让全部进度静默消失，事后无法追溯
+        LAST_LOAD_ERROR = "%s: %s" % (type(e).__name__, e)
+        try:
+            shutil.copyfile(LEARNER, LEARNER + ".corrupt")
+        except Exception:
+            pass
+        d = {}
+    if not isinstance(d, dict):
+        d = {}
     for k, v in _EMPTY.items():
-        d.setdefault(k, v if not isinstance(v, (list, dict)) else type(v)())
+        d.setdefault(k, [] if isinstance(v, list) else {})
     return d
 
 
 def save(d):
+    """原子写：先写同目录临时文件再 os.replace，避免留下半截 JSON。"""
     os.makedirs(os.path.dirname(LEARNER), exist_ok=True)
-    io.open(LEARNER, "w", encoding="utf-8", newline="\n").write(
-        json.dumps(d, ensure_ascii=False, indent=1))
+    with _LOCK:
+        attempts = d.get("attempts")
+        if isinstance(attempts, list) and len(attempts) > MAX_ATTEMPTS:
+            d["attempts"] = attempts[-MAX_ATTEMPTS:]
+        data = json.dumps(d, ensure_ascii=False, indent=1)
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(LEARNER), suffix=".tmp")
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
+                f.write(data)
+                f.flush()
+                os.fsync(f.fileno())
+            # Windows 上目标文件被杀毒/索引短暂占用会失败，重试几次
+            for i in range(5):
+                try:
+                    os.replace(tmp, LEARNER)
+                    break
+                except PermissionError:
+                    if i == 4:
+                        raise
+                    time.sleep(0.05)
+        except Exception:
+            try:
+                os.unlink(tmp)
+            except Exception:
+                pass
+            raise
+
+
+@contextlib.contextmanager
+def transaction():
+    """读-改-写全程持锁：并发交卷不会丢更新。"""
+    with _LOCK:
+        d = load()
+        yield d
+        save(d)
 
 
 def learned_chars(d):

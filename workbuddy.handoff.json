@@ -120,7 +120,8 @@
   ],
 
   "pitfalls": [
-    {"id": "proxy-localhost", "symptom": "请求 127.0.0.1 返回 502 Bad Gateway", "cause": "系统 http_proxy 拦截", "fix": "src/dify.py 与 src/llm.py 用空 ProxyHandler 打开器；并设 no_proxy"},
+    {"id": "store-lost-update", "symptom": "两人同时交卷，先交的人记录消失", "cause": "learner 是「读-改-写」，服务多线程且无锁，实测 8 并发只剩 1 条", "fix": "写路径一律走 learner.transaction()（持锁 + 原子写）；禁止直接 load→改→save"},
+    {"id": "store-half-file", "symptom": "学情突然全空，且没有任何报错", "cause": "save 直接覆写文件，写到一半崩了就留下半截 JSON，load 捕获异常后静默返回空", "fix": "先写同目录 .tmp 再 os.replace；损坏时保留 .corrupt 并写入 LAST_LOAD_ERROR（/api/health 可见）"},    {"id": "proxy-localhost", "symptom": "请求 127.0.0.1 返回 502 Bad Gateway", "cause": "系统 http_proxy 拦截", "fix": "src/dify.py 与 src/llm.py 用空 ProxyHandler 打开器；并设 no_proxy"},
     {"id": "dify-context-token", "symptom": "Dify 回答永远说'资料为空'，但仍显示引用", "cause": "{{#context#}} 被粘贴成普通文本，未作为变量令牌插入", "fix": "在 LLM 节点 SYSTEM 末尾用 {x} 插入「上下文」蓝块；有黄色警告即未绑定"},
     {"id": "dify-free-upload", "symptom": "知识与文件只能一个个上传", "cause": "Dify 免费版每批 1 个文件", "fix": "用 out/dify-kb-merged.md 单文件，分段标识符 ---，最大长度 512，重叠 0"},
     {"id": "model-trailing-slashes", "symptom": "回答结尾出现 //", "cause": "模型输出习惯", "fix": "dify.py _clean_answer 统一清洗；提示词也可加约束"},
