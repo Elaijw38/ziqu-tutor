@@ -57,7 +57,7 @@ src/
   llm.py         OpenAI 兼容客户端 + 工具调用 agent：search_kb / get_learner_state / generate_quiz / submit_answers
   build_kb.py    三源合并知识库：上游字形全集 + 通识/字源 + 课程案例（字趣只读）
 web/
-  index.html     单文件前端（三页签、整身龟宝、出处折叠条）
+  index.html     单文件前端（三页签；空对话欢迎区→首条消息后收起；回答旁 38px 小头像；出处折叠条）
   assets/        校徽、龟宝
 data/
   kb.jsonl       知识库 1,391 条 / 1,179 字（每条带 source）
@@ -119,6 +119,9 @@ out/
 | 出题考“打法”，考卷全是游戏黑话 | 选项出现“止封走位、口封印技能、先断枝再斩根” | 课程层 `play`/`tier_note` 是游戏攻略，**不能当考题**。第三种题型由 `play` 改为 `stroke`（甲骨字形几画，选项取邻近数字），`TYPE_LABEL` 同步改「笔画」 |
 | 出题数量翻倍 | `make_quiz(3)` 返回 6 题，`make_quiz(5)` 也只返回 6 题 | 变量遮蔽：`_pool`/`stroke` 分支里用 `n` 存笔画数，覆盖了同为 `n` 的题量参数，`len(items) >= n` 的退出条件失效。局部变量改名为 `cnt`（两次踩到，改完先跑 `make_quiz(1/2/3/5)` 验题量） |
 | 提示词只管“别编”，不管“怎么讲” | 回答没有固定层次，证据与推测混在一段里 | SYSTEM 升到 v5（证据分级 / 先回答-看字形-怎么理解-学习提示 / 学情诊断 / 练习 / 图片边界 / 隐私边界），同步 `out/dify-prompt-v3.txt`（内容 v5） |
+| 欢迎区收起失效 | 发出第一条消息后，龟宝欢迎块仍然占着聊天区顶部 | `.hide{display:none}` 写在 `.welcome{display:flex}` 之前，同权重后者胜。补 `.welcome.hide{display:none}`（以后新增带 display 的块都要注意这条） |
+| 空对话永远看不到 | 页面一加载就跑 `ask('日为什么写成圆的')`，欢迎区直接被顶掉 | 删掉自动首问；`input.focus()` 改 `focus({preventScroll:true})`，否则加载完浏览器自动滚到底部，首屏结构看不见 |
+| 连按 Enter 发两遍 | 同一句问题在对话里出现两次 | `ask()` 加 `BUSY` 锁（`send.disabled` 只挡鼠标，挡不住表单重复提交），请求结束才放开 |
 
 ---
 

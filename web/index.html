@@ -38,23 +38,33 @@
   .top-right{margin-left:auto;display:flex;align-items:center;gap:10px}
   .contest{font-size:12px;letter-spacing:.5px;padding:4px 10px;border-radius:999px;
     background:var(--zzu-blue-soft);border:1px solid #cfe0f5;color:var(--zzu-blue)}
-  /* 课程场景条 */
+  /* 课程场景条：压成一行，把院系/班级收进 title，首屏先给操作 */
   .ctx{background:#f8fbff;border-bottom:1px solid var(--line)}
-  .ctx-in{max-width:1040px;margin:0 auto;padding:9px 20px;display:flex;gap:16px;align-items:center;
-    flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+  .ctx-in{max-width:1040px;margin:0 auto;padding:7px 20px;display:flex;gap:14px;align-items:center;
+    flex-wrap:wrap;font-size:12.5px;color:var(--ink-2)}
   .ctx b{color:var(--ink);font-weight:600}
   .ctx .pill{padding:2px 9px;border-radius:999px;background:#fff;border:1px solid var(--line);
     color:var(--ink-2);font-size:12px}
-  .wrap{max-width:1040px;margin:0 auto;padding:22px 20px 60px}
+  .demo{font-size:10.5px;color:#8a97ab;border:1px dashed var(--line);border-radius:4px;
+    padding:0 5px;margin-left:6px;white-space:nowrap}
+  .wrap{max-width:1040px;margin:0 auto;padding:18px 20px 60px}
   .hero{position:relative;display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;
-    margin-bottom:16px;overflow:hidden;padding:6px 0 2px}
-  /* 校训水印：郑大办事大厅左侧就是这四个字，这里做成极淡的背景，不抢内容 */
-  .hero::before{content:'求是 担当';position:absolute;right:-6px;top:-18px;
-    font-size:70px;letter-spacing:10px;color:rgba(22,51,107,.045);font-weight:700;
-    pointer-events:none;white-space:nowrap}
-  h1{margin:0;font-size:25px;letter-spacing:2px}
+    margin-bottom:12px;overflow:hidden;padding:2px 0 0}
+  h1{margin:0;font-size:23px;letter-spacing:2px}
   h1 em{font-style:normal;color:var(--zzu-blue)}
-  .hero p{margin:0;color:var(--ink-2);font-size:13.5px;max-width:56ch}
+  .hero p{margin:0;color:var(--ink-2);font-size:13.5px;max-width:64ch}
+  /* 三个任务入口：一句价值主张 + 三张卡，替代原来那段长说明 */
+  .entries{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 14px}
+  .entry{text-align:left;padding:11px 14px;border:1px solid var(--line);border-radius:12px;
+    background:#fff;cursor:pointer;transition:.15s;font:inherit;color:var(--ink)}
+  .entry:hover{border-color:var(--zzu-blue);box-shadow:0 2px 10px rgba(22,51,107,.08)}
+  .entry b{display:block;font-size:14px;letter-spacing:.5px}
+  .entry span{font-size:12.5px;color:var(--ink-2);line-height:1.6}
+  @media (max-width:760px){
+    .entries{grid-template-columns:repeat(3,1fr);gap:8px}
+    .entry{padding:9px 10px;text-align:center}
+    .entry span{display:none}
+  }
   /* 导航 */
   nav{display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}
   .tab{padding:8px 18px;border:1px solid var(--line);border-radius:10px;background:#fff;
@@ -69,28 +79,40 @@
   .card-h h2{margin:0;font-size:15px;letter-spacing:1px}
   .card-h .tag{margin-left:auto;font-size:12px;color:var(--ink-2)}
   .hide{display:none}
-  /* 问答 */
-  .quick{padding:12px 16px 0;display:flex;gap:8px;flex-wrap:wrap}
+  /* .welcome 自带 display:flex，写在 .hide 之后会盖掉它，这里单独再压一次 */
+  .welcome.hide{display:none}
+  /* 问答：空对话显示欢迎区，发出第一条消息后整块收起 */
+  .welcome{display:flex;gap:14px;align-items:flex-start;padding:16px 18px 14px;
+    border-bottom:1px dashed var(--line);background:linear-gradient(180deg,#ffffff,#fafcff)}
+  .welcome .fig{width:82px;height:82px;flex:none;object-fit:contain;
+    filter:drop-shadow(0 4px 8px rgba(60,70,90,.12))}
+  .welcome .hi b{font-size:15px;letter-spacing:.5px;color:var(--ink)}
+  .welcome .hi p{margin:4px 0 0;font-size:13px;line-height:1.7;color:var(--ink-2)}
+  .quick{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
   .q-chip{padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;
     color:var(--ink-2);font-size:12.5px;cursor:pointer}
   .q-chip:hover{border-color:var(--gold);color:var(--ink)}
-  .log{padding:16px;max-height:46vh;overflow:auto}
+  /* 对话态：消息区是主体，输入框钉在聊天区底部 */
+  .chat-wrap{display:flex;flex-direction:column;min-height:0}
+  .main-col{display:flex;flex-direction:column;min-width:0}
+  .log{flex:1;padding:16px 18px;min-height:34vh;max-height:52vh;overflow:auto}
+  /* 还没开始对话时不要留一大片空白 */
+  .log:empty{min-height:12vh;max-height:12vh}
   .msg{margin:0 0 14px}
   .who{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:1px;
     color:var(--ink-2);margin-bottom:5px}
-  /* 龟宝：整身站在对话左侧，不做圆形头像 */
-  .chat-wrap{display:flex;align-items:stretch}
-  .guide-col{width:214px;flex:none;padding:6px 0 12px 14px;display:flex;
-    flex-direction:column;justify-content:flex-end;gap:10px}
-  .guide-fig{width:100%;max-width:200px;margin:0 auto;display:block;
-    filter:drop-shadow(0 10px 16px rgba(60,70,90,.14))}
-  .guide-say{font-size:12.5px;line-height:1.65;color:var(--ink-2);background:#fff;
-    border:1px solid var(--line);border-radius:12px;padding:9px 11px;position:relative}
-  .guide-say::after{content:'';position:absolute;left:16px;bottom:-6px;width:10px;height:10px;
-    background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
-    transform:rotate(45deg)}
-  .guide-say b{color:var(--ink)}
-  .main-col{flex:1;min-width:0;display:flex;flex-direction:column}
+  /* 回答旁的小头像：38px，只在对话里出现，不再放整身立绘 */
+  .ans-row{display:flex;gap:9px;align-items:flex-start}
+  .ans-row .mini{width:38px;height:38px;flex:none;object-fit:contain;margin-top:1px;
+    filter:drop-shadow(0 2px 4px rgba(60,70,90,.12))}
+  .ans-row .body{flex:1;min-width:0}
+  /* 回答状态：文字 + 颜色双重表达，不只靠颜色区分 */
+  .state{font-size:11.5px;letter-spacing:.3px;padding:1px 8px;border-radius:999px;
+    border:1px solid var(--line);margin-left:6px}
+  .state.ok{color:var(--ok);border-color:#cfe4d6;background:#f3faf5}
+  .state.gap{color:var(--zzu-red);border-color:#f0d3d0;background:#fdf4f3}
+  .state.ask{color:var(--zzu-blue);border-color:#cfe0f5;background:#f4f8ff}
+  .state.rec{color:var(--ink-2);background:#f7faff}
   /* 等待态：龟宝翻书中 */
   .typing .bubble{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);
     background:#f4f8fd;border:1px dashed #bcd2ee;border-radius:12px;padding:9px 13px}
@@ -100,11 +122,22 @@
   .dots i:nth-child(3){animation-delay:.36s}
   @keyframes bl{0%,100%{opacity:.22}50%{opacity:1}}
   @media (max-width:760px){
-    .chat-wrap{flex-direction:column}
-    .guide-col{width:auto;flex-direction:row;align-items:center;gap:12px;
-      padding:12px 14px 0;justify-content:flex-start}
-    .guide-fig{width:104px;flex:none;margin:0}
-    .guide-say::after{left:50%;bottom:-6px;margin-left:-5px}
+    /* 窄屏先给对话让路：压顶栏、压场景条、压入口卡，保证输入框在视口内 */
+    .contest{display:none}
+    .top-in{padding:10px 14px;gap:10px}
+    .ctx-in{padding:6px 14px;gap:8px}
+    .wrap{padding:12px 14px 36px}
+    .hero{padding:0;margin-bottom:10px}
+    .hero p{font-size:12.5px;line-height:1.55}
+    .entries{margin-bottom:10px}
+    nav{margin-bottom:10px}
+    .welcome{padding:12px 14px 10px;gap:11px}
+    .welcome .fig{width:56px;height:56px}
+    .welcome .hi p{font-size:12px;line-height:1.55}
+    .q-chip{font-size:11.5px;padding:3px 8px}
+    .log{min-height:26vh;max-height:44vh;padding:14px}
+    .log:empty{min-height:6vh;max-height:6vh}
+    .ans-row .mini{width:34px;height:34px}
   }
   .ask .bubble{background:#eef4fd;border:1px solid var(--line);border-radius:12px;
     padding:9px 13px;display:inline-block;max-width:100%}
@@ -176,8 +209,7 @@
   @media (max-width:620px){
     .zzu{font-size:15px;letter-spacing:2px}
     h1{font-size:21px}
-    .ctx-in{gap:10px;font-size:12.5px}
-    .log{max-height:none}
+    .ctx-in{gap:8px;font-size:12px}
   }
 </style>
 </head>
@@ -198,19 +230,23 @@
 </div>
 
 <div class="ctx">
-  <div class="ctx-in">
+  <div class="ctx-in" title="院系：文学院 · 班级：2026 秋 · 通识 3 班（示例课程，可配置）">
     <span class="pill">A2 · AI 助教</span>
-    <span>院系：<b>文学院</b></span>
-    <span>课程：<b>《汉字与中国文化》通识课</b>（示例课程，可配置）</span>
-    <span>班级：<b>2026 秋 · 通识 3 班</b>（示例）</span>
-    <span class="pill" id="meta">知识库加载中…</span>
+    <span><b>《汉字与中国文化》</b> 通识课<span class="demo">示例数据</span></span>
+    <span class="pill" id="meta" title="课程字表 = 学情覆盖率的分母；材料条数 = 可用于回答的知识库条目；字形库 = 目前能认的甲骨字形上限">知识库加载中…</span>
   </div>
 </div>
 
 <div class="wrap">
   <div class="hero">
     <h1>甲骨文 <em>AI 助教</em></h1>
-    <p>面向甲骨文学习：问字形、字义、构形、读音，也可以问甲骨文的历史与常识。答得出来源，查不到直说；再按学情诊断、自动组卷、评讲回写——教、学、评一条线走完。</p>
+    <p>看懂字形、依据材料、边学边练——答案只来自知识库，查不到直说。</p>
+  </div>
+
+  <div class="entries">
+    <button class="entry" type="button" data-go="chat"><b>问一个字</b><span>字形、字义、构形，答案附出处</span></button>
+    <button class="entry" type="button" data-go="quiz"><b>做一次练习</b><span>按学情出题，交卷即评讲</span></button>
+    <button class="entry" type="button" data-go="diag"><b>看我学得怎样</b><span>覆盖率、分区掌握、构件短板</span></button>
   </div>
 
   <nav>
@@ -223,17 +259,18 @@
     <div class="card-h"><h2>问龟宝</h2>
       <span class="tag">答案只来自知识库，附原文出处</span></div>
     <div class="chat-wrap">
-      <aside class="guide-col">
-        <img class="guide-fig" src="assets/guibao.png" alt="龟宝——甲骨小向导">
-        <div class="guide-say"><b>我是龟宝，甲骨文助教。</b><br>
-          字形怎么来的、某个字怎么读、几画、在甲骨文里是什么样子，或者甲骨文是什么、怎么断代，都可以问我。
-          答完会给出处，查不到就直接说没有。</div>
-      </aside>
+      <div class="welcome" id="welcome">
+        <img class="fig" src="assets/guibao.png" alt="龟宝——甲骨小向导">
+        <div class="hi">
+          <b>我是龟宝，甲骨文助教</b>
+          <p>问字形、字义、构形、读法都行。答案只来自知识库并附出处，查不到会直说。</p>
+          <div class="quick" id="quick"></div>
+        </div>
+      </div>
       <div class="main-col">
-        <div class="quick" id="quick"></div>
         <div class="log" id="log"></div>
         <form id="f">
-          <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off">
+          <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off" enterkeyhint="send">
           <button class="btn" type="submit" id="send">提问</button>
         </form>
       </div>
@@ -275,11 +312,16 @@ const $ = s => document.querySelector(s);
 const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c;
   if (x != null) n.textContent = x; return n; };
 
-document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
-  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === t));
-  ['chat','diag','quiz'].forEach(k => $('#p-' + k).classList.toggle('hide', k !== t.dataset.tab));
-  if (t.dataset.tab === 'diag') loadDiag();
-});
+function showTab(name){
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x.dataset.tab === name));
+  ['chat','diag','quiz'].forEach(k => $('#p-' + k).classList.toggle('hide', k !== name));
+  if (name === 'diag') loadDiag();
+  if (name === 'quiz' && !PAPER) $('#mk').click();   // 从任务入口进来就直接给一套题
+  if (name === 'chat') setTimeout(() => input.focus({preventScroll: true}), 80);
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => showTab(t.dataset.tab));
+document.querySelectorAll('.entry').forEach(b => b.onclick = () => showTab(b.dataset.go));
 
 const log = $('#log'), form = $('#f'), input = $('#q'), send = $('#send');
 // 多轮上下文：只带最近 3 轮，避免越聊越贵；Dify 链路额外记 conversation_id
@@ -312,16 +354,30 @@ function addAsk(q){ const m = el('div','msg ask');
   const w = el('div','who'); w.appendChild(el('span',null,'学生'));
   m.appendChild(w); m.appendChild(el('div','bubble',q));
   log.appendChild(m); log.scrollTop = 1e9; }
+function stateOf(a){
+  if (a.status === 'refuse') return ['gap', '材料不足 · 直说'];
+  if (a.status === 'clarify') return ['ask', '先问清再答'];
+  if ((a.citations || []).length) return ['ok', '知识库找到依据'];
+  if ((a.trace || []).length) return ['rec', '按学习记录答'];
+  return null;
+}
+function miniAvatar(){
+  const av = el('img','mini'); av.src = 'assets/guibao.png'; av.alt = '龟宝'; return av;
+}
 function addAnswer(a){
   const m = el('div','msg ans');
-  m.appendChild(el('div','who','龟宝'));
-  m.appendChild(el('div','bubble', a.answer));
+  const row = el('div','ans-row');
+  const body = el('div','body');
+  const w = el('div','who');
+  w.appendChild(el('span',null,'龟宝'));
+  const st = stateOf(a);
+  if (st) w.appendChild(el('span','state ' + st[0], st[1]));
+  body.appendChild(w);
+  body.appendChild(el('div','bubble', a.answer));
   if (a.trace && a.trace.length){
     const tr = el('div','trace');
     traceTexts(a.trace).forEach(x => tr.appendChild(el('span','tchip', x)));
-    if (a.status === 'refuse') tr.appendChild(el('span','tchip','没查到的直说'));
-    else if (a.status === 'clarify') tr.appendChild(el('span','tchip','先问清再答'));
-    m.appendChild(tr);
+    body.appendChild(tr);
   }
   if (a.citations && a.citations.length){
     const d = el('details','cite');
@@ -341,21 +397,48 @@ function addAnswer(a){
       if (c.snippet) li.appendChild(el('div','cq', c.snippet));
       ol.appendChild(li);
     });
-    d.appendChild(ol); m.appendChild(d);
+    d.appendChild(ol); body.appendChild(d);
   }
+  const fu = followUps(a); if (fu) body.appendChild(fu);
+  row.appendChild(miniAvatar()); row.appendChild(body);
+  m.appendChild(row);
   log.appendChild(m); log.scrollTop = 1e9;
 }
+/* 追问只挂在当前这条回答下面，不占用欢迎区、也不会重复自我介绍 */
+function followUps(a){
+  if (a.status !== 'answer') return null;
+  const chars = (a.citations || []).map(c => c.char || ((c.id || '').split('.').pop() || ''))
+    .filter(s => /^[\u4e00-\u9fff]$/.test(s));
+  const ch = [...new Set(chars)][0];
+  const list = [];
+  if (ch) list.push('「' + ch + '」和容易混的字怎么区分');
+  if ((a.trace || []).some(t => t.tool === 'search_kb'))
+    list.push('再出一道「' + (ch || '甲骨文') + '」的辨形题');
+  if (!list.length) return null;
+  const box = el('div','quick');
+  list.forEach(t => {
+    const b = el('button','q-chip', t); b.type = 'button'; b.onclick = () => ask(t);
+    box.appendChild(b);
+  });
+  return box;
+}
+let BUSY = false;      // 请求进行中不再接受新提问，防连按 Enter 重复提交
 async function ask(q){
-  q = (q||'').trim(); if(!q) return;
+  q = (q||'').trim(); if(!q || BUSY) return;
+  BUSY = true;
+  $('#welcome').classList.add('hide');   // 首条消息后欢迎区整块收起
   addAsk(q); input.value=''; send.disabled = true;
   // 龟宝"翻书"等待态：先给反馈，避免看起来卡住
   const wait = el('div','msg ans typing');
-  wait.appendChild(el('div','who','龟宝'));
+  const wr = el('div','ans-row');
+  const wb = el('div','body');
+  wb.appendChild(el('div','who','龟宝'));
   const bb = el('div','bubble');
   bb.appendChild(document.createTextNode('正在翻书'));
   const dots = el('span','dots');
   for (let i = 0; i < 3; i++) dots.appendChild(el('i'));
-  bb.appendChild(dots); wait.appendChild(bb);
+  bb.appendChild(dots); wb.appendChild(bb);
+  wr.appendChild(miniAvatar()); wr.appendChild(wb); wait.appendChild(wr);
   log.appendChild(wait); log.scrollTop = 1e9;
   try{
     const r = await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},
@@ -368,8 +451,8 @@ async function ask(q){
     }
     addAnswer(a.error ? {answer:'服务出错：'+a.error,citations:[]} : a);
   }catch(e){ addAnswer({answer:'连不上本地服务（是否启动了 src/server.py？）',citations:[]}); }
-  finally{ if (wait.parentNode) wait.parentNode.removeChild(wait);
-    send.disabled = false; input.focus(); }
+  finally{ BUSY = false; if (wait.parentNode) wait.parentNode.removeChild(wait);
+    send.disabled = false; input.focus({preventScroll: true}); }
 }
 form.addEventListener('submit', e => { e.preventDefault(); ask(input.value); });
 
@@ -415,7 +498,7 @@ async function loadDiag(){
     }
 
     if (d.weak_comps.length){
-      const h = el('h3',null,'构件短板'); h.appendChild(el('span','h-sub','第三关的破防部位'));
+      const h = el('h3',null,'构件短板'); h.appendChild(el('span','h-sub','构件拆分是辨形的基础'));
       box.appendChild(h);
       const p = el('div');
       d.weak_comps.forEach(c => {
@@ -490,11 +573,10 @@ async function doGrade(){
   $('#quick').appendChild(b);
 });
 fetch('/api/health').then(r => r.json()).then(h => {
-  $('#meta').textContent = '知识库 ' + h.kb_rows + ' 条 / ' + h.chars + ' 字' +
-    (h.course_chars ? '（课程字表 ' + h.course_chars + '）' : '') + ' · ' +
-    (h.llm ? '大模型已接入' : '本地检索模式');
+  $('#meta').textContent = '已收录 ' + (h.course_chars || '—') + ' 个课程字 · 关联 ' + h.kb_rows +
+    ' 条材料 · 字形库 ' + h.chars + ' 字' + (h.llm ? '' : ' · 本地检索模式');
 }).catch(()=>{});
-ask('日为什么写成圆的');
+// 不再自动首问：空对话要看到欢迎区，第一条消息由用户发起
 </script>
 </body>
 </html>
