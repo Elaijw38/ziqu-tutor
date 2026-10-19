@@ -32,3 +32,13 @@ _fix_*.py
 _clean_*.py
 _check/
 data/_kb.before_comps.jsonl
+
+# 开发期临时脚本与可再生成的中间产物（本地保留，不入库）
+_*.py
+_*.html
+_old_shot.js
+out/dify-kb/
+out/dify-kb.zip
+out/dify-prompt*.txt
+out/form-p*.png
+out/*.zip
