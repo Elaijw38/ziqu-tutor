@@ -1,0 +1,161 @@
+{
+  "$schema": "workbuddy.handoff/v1",
+  "project": {
+    "name": "甲骨文 AI 助教（龟宝）",
+    "slug": "ziqu-tutor",
+    "local_path": "C:\\DSH\\ziqu-tutor",
+    "purpose": "面向郑州大学汉字通识课的 AI 助教原型：带出处的问答 + 学情诊断 + 自动组卷 + 评阅回写，形成「问—诊—练—评」闭环",
+    "competition": "郑州大学首届 AI 智能体创新应用大赛 · 校园真实需求 A2（AI 助教 · 教、学、评闭环与个性化学习）",
+    "relation_to_other_project": "内容取自本人另一件作品「字趣」（C:\\DSH\\字趣）的只读导出；本仓库不修改原作品",
+    "language": "zh-CN",
+    "stack": ["Python 3 标准库", "原生 JavaScript", "Markdown 知识库", "OpenAI 兼容协议", "Dify 原生 API（可选）"],
+    "no_dependencies": true
+  },
+
+  "run": {
+    "start": "python src/server.py 8770",
+    "open": "http://127.0.0.1:8770",
+    "health": "GET http://127.0.0.1:8770/api/health",
+    "rebuild_kb": "python src/build_kb.py",
+    "tests": [
+      {"cmd": "python tests/test_agent.py", "asserts": "工具调用→检索→出处合并（假模型，无需 key）"},
+      {"cmd": "python tests/test_dify.py", "asserts": "Dify 链路 + retriever_resources 转出处 + // 清洗（假 Dify，无需 key）"},
+      {"cmd": "python tests/shot.py 1000 900", "asserts": "页面截图（Edge headless）"}
+    ]
+  },
+
+  "architecture": {
+    "flow": "web/index.html → /api/* → server.py → ask.py / learner.py / quiz.py → dify.py | llm.py | retrieval.py → data/kb.jsonl",
+    "answer_priority": ["dify", "llm_agent", "local_extractive", "refuse"],
+    "degrade_rule": "任一层异常一律降级，接口不报错、页面不白屏"
+  },
+
+  "files": [
+    {"path": "src/server.py", "role": "HTTP 服务（标准库 ThreadingHTTPServer），5 个接口 + 静态页", "lines_approx": 150},
+    {"path": "src/ask.py", "role": "问答编排：Dify → 大模型 agent → 本地抽取式；拒答/反问/按字去重/意图分流", "lines_approx": 210},
+    {"path": "src/retrieval.py", "role": "中文检索：字符 1-gram + 2-gram + TF-IDF（可解释、零依赖）；get_kb_meta 供诊断", "lines_approx": 120},
+    {"path": "src/learner.py", "role": "学情存取与诊断：覆盖率/分片/构件短板/错题/建议", "lines_approx": 130},
+    {"path": "src/quiz.py", "role": "出题（题型轮转+错题优先）与评阅（逐题讲解+回写）", "lines_approx": 180},
+    {"path": "src/dify.py", "role": "Dify 接入：原生 /chat-messages，解析 retriever_resources；本地地址绕过代理；回答清洗", "lines_approx": 200},
+    {"path": "src/llm.py", "role": "OpenAI 兼容客户端 + 工具调用 agent（search_kb / get_learner_state）+ 龟宝人设", "lines_approx": 210},
+    {"path": "src/build_kb.py", "role": "从 ../字趣 只读导出知识库（每条含 source）", "lines_approx": 160},
+    {"path": "web/index.html", "role": "单文件前端：郑大深宝蓝 UI、三页签、整身龟宝向导、出处折叠条", "lines_approx": 320},
+    {"path": "web/assets/zzu-logo.png", "role": "郑州大学校徽（等比缩放，不改色）"},
+    {"path": "web/assets/guibao.png", "role": "龟宝形象（抠白底，256px）"},
+    {"path": "data/kb.jsonl", "role": "知识库 170 条：王邑实物 61 + 构件讨伐 21 + 讨伐名录 88；字段 id/char/kind/text/source/meta"},
+    {"path": "data/learner.json", "role": "学习记录：{done:{zone:[char]}, bossCleared:[], attempts:[{char,ok,kind}]}（删除即重置）"},
+    {"path": "config.example.env", "role": "模型/Dify 配置模板（复制为 config.local.env，已被 gitignore）"},
+    {"path": "out/dify-kb-merged.md", "role": "Dify 知识库单文件版：170 段，分隔符 ---，每段末尾带出处"},
+    {"path": "out/dify-prompt-v3.txt", "role": "Dify LLM 节点提示词（含少样本示例与固定拒答句）"},
+    {"path": "out/dify-appearance.txt", "role": "Dify 开场白与建议问题文案"}
+  ],
+
+  "api": [
+    {
+      "method": "GET", "path": "/api/health",
+      "response_example": {"ok": true, "kb_rows": 170, "chars": 146, "llm": true, "model": "deepseek-chat", "llm_base": "https://api.deepseek.com/v1", "dify": false, "dify_base": "", "dify_error": ""}
+    },
+    {
+      "method": "GET", "path": "/api/diagnose",
+      "response_example": {
+        "coverage": 6.2, "level": "入门", "learned": 9, "total_chars": 146,
+        "zones": [{"id": "sky", "name": "天象", "done": 0, "total": 4, "pct": 0.0}],
+        "weakest_zone": {"id": "sky", "name": "天象", "done": 0, "total": 4, "pct": 0.0},
+        "weak_comps": [{"comp": "宀", "total": 2, "missing": ["家", "安"]}],
+        "wrong_top": [{"char": "鼎", "times": 1}],
+        "suggestions": ["「天象」这片只学了 0/4，从它入手最划算。"]
+      }
+    },
+    {
+      "method": "POST", "path": "/api/ask",
+      "request": {"question": "家为什么是屋顶下有猪"},
+      "response_example": {
+        "answer": "「家」由宀和豕两个构件组成……",
+        "citations": [{"id": "boss.家", "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946", "snippet": "…"}],
+        "hits": [{"id": "search_kb"}],
+        "grounded": true, "refused": false, "mode": "agent"
+      },
+      "mode_values": ["dify", "agent", "extractive", "refuse"]
+    },
+    {
+      "method": "POST", "path": "/api/quiz",
+      "request": {"n": 3, "seed": 20261104},
+      "response_example": {
+        "items": [{"char": "涉", "type": "comp", "type_label": "构件", "question": "「涉」由哪两块构件组成？", "options": ["水 + 止", "火 + 女", "家 + 隹", "宀 + 口"], "answer": "水 + 止", "answer_index": 0}],
+        "count": 3, "seed": 20261104
+      }
+    },
+    {
+      "method": "POST", "path": "/api/grade",
+      "request": {"quiz": {"items": ["…上一步返回的原样对象…"]}, "answers": [{"char": "涉", "choice": 0}]},
+      "response_example": {
+        "score": 33, "correct": 1, "total": 3,
+        "results": [{"char": "涉", "type": "comp", "ok": true, "your": "水 + 止", "right": "水 + 止", "why": "该字的构件就是它在第三关的可击破部位。"}],
+        "advice": "错的那几题集中在字义，回头把对应条目看一遍即可。"
+      },
+      "side_effect": "写入 data/learner.json 的 attempts，并影响下次出题与诊断"
+    }
+  ],
+
+  "env": [
+    {"key": "ZQ_LLM_BASE", "example": "https://api.deepseek.com/v1", "note": "OpenAI 兼容端点；百炼/火山/智谱/Ollama 同理"},
+    {"key": "ZQ_LLM_KEY", "example": "sk-***", "note": "模型厂商 key（DeepSeek 已验证可用）"},
+    {"key": "ZQ_LLM_MODEL", "example": "deepseek-chat", "note": "视觉/实验模型对文本 RAG 不稳定"},
+    {"key": "ZQ_LLM_TIMEOUT", "example": "40"},
+    {"key": "ZQ_DIFY_BASE", "example": "https://api.dify.ai/v1", "note": "Dify 应用 key 形如 app-xxxx"},
+    {"key": "ZQ_DIFY_KEY", "example": "app-***"},
+    {"key": "no_proxy", "example": "127.0.0.1,localhost", "note": "必需；否则本机请求会被 http_proxy 拦成 502"}
+  ],
+
+  "pitfalls": [
+    {"id": "proxy-localhost", "symptom": "请求 127.0.0.1 返回 502 Bad Gateway", "cause": "系统 http_proxy 拦截", "fix": "src/dify.py 与 src/llm.py 用空 ProxyHandler 打开器；并设 no_proxy"},
+    {"id": "dify-context-token", "symptom": "Dify 回答永远说'资料为空'，但仍显示引用", "cause": "{{#context#}} 被粘贴成普通文本，未作为变量令牌插入", "fix": "在 LLM 节点 SYSTEM 末尾用 {x} 插入「上下文」蓝块；有黄色警告即未绑定"},
+    {"id": "dify-free-upload", "symptom": "知识与文件只能一个个上传", "cause": "Dify 免费版每批 1 个文件", "fix": "用 out/dify-kb-merged.md 单文件，分段标识符 ---，最大长度 512，重叠 0"},
+    {"id": "model-trailing-slashes", "symptom": "回答结尾出现 //", "cause": "模型输出习惯", "fix": "dify.py _clean_answer 统一清洗；提示词也可加约束"},
+    {"id": "dify-vision-model", "symptom": "有资料却不肯合并作答、反问用户", "cause": "视觉实验模型对文本 RAG 不稳", "fix": "换 deepseek-chat / qwen-plus，并在提示词加少样本示例"},
+    {"id": "kb-no-explanation", "symptom": "问'家为什么是屋顶下有猪'只答构件，答不出造字缘由", "cause": "知识库只有 form/play，无会意解释层", "fix": "_enrich_kb.py 补 12 字常见解释（措辞带'常见解释'，不冒充定论）"},
+    {"id": "two-projects", "symptom": "改了内容却要同步两处", "cause": "kb.jsonl 与 dify-kb-merged.md 是派生物", "fix": "改 build_kb 后依次跑 _enrich_kb.py 与 _merge_kb.py"}
+  ],
+
+  "state": {
+    "works": [
+      "三页签可用：问答（真模型 + 出处）、学情诊断、随堂练习",
+      "真实 DeepSeek 已验证：工具调用 search_kb、约 3 秒/问、出处 4 条",
+      "拒答可用：超纲问题返回固定句，不编造",
+      "Dify 链路（假服务）验证通过，含 retriever_resources 转出处与 // 清洗",
+      "知识库 170 条 / 146 字；补 12 字会意解释",
+      "郑大 UI：校徽、深宝蓝、双语校名、求是担当水印；整身龟宝向导"
+    ],
+    "not_done": [
+      "Dify 应用 key（app-）尚未获取，Dify 通路未接真实应用",
+      "未部署上线，仅本机 http://127.0.0.1:8770",
+      "无登录/多用户/班级汇总；学习记录是单机 JSON",
+      "未接教务系统；课程与班级在界面上标注为示例",
+      "真实班级前后测未做（申报表写为下一步验证）"
+    ]
+  },
+
+  "next_steps": [
+    {"priority": 1, "task": "拿到 Dify app- key 后填入 config.local.env，验证 /api/health 的 dify=true 与真实引用"},
+    {"priority": 2, "task": "把 Dify 的 retriever_resources 渲染成与本地一致的「出处」折叠条（前端已支持 citations 结构）"},
+    {"priority": 3, "task": "部署到校内服务器或容器；加课程邀请码式轻认证"},
+    {"priority": 4, "task": "对接一学期真实学习记录，做前后测，补申报表的'效果验证'数据"},
+    {"priority": 5, "task": "教师端：班级汇总与薄弱点排行"}
+  ],
+
+  "glossary": {
+    "龟宝": "字趣与助教共用的原创形象：背行囊的甲骨小向导；助教人设即龟宝",
+    "字趣": "本人另一件作品，汉字文化互动游戏（第二关王邑地图 61 实物、第三关 21 关），本项目只读复用其内容",
+    "王邑": "字趣第二关的殷商聚落图卷，五个识字分区",
+    "构件": "合体字的组成部分（如 家 = 宀 + 豕），也是字趣第三关 Boss 的可击破部位——所以学情诊断的'构件短板'能直接指导练习",
+    "A2": "大赛附件1 任务清单中的 AI 助教任务（教、学、评闭环与个性化学习）"
+  },
+
+  "integrity_notes": [
+    "答案只用知识库内容；查不到就拒答，不编造出处",
+    "字形数据来自 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946，界面与文档均署名",
+    "王邑地图与 Boss 形象标注为教学示意，非考古复原",
+    "校徽版权归郑州大学；龟宝形象为本项目原创",
+    "不使用学校内部数据与个人信息；课程名与班级标注为示例"
+  ]
+}
