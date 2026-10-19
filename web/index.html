@@ -28,9 +28,8 @@
     box-shadow:0 1px 6px rgba(22,51,107,.06)}
   .top-in{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .zzu{display:flex;align-items:center;gap:11px}
-  .zzu .mark{width:38px;height:38px;border-radius:50%;border:2px solid var(--zzu-red);
-    display:grid;place-items:center;position:relative;background:#fff;flex:none}
-  .zzu .mark::after{content:'郑';color:var(--zzu-red);font-size:17px;font-weight:700}
+  /* 校徽：只按比例缩放到 38px 高，不裁切、不变形、不改色（遵守校徽使用规范） */
+  .zzu .mark{width:38px;height:38px;display:block;flex:none;object-fit:contain}
   .zzu .names{display:flex;flex-direction:column;line-height:1.15}
   .zzu .cn{font-size:16.5px;letter-spacing:3px;font-weight:600;color:var(--ink)}
   .zzu .en{font-size:8.5px;letter-spacing:1.6px;color:#8a97ab;text-transform:uppercase}
@@ -149,7 +148,7 @@
 <div class="top">
   <div class="top-in">
     <span class="zzu">
-      <span class="mark"></span>
+      <img class="mark" src="assets/zzu-logo.png" alt="郑州大学校徽">
       <span class="names"><b class="cn">郑州大学</b><span class="en">Zhengzhou University</span></span>
     </span>
     <span class="top-sep"></span>
@@ -215,7 +214,7 @@
   <footer>
     <div class="line">
       <span><b>郑州大学</b> 首届 AI 智能体创新应用大赛 · 参赛作品</span>
-      <span class="dot">·</span><span>非商业教学演示</span>
+      <span class="dot">·</span><span>非商业教学演示</span><span class="dot">·</span><span>校徽版权归郑州大学所有</span>
       <span class="dot">·</span>
       <span>字形数据：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946</span>
     </div>
