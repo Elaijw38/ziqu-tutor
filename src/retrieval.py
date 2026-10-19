@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+"""本地检索：零第三方依赖的中文检索（字符 1-gram + 2-gram + TF-IDF）。
+
+为什么不用向量库：初赛阶段要的是"可演示、可复现、离线能跑"。这个检索器
+只用标准库 + numpy，答案可解释（能指出命中了哪几个词），也不需要下载模型。
+后面要换 Chroma/Faiss，只需替换 search() 的内部实现，对外接口不变。
+"""
+import io
+import json
+import math
+import os
+import re
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+KB_PATH = os.path.join(os.path.dirname(HERE), "data", "kb.jsonl")
+
+_CJK = re.compile(r"[\u3400-\u9fff]")
+_ASCII = re.compile(r"[a-zA-Z0-9]+")
+
+
+def load_kb(path=KB_PATH):
+    rows = []
+    with io.open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
+    return rows
+
+
+def tokenize(text):
+    """中文取单字 + 相邻二字；英文数字按词。返回列表（保留重复，交给 TF 用）。"""
+    toks = []
+    cjk = _CJK.findall(text)
+    toks.extend(cjk)
+    for a, b in zip(cjk, cjk[1:]):
+        toks.append(a + b)
+    toks.extend(w.lower() for w in _ASCII.findall(text))
+    return toks
+
+
+class Index:
+    def __init__(self, rows):
+        self.rows = rows
+        self.postings = {}          # token -> {doc_idx: tf}
+        self.doc_len = []
+        self.char_to_docs = {}      # 单字 -> [doc_idx]（用于"用户直接问了某个字"）
+        for i, r in enumerate(rows):
+            toks = tokenize((r.get("text") or "") + " " + (r.get("char") or ""))
+            self.doc_len.append(len(toks) or 1)
+            tf = {}
+            for t in toks:
+                tf[t] = tf.get(t, 0) + 1
+            for t, c in tf.items():
+                self.postings.setdefault(t, {})[i] = c
+            ch = r.get("char")
+            if ch:
+                self.char_to_docs.setdefault(ch, []).append(i)
+        n = len(rows)
+        self.idf = {t: math.log(1 + n / (1 + len(p))) for t, p in self.postings.items()}
+        self.avg_len = sum(self.doc_len) / max(1, n)
+
+    def search(self, query, k=6):
+        q = tokenize(query)
+        if not q:
+            return []
+        scores = {}
+        k1, b = 1.2, 0.72
+        for t in q:
+            if t not in self.postings:
+                continue
+            idf = self.idf[t]
+            for i, tf in self.postings[t].items():
+                dl = self.doc_len[i]
+                s = idf * (tf * (k1 + 1)) / (tf + k1 * (1 - b + b * dl / self.avg_len))
+                scores[i] = scores.get(i, 0.0) + s
+        # 用户问的字若正好是某条目的字，直接加权（问答里最常见的意图）
+        for ch in set(_CJK.findall(query)):
+            for i in self.char_to_docs.get(ch, []):
+                scores[i] = scores.get(i, 0.0) + 6.0
+        top = sorted(scores.items(), key=lambda x: -x[1])[:k]
+        return [(self.rows[i], round(s, 3)) for i, s in top if s > 0]
+
+
+_SHARED = {}
+
+
+def get_index(path=KB_PATH):
+    if path not in _SHARED:
+        _SHARED[path] = Index(load_kb(path))
+    return _SHARED[path]
+
+
+if __name__ == "__main__":
+    idx = get_index()
+    for q in ["日和月为什么这么写", "「家」为什么是屋顶下有猪", "构件讨伐里虎怎么打", "休这个字怎么来的"]:
+        print("\n问：", q)
+        for r, s in idx.search(q, k=3):
+            print("  [%.2f] %-12s %s" % (s, r["id"], r["text"][:70]))
