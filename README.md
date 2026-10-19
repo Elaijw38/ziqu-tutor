@@ -52,7 +52,7 @@ src/build_kb.py   三源合并 → data/kb.jsonl（字形全集 / 通识 / 字�
 data/upstream/    上游字形数据集与署名（CC BY 4.0）
 data/general.jsonl 人工整理的通识与字源条目（逐条标出处）
 src/retrieval.py  中文检索：字 1-gram + 2-gram + TF-IDF（零依赖，可解释）
-src/learner.py    学情存取与诊断（覆盖率分母 = 课程字表）
+src/learner.py    学情存取与诊断（SQLite，按访客分开；覆盖率分母 = 课程字表）
 src/quiz.py       出题与评阅（只在课程层出题）
 src/llm.py        OpenAI 兼容客户端 + 工具调用 agent（检索/学情/出题/评阅）
 src/ask.py        问答编排：Dify → agent → 本地抽取式；三态判定
@@ -161,9 +161,12 @@ ZQ_RATE_PER_HOUR=60      # 单 IP 每小时提问上限，防刷模型额度
 4. 仓库若推送到 GitHub/Gitee，**先确认 git 历史里没有明文 key**（此前已核查并清理，旧 key 也已作废）；
 5. 公开部署建议套一层 HTTPS（平台一般自带；自建服务器用 Caddy/Nginx 反代）。
 
-**已知限制**：`data/learner.json` 是单文件，所有人都共享同一份学情——多人同时用会互相污染
-（并发写入本身已加锁并原子落盘，不会丢记录，但数据仍是共享的一份）。
-演示前删掉该文件即重置；要真正支持多用户，得按会话分文件（见交接文档 next_steps）。
+**学情按人分开**：学情存在 `data/learners.db`（SQLite，标准库），每个浏览器拿一个随机
+`zq_vid`（HttpOnly cookie，不含任何个人信息），各存各的记录；A 交的卷不会记到 B 头上。
+- 换设备、清浏览器数据、开无痕窗口 → 拿到新的 vid，等于从头开始；
+- 页面上有「清空我的记录」与「载入示例学情」（课堂演示用，会明确标注"含示例数据"）；
+- `data/learner.json` 是旧版单文件，只在建库时导入成示例桶，之后不再写入；
+- 没有 cookie 的调用（curl、脚本）落到共享的 `local` 桶，学情不能当个人证据用。
 
 ## 下一步（按 A2 验收点）
 

@@ -55,7 +55,7 @@ def main():
 
     orig = learner.load
     try:
-        learner.load = lambda: {"done": {"sky": [glyph_only[0]]},
+        learner.load = lambda vid="": {"done": {"sky": [glyph_only[0]]},
                                 "bossCleared": [], "attempts": []}
         d = learner.diagnose(idx)
     finally:

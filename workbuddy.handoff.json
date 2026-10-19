@@ -71,7 +71,7 @@
     },
     {
       "path": "src/learner.py",
-      "role": "学情存取与诊断：覆盖率（分母=课程字表）/分片/构件短板/错题/建议",
+      "role": "学情存取（SQLite，按访客 vid 分行）与诊断：作答正确率/能力维度/课程字覆盖/错题构件/建议",
       "lines_approx": 130
     },
     {
@@ -112,8 +112,8 @@
       "role": "知识库 1,391 条：字形 1,168 + 通识 24 + 字源 29 + 王邑 61 + 讨伐 21 + 名录 88；字段 id/char/kind/text/source/meta（课程层带 meta.course）"
     },
     {
-      "path": "data/learner.json",
-      "role": "学习记录：{done:{zone:[char]}, bossCleared:[], attempts:[{char,ok,kind}]}（删除即重置）"
+      "path": "data/learners.db",
+      "role": "学情库（SQLite，运行时生成）：learners(vid TEXT PK, data TEXT JSON, updated REAL)，一个浏览器一行；删掉即全部重置。data/learner.json 是旧版单文件，只在建库时导入成 demo 桶供「载入示例」"
     },
     {
       "path": "config.example.env",
@@ -339,7 +339,26 @@
         ],
         "advice": "错的那几题集中在字义，回头把对应条目看一遍即可。"
       },
-      "side_effect": "写入 data/learner.json 的 attempts，并影响下次出题与诊断"
+      "side_effect": "写入 data/learners.db 中当前访客（zq_vid）的 attempts，并影响该访客下次出题与诊断；不同浏览器互不可见"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reset",
+      "request": {},
+      "response_example": {
+        "ok": true
+      },
+      "side_effect": "只清空当前浏览器（zq_vid）的学情记录，不动其他访客与知识库"
+    },
+    {
+      "method": "POST",
+      "path": "/api/seed-demo",
+      "request": {},
+      "response_example": {
+        "ok": true,
+        "attempts": 38
+      },
+      "side_effect": "把 demo 桶（旧 learner.json 导入的示例学情）复制给当前访客，并在记录里标 seeded=true；学情页会显示「含示例学情」提示"
     }
   ],
   "env": [
@@ -507,6 +526,7 @@
   ],
   "state": {
     "works": [
+      "学情按浏览器分开：每个访客一个随机 zq_vid（HttpOnly cookie），SQLite data/learners.db 一行一人；实测两人同时交卷各记各的，互不串号",
       "三页签可用：问答（真模型 + 出处）、学情诊断、随堂练习",
       "真实 DeepSeek 已验证：工具调用 search_kb、约 3 秒/问、出处 4 条",
       "多轮上下文：前端带最近 3 轮，实测「那它怎么打」能接住上一句的字",

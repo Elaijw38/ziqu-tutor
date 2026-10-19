@@ -17,3 +17,9 @@ out/pdfprof/
 _probe_key.py
 _p_*.py
 _patch_*.py
+
+# 学情库（每个访客一份，属运行时数据）与坏行备份
+data/learners.db
+data/learners.db-wal
+data/learners.db-shm
+data/corrupt/

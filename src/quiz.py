@@ -50,7 +50,7 @@ def _uniq(xs):
     return out
 
 
-def make_quiz(n=3, seed=20261104):
+def make_quiz(n=3, seed=20261104, vid=""):
     import learner
     idx = get_index()
     forms, comps, plays, strokes = _pool(idx)
@@ -61,7 +61,8 @@ def make_quiz(n=3, seed=20261104):
         stroke_by_char.setdefault(c, cnt)
 
     # 候选顺序：答错过的字 → 没学过的字 → 其它（都打散，但错题优先）
-    d = learner.load()
+    # 只读当前访客的记录：别人答错过的字不该优先推给你
+    d = learner.load(vid)
     wrong = [a["char"] for a in (d.get("attempts") or []) if not a.get("ok") and a.get("char")]
     learned = learner.learned_chars(d)
     # 只在课程层里出题：字形库有 1,168 字，但多数只有形/音/笔画，
@@ -145,13 +146,16 @@ def make_quiz(n=3, seed=20261104):
     return {"items": items, "count": len(items), "seed": seed}
 
 
-def grade(quiz, submitted):
-    """submitted: [{"char":..., "choice": 索引}, ...] → 得分 + 逐题反馈 + 更新进度。"""
+def grade(quiz, submitted, vid=""):
+    """submitted: [{"char":..., "choice": 索引}, ...] → 得分 + 逐题反馈 + 更新学情。
+
+    vid 是当前访客：只写自己的记录。以前不分人，A 交的卷会记到 B 头上。
+    """
     import learner
     by_char = {q["char"]: q for q in quiz.get("items") or []}
     results, correct = [], 0
     # 读-改-写整体上锁：两个人同时交卷时，后写的那份不会覆盖掉先写的结果
-    with learner.transaction() as d:
+    with learner.transaction(vid) as d:
         attempts = d.setdefault("attempts", [])
         for s in submitted or []:
             q = by_char.get(s.get("char"))

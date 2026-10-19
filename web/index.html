@@ -184,6 +184,16 @@
   ul.tips{margin:0;padding-left:20px;font-size:14px}
   ul.tips li{margin:6px 0}
   .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0;line-height:1.65}
+  /* 学情归属：每人一份，这里给出「这些数据属于谁」和清空/示例入口 */
+  .scope{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;
+    padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#f8fbff;
+    font-size:12.5px;color:var(--ink-2);line-height:1.6}
+  .scope.em{background:#fff8ec;border-color:#efdfc2;color:#7a5c1e}
+  .scope .grow{flex:1 1 220px;min-width:0}
+  .mini-btn{padding:4px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;
+    color:var(--ink);font-size:12.5px;cursor:pointer;white-space:nowrap;font:inherit;font-size:12.5px}
+  .mini-btn:hover{border-color:var(--zzu-blue);color:var(--zzu-blue)}
+  .mini-btn:disabled{opacity:.5;cursor:default}
   .comp{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;
     background:#fff;border:1px solid var(--line);font-size:13px;margin:0 6px 6px 0}
   .comp b{color:var(--zzu-blue);font-weight:600}
@@ -453,8 +463,32 @@ async function loadDiag(){
     if (d.error){ box.textContent = '出错了：' + d.error; return; }
     box.innerHTML = '';
     if (d.total_chars)
-      $('#diagTag').textContent = '来自本机练习记录 · 课程字表 ' + d.total_chars + ' 字' +
+      $('#diagTag').textContent = '只统计当前浏览器 · 课程字表 ' + d.total_chars + ' 字' +
         (d.lexicon_chars ? ' · 字形库 ' + d.lexicon_chars + ' 字' : '');
+    // 归属说明：学情按浏览器分开存，这里必须让人看得懂「这些数字是谁的」
+    const sc = el('div','scope' + (d.seeded ? ' em' : ''));
+    sc.appendChild(el('div','grow', d.seeded
+      ? '当前含示例学情（课堂演示用，不是你的真实作答）。做一轮练习会累加到这份数据上，点右侧即可从零开始。'
+      : '这份记录只属于当前浏览器，不含任何个人信息；换设备或清理浏览器数据会重新开始。'));
+    const call = async (url) => {
+      try{
+        const r = await (await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'})).json();
+        if (r.error){ alert(r.error); return; }
+        loadDiag();
+      }catch(e){ alert('操作失败：连不上服务。'); }
+    };
+    if (d.seeded || d.attempts_total){
+      const b = el('button','mini-btn', d.seeded ? '清空，从头开始' : '清空我的记录'); b.type = 'button';
+      b.onclick = () => { if (confirm('只清空当前浏览器的学情记录，题目和知识库不受影响。继续？')) call('/api/reset'); };
+      sc.appendChild(b);
+    }
+    if (!d.seeded){
+      const b = el('button','mini-btn','载入示例学情'); b.type = 'button';
+      if (d.attempts_total) b.title = '会用示例数据覆盖当前记录';
+      b.onclick = () => { if (!d.attempts_total || confirm('载入示例会覆盖当前记录，继续？')) call('/api/seed-demo'); };
+      sc.appendChild(b);
+    }
+    box.appendChild(sc);
     const noAtt = !d.attempts_total;
     const row = el('div','row');
     const mk = (v,s,red) => { const c = el('div','stat' + (red?' red':''));

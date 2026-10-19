@@ -69,6 +69,39 @@ LOGIN_HTML = """<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 class Handler(BaseHTTPRequestHandler):
     server_version = "ziqu-tutor/0.1"
 
+    # ---------------- 访客身份（学情按人分开的前提） ----------------
+
+    def _visitor(self):
+        """每个浏览器一个随机 vid；只当钥匙用，不含任何个人信息。
+
+        没有 cookie（curl、脚本、禁用 cookie 的浏览器）时落到共享的本机桶，
+        学情不再能当个人证据用——这种情况在接口返回里会说清楚。
+        """
+        if getattr(self, "_vid", None):
+            return self._vid
+        raw = ""
+        for part in (self.headers.get("Cookie") or "").split(";"):
+            k, _, v = part.strip().partition("=")
+            if k == "zq_vid":
+                raw = v.strip()
+                break
+        if learner.is_valid_vid(raw):
+            self._vid = raw
+            self._new_vid = False
+        else:
+            self._vid = learner.new_vid()
+            self._new_vid = True
+        return self._vid
+
+    def end_headers(self):
+        # 首次访问即签发，避免"第一次交卷记到公共桶、第二次才有自己的记录"
+        if getattr(self, "_new_vid", False):
+            self._new_vid = False
+            self.send_header("Set-Cookie",
+                             "zq_vid=%s; Path=/; HttpOnly; SameSite=Lax; Max-Age=31536000"
+                             % self._vid)
+        BaseHTTPRequestHandler.end_headers(self)
+
     def _json(self, obj, code=200):
         body = json.dumps(obj, ensure_ascii=False).encode("utf-8")
         self.send_response(code)
@@ -128,12 +161,13 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         p = urllib.parse.urlparse(self.path)
+        vid = self._visitor()
         if p.path == "/api/diagnose":
             if not self._code_ok():
                 self._json({"error": "需要邀请码：请从带邀请码的链接进入"}, 401)
                 return
             try:
-                self._json(learner.diagnose(get_index()))
+                self._json(learner.diagnose(get_index(), vid))
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
@@ -141,8 +175,7 @@ class Handler(BaseHTTPRequestHandler):
             idx = get_index()
             chars = {r.get("char") for r in idx.rows if r.get("char")}
             try:
-                import learner as learner_mod
-                course_n = len(learner_mod.course_chars(idx.rows))
+                course_n = len(learner.course_chars(idx.rows))
             except Exception:
                 course_n = 0
             try:
@@ -155,13 +188,9 @@ class Handler(BaseHTTPRequestHandler):
                 ds = dify_mod.status()
             except Exception:
                 ds = {"ready": False, "base": ""}
-            # 学情文件损坏会静默清零，必须在自检里看得见
+            # 学情坏行会静默清零，必须在自检里看得见；分人之后再看访客数
             try:
-                import learner as learner_mod
-                ld = learner_mod.load()
-                store = {"attempts": len(ld.get("attempts") or []),
-                         "learned": len(learner_mod.learned_chars(ld)),
-                         "error": learner_mod.LAST_LOAD_ERROR}
+                store = learner.stats(vid)
             except Exception as e:
                 store = {"error": str(e)[:120]}
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
@@ -180,6 +209,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         p = urllib.parse.urlparse(self.path)
+        vid = self._visitor()
         if p.path == "/api/login":
             n = int(self.headers.get("Content-Length") or 0)
             raw = self.rfile.read(n).decode("utf-8", "replace") if n else ""
@@ -194,7 +224,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", "/")
             self.end_headers()
             return
-        if p.path not in ("/api/ask", "/api/quiz", "/api/grade"):
+        if p.path not in ("/api/ask", "/api/quiz", "/api/grade",
+                          "/api/reset", "/api/seed-demo"):
             self._json({"error": "not found"}, 404)
             return
         if not self._code_ok():
@@ -207,17 +238,34 @@ class Handler(BaseHTTPRequestHandler):
         except Exception as e:
             self._json({"error": "bad json: %s" % e}, 400)
             return
+        if p.path == "/api/reset":
+            # 只清当前这一个访客的记录，不动别人的
+            try:
+                learner.reset(vid)
+                self._json({"ok": True})
+            except Exception as e:
+                self._json({"error": "internal: %s" % e}, 500)
+            return
+        if p.path == "/api/seed-demo":
+            # 课堂演示用：把示例学情复制给当前访客，页面会标明「含示例数据」
+            try:
+                n = learner.seed_demo(vid)
+                self._json({"ok": True, "attempts": n} if n else
+                           {"error": "示例数据不存在（data/learner.json 已移除？）"}, 200 if n else 404)
+            except Exception as e:
+                self._json({"error": "internal: %s" % e}, 500)
+            return
         if p.path == "/api/quiz":
             try:
                 self._json(quiz_mod.make_quiz(int(payload.get("n") or 3),
-                                              int(payload.get("seed") or 20261104)))
+                                              int(payload.get("seed") or 20261104), vid))
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
         if p.path == "/api/grade":
             try:
                 self._json(quiz_mod.grade(payload.get("quiz") or {},
-                                          payload.get("answers") or []))
+                                          payload.get("answers") or [], vid))
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
@@ -248,7 +296,7 @@ class Handler(BaseHTTPRequestHandler):
                       if ch.isalnum() or ch in "-_")
         try:
             self._json(ask_mod.answer(q, history=hist, conversation_id=conv,
-                                     session_id=sid))
+                                     session_id=sid, vid=vid))
         except Exception as e:
             self._json({"error": "internal: %s" % e}, 500)
 

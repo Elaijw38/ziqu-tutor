@@ -110,8 +110,9 @@ def test_tools_locally():
     from retrieval import get_index
 
     idx = get_index()
-    old = learner.LEARNER
-    learner.LEARNER = os.path.join(tempfile.mkdtemp(), "learner.json")
+    old = learner.DB
+    # 临时库：别把测试作答写进 data/learners.db（演示数据）
+    learner.DB = os.path.join(tempfile.mkdtemp(), "learners.db")
     try:
         r = llm._exec_tool("generate_quiz", {"n": 2, "seed": 7}, idx, learner, "s1")
         assert r.get("quiz_id") and r.get("count") == 2, "出题失败"
@@ -127,7 +128,7 @@ def test_tools_locally():
         print("  [工具] 出题 2 道 / 评阅 %s 分 / 重复提交被拒 ✓" % g["score"])
         return True
     finally:
-        learner.LEARNER = old
+        learner.DB = old
 
 
 def test_classify_locally():

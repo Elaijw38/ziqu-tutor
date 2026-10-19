@@ -121,7 +121,7 @@ def _dedupe_by_char(hits, limit, intent="any"):
     return out[:limit]
 
 
-def answer(question, history=None, conversation_id="", session_id=""):
+def answer(question, history=None, conversation_id="", session_id="", vid=""):
     q = (question or "").strip()
     if not q:
         return _refuse("你想问哪个字？直接说字，比如「家为什么是屋顶下有猪」。")
@@ -147,7 +147,7 @@ def answer(question, history=None, conversation_id="", session_id=""):
         try:
             import learner as learner_mod
             got = llm_mod.agent_answer(q, idx, learner_mod, history=history,
-                                       session_id=session_id)
+                                       session_id=session_id, vid=vid)
             if got:
                 got.setdefault("grounded", True)
                 got["citations"] = _dedup(got.get("citations") or [])

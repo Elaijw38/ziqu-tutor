@@ -250,7 +250,7 @@ def _remember_quiz(quiz, session_id=""):
     return qid
 
 
-def _exec_tool(name, args, idx, learner_mod, session_id=""):
+def _exec_tool(name, args, idx, learner_mod, session_id="", vid=""):
     if name == "search_kb":
         q = (args or {}).get("query") or ""
         hits = idx.search(q, k=5)
@@ -258,7 +258,7 @@ def _exec_tool(name, args, idx, learner_mod, session_id=""):
                  "source": r["source"]} for r, s in hits]
         return {"found": len(rows), "items": rows}
     if name == "get_learner_state":
-        d = learner_mod.diagnose(idx)
+        d = learner_mod.diagnose(idx, vid)
         return {"level": d["level"],
                 "coverage": d["coverage"],           # 课程字表里「见过」的比例
                 "learned": d["learned"], "total_chars": d["total_chars"],
@@ -275,7 +275,7 @@ def _exec_tool(name, args, idx, learner_mod, session_id=""):
         import quiz as quiz_mod
         n = max(1, min(5, int((args or {}).get("n") or 3)))
         seed = (args or {}).get("seed")
-        quiz = quiz_mod.make_quiz(n, int(seed) if seed else 20261104)
+        quiz = quiz_mod.make_quiz(n, int(seed) if seed else 20261104, vid)
         qid = _remember_quiz(quiz, session_id)
         items = [{"char": it["char"], "type": it["type_label"],
                   "question": it["question"], "options": it["options"]}
@@ -288,7 +288,7 @@ def _exec_tool(name, args, idx, learner_mod, session_id=""):
         quiz = _QUIZ_STORE.get(qid)
         if not quiz:
             return {"error": "找不到这套题（quiz_id=%s），请先调 generate_quiz 再评阅。" % qid}
-        res = quiz_mod.grade(quiz, (args or {}).get("answers") or [])
+        res = quiz_mod.grade(quiz, (args or {}).get("answers") or [], vid)
         _QUIZ_STORE.pop(qid, None)
         if _SESSION_QUIZ.get(session_id) == qid:
             _SESSION_QUIZ.pop(session_id, None)
@@ -335,7 +335,7 @@ def _history_messages(history):
     return out
 
 
-def agent_answer(question, idx, learner_mod, history=None, session_id=""):
+def agent_answer(question, idx, learner_mod, history=None, session_id="", vid=""):
     """带工具调用的问答。返回 dict；任何失败都返回 None 让上层降级。
 
     history 是最近几轮 [{"role","content"}]，拼在 system 之后、本次提问之前——
@@ -369,7 +369,7 @@ def agent_answer(question, idx, learner_mod, history=None, session_id=""):
             except Exception:
                 args = {}
             called.append(name)
-            result = _exec_tool(name, args, idx, learner_mod, session_id)
+            result = _exec_tool(name, args, idx, learner_mod, session_id, vid)
             if name == "search_kb":
                 for it in result.get("items") or []:
                     citations.append({"id": it["id"], "source": it["source"],

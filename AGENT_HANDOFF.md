@@ -51,7 +51,7 @@ src/
   server.py      HTTP 服务（标准库），5 个接口 + 静态页
   ask.py         问答编排：Dify → 大模型 agent → 本地抽取式 → 拒答（逐级降级）
   retrieval.py   中文检索：字 1-gram + 2-gram + TF-IDF；get_kb_meta 供诊断
-  learner.py     学情：存取 + 诊断（作答正确率 / 能力维度 / 课程字覆盖 / 高频错字 / 错题构件 / 建议）
+  learner.py     学情：SQLite 存取（按访客 vid 分人）+ 诊断（作答正确率 / 能力维度 / 课程字覆盖 / 高频错字 / 错题构件 / 建议）
   quiz.py        出题（题型轮转、错题优先）+ 评阅（讲解 + 回写）
   dify.py        Dify 接入（原生 chat-messages，解析 retriever_resources）
   llm.py         OpenAI 兼容客户端 + 工具调用 agent：search_kb / get_learner_state / generate_quiz / submit_answers
@@ -63,7 +63,9 @@ data/
   kb.jsonl       知识库 1,391 条 / 1,179 字（每条带 source）
   upstream/      上游 1,203 字形数据集 + ATTRIBUTION.md（CC BY 4.0）
   general.jsonl  通识 24 条 + 字源 29 条（人工整理，逐条标出处）
-  learner.json   学习记录（删掉即重置演示状态）
+  learners.db    学情库（SQLite）：learners(vid, data JSON, updated)，一个访客一行
+  learner.json   旧版单文件，只在建库时导入成 demo 桶（示例），之后不再写入
+  corrupt/       坏行备份（读不出来时留证据，不会静默清零）
 out/
   dify-kb-merged.md   Dify 用单文件知识库（1,391 段，分隔符 ---）
   dify-prompt-v3.txt  Dify LLM 节点提示词（v4，含通识与字形示例）
@@ -103,9 +105,10 @@ out/
 | Dify 出处显示文件名 | 折叠条里写着 `dify-kb-merged.md`，等于没署名 | `dify.py::_split_segment` 取分段末尾 `出处：` 行作 source，标题/摘录/相似度另存 |
 | Dify 拒答仍报未拒答 | `refused=false`，还挂着无关出处 | `_looks_refused()` 认固定拒答句 → `refused=true` 且清空 citations |
 | 出题后下一句评阅不上 | 模型下一轮手里没有 `quiz_id`（它在上一轮的工具返回里） | `llm.py::_SESSION_QUIZ` 按 `session_id` 记住本会话最近一套题；`submit_answers` 的 `quiz_id` 改为可省略 |
-| 并发交卷丢记录 | 两个人几乎同时提交，先交的那份记录消失 | 学情是「读-改-写」，服务多线程且无锁（实测 8 并发只剩 1 条）。写路径必须走 `learner.transaction()`，不要自己 `load()` 改完再 `save()` |
-| 学情突然全空且无报错 | 覆盖度归零，`learner.json` 内容只剩半截 | `save` 直接覆写，崩在中途就留下半截 JSON，`load` 捕获异常后静默返回空。现改为 `.tmp` + `os.replace` 原子写；损坏时留 `.corrupt` 并写 `LAST_LOAD_ERROR`，`/api/health` 的 `store.error` 可见 |
-| 作答记录无限增长 | 一学期后 `learner.json` 持续变大、诊断变慢 | `learner.MAX_ATTEMPTS` 保留最近 500 条（只用于错题排行，不需要全量） |
+| 并发交卷丢记录 | 两个人几乎同时提交，先交的那份记录消失 | 学情是「读-改-写」。写路径必须走 `learner.transaction()`：现在是 SQLite `BEGIN IMMEDIATE` 包住整个读改写，跨进程也成立；不要自己 `load()` 改完再 `save()` |
+| 学情突然全空且无报错 | 覆盖度归零，某一行 data 只剩半截 JSON | 读不出来时把原始内容备份到 `data/corrupt/` 并写 `LAST_LOAD_ERROR`，`/api/health` 的 `store.error` 可见；不要改成「异常就返回空」 |
+| 作答记录无限增长 | 一学期后单个访客的行越来越大、诊断变慢 | `learner.MAX_ATTEMPTS` 保留最近 500 条（只用于错题排行，不需要全量） |
+| 学情所有人共用一份 | A 交的卷记到 B 头上，学情页显示的是「这台机器上所有人的混合体」，不能当学习证据 | 每个浏览器发一个随机 `zq_vid`（HttpOnly cookie，不含个人信息），`learners` 表按 vid 分行；`load/save/transaction/diagnose/make_quiz/grade` 全部带 vid 透传。没有 cookie 的调用落 `local` 桶，接口返回 `scope` 字段说明归属 |
 | 字形层整层丢失（历史） | 知识库里 `kind=glyph` 一条都没有，“这个字几笔”永远答不出 | 根因是数据集 v0.3 把 `App.glyphs` 的字段从 `glyphs` 改成 `parts`，旧解析器取到空 `{}` 却不报错。现已**不再从字趣转手**，直接读上游 `data/upstream/jgw_1203_labeled.json`，并在 `build_kb` 里检查字数（<1000 会告警） |
 | 字库扩容把诊断打穿 | 覆盖率从 20% 掉到 2%，学生一学期也“未入门” | 学情分母不能是全部字表。`learner.course_chars()` 只取课程层（146 字），`diagnose` 另给 `lexicon_chars` 表示能力边界 |
 | 笔画数说错 | 学生问“日几笔”，答 4 笔；甲骨字形其实是 3 画 | 上游 `n_strokes` 是**甲骨字形**笔画数，与现代通行笔画不同。文案必须写“甲骨字形 N 画”，不能冒充现代笔画 |
