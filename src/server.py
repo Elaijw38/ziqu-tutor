@@ -68,9 +68,14 @@ class Handler(BaseHTTPRequestHandler):
         if p.path == "/api/health":
             idx = get_index()
             chars = {r.get("char") for r in idx.rows if r.get("char")}
-            llm = all(os.environ.get(k) for k in ("ZQ_LLM_KEY", "ZQ_LLM_BASE", "ZQ_LLM_MODEL"))
+            try:
+                import llm as llm_mod
+                st = llm_mod.status()
+            except Exception:
+                st = {"ready": False, "model": "", "base": ""}
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
-                        "llm": llm})
+                        "llm": st["ready"], "model": st["model"],
+                        "llm_base": st["base"]})
             return
         self._static(p.path)
 

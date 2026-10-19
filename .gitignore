@@ -6,3 +6,5 @@ out/_pdfshot.js
 *.pyc
 data/kb.jsonl
 out/申报表预览.pdf
+# 不要提交真实密钥
+config.local.env

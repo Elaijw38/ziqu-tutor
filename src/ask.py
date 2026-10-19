@@ -17,8 +17,10 @@ import re
 import urllib.request
 
 from retrieval import get_index
+import llm as llm_mod
 
 _CJK = re.compile(r"[\u3400-\u9fff]")
+_LAST_LLM_ERROR = ""
 
 # 这些词只是提问的脚手架，不代表"想查哪个字"
 FILLER = ("为什么", "怎么", "什么", "这个", "那个", "请问", "如何", "是不是",
@@ -81,6 +83,24 @@ def answer(question):
         return _refuse("你想问哪个字？直接说字，比如「家为什么是屋顶下有猪」。")
 
     idx = get_index()
+
+    # ① 配了大模型就走 agent（模型自己决定先检索还是先看学情）
+    if llm_mod.status()["ready"]:
+        try:
+            import learner as learner_mod
+            got = llm_mod.agent_answer(q, idx, learner_mod)
+            if got:
+                got.setdefault("grounded", True)
+                got.setdefault("refused", False)
+                got["citations"] = _dedup(got.get("citations") or [])
+                got["hits"] = got.get("tools") or []
+                return got
+        except Exception as e:
+            # 记一笔但不抛：下面用抽取式兜底，并在返回里标出降级原因
+            global _LAST_LLM_ERROR
+            _LAST_LLM_ERROR = str(e)[:120]
+
+    # ② 未配置或调用失败 → 本地抽取式（原有逻辑）
     hits = idx.search(q, k=10)
     chars = _chars_in(q)
 
@@ -121,7 +141,7 @@ def answer(question):
     text = "查到的内容：\n" + "\n".join("· " + t for t in lines)
     text += "\n\n下面每一条都能点开核对原文。"
 
-    polished = _llm_polish(q, lines)
+    polished = None  # 大模型已在上面的 agent 分支处理；这里不再重复调用
     if polished:
         text = polished + "\n\n出处见下方条目。"
 
