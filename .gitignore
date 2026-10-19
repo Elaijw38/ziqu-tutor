@@ -8,3 +8,11 @@ data/kb.jsonl
 out/申报表预览.pdf
 # 不要提交真实密钥
 config.local.env
+
+# 截图与浏览器配置（含 Cookie/History，绝不能入库）
+_shots/
+out/pdfprof/
+*.bundle
+_probe_key.py
+_p_*.py
+_patch_*.py
