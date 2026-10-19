@@ -340,37 +340,6 @@ def _answer_core(question, history=None, conversation_id="", session_id="", vid=
         "mode": "llm" if polished else "extractive",
     }
 
-    # ---- 三种作答模式（蓝图 §6：直接解释 / 给我提示 / 考考我）----
-    mode = (mode or "").strip().lower()
-    if mode == "hint" and picks:
-        row = picks[0][0]
-        first = _first_sentence(row.get("text") or "")
-        got["answer"] = ("先只给一条线索：\n· " + first +
-                         "\n\n你可以顺着这条想——这个字画的是什么？由哪几块构成？"
-                         "\n想好了告诉我，或者说「看答案」。")
-        got["hint"] = True
-        got["full_answer"] = text          # 前端「看答案」时直接展开，不必再请求
-        got["mode"] = "hint"
-    elif mode == "quiz" and picks:
-        row = picks[0][0]
-        ch = row.get("char") or ""
-        meta = row.get("meta") or {}
-        comps = meta.get("comps") or []
-        if comps and len(comps) >= 2:
-            stem = "「%s」由哪两块构件组成？" % ch
-            answer_line = "正确答案：%s" % " + ".join(comps[:2])
-        elif meta.get("n_strokes") or meta.get("strokes"):
-            stem = "「%s」的甲骨字形有几笔？" % ch
-            answer_line = "正确答案：%s 笔（甲骨字形笔画，不等于现代通行笔画）" % (
-                meta.get("n_strokes") or meta.get("strokes"))
-        else:
-            stem = "「%s」在课程材料里代表什么？" % ch
-            answer_line = "正确答案：" + _first_sentence(row.get("text") or "")
-        got["answer"] = ("考考你：\n" + stem +
-                         "\n\n先自己答，再点「看答案」。")
-        got["quiz"] = {"stem": stem, "answer": answer_line,
-                       "char": ch, "knowledge_point_id": meta.get("knowledge_point_id") or ""}
-        got["mode"] = "quiz"
     return _settle(got, q)
 
 
