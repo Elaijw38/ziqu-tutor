@@ -175,7 +175,7 @@ def diagnose(idx):
 
     suggestions = []
     if wrong_top:
-        suggestions.append("先把答错过的「%s」再过一遍，它们最容易在比赛演示时露怯。"
+        suggestions.append("先把答错过的「%s」再过一遍，它们最值得优先复习。"
                            % "」「".join([c for c, _ in wrong_top[:3]]))
     if weakest_zone and weakest_zone["pct"] < 100:
         suggestions.append("「%s」这片只学了 %d/%d，从它入手最划算。"
@@ -183,12 +183,12 @@ def diagnose(idx):
     if weak_comps:
         c0, i0 = weak_comps[0]
         suggestions.append("构件「%s」还没掌握（%d 个字里差 %d 个），"
-                           "而第三关的破防部位正是构件，建议优先补。"
+                           "而构件拆分正是辨形的基础，建议优先补。"
                            % (c0, i0["total"], len(i0["missing"])))
     if coverage >= 80:
-        suggestions.append("覆盖度已经 %s%%，可以开始练「完美通关」——一阶一次都不挑错。" % coverage)
+        suggestions.append("覆盖度已经 %s%%，可以开始练更难的辨析题，试着一次不错。" % coverage)
     if not suggestions:
-        suggestions.append("还没有学习记录。先去问几个字形，或做一轮练习，我就能给出画像。")
+        suggestions.append("还没有学习记录。先去问几个字形，或做一轮练习，我就能给出学习建议。")
 
     level = "未入门" if coverage < 5 else ("入门" if coverage < 30 else
             ("进阶" if coverage < 70 else ("熟练" if coverage < 95 else "全覆盖")))

@@ -38,7 +38,8 @@ _CLARIFY_WORDS = ("你想问哪个字", "你指的是", "是想问", "具体是�
                   "哪一个字", "哪个字", "请告诉我你想问", "需要先知道",
                   "还没出现过", "告诉我是哪个")
 _REFUSE_WORDS = ("知识库里没有", "知识库没有", "没有找到", "查不到", "无法回答",
-                 "不在知识库", "只回答与", "没有相关内容", "暂时没有")
+                 "不在知识库", "只回答与", "没有相关内容", "暂时没有",
+                 "帮不上忙", "查不了")
 
 
 # 问"有哪些字/都有什么"这类要字表的问题：知识库没有汇总表，检索到的单字条目
@@ -164,7 +165,7 @@ def answer(question, history=None, conversation_id="", session_id=""):
 
     if not hits:
         return _refuse("这个问题在现有知识库里没有对应内容。可以问我某个字怎么写、"
-                       "怎么打，或者它在王邑图里代表什么。", chars)
+                       "怎么打，或者它的甲骨字形像什么。", chars)
 
     best_score = hits[0][1]
 
@@ -174,8 +175,7 @@ def answer(question, history=None, conversation_id="", session_id=""):
         # 出现了"像字"的词、但知识库里没有这个字 → 直接说没有，别拿别的字凑
         if not named:
             return _refuse(
-                "知识库里没有%s这个字。现在覆盖 %d 个字（王邑 61 个实物、讨伐 21 关、"
-                "名录 88 尊），可以换个字试试。"
+                "知识库里没有%s这个字。目前能答 %d 个字，可以换个字试试。"
                 % ("「" + "」「".join(chars[:3]) + "」" if chars else "你说的", len(
                     {r.get("char") for r in idx.rows if r.get("char")})), chars)
         hits = named
@@ -184,7 +184,7 @@ def answer(question, history=None, conversation_id="", session_id=""):
         thr = 3.0 if any(w in q for w in DOMAIN_WORDS) else MIN_SCORE
         if best_score < thr:
             return _refuse(
-                "我是甲骨文助教，只回答与汉字字形、王邑图卷、构件讨伐相关的问题。"
+                "我是甲骨文助教，只回答与汉字字形、甲骨文字形与字源相关的问题。"
                 "试试：「家为什么是屋顶下有猪」「日为什么写成圆的」「虎怎么打」。", chars)
 
     picks = _dedupe_by_char(hits, 3, _intent(q))
@@ -226,6 +226,16 @@ def _settle(got, question=""):
     if st not in ("answer", "refuse", "clarify"):
         st = "answer"
     if got.get("refused") is True:      # Dify 链路自带拒答判定，优先采信
+        st = "refuse"
+    tools = got.get("tools") or []
+    # 学情 / 出题 / 评阅这三类工具的正常回答本来就没有检索出处，不能按
+    # "文本里出现'暂时没有'就判拒答"的老规则处理（"暂时没有明显短板"会被误伤）。
+    if tools and set(tools) & {"get_learner_state", "generate_quiz", "submit_answers"}:
+        st = "answer"
+    # 硬约束：既没出处、又没调过任何工具（查库/学情/出题），说明是凭记忆答的。
+    # 本项目承诺"答案只用知识库内容并给出处"，这种回答一律按拒答处理，
+    # 避免出现"答了、但一条出处都没有"的裸答（答辩现场最容易被追问）。
+    elif st == "answer" and not (got.get("citations") or []) and not tools:
         st = "refuse"
     got["status"] = st
     got["refused"] = (st == "refuse")

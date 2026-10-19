@@ -266,7 +266,7 @@
       <span class="dot">·</span>
       <span>字形数据：Oracle Bone Glyphs v0.3（Li &amp; Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946</span>
     </div>
-    <div class="line"><span>答案不编造：问不到会直接说没有；王邑地图为教学示意图，非考古复原。</span></div>
+    <div class="line"><span>答案不编造：只依据知识库作答，问不到会直接说没有，并告诉你现在能答哪些字、能答什么。</span></div>
   </footer>
 </div>
 
@@ -439,7 +439,7 @@ $('#mk').onclick = async () => {
     PAPER = await (await fetch('/api/quiz',{method:'POST',
       headers:{'Content-Type':'application/json'},body:JSON.stringify({n:3})})).json();
     if (PAPER.error){ box.textContent = '出错了：' + PAPER.error; return; }
-    $('#quizHint').textContent = '共 ' + PAPER.count + ' 题 · 构件 / 字义 / 打法各一 · 优先考答错过的字';
+    $('#quizHint').textContent = '共 ' + PAPER.count + ' 题 · 构件 / 字义 / 字形笔画 · 优先考答错过的字';
     box.innerHTML = '';
     PAPER.items.forEach((it, qi) => {
       const q = el('div','q');
