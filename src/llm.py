@@ -115,7 +115,9 @@ TOOLS = [
         "type": "function",
         "function": {
             "name": "get_learner_state",
-            "description": "读取当前学生的学习诊断（覆盖率、分片掌握、构件短板、错题）。"
+            "description": "读取当前学生的学习诊断：课程字覆盖、实际作答正确率、"
+                           "按题型（构件分析/字义理解/字形笔画）分的正确率、高频错字、"
+                           "错题涉及的构件、字义主题分布。"
                            "学生问「我哪里弱」「接下来学什么」时必须先调用它。",
             "parameters": {"type": "object", "properties": {}},
         },
@@ -174,7 +176,7 @@ SYSTEM = (
     "\n"
     "【工具】不靠记忆答，靠工具做事：\n"
     "· search_kb —— 查字形（形/音/笔画）、字义、构形、甲骨文通识、课程案例；\n"
-    "· get_learner_state —— 看学生进度、薄弱分区、构件短板、错题；\n"
+    "· get_learner_state —— 看课程字覆盖、练习正确率、哪类题弱、高频错字、错题构件；\n"
     "· generate_quiz —— 按学情出随堂练习；\n"
     "· submit_answers —— 学生作答后评阅，并写回学习记录。\n"
     "字形、字义、构形、读音、年代、出土背景、通识、课程案例 → 先 search_kb；"
@@ -257,10 +259,17 @@ def _exec_tool(name, args, idx, learner_mod, session_id=""):
         return {"found": len(rows), "items": rows}
     if name == "get_learner_state":
         d = learner_mod.diagnose(idx)
-        return {"level": d["level"], "coverage": d["coverage"],
+        return {"level": d["level"],
+                "coverage": d["coverage"],           # 课程字表里「见过」的比例
+                "learned": d["learned"], "total_chars": d["total_chars"],
+                "attempts": d["attempts_total"],
+                "accuracy": d["accuracy"],           # 实际作答正确率
+                "recent_accuracy": (d.get("recent") or {}).get("acc"),
+                "by_kind": [{"label": k["label"], "acc": k["acc"], "n": k["total"]}
+                            for k in d["by_kind"]],
                 "weakest_zone": d["weakest_zone"],
                 "weak_comps": [c["comp"] for c in d["weak_comps"]],
-                "wrong": [w["char"] for w in d["wrong_top"]],
+                "wrong": [{"char": w["char"], "times": w["times"]} for w in d["wrong_top"]],
                 "suggestions": d["suggestions"]}
     if name == "generate_quiz":
         import quiz as quiz_mod

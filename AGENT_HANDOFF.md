@@ -51,7 +51,7 @@ src/
   server.py      HTTP 服务（标准库），5 个接口 + 静态页
   ask.py         问答编排：Dify → 大模型 agent → 本地抽取式 → 拒答（逐级降级）
   retrieval.py   中文检索：字 1-gram + 2-gram + TF-IDF；get_kb_meta 供诊断
-  learner.py     学情：存取 + 诊断（覆盖率/分片/构件短板/错题/建议）
+  learner.py     学情：存取 + 诊断（作答正确率 / 能力维度 / 课程字覆盖 / 高频错字 / 错题构件 / 建议）
   quiz.py        出题（题型轮转、错题优先）+ 评阅（讲解 + 回写）
   dify.py        Dify 接入（原生 chat-messages，解析 retriever_resources）
   llm.py         OpenAI 兼容客户端 + 工具调用 agent：search_kb / get_learner_state / generate_quiz / submit_answers
@@ -111,6 +111,8 @@ out/
 | 笔画数说错 | 学生问“日几笔”，答 4 笔；甲骨字形其实是 3 画 | 上游 `n_strokes` 是**甲骨字形**笔画数，与现代通行笔画不同。文案必须写“甲骨字形 N 画”，不能冒充现代笔画 |
 | 简体字查不到繁体字形 | 问“龟几画”查不到「龜」的条目 | 上游 203 个字标为繁体/异体。`build_kb.SIMPLIFIED` 收常见无争议的简繁对应，写进 `meta.aliases`；`retrieval` 用别名建 `char_to_docs` 索引 |
 | 部分可答被判成拒答 | 模型说“知识库里只有尊的字形，字义没有”，前端标成拒答还把出处清空 | `_classify(text, question, cites)`：若问题指向的那个字确实在检索结果里，判 `answer` 保留出处；问字表（“有哪些”）或该字根本不在库里才判 `refuse` |
+| 学情像游戏战绩 | 旧学情只有「覆盖 6.2%」「天象 0/4」「构件短板」——都是从游戏地图/关卡搬来的口径，看不出「会不会做」 | 覆盖只表示「见过」，另算**作答正确率**；能力维度按题型（构件分析/字义理解/字形笔画）分开；构件短板改为**从答错的字反查**，不再把「没学过的字」当短板 |
+| 构件短板名不副实（历史） | 「构件 X 短板」列的其实是「带这个构件的字你还没学」，答错过的构件反而列不出来 | 旧算法 `miss = [c for c in chars if c not in learned]` 语义是「未学」，不是「薄弱」。现改为错题集合 `wrong` 与 `meta.comp_chars` 求交，并按错题次数排序 |
 | 上下文被前端塞脏 | 有人往 `history` 里塞 `system` 或超长文本 | `_history_messages()` 只认 `user/assistant`，最多 6 条、每条 600 字；`server.py` 再校验一次类型 |
 | agent 说“知识库里没有”却报 `refused=false` | 前端显示成“答了但不给出处” | `ask.py::_classify` 统一 answer/refuse/clarify 三态，非 answer 一律清空出处 |
 | 工具轮次用尽后整段降级 | 答案质量突然掉到抽取式，用户无感 | `agent_answer` 收口时再要一次纯文本回答（不带 tools），尽量不出降级 |

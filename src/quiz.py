@@ -14,6 +14,7 @@
 不能当考题——独立助教考的是字形与构形，不是通关攻略。
 """
 import random
+import time
 
 from retrieval import get_index
 
@@ -165,7 +166,9 @@ def grade(quiz, submitted):
                 "right": q["answer"],
                 "why": _explain(q),
             })
-            attempts.append({"char": q["char"], "ok": ok, "kind": q["type"]})
+            # ts 用于学情里的「最近一段时间」，老记录没有这个字段，统计时按缺失跳过
+            attempts.append({"char": q["char"], "ok": ok, "kind": q["type"],
+                             "ts": int(time.time())})
 
     total = len(results) or 1
     score = round(correct * 100 / total)

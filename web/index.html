@@ -183,6 +183,7 @@
   .zt .pb i{display:block;height:100%;background:var(--gold)}
   ul.tips{margin:0;padding-left:20px;font-size:14px}
   ul.tips li{margin:6px 0}
+  .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0;line-height:1.65}
   .comp{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;
     background:#fff;border:1px solid var(--line);font-size:13px;margin:0 6px 6px 0}
   .comp b{color:var(--zzu-blue);font-weight:600}
@@ -241,7 +242,7 @@
 
   <nav>
     <button class="tab on" data-tab="chat"><b>问答</b><span>问字形、字义、构形，答案附出处</span></button>
-    <button class="tab" data-tab="diag"><b>学情诊断</b><span>覆盖率、分区掌握、构件短板</span></button>
+    <button class="tab" data-tab="diag"><b>学情诊断</b><span>正确率、能力维度、错题与建议</span></button>
     <button class="tab" data-tab="quiz"><b>随堂练习</b><span>按学情组卷，交卷即评讲</span></button>
   </nav>
 
@@ -452,24 +453,57 @@ async function loadDiag(){
     if (d.error){ box.textContent = '出错了：' + d.error; return; }
     box.innerHTML = '';
     if (d.total_chars)
-      $('#diagTag').textContent = '按课程字表 ' + d.total_chars + ' 字计' +
+      $('#diagTag').textContent = '来自本机练习记录 · 课程字表 ' + d.total_chars + ' 字' +
         (d.lexicon_chars ? ' · 字形库 ' + d.lexicon_chars + ' 字' : '');
+    const noAtt = !d.attempts_total;
     const row = el('div','row');
     const mk = (v,s,red) => { const c = el('div','stat' + (red?' red':''));
       c.appendChild(el('b',null,v)); c.appendChild(el('span',null,s)); return c; };
-    row.appendChild(mk(d.level,'学情等级'));
-    row.appendChild(mk(d.coverage + '%','覆盖率（' + d.learned + '/' + d.total_chars + ' 字）'));
-    row.appendChild(mk(d.wrong_top.length,'错题字数', true));
-    row.appendChild(mk(d.weak_comps.length,'待补构件'));
+    row.appendChild(mk(noAtt ? '—' : Math.round(d.accuracy) + '%', '练习正确率'));
+    row.appendChild(mk(d.learned + '/' + d.total_chars, '课程字覆盖 · ' + d.coverage + '%'));
+    row.appendChild(mk(d.attempts_total || 0, '累计作答次数'));
+    row.appendChild(mk((d.wrong_top || []).length, '待复习字', !noAtt));
     box.appendChild(row);
 
-    const bw = el('div'); bw.appendChild(el('div',null,'课程覆盖进度'));
+    const bw = el('div');
+    bw.appendChild(el('div',null,'课程字表覆盖（只表示「见过」，不等于会做）'));
     const bar = el('div','bar'); const i = el('i');
     i.style.width = Math.min(100,d.coverage) + '%';
     bar.appendChild(i); bw.appendChild(bar); box.appendChild(bw);
 
+    // 能力维度：按题型分开算，这是看「弱在哪类题」最直接的一层
+    if ((d.by_kind || []).length){
+      const h = el('h3',null,'能力维度');
+      h.appendChild(el('span','h-sub','按题型分别统计（答对 / 作答），看得出弱在哪类题'));
+      box.appendChild(h);
+      const tb = el('table','zt');
+      d.by_kind.forEach(k => {
+        const tr = el('tr');
+        tr.appendChild(el('td',null,k.label));
+        tr.appendChild(el('td',null,k.ok + ' / ' + k.total));
+        const td = el('td');
+        const pb = el('div','pb'); const bi = el('i');
+        bi.style.width = Math.max(2,k.acc) + '%'; pb.appendChild(bi);
+        td.appendChild(pb);
+        const sp = el('span',null,' ' + Math.round(k.acc) + '%'); sp.style.marginLeft = '8px';
+        td.appendChild(sp); tr.appendChild(td); tb.appendChild(tr);
+      });
+      box.appendChild(tb);
+      if (d.recent && d.recent.n >= 3){
+        const diff = d.recent.acc - d.accuracy;
+        box.appendChild(el('p','hint','最近 ' + d.recent.n + ' 次作答正确率 ' +
+          Math.round(d.recent.acc) + '%，' +
+          (diff > 3 ? '比总体在上升。'
+            : diff < -3 ? '比总体偏低，注意别在同一类题上反复出错。'
+            : '与总体大体持平。')));
+      }
+    } else {
+      box.appendChild(el('p','hint','还没有作答记录，能力维度要做过一轮练习才会出现。'));
+    }
+
     if (d.zones.length){
-      const h = el('h3',null,'分片掌握'); h.appendChild(el('span','h-sub','对应课程的五个识字单元'));
+      const h = el('h3',null,'字义主题分布');
+      h.appendChild(el('span','h-sub','课程字表按字义归类，看知识面宽窄'));
       box.appendChild(h);
       const tb = el('table','zt');
       d.zones.forEach(z => {
@@ -486,13 +520,27 @@ async function loadDiag(){
       box.appendChild(tb);
     }
 
+    if ((d.wrong_top || []).length){
+      const h = el('h3',null,'高频错字');
+      h.appendChild(el('span','h-sub','错得越多，越该先回看字形与构形'));
+      box.appendChild(h);
+      const p = el('div');
+      d.wrong_top.forEach(w => {
+        const t = el('span','comp'); t.appendChild(el('b',null,w.char));
+        t.appendChild(el('span',null,'×' + w.times)); p.appendChild(t);
+      });
+      box.appendChild(p);
+    }
+
     if (d.weak_comps.length){
-      const h = el('h3',null,'构件短板'); h.appendChild(el('span','h-sub','构件拆分是辨形的基础'));
+      const h = el('h3',null,'错题涉及的构件');
+      h.appendChild(el('span','h-sub','从答错的字反查，不是「没学过的字」'));
       box.appendChild(h);
       const p = el('div');
       d.weak_comps.forEach(c => {
         const t = el('span','comp'); t.appendChild(el('b',null,c.comp));
-        t.appendChild(el('span',null,'缺 ' + c.missing.length + ' 字')); p.appendChild(t);
+        t.appendChild(el('span',null,'「' + c.chars.join('」「') + '」×' + c.times));
+        p.appendChild(t);
       });
       box.appendChild(p);
     }
