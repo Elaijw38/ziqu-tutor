@@ -56,6 +56,68 @@ def _clean_answer(a):
     return out
 
 
+_HEAD = re.compile(r"^#{1,6}\s*")
+_ATTR = re.compile(r"^出\s*处\s*[:：]\s*")
+# 提示词里写死的拒答句（见 out/dify-prompt-v3.txt 第 3 条）：命中即视为"没答"
+_REFUSE = re.compile(r"^(课程)?资料里没有|^这个问题在现有知识库里没有")
+
+
+def _looks_refused(answer):
+    """Dify 侧拒答时也是 200 + 一段固定句，得自己认出来，否则接口会谎报 refused=false。"""
+    return bool(_REFUSE.match((answer or "").strip()))
+
+
+def _split_segment(content):
+    """把一段知识库原文拆成（标题, 正文, 出处行）。
+
+    我们的 dify-kb-merged.md 每段长这样：
+        ## 构件讨伐 · 家（一阶 · 合体字）
+        （正文）
+        出处：字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946
+
+    最后那行才是能让人核对的真出处；`document_name` 只是上传的文件名，
+    直接显示「dify-kb-merged.md」等于没给出处——所以这里优先取「出处：」行。
+    """
+    title, attr, body = "", "", []
+    for ln in (content or "").splitlines():
+        s = ln.strip()
+        if not s:
+            continue
+        if not title and s.startswith("#"):
+            title = _HEAD.sub("", s).strip()
+            continue
+        m = _ATTR.match(s)
+        if m:
+            attr = s[m.end():].strip()
+            continue
+        body.append(s)
+    return title, " ".join(body), attr
+
+
+def _citations(resources):
+    """retriever_resources → 与本地链路同构的 citations。
+
+    字段：id / source（署名行）/ title（分段标题）/ snippet（原文摘录）/ score。
+    title、snippet、score 都是可选增强，前端没有时按老样子只显示 source。
+    """
+    cites, seen = [], set()
+    for res in (resources or []):
+        name = res.get("document_name") or "知识库条目"
+        title, body, attr = _split_segment(res.get("content") or "")
+        title = title or name
+        if title in seen:          # 同一分段被重复召回时只留一条
+            continue
+        seen.add(title)
+        cites.append({
+            "id": "dify:" + title,
+            "source": attr or name,
+            "title": title,
+            "snippet": body[:150],
+            "score": round(float(res.get("score") or 0), 2),
+        })
+    return cites
+
+
 def _load_dotenv():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     p = os.path.join(root, "config.local.env")
@@ -120,22 +182,12 @@ def _ask_impl(question, user="zzu-student-demo", conversation_id=""):
     if not answer:
         return None
 
-    cites, seen = [], set()
-    for res in ((data.get("metadata") or {}).get("retriever_resources") or []):
-        name = res.get("document_name") or "知识库条目"
-        content = (res.get("content") or "").strip()
-        key = (name, content[:60])
-        if key in seen:
-            continue
-        seen.add(key)
-        # 出处取分段首行（我们的 md 首行就是「## 类型 · 字（区域）」）
-        head = content.splitlines()[0].lstrip("# ").strip() if content else name
-        cites.append({
-            "id": "%s#%d" % (name, len(cites) + 1),
-            "source": "%s · %s（相似度 %.2f）"
-                      % (name, head, float(res.get("score") or 0)),
-            "snippet": content[:200],
-        })
-    return {"answer": answer, "citations": cites,
+    cites = _citations((data.get("metadata") or {}).get("retriever_resources"))
+    refused = _looks_refused(answer)
+    return {"answer": answer,
+            # 拒答时不给出处：检索到的条目与问题无关，摆出来等于误导
+            "citations": [] if refused else cites,
             "conversation_id": data.get("conversation_id") or "",
+            "grounded": True,
+            "refused": refused,
             "mode": "dify"}

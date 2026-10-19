@@ -2,7 +2,7 @@
 """本地检索：零第三方依赖的中文检索（字符 1-gram + 2-gram + TF-IDF）。
 
 为什么不用向量库：初赛阶段要的是"可演示、可复现、离线能跑"。这个检索器
-只用标准库 + numpy，答案可解释（能指出命中了哪几个词），也不需要下载模型。
+只用 Python 标准库，答案可解释（能指出命中了哪几个词），也不需要下载模型。
 后面要换 Chroma/Faiss，只需替换 search() 的内部实现，对外接口不变。
 """
 import io
@@ -10,8 +10,6 @@ import json
 import math
 import os
 import re
-
-import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 KB_PATH = os.path.join(os.path.dirname(HERE), "data", "kb.jsonl")

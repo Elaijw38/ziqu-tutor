@@ -22,11 +22,18 @@ class Mock(BaseHTTPRequestHandler):
             "conversation_id": "conv-123",
             "metadata": {"retriever_resources": [
                 {"document_name": "dify-kb-merged.md",
-                 "content": "## 构件讨伐 · 家（一阶 · 合体字）\n\n「家」属于一阶 · 合体字，字形构成：构件 宀+豕。",
+                 "content": "## 构件讨伐 · 家（一阶 · 合体字）\n\n「家」属于一阶 · 合体字，字形构成：构件 宀+豕。\n\n"
+                            "出处：字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, "
+                            "DOI 10.5281/zenodo.22467946",
                  "score": 0.8231},
                 {"document_name": "dify-kb-merged.md",
-                 "content": "## 王邑实物 · 宀（人居器物）\n\n「宀」代表屋舍的屋顶。",
+                 "content": "## 王邑实物 · 宀（人居器物）\n\n「宀」代表屋舍的屋顶。\n\n"
+                            "出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）",
                  "score": 0.7712},
+                # 同一分段被重复召回：应被去重，不能出现两条一样的出处
+                {"document_name": "dify-kb-merged.md",
+                 "content": "## 构件讨伐 · 家（一阶 · 合体字）\n\n「家」属于一阶 · 合体字，字形构成：构件 宀+豕。",
+                 "score": 0.7900},
             ]},
         }, ensure_ascii=False).encode("utf-8")
         self.send_response(200)

@@ -93,6 +93,9 @@ out/
 | 知识库缺会意解释 | “家为什么是屋顶下有猪”只答构件 | `_enrich_kb.py` 补 12 字「常见解释」，措辞不冒充定论 |
 | 两个知识库要同步 | 改了 kb 却忘了 Dify 那份 | 改完依次跑 `src/build_kb.py` → `_enrich_kb.py` → `_merge_kb.py` |
 | 测试用同进程假服务 | Windows 下连接被重置 | 假服务改成**独立进程**（见 `tests/mock_dify_server.py`） |
+| 死的 `import numpy` | `python src/server.py` 直接 `ModuleNotFoundError: numpy`，起不来 | `retrieval.py` 里既没用到 numpy 也不该依赖它（零依赖是卖点），已删该 import |
+| Dify 出处显示文件名 | 折叠条里写着 `dify-kb-merged.md`，等于没署名 | `dify.py::_split_segment` 取分段末尾 `出处：` 行作 source，标题/摘录/相似度另存 |
+| Dify 拒答仍报未拒答 | `refused=false`，还挂着无关出处 | `_looks_refused()` 认固定拒答句 → `refused=true` 且清空 citations |
 
 ---
 
@@ -111,11 +114,12 @@ out/
 **能**：
 - 三页签完整可用；真实 DeepSeek 已验证（工具调用、约 3 秒/问、4 条出处）
 - 超纲问题拒答；学情诊断与组卷评阅闭环
-- Dify 链路已用假服务验证通过（含出处转换与清洗）
+- Dify 链路已用假服务验证通过：回答、去重、`//` 清洗、**真署名出处**（标题 + `出处：` 行 + 摘录 + 相似度）、
+  拒答标记 `refused=true` 且不挂无关出处
 
 **不能**：
 - 未部署上线（仅 `127.0.0.1`）；无登录、无多用户、无班级汇总
-- Dify 真实应用 key（`app-` 开头）尚未接入
+- Dify 真实应用 key（`app-` 开头）尚未接入——**这是唯一卡住 Dify 真跑的一步**
 - 未接教务系统；课程/班级在界面上标注为“示例”
 - 真实班级前后测未做
 
@@ -123,8 +127,10 @@ out/
 
 ## 8. 下一步（按优先级）
 
-1. 拿到 Dify `app-` key → 填 `config.local.env` → 验证 `dify:true` 与真实引用
-2. 把 Dify 的 `retriever_resources` 渲染成与本地一致的出处折叠条（前端结构已就绪）
+1. 拿到 Dify `app-` key → 填 `config.local.env`（`ZQ_DIFY_BASE` / `ZQ_DIFY_KEY`）→
+   重启后 `GET /api/health` 应为 `dify:true`，再问一句看折叠条是不是 `字趣《…》` 署名行
+2. ~~把 Dify 的 `retriever_resources` 渲染成与本地一致的出处折叠条~~ **已完成**：
+   `dify.py::_split_segment/_citations` 出 `title/source/snippet/score`，前端按有无 title 兼容两种结构
 3. 部署（校内服务器/容器）+ 邀请码式轻认证
 4. 对接一学期真实学习记录，做前后测，补申报表“效果验证”数据
 5. 教师端：班级汇总与薄弱点排行

@@ -114,6 +114,11 @@
   .cite summary{cursor:pointer;font-size:12.5px;color:var(--ink-2)}
   .cite ol{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--ink-2)}
   .cite li{margin:3px 0;word-break:break-all}
+  /* Dify 链路会多给标题/摘录/相似度；本地链路没有就只显示 source，样式不变 */
+  .cite .ct{font-weight:600;color:var(--ink)}
+  .cite .cs{word-break:break-all}
+  .cite .cq{margin-top:2px;padding-left:8px;border-left:2px solid var(--line);color:var(--ink-2)}
+  .cite .sc{font-weight:400;font-size:11.5px;color:#93a1b4;margin-left:4px}
   form{display:flex;gap:9px;padding:12px 16px;border-top:1px solid var(--line);background:#fbfdff}
   input[type=text]{flex:1;padding:11px 14px;border:1px solid var(--line);border-radius:10px;
     font-size:14.5px;background:#fff;color:var(--ink);outline:none}
@@ -283,9 +288,22 @@ function addAnswer(a){
   m.appendChild(el('div','bubble', a.answer));
   if (a.citations && a.citations.length){
     const d = el('details','cite');
-    d.appendChild(el('summary',null,'出处 · ' + a.citations.length + ' 条（点开核对）'));
+    d.appendChild(el('summary',null,'出处 · ' + a.citations.length + ' 条（点开核对原文）'));
     const ol = el('ol');
-    a.citations.forEach(c => ol.appendChild(el('li',null,c.source)));
+    a.citations.forEach(c => {
+      const li = el('li');
+      // 本地链路只给 source；Dify 链路还带 title/snippet/score，有就渲染，没有就保持原样
+      if (c.title){
+        const t = el('div','ct');
+        t.appendChild(document.createTextNode(c.title));
+        if (typeof c.score === 'number' && c.score > 0)
+          t.appendChild(el('span','sc','· 相似度 ' + c.score.toFixed(2)));
+        li.appendChild(t);
+        li.appendChild(el('div','cs', c.source));
+      } else { li.appendChild(el('span',null,c.source)); }
+      if (c.snippet) li.appendChild(el('div','cq', c.snippet));
+      ol.appendChild(li);
+    });
     d.appendChild(ol); m.appendChild(d);
   }
   log.appendChild(m); log.scrollTop = 1e9;

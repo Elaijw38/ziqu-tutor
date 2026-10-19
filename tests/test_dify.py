@@ -63,19 +63,31 @@ def main():
         print("  mode   :", a.get("mode"))
         print("  answer :", (a.get("answer") or "")[:70])
         for c in a.get("citations") or []:
-            print("  出处   :", c["source"][:80])
+            print("  出处   :", c.get("title") or "-", "|", c["source"][:70])
 
         b = ask("今天天气怎么样")
-        print("  超纲   :", (b.get("answer") or "")[:40])
+        print("  超纲   :", (b.get("answer") or "")[:40],
+              "| refused=%s cites=%d" % (b.get("refused"), len(b.get("citations") or [])))
 
         h2 = json.loads(urllib.request.urlopen(base + "/api/health", timeout=10).read())
         print("  错误   :", h2.get("dify_error") or "（无）")
 
+        cites = a.get("citations") or []
+        # 出处必须是「字趣《…》…」这种真署名行，而不是上传的文件名
+        real_src = all("字趣" in (c.get("source") or "") for c in cites)
+        # 同一分段重复召回只保留一条
+        uniq = len({c.get("title") for c in cites}) == len(cites)
         ok = (a.get("mode") == "dify"
-              and len(a.get("citations") or []) >= 2
-              and "//" not in (a.get("answer") or ""))
-        print("\n  结论:", "✓ Dify 链路通过（回答 + 出处，// 已清洗）"
-              if ok else "✗ 未通过")
+              and len(cites) >= 2
+              and real_src and uniq
+              and all(c.get("snippet") for c in cites)
+              and "//" not in (a.get("answer") or "")
+              # 超纲问题：认成 refused，且不摆无关出处
+              and b.get("refused") is True
+              and not (b.get("citations") or []))
+        print("\n  结论:", "✓ Dify 链路通过（回答 + 真署名出处 + 去重 + 拒答标记 + // 已清洗）"
+              if ok else "✗ 未通过（署名=%s 去重=%s 条数=%d 拒答=%s）"
+              % (real_src, uniq, len(cites), b.get("refused")))
         return 0 if ok else 1
     finally:
         srv.kill()

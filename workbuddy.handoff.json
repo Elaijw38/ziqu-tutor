@@ -36,7 +36,7 @@
     {"path": "src/retrieval.py", "role": "中文检索：字符 1-gram + 2-gram + TF-IDF（可解释、零依赖）；get_kb_meta 供诊断", "lines_approx": 120},
     {"path": "src/learner.py", "role": "学情存取与诊断：覆盖率/分片/构件短板/错题/建议", "lines_approx": 130},
     {"path": "src/quiz.py", "role": "出题（题型轮转+错题优先）与评阅（逐题讲解+回写）", "lines_approx": 180},
-    {"path": "src/dify.py", "role": "Dify 接入：原生 /chat-messages，解析 retriever_resources；本地地址绕过代理；回答清洗", "lines_approx": 200},
+    {"path": "src/dify.py", "role": "Dify 接入：原生 /chat-messages，解析 retriever_resources 并拆成标题/署名行/摘录/相似度；拒答识别；本地地址绕过代理；回答清洗", "lines_approx": 250},
     {"path": "src/llm.py", "role": "OpenAI 兼容客户端 + 工具调用 agent（search_kb / get_learner_state）+ 龟宝人设", "lines_approx": 210},
     {"path": "src/build_kb.py", "role": "从 ../字趣 只读导出知识库（每条含 source）", "lines_approx": 160},
     {"path": "web/index.html", "role": "单文件前端：郑大深宝蓝 UI、三页签、整身龟宝向导、出处折叠条", "lines_approx": 320},
@@ -71,7 +71,8 @@
       "request": {"question": "家为什么是屋顶下有猪"},
       "response_example": {
         "answer": "「家」由宀和豕两个构件组成……",
-        "citations": [{"id": "boss.家", "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946", "snippet": "…"}],
+        "citations": [{"id": "boss.家", "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946", "snippet": "…", "title": "构件讨伐 · 家（一阶 · 合体字）", "score": 0.82}],
+        "citations_note": "id/source 必有；title/snippet/score 为 Dify 链路的可选增强，本地链路没有，前端按有无 title 兼容两种结构",
         "hits": [{"id": "search_kb"}],
         "grounded": true, "refused": false, "mode": "agent"
       },
@@ -114,7 +115,10 @@
     {"id": "model-trailing-slashes", "symptom": "回答结尾出现 //", "cause": "模型输出习惯", "fix": "dify.py _clean_answer 统一清洗；提示词也可加约束"},
     {"id": "dify-vision-model", "symptom": "有资料却不肯合并作答、反问用户", "cause": "视觉实验模型对文本 RAG 不稳", "fix": "换 deepseek-chat / qwen-plus，并在提示词加少样本示例"},
     {"id": "kb-no-explanation", "symptom": "问'家为什么是屋顶下有猪'只答构件，答不出造字缘由", "cause": "知识库只有 form/play，无会意解释层", "fix": "_enrich_kb.py 补 12 字常见解释（措辞带'常见解释'，不冒充定论）"},
-    {"id": "two-projects", "symptom": "改了内容却要同步两处", "cause": "kb.jsonl 与 dify-kb-merged.md 是派生物", "fix": "改 build_kb 后依次跑 _enrich_kb.py 与 _merge_kb.py"}
+    {"id": "two-projects", "symptom": "改了内容却要同步两处", "cause": "kb.jsonl 与 dify-kb-merged.md 是派生物", "fix": "改 build_kb 后依次跑 _enrich_kb.py 与 _merge_kb.py"},
+    {"id": "dead-numpy-import", "symptom": "python src/server.py 直接 ModuleNotFoundError: numpy，服务起不来", "cause": "retrieval.py 有一行从未使用的 import numpy", "fix": "已删除；本项目 zero-dependency 是卖点，任何第三方 import 都不该出现"},
+    {"id": "dify-cite-filename", "symptom": "出处折叠条显示 dify-kb-merged.md，等于没署名", "cause": "document_name 只是上传文件名，不是出处", "fix": "dify.py::_split_segment 取分段末尾「出处：」行作 source，标题/摘录/相似度另存字段"},
+    {"id": "dify-refusal-flag", "symptom": "Dify 拒答却返回 refused=false 且挂无关出处", "cause": "Dify 拒答也是 200 + 固定句，代码没有识别", "fix": "dify.py::_looks_refused 匹配固定拒答句 → refused=true 且清空 citations"}
   ],
 
   "state": {
@@ -123,6 +127,7 @@
       "真实 DeepSeek 已验证：工具调用 search_kb、约 3 秒/问、出处 4 条",
       "拒答可用：超纲问题返回固定句，不编造",
       "Dify 链路（假服务）验证通过，含 retriever_resources 转出处与 // 清洗",
+      "Dify 出处已改为分段「出处：」署名行（另带标题/摘录/相似度），重复召回去重；拒答正确标记 refused",
       "知识库 170 条 / 146 字；补 12 字会意解释",
       "郑大 UI：校徽、深宝蓝、双语校名、求是担当水印；整身龟宝向导"
     ],
@@ -136,11 +141,10 @@
   },
 
   "next_steps": [
-    {"priority": 1, "task": "拿到 Dify app- key 后填入 config.local.env，验证 /api/health 的 dify=true 与真实引用"},
-    {"priority": 2, "task": "把 Dify 的 retriever_resources 渲染成与本地一致的「出处」折叠条（前端已支持 citations 结构）"},
-    {"priority": 3, "task": "部署到校内服务器或容器；加课程邀请码式轻认证"},
-    {"priority": 4, "task": "对接一学期真实学习记录，做前后测，补申报表的'效果验证'数据"},
-    {"priority": 5, "task": "教师端：班级汇总与薄弱点排行"}
+    {"priority": 1, "task": "拿到 Dify app- key 后填入 config.local.env（ZQ_DIFY_BASE/ZQ_DIFY_KEY），重启验证 /api/health 的 dify=true，并问一句确认折叠条是「字趣《…》」署名行"},
+    {"priority": 2, "task": "部署到校内服务器或容器；加课程邀请码式轻认证"},
+    {"priority": 3, "task": "对接一学期真实学习记录，做前后测，补申报表的'效果验证'数据"},
+    {"priority": 4, "task": "教师端：班级汇总与薄弱点排行"}
   ],
 
   "glossary": {
