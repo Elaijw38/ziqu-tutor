@@ -71,6 +71,126 @@
    "char": "龍",
    "ok": false,
    "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": false,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": false,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": true,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": true,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": false,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": false,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": false,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": false,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": true,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": true,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": true,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": true,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": true,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": true,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": true,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": true,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": true,
+   "kind": "play"
   }
  ]
 }
