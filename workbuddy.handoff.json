@@ -42,10 +42,10 @@
     {"path": "web/index.html", "role": "单文件前端：郑大深宝蓝 UI、三页签、整身龟宝向导、出处折叠条", "lines_approx": 320},
     {"path": "web/assets/zzu-logo.png", "role": "郑州大学校徽（等比缩放，不改色）"},
     {"path": "web/assets/guibao.png", "role": "龟宝形象（抠白底，256px）"},
-    {"path": "data/kb.jsonl", "role": "知识库 170 条：王邑实物 61 + 构件讨伐 21 + 讨伐名录 88；字段 id/char/kind/text/source/meta"},
+    {"path": "data/kb.jsonl", "role": "知识库 243 条：王邑实物 61 + 构件讨伐 21 + 讨伐名录 88 + 字形 73；字段 id/char/kind/text/source/meta"},
     {"path": "data/learner.json", "role": "学习记录：{done:{zone:[char]}, bossCleared:[], attempts:[{char,ok,kind}]}（删除即重置）"},
     {"path": "config.example.env", "role": "模型/Dify 配置模板（复制为 config.local.env，已被 gitignore）"},
-    {"path": "out/dify-kb-merged.md", "role": "Dify 知识库单文件版：170 段，分隔符 ---，每段末尾带出处"},
+    {"path": "out/dify-kb-merged.md", "role": "Dify 知识库单文件版：243 段，分隔符 ---，每段末尾带出处"},
     {"path": "out/dify-prompt-v3.txt", "role": "Dify LLM 节点提示词（含少样本示例与固定拒答句）"},
     {"path": "out/dify-appearance.txt", "role": "Dify 开场白与建议问题文案"}
   ],
@@ -53,7 +53,7 @@
   "api": [
     {
       "method": "GET", "path": "/api/health",
-      "response_example": {"ok": true, "kb_rows": 170, "chars": 146, "llm": true, "model": "deepseek-chat", "llm_base": "https://api.deepseek.com/v1", "dify": false, "dify_base": "", "dify_error": ""}
+      "response_example": {"ok": true, "kb_rows": 243, "chars": 150, "llm": true, "model": "deepseek-chat", "llm_base": "https://api.deepseek.com/v1", "dify": false, "dify_base": "", "dify_error": ""}
     },
     {
       "method": "GET", "path": "/api/diagnose",
@@ -120,7 +120,8 @@
   ],
 
   "pitfalls": [
-    {"id": "store-lost-update", "symptom": "两人同时交卷，先交的人记录消失", "cause": "learner 是「读-改-写」，服务多线程且无锁，实测 8 并发只剩 1 条", "fix": "写路径一律走 learner.transaction()（持锁 + 原子写）；禁止直接 load→改→save"},
+    {"id": "glyph-layer-lost", "symptom": "kind=glyph 条目为 0，问“这个字几笔/怎么写”永远答不出", "cause": "数据集 v0.3 把 App.glyphs 里的字段名从 glyphs 改成 parts，load_glyph_chars 只认旧名，try 解析成功但取到空 dict", "fix": "兼容 parts/glyphs/data 三个键，优先用 pieceCount；重跑 build_kb→_enrich_kb→_merge_kb 后 243 条/150 字"},
+    {"id": "partial-answer-as-refuse", "symptom": "模型说“只有该字字形、字义没有”，前端标拒答且出处被清空", "cause": "_classify 只看关键词，把“知识库里没有…的字义”当成整体拒答", "fix": "_classify(text, question, cites)：问题指向的字命中检索结果 → answer 并保留出处；字表类问题或该字不在库 → refuse"},    {"id": "store-lost-update", "symptom": "两人同时交卷，先交的人记录消失", "cause": "learner 是「读-改-写」，服务多线程且无锁，实测 8 并发只剩 1 条", "fix": "写路径一律走 learner.transaction()（持锁 + 原子写）；禁止直接 load→改→save"},
     {"id": "store-half-file", "symptom": "学情突然全空，且没有任何报错", "cause": "save 直接覆写文件，写到一半崩了就留下半截 JSON，load 捕获异常后静默返回空", "fix": "先写同目录 .tmp 再 os.replace；损坏时保留 .corrupt 并写入 LAST_LOAD_ERROR（/api/health 可见）"},    {"id": "proxy-localhost", "symptom": "请求 127.0.0.1 返回 502 Bad Gateway", "cause": "系统 http_proxy 拦截", "fix": "src/dify.py 与 src/llm.py 用空 ProxyHandler 打开器；并设 no_proxy"},
     {"id": "dify-context-token", "symptom": "Dify 回答永远说'资料为空'，但仍显示引用", "cause": "{{#context#}} 被粘贴成普通文本，未作为变量令牌插入", "fix": "在 LLM 节点 SYSTEM 末尾用 {x} 插入「上下文」蓝块；有黄色警告即未绑定"},
     {"id": "dify-free-upload", "symptom": "知识与文件只能一个个上传", "cause": "Dify 免费版每批 1 个文件", "fix": "用 out/dify-kb-merged.md 单文件，分段标识符 ---，最大长度 512，重叠 0"},
@@ -148,7 +149,7 @@
       "拒答可用：超纲问题返回固定句，不编造",
       "Dify 链路（假服务）验证通过，含 retriever_resources 转出处与 // 清洗",
       "Dify 出处已改为分段「出处：」署名行（另带标题/摘录/相似度），重复召回去重；拒答正确标记 refused",
-      "知识库 170 条 / 146 字；补 12 字会意解释",
+      "知识库 243 条 / 150 字；补 16 条会意解释",
       "郑大 UI：校徽、深宝蓝、双语校名、求是担当水印；整身龟宝向导"
     ],
     "not_done": [

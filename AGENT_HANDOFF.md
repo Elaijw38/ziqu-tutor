@@ -56,10 +56,10 @@ web/
   index.html     单文件前端（三页签、整身龟宝、出处折叠条）
   assets/        校徽、龟宝
 data/
-  kb.jsonl       知识库 170 条（每条带 source）
+  kb.jsonl       知识库 243 条（每条带 source）
   learner.json   学习记录（删掉即重置演示状态）
 out/
-  dify-kb-merged.md   Dify 用单文件知识库（170 段，分隔符 ---）
+  dify-kb-merged.md   Dify 用单文件知识库（243 段，分隔符 ---）
   dify-prompt-v3.txt  Dify LLM 节点提示词（含少样本示例）
   dify-appearance.txt Dify 开场白与建议问题文案
  申报表-郑大甲骨文AI助教.docx  已填写的申报表（个人信息留空待填）
@@ -87,7 +87,7 @@ out/
 |---|---|---|
 | 系统代理拦本机 | 请求 127.0.0.1 返回 **502** | `dify.py`/`llm.py` 用空 ProxyHandler；并设 `no_proxy=127.0.0.1,localhost` |
 | Dify 上下文没绑定 | 回答永远“资料为空”，却仍显示引用 | 在 LLM 节点 SYSTEM 末尾用 `{x}` 插入**上下文蓝块**；有黄色警告即未绑定 |
-| Dify 免费版单文件上传 | 170 个 md 无法批量传 | 用 `out/dify-kb-merged.md` 单文件；分段标识符 `---`、长度 512、重叠 0 |
+| Dify 免费版单文件上传 | 上百个 md 无法批量传 | 用 `out/dify-kb-merged.md` 单文件；分段标识符 `---`、长度 512、重叠 0 |
 | 模型结尾吐 `//` | 回答末尾多两个斜杠 | `dify.py::_clean_answer` 统一清洗；提示词再加约束 |
 | 视觉模型做文本 RAG | 有资料却反问用户 | 换 `deepseek-chat`/`qwen-plus`；提示词加少样本示例 |
 | 知识库缺会意解释 | “家为什么是屋顶下有猪”只答构件 | `_enrich_kb.py` 补 12 字「常见解释」，措辞不冒充定论 |
@@ -100,6 +100,8 @@ out/
 | 并发交卷丢记录 | 两个人几乎同时提交，先交的那份记录消失 | 学情是「读-改-写」，服务多线程且无锁（实测 8 并发只剩 1 条）。写路径必须走 `learner.transaction()`，不要自己 `load()` 改完再 `save()` |
 | 学情突然全空且无报错 | 覆盖度归零，`learner.json` 内容只剩半截 | `save` 直接覆写，崩在中途就留下半截 JSON，`load` 捕获异常后静默返回空。现改为 `.tmp` + `os.replace` 原子写；损坏时留 `.corrupt` 并写 `LAST_LOAD_ERROR`，`/api/health` 的 `store.error` 可见 |
 | 作答记录无限增长 | 一学期后 `learner.json` 持续变大、诊断变慢 | `learner.MAX_ATTEMPTS` 保留最近 500 条（只用于错题排行，不需要全量） |
+| 字形层整层丢失 | 知识库里 `kind=glyph` 一条都没有，“这个字几笔”永远答不出 | 数据集 v0.3 把字段从 `glyphs` 改成了 `parts`，`build_kb.load_glyph_chars` 只认旧名，解析成功但取到空 `{}`。已兼容 `parts/glyphs/data` 并改用 `pieceCount`；顺带补回只出现在字形数据里的 4 个字（尊彝爵絲） |
+| 部分可答被判成拒答 | 模型说“知识库里只有尊的字形，字义没有”，前端标成拒答还把出处清空 | `_classify(text, question, cites)`：若问题指向的那个字确实在检索结果里，判 `answer` 保留出处；问字表（“有哪些”）或该字根本不在库里才判 `refuse` |
 | 上下文被前端塞脏 | 有人往 `history` 里塞 `system` 或超长文本 | `_history_messages()` 只认 `user/assistant`，最多 6 条、每条 600 字；`server.py` 再校验一次类型 |
 | agent 说“知识库里没有”却报 `refused=false` | 前端显示成“答了但不给出处” | `ask.py::_classify` 统一 answer/refuse/clarify 三态，非 answer 一律清空出处 |
 | 工具轮次用尽后整段降级 | 答案质量突然掉到抽取式，用户无感 | `agent_answer` 收口时再要一次纯文本回答（不带 tools），尽量不出降级 |

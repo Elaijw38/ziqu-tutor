@@ -130,6 +130,29 @@ def test_tools_locally():
         learner.LEARNER = old
 
 
+def test_classify_locally():
+    """三态判定：部分可答（该字确有条目）不能判成拒答，否则出处会被清空。"""
+    from ask import _classify
+    cases = [
+        # 回答、问题、出处、期望
+        ("知识库里没有「人字旁」这类偏旁字表，只查到「人」本身",
+         "人字旁有哪些字", [{"id": "boss.人"}], "refuse"),
+        ("知识库里关于「尊」只有一条：字形由 10 段构成；字义没有",
+         "尊是什么字", [{"id": "glyph.尊"}], "answer"),
+        ("知识库里没有「龘」这个字，检索到的都是別的字",
+         "龘是什么意思", [{"id": "boss.馬"}], "refuse"),
+        ("你需要先告诉我是哪个字", "这个字一共几笔", [], "clarify"),
+        ("「日」属于二阶独体字，字形 3 段", "日几段", [{"id": "glyph.日"}], "answer"),
+    ]
+    bad = []
+    for text, q, cites, want in cases:
+        got = _classify(text, q, cites)
+        if got != want:
+            bad.append("%s → %s（应为 %s）" % (q, got, want))
+    print("  [三态] 5 例 %s" % ("✓" if not bad else "✗ " + "；".join(bad)))
+    return not bad
+
+
 def main():
     mock = ThreadingHTTPServer(("127.0.0.1", MOCK_PORT), Mock)
     import threading
@@ -183,6 +206,7 @@ def main():
                    and quiz_trace[0].get("quiz_id"))
 
         ok &= test_tools_locally()
+        ok &= test_classify_locally()
 
         print("\n  结论:", "✓ agent 全链路通过（工具/多轮/三态/出题）" if ok else "✗ 有断言未通过")
         return 0 if ok else 1

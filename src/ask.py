@@ -41,12 +41,31 @@ _REFUSE_WORDS = ("知识库里没有", "知识库没有", "没有找到", "查�
                  "不在知识库", "只回答与", "没有相关内容", "暂时没有")
 
 
-def _classify(text):
+# 问"有哪些字/都有什么"这类要字表的问题：知识库没有汇总表，检索到的单字条目
+# 也不构成答案，只能拒答。单独判，免得被下面的"部分可答"规则捞回去。
+_LISTY = ("有哪些", "哪些字", "都有什么", "都哪些", "列一下", "列举")
+
+
+def _classify(text, question="", cites=None):
     t = text or ""
+    # 先判"库里没有"：模型常在同一句里既说没有、又反问要问哪个字，
+    # 这种情况是拒答，不是没听清（问句本身已经明确）。
+    if any(w in t for w in _REFUSE_WORDS):
+        if any(w in (question or "") for w in _LISTY):
+            return "refuse"
+        # 部分可答：模型说"这条没有"，但问题指向的那个字确实检索到了，
+        # 就不能把出处清掉——有出处可核对，比"查不到"更符合本项目的口径。
+        qchars = set(_chars_in(question or ""))
+        hit = set()
+        for c in (cites or []):
+            cid = c.get("id") or ""
+            if "." in cid:
+                hit.add(cid.rsplit(".", 1)[-1])
+        if qchars & hit:
+            return "answer"
+        return "refuse"
     if any(w in t for w in _CLARIFY_WORDS):
         return "clarify"
-    if any(w in t for w in _REFUSE_WORDS):
-        return "refuse"
     return "answer"
 
 
@@ -113,7 +132,7 @@ def answer(question, history=None, conversation_id="", session_id=""):
         if got:
             got.setdefault("grounded", True)
             got["citations"] = _dedup(got.get("citations") or [])
-            _settle(got)
+            _settle(got, q)
             got["hits"] = [{"id": c["id"]} for c in got["citations"]]
             return got
 
@@ -126,7 +145,7 @@ def answer(question, history=None, conversation_id="", session_id=""):
             if got:
                 got.setdefault("grounded", True)
                 got["citations"] = _dedup(got.get("citations") or [])
-                _settle(got)
+                _settle(got, q)
                 got["hits"] = got.get("tools") or []
                 return got
         except Exception as e:
@@ -186,18 +205,19 @@ def answer(question, history=None, conversation_id="", session_id=""):
         "grounded": True,
         "mode": "llm" if polished else "extractive",
     }
-    return _settle(got)
+    return _settle(got, q)
 
 
-def _settle(got):
+def _settle(got, question=""):
     """统一三态：任何链路返回后都过一遍，保证 status / refused / citations 自洽。
 
-    - status=answer  ：正常作答，出处保留；
+    - status=answer  ：正常作答（含"只覆盖一部分但确有出处"），出处保留；
     - status=refuse  ：知识库确实没有，refused=True，出处清空；
     - status=clarify ：没听清要反问，同样不挂出处。
     refused 字段保留，兼容老前端与测试。
     """
-    st = got.get("status") or _classify(got.get("answer"))
+    st = got.get("status") or _classify(got.get("answer"), question,
+                                        got.get("citations"))
     if st not in ("answer", "refuse", "clarify"):
         st = "answer"
     if got.get("refused") is True:      # Dify 链路自带拒答判定，优先采信

@@ -52,13 +52,20 @@ def load_glyph_chars():
         d = json.loads(t[i:j])
     except Exception:
         return {}
-    g = d.get("glyphs") or d.get("data") or {}
+    # 数据集的字段名改过一次：v0.3 用 parts，更早的版本用 glyphs / data。
+    # 只认 glyphs 会导致整层字形数据静默丢失（曾经就是这样，73 个字掉光）。
+    g = d.get("parts") or d.get("glyphs") or d.get("data") or {}
+    if not isinstance(g, dict):
+        return {}
     out = {}
-    for k, v in (g.items() if isinstance(g, dict) else []):
+    for k, v in g.items():
         n = 0
         if isinstance(v, dict):
-            st = v.get("strokes") or v.get("paths") or v.get("d") or []
-            n = len(st) if isinstance(st, (list, tuple)) else (1 if st else 0)
+            if v.get("pieceCount"):
+                n = int(v["pieceCount"])
+            else:
+                st = v.get("strokes") or v.get("paths") or v.get("d") or []
+                n = len(st) if isinstance(st, (list, tuple)) else (1 if st else 0)
         out[k] = n
     return out
 
@@ -138,14 +145,21 @@ def main():
             "meta": {"group": e.get("group")},
         })
 
-    # 4) 字形本体（有笔画的字，给"这个字几笔、怎么来的"用）
+    # 4) 字形本体（有字形的字，供"这个字怎么写/几段"类问题）
+    #    注意：数据集给的是几何路径片段数，不等于传统笔画数，
+    #    措辞必须如实说"段"，不能冒充"笔"，否则就是编造。
     for ch, n in strokes.items():
         if not ch:
             continue
+        if n:
+            text = ("「%s」的甲骨字形在 CC BY 4.0 数据集中由 %d 段几何路径构成，"
+                    "可据此临写；段数是矢量分解结果，不等同于传统笔画数。" % (ch, n))
+        else:
+            text = "「%s」收录了甲骨字形，但数据集未给出路径段数。" % ch
         rows.append({
             "id": "glyph.%s" % ch,
             "char": ch, "kind": "glyph",
-            "text": "「%s」的甲骨字形共 %d 笔（按数据集逐笔几何计）。" % (ch, n or 0),
+            "text": text,
             "source": GLYPH_SRC,
             "meta": {"strokes": n},
         })
