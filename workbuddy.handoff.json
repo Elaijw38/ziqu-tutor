@@ -178,30 +178,29 @@
         "level": "入门",
         "learned": 9,
         "total_chars": 146,
-        "zones": [
+        "attempts_total": 38,
+        "accuracy": 78.9,
+        "recent": {
+          "n": 10,
+          "acc": 80.0
+        },
+        "by_kind": [
           {
-            "id": "sky",
-            "name": "天象",
-            "done": 0,
-            "total": 4,
-            "pct": 0.0
+            "kind": "comp",
+            "label": "构件分析",
+            "total": 12,
+            "ok": 10,
+            "acc": 83.3
           }
         ],
-        "weakest_zone": {
-          "id": "sky",
-          "name": "天象",
-          "done": 0,
-          "total": 4,
-          "pct": 0.0
-        },
         "weak_comps": [
           {
             "comp": "宀",
-            "total": 2,
-            "missing": [
+            "chars": [
               "家",
               "安"
-            ]
+            ],
+            "times": 2
           }
         ],
         "wrong_top": [
@@ -211,10 +210,10 @@
           }
         ],
         "suggestions": [
-          "「天象」这片只学了 0/4，从它入手最划算。"
+          "「鼎」累计答错 1 次，先回看这个字的字形与构形，比继续刷新题有效。"
         ],
         "lexicon_chars": 1179,
-        "total_chars_note": "课程字表；lexicon_chars 是字形库规模，两者不能混用"
+        "total_chars_note": "课程字表；lexicon_chars 是字形库规模，两者不能混用；不再按王邑区域（天象/山川等）统计，那不是学习诊断的维度"
       }
     },
     {

@@ -535,25 +535,6 @@ async function loadDiag(){
       box.appendChild(el('p','hint','还没有作答记录，能力维度要做过一轮练习才会出现。'));
     }
 
-    if (d.zones.length){
-      const h = el('h3',null,'字义主题分布');
-      h.appendChild(el('span','h-sub','课程字表按字义归类，看知识面宽窄'));
-      box.appendChild(h);
-      const tb = el('table','zt');
-      d.zones.forEach(z => {
-        const tr = el('tr');
-        tr.appendChild(el('td',null,z.name));
-        tr.appendChild(el('td',null,z.done + ' / ' + z.total));
-        const td = el('td');
-        const pb = el('div','pb'); const bi = el('i');
-        bi.style.width = Math.max(2,z.pct) + '%'; pb.appendChild(bi);
-        td.appendChild(pb);
-        const sp = el('span',null,' ' + z.pct + '%'); sp.style.marginLeft = '8px';
-        td.appendChild(sp); tr.appendChild(td); tb.appendChild(tr);
-      });
-      box.appendChild(tb);
-    }
-
     if ((d.wrong_top || []).length){
       const h = el('h3',null,'高频错字');
       h.appendChild(el('span','h-sub','错得越多，越该先回看字形与构形'));

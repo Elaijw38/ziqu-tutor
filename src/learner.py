@@ -9,6 +9,9 @@
   能力维度   = 按题型（构件分析 / 字义理解 / 字形笔画）分别算正确率
   待复习     = 至少答错过一次的字
 
+不按王邑的「天象 / 山川 / 禽兽虫鱼」这些区域分类统计：那是课程地图的划分，
+不是学习诊断的维度——学生在「山川」里少见了几个字，说明不了能力弱在哪。
+
 存储：SQLite（sqlite3 是标准库，仍然零依赖），单文件 data/learners.db
 
     learners(vid TEXT PRIMARY KEY, data TEXT, updated REAL)
@@ -382,17 +385,6 @@ def diagnose(idx, vid=DEFAULT_VID):
     recent_acc = (round(sum(1 for a in attempts[-recent_n:] if a.get("ok"))
                         * 100.0 / recent_n, 1) if recent_n else 0.0)
 
-    # 字义主题分布：只作「知识面」看，不再当游戏地图进度
-    zones = []
-    for zid, zname in meta["zones"]:
-        zchars = meta["zone_chars"].get(zid, [])
-        got = [c for c in zchars if c in learned]
-        zones.append({"id": zid, "name": zname, "done": len(got),
-                      "total": len(zchars),
-                      "pct": round(len(got) * 100 / max(1, len(zchars)), 1)})
-    zones_sorted = sorted([z for z in zones if z["total"]], key=lambda z: z["pct"])
-    weakest_zone = zones_sorted[0] if zones_sorted else None
-
     # 错题
     wrong = {}
     for a in attempts:
@@ -426,10 +418,6 @@ def diagnose(idx, vid=DEFAULT_VID):
                 suggestions.append("%s正确率 %.0f%%（%d/%d）是目前最薄的一环，"
                                    "下一轮练习集中考这一类。"
                                    % (wk["label"], wk["acc"], wk["ok"], wk["total"]))
-    if weakest_zone and weakest_zone["pct"] < 100:
-        suggestions.append("课程字表按字义分「%s」类，这一类你还差 %d 个字，可以按类往下补。"
-                           % (weakest_zone["name"],
-                              weakest_zone["total"] - weakest_zone["done"]))
     if n_att == 0:
         suggestions.insert(0, "还没有作答记录——上面的覆盖只是「见过」，不等于会做。"
                               "先做一轮随堂练习，正确率才有参考价值。")
@@ -460,8 +448,6 @@ def diagnose(idx, vid=DEFAULT_VID):
         "accuracy": accuracy,
         "recent": {"n": recent_n, "acc": recent_acc},
         "by_kind": by_kind,
-        "zones": zones,
-        "weakest_zone": weakest_zone,
         "weak_comps": weak_comps,
         "wrong_top": [{"char": c, "times": n} for c, n in wrong_top],
         "suggestions": suggestions,

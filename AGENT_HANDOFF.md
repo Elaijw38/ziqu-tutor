@@ -80,7 +80,7 @@ out/
 | 方法 | 路径 | request | response 关键字段 |
 |---|---|---|---|
 | GET | `/api/health` | — | `kb_rows, chars, course_chars, llm, model, dify, dify_error, store{attempts,learned,error}` |
-| GET | `/api/diagnose` | — | `coverage, level, total_chars(课程字表), lexicon_chars(总字表), zones[], weak_comps[], wrong_top[], suggestions[]` |
+| GET | `/api/diagnose` | — | `coverage, level, total_chars(课程字表), lexicon_chars(总字表), attempts_total, accuracy, recent{n,acc}, by_kind[], weak_comps[], wrong_top[], suggestions[]`（不再有 `zones`/`weakest_zone`：按王邑区域分类不是学习诊断维度） |
 | POST | `/api/ask` | `{question, history?, conversation_id?, session_id?}` | `answer, citations[{id,source,title?,snippet?}], status(answer/refuse/clarify), refused, trace[], rounds, mode(dify/agent/extractive/refuse)` |
 | POST | `/api/quiz` | `{n,seed}` | `items[{char,type,question,options[],answer,answer_index}]` |
 | POST | `/api/grade` | `{quiz,answers[{char,choice}]}` | `score, results[{ok,your,right,why}], advice`（并写入 attempts） |

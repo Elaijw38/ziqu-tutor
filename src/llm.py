@@ -117,7 +117,7 @@ TOOLS = [
             "name": "get_learner_state",
             "description": "读取当前学生的学习诊断：课程字覆盖、实际作答正确率、"
                            "按题型（构件分析/字义理解/字形笔画）分的正确率、高频错字、"
-                           "错题涉及的构件、字义主题分布。"
+                           "错题涉及的构件、下一步建议。"
                            "学生问「我哪里弱」「接下来学什么」时必须先调用它。",
             "parameters": {"type": "object", "properties": {}},
         },
@@ -267,7 +267,6 @@ def _exec_tool(name, args, idx, learner_mod, session_id="", vid=""):
                 "recent_accuracy": (d.get("recent") or {}).get("acc"),
                 "by_kind": [{"label": k["label"], "acc": k["acc"], "n": k["total"]}
                             for k in d["by_kind"]],
-                "weakest_zone": d["weakest_zone"],
                 "weak_comps": [c["comp"] for c in d["weak_comps"]],
                 "wrong": [{"char": w["char"], "times": w["times"]} for w in d["wrong_top"]],
                 "suggestions": d["suggestions"]}
