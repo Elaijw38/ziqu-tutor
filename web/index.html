@@ -53,24 +53,21 @@
   h1{margin:0;font-size:23px;letter-spacing:2px}
   h1 em{font-style:normal;color:var(--zzu-blue)}
   .hero p{margin:0;color:var(--ink-2);font-size:13.5px;max-width:64ch}
-  /* 三个任务入口：一句价值主张 + 三张卡，替代原来那段长说明 */
-  .entries{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 14px}
-  .entry{text-align:left;padding:11px 14px;border:1px solid var(--line);border-radius:12px;
-    background:#fff;cursor:pointer;transition:.15s;font:inherit;color:var(--ink)}
-  .entry:hover{border-color:var(--zzu-blue);box-shadow:0 2px 10px rgba(22,51,107,.08)}
-  .entry b{display:block;font-size:14px;letter-spacing:.5px}
-  .entry span{font-size:12.5px;color:var(--ink-2);line-height:1.6}
-  @media (max-width:760px){
-    .entries{grid-template-columns:repeat(3,1fr);gap:8px}
-    .entry{padding:9px 10px;text-align:center}
-    .entry span{display:none}
-  }
-  /* 导航 */
+  /* 导航即入口：三张任务卡与页签功能重复，已合并成带说明的分段页签 */
   nav{display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}
-  .tab{padding:8px 18px;border:1px solid var(--line);border-radius:10px;background:#fff;
-    color:var(--ink-2);cursor:pointer;font-size:14px;letter-spacing:.5px;transition:.15s}
+  .tab{display:flex;flex-direction:column;gap:1px;text-align:left;
+    padding:7px 16px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    color:var(--ink);cursor:pointer;font:inherit;transition:.15s}
+  .tab b{font-weight:600;font-size:14px;letter-spacing:.5px}
+  .tab span{font-size:11.5px;color:var(--ink-2);letter-spacing:0}
   .tab:hover{border-color:var(--gold)}
-  .tab.on{background:var(--zzu-blue);border-color:var(--zzu-blue);color:#fff;font-weight:600}
+  .tab.on{background:var(--zzu-blue);border-color:var(--zzu-blue)}
+  .tab.on b{color:#fff}
+  .tab.on span{color:rgba(255,255,255,.82)}
+  @media (max-width:760px){
+    .tab{padding:7px 13px}
+    .tab span{display:none}
+  }
   /* 卡片 */
   .card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
     box-shadow:0 2px 12px rgba(60,50,30,.05);overflow:hidden}
@@ -82,8 +79,8 @@
   /* .welcome 自带 display:flex，写在 .hide 之后会盖掉它，这里单独再压一次 */
   .welcome.hide{display:none}
   /* 问答：空对话显示欢迎区，发出第一条消息后整块收起 */
-  .welcome{display:flex;gap:14px;align-items:flex-start;padding:16px 18px 14px;
-    border-bottom:1px dashed var(--line);background:linear-gradient(180deg,#ffffff,#fafcff)}
+  .welcome{display:flex;gap:14px;align-items:flex-start;padding:16px 18px 10px;
+    background:linear-gradient(180deg,#ffffff,#fafcff)}
   .welcome .fig{width:82px;height:82px;flex:none;object-fit:contain;
     filter:drop-shadow(0 4px 8px rgba(60,70,90,.12))}
   .welcome .hi b{font-size:15px;letter-spacing:.5px;color:var(--ink)}
@@ -97,7 +94,7 @@
   .main-col{display:flex;flex-direction:column;min-width:0}
   .log{flex:1;padding:16px 18px;min-height:34vh;max-height:52vh;overflow:auto}
   /* 还没开始对话时不要留一大片空白 */
-  .log:empty{min-height:12vh;max-height:12vh}
+  .log:empty{min-height:8vh;max-height:8vh}
   .msg{margin:0 0 14px}
   .who{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:1px;
     color:var(--ink-2);margin-bottom:5px}
@@ -122,14 +119,13 @@
   .dots i:nth-child(3){animation-delay:.36s}
   @keyframes bl{0%,100%{opacity:.22}50%{opacity:1}}
   @media (max-width:760px){
-    /* 窄屏先给对话让路：压顶栏、压场景条、压入口卡，保证输入框在视口内 */
+    /* 窄屏先给对话让路：压顶栏、压场景条、压页签，保证输入框在视口内 */
     .contest{display:none}
     .top-in{padding:10px 14px;gap:10px}
     .ctx-in{padding:6px 14px;gap:8px}
     .wrap{padding:12px 14px 36px}
     .hero{padding:0;margin-bottom:10px}
     .hero p{font-size:12.5px;line-height:1.55}
-    .entries{margin-bottom:10px}
     nav{margin-bottom:10px}
     .welcome{padding:12px 14px 10px;gap:11px}
     .welcome .fig{width:56px;height:56px}
@@ -243,16 +239,10 @@
     <p>看懂字形、依据材料、边学边练——答案只来自知识库，查不到直说。</p>
   </div>
 
-  <div class="entries">
-    <button class="entry" type="button" data-go="chat"><b>问一个字</b><span>字形、字义、构形，答案附出处</span></button>
-    <button class="entry" type="button" data-go="quiz"><b>做一次练习</b><span>按学情出题，交卷即评讲</span></button>
-    <button class="entry" type="button" data-go="diag"><b>看我学得怎样</b><span>覆盖率、分区掌握、构件短板</span></button>
-  </div>
-
   <nav>
-    <button class="tab on" data-tab="chat">问答</button>
-    <button class="tab" data-tab="diag">学情诊断</button>
-    <button class="tab" data-tab="quiz">随堂练习</button>
+    <button class="tab on" data-tab="chat"><b>问答</b><span>问字形、字义、构形，答案附出处</span></button>
+    <button class="tab" data-tab="diag"><b>学情诊断</b><span>覆盖率、分区掌握、构件短板</span></button>
+    <button class="tab" data-tab="quiz"><b>随堂练习</b><span>按学情组卷，交卷即评讲</span></button>
   </nav>
 
   <section class="card" id="p-chat">
@@ -316,12 +306,11 @@ function showTab(name){
   document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x.dataset.tab === name));
   ['chat','diag','quiz'].forEach(k => $('#p-' + k).classList.toggle('hide', k !== name));
   if (name === 'diag') loadDiag();
-  if (name === 'quiz' && !PAPER) $('#mk').click();   // 从任务入口进来就直接给一套题
+  if (name === 'quiz' && !PAPER) $('#mk').click();   // 点练习页签就直接给一套题
   if (name === 'chat') setTimeout(() => input.focus({preventScroll: true}), 80);
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 document.querySelectorAll('.tab').forEach(t => t.onclick = () => showTab(t.dataset.tab));
-document.querySelectorAll('.entry').forEach(b => b.onclick = () => showTab(b.dataset.go));
 
 const log = $('#log'), form = $('#f'), input = $('#q'), send = $('#send');
 // 多轮上下文：只带最近 3 轮，避免越聊越贵；Dify 链路额外记 conversation_id
