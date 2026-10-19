@@ -1,0 +1,19 @@
+# 不进镜像的东西：密钥与本地配置
+config.local.env
+config.example.env
+.env
+
+# 仓库与开发残留
+.git
+.gitignore
+__pycache__
+*.pyc
+_*.py
+
+# 截图与浏览器配置（含 Login Data / Web Data，绝不能进镜像）
+_shots
+out
+tests
+
+# 文档
+*.md

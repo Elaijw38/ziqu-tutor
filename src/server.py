@@ -1,16 +1,23 @@
 # -*- coding: utf-8 -*-
-"""本地服务：零框架（标准库 http.server），只做三件事：
+"""本地/公网服务：零框架（标准库 http.server），只做三件事：
 
   GET  /                → web/ 静态页（助教聊天界面）
   POST /api/ask         → {"question": "..."} → 答案 + 出处
   GET  /api/health      → 自检：知识库条数、覆盖字数、LLM 是否启用
 
-为什么不用 FastAPI：初赛演示要在任何机器上一条命令起来，不能要求装依赖。
+为什么不用 FastAPI：演示要在任何机器上一条命令起来，不能要求装依赖。
 真正的产物是检索与问答逻辑，换框架只是换一层壳。
+
+部署相关（都是环境变量，不配则保持本机行为）：
+  PORT=8770            平台（Render/Fly/容器）通常注入 PORT
+  ZQ_HOST=0.0.0.0      对外开放；默认只绑 127.0.0.1
+  ZQ_ACCESS_CODE=xxx   邀请码门禁；设了之后访问页与接口都要凭码
+  ZQ_RATE_PER_HOUR=60  单 IP 每小时提问上限；0 或不设表示不限
 """
 import json
 import os
 import sys
+import time
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -28,6 +35,36 @@ MIME = {".html": "text/html; charset=utf-8", ".js": "application/javascript; cha
         ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8",
         ".png": "image/png", ".svg": "image/svg+xml", ".ico": "image/x-icon"}
 
+ACCESS_CODE = (os.environ.get("ZQ_ACCESS_CODE") or "").strip()
+RATE_LIMIT = int(os.environ.get("ZQ_RATE_PER_HOUR") or 0)
+_HITS = {}     # ip -> [时间戳]：内存计数，单进程够用，重启即清零
+
+LOGIN_HTML = """<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>甲骨文 AI 助教 · 请输入邀请码</title>
+<style>
+ body{margin:0;min-height:100vh;display:grid;place-items:center;
+   background:linear-gradient(180deg,#fff 0%,#eef4fc 60%,#e8f0fa 100%);
+   font:15px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#1b2432}
+ .box{background:#fff;border:1px solid #e2e9f3;border-radius:16px;padding:28px 30px;
+   box-shadow:0 10px 30px rgba(22,51,107,.08);width:min(92vw,380px)}
+ h1{font-size:17px;margin:0 0 6px;color:#16336b;letter-spacing:.5px}
+ p{font-size:13px;color:#5c6b80;margin:0 0 16px}
+ input{width:100%;padding:11px 13px;border:1px solid #e2e9f3;border-radius:10px;
+   font-size:14.5px;outline:none;box-sizing:border-box}
+ input:focus{border-color:#16336b;box-shadow:0 0 0 3px rgba(22,51,107,.12)}
+ button{width:100%;margin-top:10px;padding:11px;border:0;border-radius:10px;
+   background:#16336b;color:#fff;font-size:14.5px;cursor:pointer}
+ button:disabled{opacity:.6;cursor:default}
+ .err{color:#a4231f;font-size:12.5px;margin-top:9px;min-height:18px}
+</style></head><body>
+<form class="box" method="post" action="/api/login">
+  <h1>甲骨文 AI 助教</h1>
+  <p>郑州大学汉字通识课 · 请输入课程邀请码</p>
+  <input name="code" type="password" placeholder="邀请码" autofocus required>
+  <button type="submit">进入</button>
+  <div class="err">__ERR__</div>
+</form></body></html>"""
+
 
 class Handler(BaseHTTPRequestHandler):
     server_version = "ziqu-tutor/0.1"
@@ -38,6 +75,38 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(body)
+
+    def _code_ok(self):
+        """邀请码校验：未设码则全放行；设了码就认 cookie。"""
+        if not ACCESS_CODE:
+            return True
+        for part in (self.headers.get("Cookie") or "").split(";"):
+            k, _, v = part.strip().partition("=")
+            if k == "zq_code" and v == ACCESS_CODE:
+                return True
+        return False
+
+    def _rate_ok(self):
+        """单 IP 每小时提问上限，防止公开链接被刷模型额度。"""
+        if not RATE_LIMIT:
+            return True
+        ip = self.client_address[0]
+        now = time.time()
+        q = [t for t in _HITS.get(ip, []) if now - t < 3600]
+        if len(q) >= RATE_LIMIT:
+            _HITS[ip] = q
+            return False
+        q.append(now)
+        _HITS[ip] = q
+        return True
+
+    def _login_page(self, err=""):
+        body = LOGIN_HTML.replace("__ERR__", err).encode("utf-8")
+        self.send_response(401 if err else 200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
 
@@ -60,6 +129,9 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         p = urllib.parse.urlparse(self.path)
         if p.path == "/api/diagnose":
+            if not self._code_ok():
+                self._json({"error": "需要邀请码：请从带邀请码的链接进入"}, 401)
+                return
             try:
                 self._json(learner.diagnose(get_index()))
             except Exception as e:
@@ -84,12 +156,33 @@ class Handler(BaseHTTPRequestHandler):
                         "dify": ds["ready"], "dify_base": ds["base"],
                         "dify_error": getattr(dify_mod, "LAST_ERROR", "")})
             return
+        # 首页要过邀请码；校徽/龟宝等静态图放行（页面本身拿不到就没意义）
+        if p.path in ("/", "/index.html") and not self._code_ok():
+            self._login_page()
+            return
         self._static(p.path)
 
     def do_POST(self):
         p = urllib.parse.urlparse(self.path)
+        if p.path == "/api/login":
+            n = int(self.headers.get("Content-Length") or 0)
+            raw = self.rfile.read(n).decode("utf-8", "replace") if n else ""
+            code = urllib.parse.parse_qs(raw).get("code", [""])[0].strip()
+            if ACCESS_CODE and code != ACCESS_CODE:
+                self._login_page("邀请码不对，请向任课教师索取。")
+                return
+            self.send_response(303)
+            # 邀请码等价于口令，只放 HttpOnly cookie，不让前端脚本读到
+            self.send_header("Set-Cookie", "zq_code=%s; Path=/; HttpOnly; SameSite=Lax; Max-Age=604800"
+                             % urllib.parse.quote(code))
+            self.send_header("Location", "/")
+            self.end_headers()
+            return
         if p.path not in ("/api/ask", "/api/quiz", "/api/grade"):
             self._json({"error": "not found"}, 404)
+            return
+        if not self._code_ok():
+            self._json({"error": "需要邀请码：请从带邀请码的链接进入"}, 401)
             return
         try:
             n = int(self.headers.get("Content-Length") or 0)
@@ -117,6 +210,9 @@ class Handler(BaseHTTPRequestHandler):
         if not q:
             self._json({"error": "question 不能为空"}, 400)
             return
+        if not self._rate_ok():
+            self._json({"error": "提问太快了：每个 IP 每小时 %d 次，请稍后再问。" % RATE_LIMIT}, 429)
+            return
         try:
             self._json(ask_mod.answer(q))
         except Exception as e:
@@ -127,9 +223,15 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main():
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8770
-    srv = ThreadingHTTPServer(("127.0.0.1", port), Handler)
-    print("助教服务已启动： http://127.0.0.1:%d" % port)
+    port = (int(sys.argv[1]) if len(sys.argv) > 1
+            else int(os.environ.get("PORT") or 8770))
+    host = os.environ.get("ZQ_HOST") or "127.0.0.1"
+    srv = ThreadingHTTPServer((host, port), Handler)
+    print("助教服务已启动： http://%s:%d" % (host, port))
+    if host not in ("127.0.0.1", "localhost"):
+        print("对外开放：邀请码 %s / 单 IP 每小时 %s 次"
+              % ("已启用" if ACCESS_CODE else "未设置（任何人可调用，会消耗模型额度）",
+                 RATE_LIMIT or "不限"))
     try:
         srv.serve_forever()
     except KeyboardInterrupt:

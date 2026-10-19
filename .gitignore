@@ -4,7 +4,8 @@ _shots/zzu/prof/
 out/pdfprof/
 out/_pdfshot.js
 *.pyc
-data/kb.jsonl
+# kb.jsonl 是派生物，但部署时必须随包走（服务器上没有 ../字趣 可重新导出），所以入库
+# data/kb.jsonl
 out/申报表预览.pdf
 # 不要提交真实密钥
 config.local.env
