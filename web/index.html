@@ -3,116 +3,188 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>甲骨文助教 · 字趣 AI</title>
+<title>甲骨文 AI 助教 · 郑州大学</title>
 <style>
-  :root{--bone:#f4ecda;--bone-white:#fffdf8;--ink:#2f2618;--ink-soft:#6b5b44;
-    --edge:#ddd0b6;--cinnabar:#a8321e;--gold:#b98b3c;--green:#4b7d4b}
+  :root{
+    /* 郑大红取自校徽「以人为本」的红色元素；藏青作正文色，宣纸骨白作底 */
+    --zzu-red:#a4231f; --zzu-red-deep:#8a1b18;
+    --navy:#122a4d; --navy-2:#1c3b66;
+    --paper:#f6f1e6; --paper-2:#fffdf8;
+    --ink:#1f2430; --ink-2:#5b6474; --line:#dfd7c6;
+    --gold:#b98b3c; --ok:#2f6b46;
+  }
   *{box-sizing:border-box}
-  body{margin:0;min-height:100vh;color:var(--ink);
-    font:15px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
-    background:radial-gradient(ellipse at 20% 0%,#fffdf7 0%,transparent 58%),
-      linear-gradient(160deg,#f7f1e3,#efe4cd 60%,#e6d8bd)}
-  .wrap{max-width:940px;margin:0 auto;padding:26px 18px 56px}
-  header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-  h1{margin:0;font-size:22px;letter-spacing:1px}
-  .seal{padding:2px 8px;border:1px solid var(--cinnabar);color:var(--cinnabar);
-    border-radius:3px;font-size:12px;letter-spacing:2px}
-  .sub{color:var(--ink-soft);font-size:13px;margin:6px 0 14px}
-  .tabs{display:flex;gap:6px;margin-bottom:14px}
-  .tab{padding:7px 15px;border:1px solid var(--edge);border-radius:9px 9px 0 0;
-    background:#f7efdd;color:var(--ink-soft);cursor:pointer;font-size:14px}
-  .tab.on{background:var(--bone-white);color:var(--ink);border-bottom-color:var(--bone-white);
-    font-weight:600}
-  .panel{background:var(--bone-white);border:1px solid var(--edge);border-radius:0 12px 12px 12px;
-    box-shadow:0 2px 10px rgba(80,60,30,.06);overflow:hidden}
+  body{margin:0;color:var(--ink);background:var(--paper);
+    font:15px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+  /* 校名顶栏 */
+  .top{background:linear-gradient(90deg,var(--navy),var(--navy-2));color:#fff}
+  .top-in{max-width:1040px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .zzu{display:flex;align-items:center;gap:9px;font-size:17px;letter-spacing:3px;font-weight:600}
+  .zzu i{width:26px;height:26px;border-radius:6px;background:var(--zzu-red);display:grid;
+    place-items:center;font-style:normal;font-size:14px;letter-spacing:0;font-weight:700;color:#fff}
+  .top-sep{width:1px;height:22px;background:rgba(255,255,255,.28)}
+  .app-name{font-size:15.5px;letter-spacing:1px;color:#eaf0f8}
+  .top-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+  .contest{font-size:12px;letter-spacing:1px;padding:3px 9px;border-radius:999px;
+    background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#e8eef7}
+  /* 课程场景条 */
+  .ctx{background:#eee7d7;border-bottom:1px solid var(--line)}
+  .ctx-in{max-width:1040px;margin:0 auto;padding:9px 20px;display:flex;gap:16px;align-items:center;
+    flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+  .ctx b{color:var(--ink);font-weight:600}
+  .ctx .pill{padding:2px 9px;border-radius:999px;background:#fff;border:1px solid var(--line);
+    color:var(--ink-2);font-size:12px}
+  .wrap{max-width:1040px;margin:0 auto;padding:22px 20px 60px}
+  .hero{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+  h1{margin:0;font-size:25px;letter-spacing:2px}
+  h1 em{font-style:normal;color:var(--zzu-red)}
+  .hero p{margin:0;color:var(--ink-2);font-size:13.5px;max-width:56ch}
+  /* 导航 */
+  nav{display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}
+  .tab{padding:8px 18px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    color:var(--ink-2);cursor:pointer;font-size:14px;letter-spacing:.5px;transition:.15s}
+  .tab:hover{border-color:var(--gold)}
+  .tab.on{background:var(--zzu-red);border-color:var(--zzu-red);color:#fff;font-weight:600}
+  /* 卡片 */
+  .card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+    box-shadow:0 2px 12px rgba(60,50,30,.05);overflow:hidden}
+  .card-h{display:flex;align-items:center;gap:10px;padding:13px 18px;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#fffdf8,#f8f3e7)}
+  .card-h h2{margin:0;font-size:15px;letter-spacing:1px}
+  .card-h .tag{margin-left:auto;font-size:12px;color:var(--ink-2)}
   .hide{display:none}
   /* 问答 */
+  .quick{padding:12px 16px 0;display:flex;gap:8px;flex-wrap:wrap}
+  .q-chip{padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;
+    color:var(--ink-2);font-size:12.5px;cursor:pointer}
+  .q-chip:hover{border-color:var(--gold);color:var(--ink)}
   .log{padding:16px;max-height:46vh;overflow:auto}
-  .msg{margin:0 0 13px}
-  .who{font-size:11.5px;letter-spacing:1px;color:var(--ink-soft);margin-bottom:4px}
-  .ask .bubble{background:#f0e7d3;border:1px solid var(--edge);border-radius:10px;
-    padding:9px 12px;display:inline-block;max-width:100%}
-  .ans .bubble{background:#fffefb;border:1px solid var(--edge);border-left:3px solid var(--gold);
-    border-radius:10px;padding:11px 13px;white-space:pre-wrap}
-  .cite{margin-top:8px;border-top:1px dashed var(--edge);padding-top:7px}
-  .cite summary{cursor:pointer;font-size:12.5px;color:var(--ink-soft)}
-  .cite ol{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--ink-soft)}
+  .msg{margin:0 0 14px}
+  .who{font-size:11.5px;letter-spacing:1px;color:var(--ink-2);margin-bottom:4px}
+  .ask .bubble{background:#efe8d8;border:1px solid var(--line);border-radius:12px;
+    padding:9px 13px;display:inline-block;max-width:100%}
+  .ans .bubble{background:#fff;border:1px solid var(--line);border-left:3px solid var(--zzu-red);
+    border-radius:12px;padding:11px 14px;white-space:pre-wrap}
+  .cite{margin-top:8px;border-top:1px dashed var(--line);padding-top:7px}
+  .cite summary{cursor:pointer;font-size:12.5px;color:var(--ink-2)}
+  .cite ol{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--ink-2)}
   .cite li{margin:3px 0;word-break:break-all}
-  form{display:flex;gap:9px;padding:12px;border-top:1px solid var(--edge);background:#fbf6ea}
-  input[type=text]{flex:1;padding:11px 13px;border:1px solid var(--edge);border-radius:9px;
+  form{display:flex;gap:9px;padding:12px 16px;border-top:1px solid var(--line);background:#faf6ec}
+  input[type=text]{flex:1;padding:11px 14px;border:1px solid var(--line);border-radius:10px;
     font-size:14.5px;background:#fff;color:var(--ink);outline:none}
-  input[type=text]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(185,139,60,.14)}
-  button{border:0;cursor:pointer}
-  .btn{padding:10px 18px;border-radius:9px;background:var(--cinnabar);color:#fff;font-size:14px;
-    letter-spacing:1px}
-  .btn.ghost{background:#f1e7d2;color:var(--ink);border:1px solid var(--edge)}
+  input[type=text]:focus{border-color:var(--zzu-red);box-shadow:0 0 0 3px rgba(164,35,31,.1)}
+  /* 按钮 */
+  .btn{padding:10px 20px;border:0;border-radius:10px;background:var(--zzu-red);color:#fff;
+    font-size:14px;letter-spacing:1px;cursor:pointer;transition:.15s}
+  .btn:hover{background:var(--zzu-red-deep)}
+  .btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
   .btn:disabled{opacity:.5;cursor:default}
   /* 学情 */
   .pad{padding:18px}
-  .row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
-  .stat{flex:1 1 150px;border:1px solid var(--edge);border-radius:10px;padding:12px 14px;
-    background:#fdf9f0}
-  .stat b{display:block;font-size:24px;line-height:1.2}
-  .stat span{font-size:12.5px;color:var(--ink-soft)}
-  .bar{height:8px;border-radius:5px;background:#e8dcc4;overflow:hidden;margin-top:8px}
-  .bar i{display:block;height:100%;background:var(--gold)}
-  .zt{width:100%;border-collapse:collapse;font-size:13.5px}
-  .zt td{padding:6px 4px;border-bottom:1px dashed var(--edge)}
-  .zt td:last-child{text-align:right;color:var(--ink-soft);white-space:nowrap}
-  h3{font-size:15px;margin:18px 0 8px}
+  .row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+  .stat{flex:1 1 150px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff}
+  .stat b{display:block;font-size:25px;line-height:1.25;color:var(--navy)}
+  .stat span{font-size:12.5px;color:var(--ink-2)}
+  .stat.red b{color:var(--zzu-red)}
+  .bar{height:9px;border-radius:6px;background:#e6dcc8;overflow:hidden;margin-top:8px}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--zzu-red),#c9564f)}
+  h3{font-size:14.5px;margin:20px 0 8px;letter-spacing:.5px}
+  h3 .h-sub{font-weight:400;color:var(--ink-2);font-size:12.5px;margin-left:8px}
+  .zt{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border-radius:10px;overflow:hidden}
+  .zt td{padding:8px 10px;border-bottom:1px solid #efe9db}
+  .zt tr:last-child td{border-bottom:0}
+  .zt td:last-child{text-align:right;color:var(--ink-2);white-space:nowrap}
+  .zt .pb{display:inline-block;width:86px;height:6px;border-radius:4px;background:#eee6d5;
+    overflow:hidden;vertical-align:middle}
+  .zt .pb i{display:block;height:100%;background:var(--gold)}
   ul.tips{margin:0;padding-left:20px;font-size:14px}
-  ul.tips li{margin:5px 0}
-  .tag{display:inline-block;padding:1px 7px;border-radius:999px;background:#f1e7d2;
-    color:var(--ink-soft);font-size:12px;margin-right:5px}
+  ul.tips li{margin:6px 0}
+  .comp{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;
+    background:#fff;border:1px solid var(--line);font-size:13px;margin:0 6px 6px 0}
+  .comp b{color:var(--zzu-red);font-weight:600}
   /* 练习 */
-  .q{border:1px solid var(--edge);border-radius:10px;padding:13px 15px;margin-bottom:12px;
-    background:#fdf9f0}
-  .q p{margin:0 0 9px;font-weight:600}
-  .opt{display:block;width:100%;text-align:left;padding:9px 12px;margin:5px 0;border-radius:8px;
-    border:1px solid var(--edge);background:#fff;color:var(--ink);font-size:14px}
+  .q{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;background:#fff}
+  .q p{margin:0 0 10px;font-weight:600}
+  .q .kind{display:inline-block;font-size:11.5px;letter-spacing:1px;color:#fff;background:var(--navy);
+    border-radius:5px;padding:1px 7px;margin-right:7px}
+  .opt{display:block;width:100%;text-align:left;padding:10px 13px;margin:5px 0;border-radius:9px;
+    border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14px;cursor:pointer}
   .opt:hover{border-color:var(--gold)}
-  .opt.sel{border-color:var(--cinnabar);background:#fdf0ec}
-  .opt.ok{border-color:var(--green);background:#eef6ee}
-  .opt.bad{border-color:var(--cinnabar);background:#fbeceb}
-  .res{font-size:14px;margin-top:6px}
-  footer{margin-top:14px;font-size:12px;color:var(--ink-soft);line-height:1.8}
+  .opt.sel{border-color:var(--zzu-red);background:#fdf1ee}
+  .opt.ok{border-color:var(--ok);background:#eff7f1}
+  .opt.bad{border-color:var(--zzu-red);background:#fbecea}
+  .res{font-size:13.5px;margin-top:8px;color:var(--ink-2)}
+  .res b{color:var(--ink)}
+  footer{margin-top:18px;font-size:12.5px;color:var(--ink-2);line-height:1.9}
+  footer .line{display:flex;gap:10px;flex-wrap:wrap}
+  footer .dot{color:var(--line)}
+  @media (max-width:620px){
+    .zzu{font-size:15px;letter-spacing:2px}
+    h1{font-size:21px}
+    .ctx-in{gap:10px;font-size:12.5px}
+    .log{max-height:none}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>甲骨文助教</h1>
-    <span class="seal">AI 智能体</span>
-    <span class="sub" id="meta" style="margin:0"></span>
-  </header>
-  <p class="sub">问字形怎么来的、某个字怎么打、王邑图里代表什么；再让助教看学情、出题、评讲。每条回答都附原文出处。</p>
 
-  <div class="tabs">
-    <button class="tab on" data-tab="chat">问答</button>
-    <button class="tab" data-tab="diag">学情</button>
-    <button class="tab" data-tab="quiz">练习</button>
+<div class="top">
+  <div class="top-in">
+    <span class="zzu"><i>郑</i>郑州大学</span>
+    <span class="top-sep"></span>
+    <span class="app-name">甲骨文 AI 助教</span>
+    <div class="top-right">
+      <span class="contest">首届 AI 智能体创新应用大赛 · 参赛作品</span>
+    </div>
+  </div>
+</div>
+
+<div class="ctx">
+  <div class="ctx-in">
+    <span class="pill">A2 · AI 助教</span>
+    <span>院系：<b>文学院</b></span>
+    <span>课程：<b>《汉字与中国文化》通识课</b>（示例课程，可配置）</span>
+    <span>班级：<b>2026 秋 · 通识 3 班</b>（示例）</span>
+    <span class="pill" id="meta">知识库加载中…</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>甲骨文 <em>AI 助教</em></h1>
+    <p>面向郑大汉字通识课：学生问字形、问打法，助教答得出来源；再按学情诊断、自动组卷、评讲回写——教、学、评一条线走完。</p>
   </div>
 
-  <!-- 问答 -->
-  <section class="panel" id="p-chat">
+  <nav>
+    <button class="tab on" data-tab="chat">问答</button>
+    <button class="tab" data-tab="diag">学情诊断</button>
+    <button class="tab" data-tab="quiz">随堂练习</button>
+  </nav>
+
+  <section class="card" id="p-chat">
+    <div class="card-h"><h2>向助教提问</h2>
+      <span class="tag">答案只来自课程知识库，附原文出处</span></div>
+    <div class="quick" id="quick"></div>
     <div class="log" id="log"></div>
     <form id="f">
       <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off">
-      <button class="btn" type="submit" id="send">问</button>
+      <button class="btn" type="submit" id="send">提问</button>
     </form>
   </section>
 
-  <!-- 学情 -->
-  <section class="panel hide" id="p-diag">
+  <section class="card hide" id="p-diag">
+    <div class="card-h"><h2>学情诊断</h2>
+      <span class="tag" id="diagTag">按课程知识库 146 个字计</span></div>
     <div class="pad" id="diagBox">加载中…</div>
   </section>
 
-  <!-- 练习 -->
-  <section class="panel hide" id="p-quiz">
+  <section class="card hide" id="p-quiz">
+    <div class="card-h"><h2>随堂练习</h2>
+      <span class="tag">按学情出题 · 交卷即评讲</span></div>
     <div class="pad">
-      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px">
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px">
         <button class="btn" id="mk">按学情出一套题（3 题）</button>
-        <span class="sub" id="quizHint" style="margin:0"></span>
+        <span style="font-size:12.5px;color:var(--ink-2)" id="quizHint"></span>
       </div>
       <div id="paper"></div>
       <div id="gradeBox"></div>
@@ -120,8 +192,13 @@
   </section>
 
   <footer>
-    答案只来自本地知识库，<b>不编造</b>；问不到会直接说没有。<br>
-    字形数据：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946。
+    <div class="line">
+      <span><b>郑州大学</b> 首届 AI 智能体创新应用大赛 · 参赛作品</span>
+      <span class="dot">·</span><span>非商业教学演示</span>
+      <span class="dot">·</span>
+      <span>字形数据：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946</span>
+    </div>
+    <div class="line"><span>答案不编造：问不到会直接说没有；王邑地图为教学示意图，非考古复原。</span></div>
   </footer>
 </div>
 
@@ -130,17 +207,14 @@ const $ = s => document.querySelector(s);
 const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c;
   if (x != null) n.textContent = x; return n; };
 
-/* ---------- 选项卡 ---------- */
 document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
   document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === t));
-  ['chat','diag','quiz'].forEach(k =>
-    $('#p-' + k).classList.toggle('hide', k !== t.dataset.tab));
+  ['chat','diag','quiz'].forEach(k => $('#p-' + k).classList.toggle('hide', k !== t.dataset.tab));
   if (t.dataset.tab === 'diag') loadDiag();
 });
 
-/* ---------- 问答 ---------- */
 const log = $('#log'), form = $('#f'), input = $('#q'), send = $('#send');
-function addAsk(q){ const m = el('div','msg ask'); m.appendChild(el('div','who','你'));
+function addAsk(q){ const m = el('div','msg ask'); m.appendChild(el('div','who','学生'));
   m.appendChild(el('div','bubble',q)); log.appendChild(m); log.scrollTop = 1e9; }
 function addAnswer(a){
   const m = el('div','msg ans'); m.appendChild(el('div','who','助教'));
@@ -167,7 +241,6 @@ async function ask(q){
 }
 form.addEventListener('submit', e => { e.preventDefault(); ask(input.value); });
 
-/* ---------- 学情 ---------- */
 async function loadDiag(){
   const box = $('#diagBox'); box.textContent = '加载中…';
   try{
@@ -175,37 +248,44 @@ async function loadDiag(){
     if (d.error){ box.textContent = '出错了：' + d.error; return; }
     box.innerHTML = '';
     const row = el('div','row');
-    const mk = (v, s) => { const c = el('div','stat');
+    const mk = (v,s,red) => { const c = el('div','stat' + (red?' red':''));
       c.appendChild(el('b',null,v)); c.appendChild(el('span',null,s)); return c; };
-    row.appendChild(mk(d.level, '学情等级'));
-    row.appendChild(mk(d.coverage + '%', '覆盖率（' + d.learned + '/' + d.total_chars + ' 字）'));
-    row.appendChild(mk(d.wrong_top.length, '答错过的字'));
-    row.appendChild(mk(d.weak_comps.length, '待补构件'));
+    row.appendChild(mk(d.level,'学情等级'));
+    row.appendChild(mk(d.coverage + '%','覆盖率（' + d.learned + '/' + d.total_chars + ' 字）'));
+    row.appendChild(mk(d.wrong_top.length,'错题字数', true));
+    row.appendChild(mk(d.weak_comps.length,'待补构件'));
     box.appendChild(row);
 
-    const barWrap = el('div');
-    barWrap.appendChild(el('div','sub','覆盖进度'));
-    const bar = el('div','bar'); const i = el('i'); i.style.width = Math.min(100,d.coverage) + '%';
-    bar.appendChild(i); barWrap.appendChild(bar); box.appendChild(barWrap);
+    const bw = el('div'); bw.appendChild(el('div',null,'课程覆盖进度'));
+    const bar = el('div','bar'); const i = el('i');
+    i.style.width = Math.min(100,d.coverage) + '%';
+    bar.appendChild(i); bw.appendChild(bar); box.appendChild(bw);
 
     if (d.zones.length){
-      box.appendChild(el('h3',null,'分片掌握'));
+      const h = el('h3',null,'分片掌握'); h.appendChild(el('span','h-sub','对应课程的五个识字单元'));
+      box.appendChild(h);
       const tb = el('table','zt');
       d.zones.forEach(z => {
         const tr = el('tr');
         tr.appendChild(el('td',null,z.name));
         tr.appendChild(el('td',null,z.done + ' / ' + z.total));
-        tr.appendChild(el('td',null,z.pct + '%'));
-        tb.appendChild(tr);
+        const td = el('td');
+        const pb = el('div','pb'); const bi = el('i');
+        bi.style.width = Math.max(2,z.pct) + '%'; pb.appendChild(bi);
+        td.appendChild(pb);
+        const sp = el('span',null,' ' + z.pct + '%'); sp.style.marginLeft = '8px';
+        td.appendChild(sp); tr.appendChild(td); tb.appendChild(tr);
       });
       box.appendChild(tb);
     }
 
     if (d.weak_comps.length){
-      box.appendChild(el('h3',null,'构件短板（第三关的破防部位）'));
+      const h = el('h3',null,'构件短板'); h.appendChild(el('span','h-sub','第三关的破防部位'));
+      box.appendChild(h);
       const p = el('div');
       d.weak_comps.forEach(c => {
-        p.appendChild(el('span','tag',c.comp + ' 缺 ' + c.missing.length));
+        const t = el('span','comp'); t.appendChild(el('b',null,c.comp));
+        t.appendChild(el('span',null,'缺 ' + c.missing.length + ' 字')); p.appendChild(t);
       });
       box.appendChild(p);
     }
@@ -217,7 +297,6 @@ async function loadDiag(){
   }catch(e){ box.textContent = '连不上服务。'; }
 }
 
-/* ---------- 练习 ---------- */
 let PAPER = null;
 $('#mk').onclick = async () => {
   const box = $('#paper'); box.textContent = '出题中…'; $('#gradeBox').textContent = '';
@@ -225,25 +304,24 @@ $('#mk').onclick = async () => {
     PAPER = await (await fetch('/api/quiz',{method:'POST',
       headers:{'Content-Type':'application/json'},body:JSON.stringify({n:3})})).json();
     if (PAPER.error){ box.textContent = '出错了：' + PAPER.error; return; }
-    $('#quizHint').textContent = '共 ' + PAPER.count + ' 题 · 一题一型（构件/字义/打法）· 按学情优先考答错过的字';
+    $('#quizHint').textContent = '共 ' + PAPER.count + ' 题 · 构件 / 字义 / 打法各一 · 优先考答错过的字';
     box.innerHTML = '';
     PAPER.items.forEach((it, qi) => {
       const q = el('div','q');
-      q.appendChild(el('p',null, (qi+1) + '. ' + it.question));
+      const p = el('p'); p.appendChild(el('span','kind', it.type_label));
+      p.appendChild(document.createTextNode((qi+1) + '. ' + it.question));
+      q.appendChild(p);
       it.options.forEach((opt, oi) => {
         const b = el('button','opt', opt); b.type = 'button';
-        b.dataset.qi = qi; b.dataset.oi = oi;
         b.onclick = () => {
           q.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
-          b.classList.add('sel');
-          PAPER.items[qi]._choice = oi;
+          b.classList.add('sel'); PAPER.items[qi]._choice = oi;
         };
         q.appendChild(b);
       });
       box.appendChild(q);
     });
-    const submit = el('button','btn','提交评阅');
-    submit.onclick = () => doGrade();
+    const submit = el('button','btn','提交评阅'); submit.onclick = () => doGrade();
     box.appendChild(submit);
   }catch(e){ box.textContent = '连不上服务。'; }
 };
@@ -251,9 +329,7 @@ $('#mk').onclick = async () => {
 async function doGrade(){
   if (!PAPER) return;
   const answers = PAPER.items.map(it => ({char: it.char, choice: it._choice}));
-  if (answers.some(a => a.choice == null)){
-    $('#gradeBox').textContent = '还有题没答。'; return;
-  }
+  if (answers.some(a => a.choice == null)){ $('#gradeBox').textContent = '还有题没答。'; return; }
   const g = await (await fetch('/api/grade',{method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({quiz:PAPER, answers})})).json();
@@ -262,7 +338,6 @@ async function doGrade(){
   const head = el('div','res');
   head.innerHTML = '<b>得分 ' + g.score + '</b>（' + g.correct + '/' + g.total + '）· ' + g.advice;
   box.appendChild(head);
-
   document.querySelectorAll('#paper .q').forEach((q, qi) => {
     const r = g.results[qi]; if (!r) return;
     q.querySelectorAll('.opt').forEach((b, oi) => {
@@ -275,22 +350,14 @@ async function doGrade(){
   loadDiag();
 }
 
-/* ---------- 启动 ---------- */
-fetch('/api/health').then(r => r.json()).then(h => {
-  $('#meta').textContent = '知识库 ' + h.kb_rows + ' 条 / 覆盖 ' + h.chars + ' 字 · ' +
-    (h.llm ? '已接入大模型' : '本地检索模式');
-}).catch(()=>{});
 ['日为什么写成圆的','家为什么是屋顶下有猪','虎怎么打','宀是什么意思'].forEach(q => {
-  const b = el('button','tag', q); b.type='button';
-  b.onclick = () => ask(q);
-  b.style.marginBottom = '8px';
-  const wrap = el('div'); wrap.style.padding = '10px 16px 0';
-  b.style.cursor = 'pointer';
-  if (!document.querySelector('#quick')){
-    const w = el('div'); w.id = 'quick'; w.style.padding = '10px 16px 0'; $('#log').before(w);
-  }
-  document.querySelector('#quick').appendChild(b);
+  const b = el('button','q-chip', q); b.type = 'button'; b.onclick = () => ask(q);
+  $('#quick').appendChild(b);
 });
+fetch('/api/health').then(r => r.json()).then(h => {
+  $('#meta').textContent = '知识库 ' + h.kb_rows + ' 条 / ' + h.chars + ' 字 · ' +
+    (h.llm ? '大模型已接入' : '本地检索模式');
+}).catch(()=>{});
 ask('日为什么写成圆的');
 </script>
 </body>
