@@ -153,6 +153,30 @@ def test_classify_locally():
     return not bad
 
 
+def test_prompt_locally():
+    """提示词自身的硬约束，防止以后改回去：
+    ① 格式必须按问题类型分派，不能所有问题套同一套小标签；
+    ② 不能出现井号/星号——前端是纯文本 pre-wrap，写了只会把符号露给学生。
+    """
+    if os.path.join(ROOT, "src") not in sys.path:
+        sys.path.insert(0, os.path.join(ROOT, "src"))
+    import llm
+    s = llm.SYSTEM
+    bad = []
+    if "先判断问题类型" not in s:
+        bad.append("缺「按问题类型选格式」")
+    if "看字形：" in s:
+        bad.append("仍把「看字形」写成固定标签")
+    for ch, name in (("#", "井号"), ("*", "星号")):
+        if ch in s:
+            bad.append("提示词自身含%s，模型会照着学" % name)
+    if "A、B、C、D" not in s:
+        bad.append("出题未规定选项用 A/B/C/D")
+    print("  [提示词] 格式按类型分派 + 无 Markdown 符号 %s"
+          % ("✓" if not bad else "✗ " + "；".join(bad)))
+    return not bad
+
+
 def main():
     mock = ThreadingHTTPServer(("127.0.0.1", MOCK_PORT), Mock)
     import threading
@@ -207,6 +231,7 @@ def main():
 
         ok &= test_tools_locally()
         ok &= test_classify_locally()
+        ok &= test_prompt_locally()
 
         print("\n  结论:", "✓ agent 全链路通过（工具/多轮/三态/出题）" if ok else "✗ 有断言未通过")
         return 0 if ok else 1
