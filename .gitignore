@@ -1,4 +1,8 @@
 __pycache__/
 _shots/prof/
+_shots/zzu/prof/
+out/pdfprof/
+out/_pdfshot.js
 *.pyc
 data/kb.jsonl
+out/申报表预览.pdf
