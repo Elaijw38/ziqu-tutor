@@ -224,3 +224,14 @@ ziqu-tutor/
 - `AGENT_HANDOFF.md` — 接口契约、数据结构、踩坑记录（给接手的工程师）
 - `docs/演示脚本.md` — 答辩演示的提问顺序与讲解点
 - `docs/项目进展报告.md` — 项目阶段记录
+
+---
+
+## 许可说明
+
+- **本项目代码**：MIT License，见 [LICENSE](LICENSE)。
+- **甲骨字形数据**：Oracle Bone Glyphs: Parametric Vector Dataset (v0.3)，
+  CC BY 4.0，DOI [10.5281/zenodo.22467946](https://doi.org/10.5281/zenodo.22467946)；
+  使用时保留署名，不得删除 `data/upstream/ATTRIBUTION.md`。
+- **郑州大学校徽**：版权归郑州大学所有，仅用于本校比赛作品的非商业展示。
+- **课程材料与插图**：项目组自建，标注为教学示意，非考古复原。
