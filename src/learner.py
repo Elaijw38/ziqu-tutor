@@ -58,6 +58,8 @@ _LOCK = threading.RLock()
 
 # attempts 只用于算错题排行，保留最近若干条足够；无上限会随学期无限膨胀
 MAX_ATTEMPTS = 500
+# 证据表同理：诊断只关心近期作答，2000 条足够一个学期的课堂使用
+MAX_EVIDENCE = 2000
 
 # 最近一次读档失败的原因（坏行/权限问题），供 /api/health 暴露，不再静默清零
 LAST_LOAD_ERROR = ""
@@ -68,6 +70,42 @@ CREATE TABLE IF NOT EXISTS learners (
     data    TEXT NOT NULL,
     updated REAL NOT NULL DEFAULT 0
 );
+
+-- 题目与评分库：题目生成时写入，评阅时以这里为准（客户端回传的题目不作数）
+CREATE TABLE IF NOT EXISTS quiz_items (
+    item_id     TEXT PRIMARY KEY,
+    quiz_id     TEXT NOT NULL,
+    vid         TEXT NOT NULL DEFAULT '',
+    kp_id       TEXT NOT NULL DEFAULT '',
+    char        TEXT NOT NULL DEFAULT '',
+    kind        TEXT NOT NULL DEFAULT '',
+    difficulty  TEXT NOT NULL DEFAULT '',
+    question    TEXT NOT NULL DEFAULT '',
+    options     TEXT NOT NULL DEFAULT '[]',
+    answer      TEXT NOT NULL DEFAULT '',
+    answer_index INTEGER NOT NULL DEFAULT -1,
+    source      TEXT NOT NULL DEFAULT '',
+    ts          REAL NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS ix_items_quiz ON quiz_items(quiz_id);
+
+-- 学习证据库：一次作答一行，指向题目与知识点；无姓名、无学号，只有匿名 vid
+CREATE TABLE IF NOT EXISTS attempts (
+    attempt_id TEXT PRIMARY KEY,
+    vid        TEXT NOT NULL,
+    quiz_id    TEXT NOT NULL DEFAULT '',
+    item_id    TEXT NOT NULL DEFAULT '',
+    kp_id      TEXT NOT NULL DEFAULT '',
+    char       TEXT NOT NULL DEFAULT '',
+    kind       TEXT NOT NULL DEFAULT '',
+    ok         INTEGER NOT NULL DEFAULT 0,
+    chosen     TEXT NOT NULL DEFAULT '',
+    correct    TEXT NOT NULL DEFAULT '',
+    ts         REAL NOT NULL DEFAULT 0,
+    seeded     INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS ix_att_vid ON attempts(vid, ts);
+CREATE INDEX IF NOT EXISTS ix_att_quiz ON attempts(vid, quiz_id);
 """
 
 # 已经建过表的库路径，避免每次连接都跑一遍 DDL
@@ -214,14 +252,22 @@ def save(d, vid=DEFAULT_VID):
 
 @contextlib.contextmanager
 def transaction(vid=DEFAULT_VID):
-    """读-改-写全程持写锁：并发交卷不会丢更新。"""
+    """读-改-写全程持写锁：并发交卷不会丢更新。
+
+    期间用 stage_attempt(d, rec) 登记的作答，会在提交前写进 attempts 表，
+    和 JSON 学习记录保持同一事务——不会出现「分记了、证据没记」的半截状态。
+    """
     vid = normalize_vid(vid)
     with _LOCK:
         conn = _connect()
         try:
             conn.execute("BEGIN IMMEDIATE")
             d = _read(conn, vid)
+            d["_new_attempts"] = []
             yield d
+            for rec in d.pop("_new_attempts", []) or []:
+                _insert_attempt(conn, vid, rec)
+            _trim_evidence(conn, vid)
             _write(conn, vid, d)
             conn.commit()
         except BaseException:
@@ -245,31 +291,55 @@ def has_record(vid):
 
 
 def reset(vid):
-    """清空这一个访客的记录（不动别人的）。"""
+    """清空这一个访客的记录（不动别人的，也不动题目库本身）。"""
     vid = normalize_vid(vid)
     with _LOCK:
         conn = _connect()
         try:
+            conn.execute("BEGIN IMMEDIATE")
             conn.execute("DELETE FROM learners WHERE vid=?", (vid,))
+            conn.execute("DELETE FROM attempts WHERE vid=?", (vid,))
+            conn.execute("DELETE FROM quiz_items WHERE vid=?", (vid,))
+            conn.commit()
+        except BaseException:
+            conn.rollback()
+            raise
         finally:
             conn.close()
 
 
 def seed_demo(vid):
-    """把示例学情复制给当前访客（用于课堂演示；标记 seeded=true 以便提示）。"""
+    """把示例学情复制给当前访客（用于课堂演示；标记 seeded=true 以便提示）。
+
+    示例的作答证据也一并复制，学情页才能按知识点展示（否则只有数字没有证据）。
+    """
     vid = normalize_vid(vid)
     if vid == DEMO_VID:
         return 0
+    # demo 桶可能还是旧 JSON 导入的：先迁出证据，再复制（不能在事务里另开连接）
+    migrate_evidence(DEMO_VID)
     with _LOCK:
         conn = _connect()
         try:
+            conn.execute("BEGIN IMMEDIATE")
             row = conn.execute("SELECT data FROM learners WHERE vid=?", (DEMO_VID,)).fetchone()
             if not row:
+                conn.rollback()
                 return 0
             d = _norm(json.loads(row[0]))
             d["seeded"] = True
-            conn.execute("BEGIN IMMEDIATE")
+            d["evidence_version"] = 2
             _write(conn, vid, d)
+            conn.execute("DELETE FROM attempts WHERE vid=?", (vid,))
+            demo = conn.execute(
+                "SELECT quiz_id,item_id,kp_id,char,kind,ok,chosen,correct,ts "
+                "FROM attempts WHERE vid=?", (DEMO_VID,)).fetchall()
+            for i, r in enumerate(demo):
+                _insert_attempt(conn, vid, {
+                    "attempt_id": "demo.%s.%d" % (vid[:8], i),
+                    "quiz_id": r[0], "item_id": r[1], "kp_id": r[2], "char": r[3],
+                    "kind": r[4], "ok": bool(r[5]), "chosen": r[6], "correct": r[7],
+                    "ts": r[8], "seeded": True})
             conn.commit()
             return len(d.get("attempts") or [])
         except BaseException:
@@ -295,6 +365,194 @@ def stats(vid=DEFAULT_VID):
                     "updated": (row[0] if row else 0),
                     "visitors": visitors,
                     "error": LAST_LOAD_ERROR}
+        finally:
+            conn.close()
+
+
+# ---------------- 题目与评分库 / 学习证据库 ----------------
+# 四库里的这两库落在同一个 learners.db：不新建独立数据库，靠 item_id / attempt_id 关联。
+
+QUIZ_TTL = 6 * 3600      # 题目留 6 小时：够复盘一节课，又不会无限涨
+
+
+def save_quiz(quiz_id, vid, items):
+    """题目生成后立刻入库。评阅时以库里的标准答案为准。"""
+    vid = normalize_vid(vid)
+    now = time.time()
+    with _LOCK:
+        conn = _connect()
+        try:
+            conn.execute("BEGIN IMMEDIATE")
+            for it in items or []:
+                conn.execute(
+                    "INSERT OR REPLACE INTO quiz_items(item_id,quiz_id,vid,kp_id,char,kind,"
+                    "difficulty,question,options,answer,answer_index,source,ts) "
+                    "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (it.get("item_id") or "", quiz_id, vid, it.get("kp_id") or "",
+                     it.get("char") or "", it.get("type") or it.get("kind") or "",
+                     it.get("difficulty") or "", it.get("question") or "",
+                     json.dumps(it.get("options") or [], ensure_ascii=False),
+                     it.get("answer") or "", int(it.get("answer_index", -1)),
+                     it.get("source") or "", now))
+            conn.execute("DELETE FROM quiz_items WHERE ts < ?", (now - QUIZ_TTL,))
+            conn.commit()
+        except BaseException:
+            conn.rollback()
+            raise
+        finally:
+            conn.close()
+
+
+def get_quiz(quiz_id):
+    """取回一套题（含标准答案，只在服务端用）。返回 None 表示已过期或不存在。"""
+    if not quiz_id:
+        return None
+    with _LOCK:
+        conn = _connect()
+        try:
+            rows = conn.execute(
+                "SELECT item_id,quiz_id,kp_id,char,kind,difficulty,question,options,"
+                "answer,answer_index,source FROM quiz_items WHERE quiz_id=? ORDER BY item_id",
+                (quiz_id,)).fetchall()
+        finally:
+            conn.close()
+    if not rows:
+        return None
+    items = []
+    for r in rows:
+        try:
+            options = json.loads(r[7] or "[]")
+        except Exception:
+            options = []
+        items.append({"item_id": r[0], "quiz_id": r[1], "kp_id": r[2], "char": r[3],
+                      "type": r[4], "difficulty": r[5], "question": r[6],
+                      "options": options, "answer": r[8], "answer_index": r[9],
+                      "source": r[10]})
+    return {"quiz_id": quiz_id, "items": items, "count": len(items)}
+
+
+def quiz_total(quiz_id):
+    if not quiz_id:
+        return 0
+    with _LOCK:
+        conn = _connect()
+        try:
+            return conn.execute("SELECT COUNT(*) FROM quiz_items WHERE quiz_id=?",
+                                (quiz_id,)).fetchone()[0]
+        finally:
+            conn.close()
+
+
+def latest_quiz(vid=DEFAULT_VID):
+    """最近一次有作答的套题；没有作答时退回最近生成的一套。"""
+    vid = normalize_vid(vid)
+    with _LOCK:
+        conn = _connect()
+        try:
+            row = conn.execute(
+                "SELECT quiz_id FROM attempts WHERE vid=? AND quiz_id<>'' "
+                "ORDER BY ts DESC LIMIT 1", (vid,)).fetchone()
+            if not row:
+                row = conn.execute(
+                    "SELECT quiz_id FROM quiz_items WHERE vid=? ORDER BY ts DESC LIMIT 1",
+                    (vid,)).fetchone()
+            return row[0] if row else ""
+        finally:
+            conn.close()
+
+
+def _insert_attempt(conn, vid, rec):
+    conn.execute(
+        "INSERT OR REPLACE INTO attempts(attempt_id,vid,quiz_id,item_id,kp_id,char,kind,"
+        "ok,chosen,correct,ts,seeded) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
+        (rec.get("attempt_id") or new_vid(), vid, rec.get("quiz_id") or "",
+         rec.get("item_id") or "", rec.get("kp_id") or "", rec.get("char") or "",
+         rec.get("kind") or rec.get("type") or "", 1 if rec.get("ok") else 0,
+         rec.get("chosen") or "", rec.get("correct") or "",
+         float(rec.get("ts") or time.time()), 1 if rec.get("seeded") else 0))
+
+
+def _trim_evidence(conn, vid):
+    """证据只留最近 MAX_EVIDENCE 条：诊断看的是近期作答，不保留全学期明细。"""
+    n = conn.execute("SELECT COUNT(*) FROM attempts WHERE vid=?", (vid,)).fetchone()[0]
+    if n <= MAX_EVIDENCE:
+        return
+    conn.execute(
+        "DELETE FROM attempts WHERE vid=? AND attempt_id NOT IN "
+        "(SELECT attempt_id FROM attempts WHERE vid=? ORDER BY ts DESC LIMIT ?)",
+        (vid, vid, MAX_EVIDENCE))
+
+
+def stage_attempt(d, rec):
+    """在 transaction() 里登记一条作答证据：结束时与 JSON 学习记录一起提交。
+
+    调用方已经持有写锁，这里不另开连接，避免 SQLite 的嵌套事务报错。
+    """
+    if not isinstance(d.get("_new_attempts"), list):
+        d["_new_attempts"] = []
+    d["_new_attempts"].append(rec)
+
+
+def list_attempts(vid=DEFAULT_VID, quiz_id="", limit=500):
+    """按时间顺序返回作答证据。旧 JSON 记录会先迁移成带 kp_id 的行。"""
+    vid = normalize_vid(vid)
+    migrate_evidence(vid)
+    # 先取最近 N 条，再按时间正序返回——直接 ASC LIMIT 会在数据多时只拿到最早的
+    sql = ("SELECT * FROM (SELECT attempt_id,quiz_id,item_id,kp_id,char,kind,ok,chosen,"
+           "correct,ts,seeded FROM attempts WHERE vid=?")
+    args = [vid]
+    if quiz_id:
+        sql += " AND quiz_id=?"
+        args.append(quiz_id)
+    sql += " ORDER BY ts DESC LIMIT ?) ORDER BY ts ASC"
+    args.append(int(limit))
+    with _LOCK:
+        conn = _connect()
+        try:
+            rows = conn.execute(sql, args).fetchall()
+        finally:
+            conn.close()
+    return [{"attempt_id": r[0], "quiz_id": r[1], "item_id": r[2], "kp_id": r[3],
+             "char": r[4], "kind": r[5], "ok": bool(r[6]), "chosen": r[7],
+             "correct": r[8], "ts": r[9], "seeded": bool(r[10])} for r in rows]
+
+
+def migrate_evidence(vid=DEFAULT_VID):
+    """把旧 JSON 里的 attempts 迁成带 kp_id 的证据行——只跑一次，标记在 JSON 里。
+
+    旧记录没有 item_id / 选择项，无法凭空补出来：item_id 记成 legacy.*，
+    chosen/correct 留空，诊断时这些题的错因一律标「暂无法归因」。
+    """
+    import curriculum
+    vid = normalize_vid(vid)
+    with _LOCK:
+        conn = _connect()
+        try:
+            conn.execute("BEGIN IMMEDIATE")
+            d = _read(conn, vid)
+            if int(d.get("evidence_version") or 1) >= 2:
+                conn.commit()
+                return 0
+            seeded = bool(d.get("seeded"))
+            n = 0
+            for i, a in enumerate(d.get("attempts") or []):
+                if not isinstance(a, dict):
+                    continue
+                kind = a.get("kind") or a.get("type") or ""
+                _insert_attempt(conn, vid, {
+                    "attempt_id": "legacy.%s.%d" % (vid[:8], i),
+                    "quiz_id": "", "item_id": "", "kp_id": curriculum.kp_for_type(kind),
+                    "char": a.get("char") or "", "kind": kind, "ok": bool(a.get("ok")),
+                    "chosen": "", "correct": "",
+                    "ts": a.get("ts") or 0, "seeded": seeded})
+                n += 1
+            d["evidence_version"] = 2
+            _write(conn, vid, d)
+            conn.commit()
+            return n
+        except BaseException:
+            conn.rollback()
+            raise
         finally:
             conn.close()
 

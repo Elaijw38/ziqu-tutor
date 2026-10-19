@@ -51,8 +51,10 @@ src/
   server.py      HTTP 服务（标准库），5 个接口 + 静态页
   ask.py         问答编排：Dify → 大模型 agent → 本地抽取式 → 拒答（逐级降级）
   retrieval.py   中文检索：字 1-gram + 2-gram + TF-IDF；get_kb_meta 供诊断
-  learner.py     学情：SQLite 存取（按访客 vid 分人）+ 诊断（作答正确率 / 能力维度 / 课程字覆盖 / 高频错字 / 错题构件 / 建议）
-  quiz.py        出题（题型轮转、错题优先）+ 评阅（讲解 + 回写）
+  learner.py     学情存取：SQLite（按访客 vid 分人）+ 题目库 quiz_items + 证据库 attempts + 旧数据迁移
+  curriculum.py  课程知识点库 / 诊断规则库的加载（data/curriculum.json、data/diagnosis.json）
+  learning.py    四库联动诊断：按知识点的作答统计、阈值判状态、错因归因与证据
+  quiz.py        出题（题型轮转、错题优先、可指定知识点）+ 评阅（服务端判分 + 讲解 + 写证据）
   dify.py        Dify 接入（原生 chat-messages，解析 retriever_resources）
   llm.py         OpenAI 兼容客户端 + 工具调用 agent：search_kb / get_learner_state / generate_quiz / submit_answers
   build_kb.py    三源合并知识库：上游字形全集 + 通识/字源 + 课程案例（字趣只读）
@@ -63,14 +65,19 @@ data/
   kb.jsonl       知识库 1,391 条 / 1,179 字（每条带 source）
   upstream/      上游 1,203 字形数据集 + ATTRIBUTION.md（CC BY 4.0）
   general.jsonl  通识 24 条 + 字源 29 条（人工整理，逐条标出处）
-  learners.db    学情库（SQLite）：learners(vid, data JSON, updated)，一个访客一行
+  curriculum.json 课程知识点库：课程目标、5 个能力维度、6 个知识点、题型/难度对应
+  diagnosis.json  诊断与干预库：阈值、状态文案、错因规则、补练动作
+  learners.db    学情库（SQLite，一个库三张表）
+                  learners(vid, data JSON, updated)      一人一行
+                  quiz_items(item_id, quiz_id, kp_id, …) 题目与评分库
+                  attempts(attempt_id, vid, item_id, kp_id, ok, ts, …) 学习证据库
   learner.json   旧版单文件，只在建库时导入成 demo 桶（示例），之后不再写入
   corrupt/       坏行备份（读不出来时留证据，不会静默清零）
 out/
   dify-kb-merged.md   Dify 用单文件知识库（1,391 段，分隔符 ---）
-  dify-prompt-v3.txt  Dify LLM 节点提示词（v4，含通识与字形示例）
+  dify-prompt-v3.txt  Dify LLM 节点提示词（v5，回答格式按问题类型分派）
   dify-appearance.txt Dify 开场白与建议问题文案
- 申报表-郑大甲骨文AI助教.docx  已填写的申报表（个人信息留空待填）
+  申报表-郑大甲骨文AI助教.docx  已填写的申报表（个人信息留空待填）
 ```
 
 ---
@@ -79,11 +86,14 @@ out/
 
 | 方法 | 路径 | request | response 关键字段 |
 |---|---|---|---|
-| GET | `/api/health` | — | `kb_rows, chars, course_chars, llm, model, dify, dify_error, store{attempts,learned,error}` |
-| GET | `/api/diagnose` | — | `coverage, level, total_chars(课程字表), lexicon_chars(总字表), attempts_total, accuracy, recent{n,acc}, by_kind[], weak_comps[], wrong_top[], suggestions[]`（不再有 `zones`/`weakest_zone`：按王邑区域分类不是学习诊断维度） |
+| GET | `/api/health` | — | `kb_rows, chars, course_chars, llm, model, dify, dify_error, store{attempts,learned,seeded,visitors,error}`（不再输出 `llm_base`/`dify_base` 这类部署配置） |
+| GET | `/api/diagnose` | `?quiz_id=`（可选） | `overview{range_type,range_text,quiz_id,answered,total_items,correct,at_text,basis,seeded}, knowledge_points[{kp_id,name,dimension_name,status_key,status,status_hint,answered,ok,wrong,accuracy,evidence_level,has_items,available_chars,wrong_chars,in_this_practice}], wrong_items[{attempt_id,item_id,char,kp,question,your,right,why,cause,attributed,legacy}], causes[{cause_id,name,count,evidence[]}], actions[{text,cta,knowledge_point_id,n}]` + 兼容旧字段 `coverage,level,learned,total_chars,lexicon_chars,attempts_total,accuracy,recent,by_kind,weak_comps,wrong_top,suggestions,scope,seeded` |
 | POST | `/api/ask` | `{question, history?, conversation_id?, session_id?}` | `answer, citations[{id,source,title?,snippet?}], status(answer/refuse/clarify), refused, trace[], rounds, mode(dify/agent/extractive/refuse)` |
-| POST | `/api/quiz` | `{n,seed}` | `items[{char,type,question,options[],answer,answer_index}]` |
-| POST | `/api/grade` | `{quiz,answers[{char,choice}]}` | `score, results[{ok,your,right,why}], advice`（并写入 attempts） |
+| POST | `/api/quiz` | `{n,seed?,kp_id?}` | `quiz_id, items[{item_id,kp_id,kp_name,difficulty,difficulty_label,char,type,question,options[],answer,answer_index,source}]`；`kp_id` 无对应题型时返回 400 与 `error` |
+| POST | `/api/grade` | `{quiz_id, answers[{item_id,char?,choice}]}`（旧调用可继续用 `{quiz,answers}`） | `score, correct, total, by_kp[], results[{attempt_id,item_id,kp_id,kp_name,ok,your,right,why,source}], advice`；`quiz_id` 已过期返回 410 |
+
+评阅以服务端 `quiz_items` 中保存的答案为准：带 `quiz_id` 时忽略客户端回传的题目，
+避免改请求里的 `answer_index` 拿满分。
 
 完整示例见 `workbuddy.handoff.json` 的 `api` 段。
 

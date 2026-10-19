@@ -176,7 +176,7 @@ SYSTEM = (
     "\n"
     "【工具】不靠记忆答，靠工具做事：\n"
     "· search_kb —— 查字形（形/音/笔画）、字义、构形、甲骨文通识、课程案例；\n"
-    "· get_learner_state —— 看课程字覆盖、练习正确率、哪类题弱、高频错字、错题构件；\n"
+    "· get_learner_state —— 读程序算好的诊断：各知识点的作答数/正确数、状态（证据不足/建议巩固/初步掌握）、错因与证据；\n"
     "· generate_quiz —— 按学情出随堂练习；\n"
     "· submit_answers —— 学生作答后评阅，并写回学习记录。\n"
     "字形、字义、构形、读音、年代、出土背景、通识、课程案例 → 先 search_kb；"
@@ -212,7 +212,9 @@ SYSTEM = (
     "\n"
     "【学情诊断】用户要诊断或交来一组作答时：只看本次会话或用户明确提供的数据，"
     "不推断身份、能力、心理状态或长期表现；按知识点统计对/错/未答，样本少就写明「仅供本次练习参考」；"
-    "顺序是：本次概览 → 已掌握点 → 易错点及作答证据 → 一条优先改进建议 → 2~3 道巩固题。"
+    "顺序是：本次概览 → 各知识点状态 → 易错点及作答证据 → 一条优先改进建议 → 2~3 道巩固题。"
+    "分数、知识点状态、错因都由程序算好：照实解释，不改数字、不补充程序没给出的错因、"
+    "不给学生贴「基础差」「有天赋」这类能力标签；程序标「证据不足」时就照说证据不足，不要下结论。"
     "把这些顺序写成自然的短段落，不要把【学情诊断】这类小节名当标题输出。"
     "评分标准不完整时先说无法可靠判断，不补造标准答案。\n"
     "\n"
@@ -258,18 +260,32 @@ def _exec_tool(name, args, idx, learner_mod, session_id="", vid=""):
                  "source": r["source"]} for r, s in hits]
         return {"found": len(rows), "items": rows}
     if name == "get_learner_state":
-        d = learner_mod.diagnose(idx, vid)
-        return {"level": d["level"],
-                "coverage": d["coverage"],           # 课程字表里「见过」的比例
+        import learning
+        d = learning.diagnose(idx, vid)
+        kps = [{"kp": k["name"], "status": k["status"], "answered": k["answered"],
+                "ok": k["ok"], "wrong": k["wrong"], "acc": k["accuracy"],
+                "evidence": k["status_hint"],
+                "has_items": k["has_items"]}
+               for k in d["knowledge_points"] if k["has_items"]]
+        # 只给聚合结果与错字，不给逐题的「你选了什么/正确答案」——
+        # 模型解释建议不需要作答明细，少传一层就少一层泄露面。
+        graded = sum(k["answered"] for k in d["knowledge_points"])
+        return {"overview": d["overview"]["range_text"],
+                "level": d["level"],
+                "coverage": d["coverage"],
                 "learned": d["learned"], "total_chars": d["total_chars"],
-                "attempts": d["attempts_total"],
-                "accuracy": d["accuracy"],           # 实际作答正确率
-                "recent_accuracy": (d.get("recent") or {}).get("acc"),
-                "by_kind": [{"label": k["label"], "acc": k["acc"], "n": k["total"]}
-                            for k in d["by_kind"]],
-                "weak_comps": [c["comp"] for c in d["weak_comps"]],
-                "wrong": [{"char": w["char"], "times": w["times"]} for w in d["wrong_top"]],
-                "suggestions": d["suggestions"]}
+                "attempts": graded,
+                "attempts_note": "这个数是能归到知识点上的作答；更早的旧记录可能没有知识点信息",
+                "total_attempts_all": d["attempts_total"],
+                "accuracy": d["accuracy"],
+                "knowledge_points": kps,
+                "causes": [{"name": c["name"], "count": c["count"],
+                            "hint": c["hint"]} for c in d["causes"]],
+                "wrong": [{"char": w["char"], "times": w["times"]}
+                          for w in d["wrong_top"]],
+                "actions": [a["text"] for a in d["actions"]],
+                "suggestions": d["suggestions"],
+                "note": "以上数字与状态由程序统计，解释时不要改动、不要补造。"}
     if name == "generate_quiz":
         import quiz as quiz_mod
         n = max(1, min(5, int((args or {}).get("n") or 3)))

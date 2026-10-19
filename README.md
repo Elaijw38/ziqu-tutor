@@ -52,13 +52,18 @@ src/build_kb.py   三源合并 → data/kb.jsonl（字形全集 / 通识 / 字�
 data/upstream/    上游字形数据集与署名（CC BY 4.0）
 data/general.jsonl 人工整理的通识与字源条目（逐条标出处）
 src/retrieval.py  中文检索：字 1-gram + 2-gram + TF-IDF（零依赖，可解释）
-src/learner.py    学情存取与诊断（SQLite，按访客分开；覆盖率分母 = 课程字表）
-src/quiz.py       出题与评阅（只在课程层出题）
+src/learner.py    学情存取与诊断底表（SQLite，按访客分开；题目库 + 作答证据）
+src/curriculum.py 课程知识点库与诊断规则库的加载（读 data/curriculum.json / diagnosis.json）
+src/learning.py   四库联动的诊断：按知识点统计、阈值判状态、错因归因与证据
+src/quiz.py       出题与评阅（只在课程层出题；题目带 item_id / 知识点 / 难度 / 出处）
 src/llm.py        OpenAI 兼容客户端 + 工具调用 agent（检索/学情/出题/评阅）
 src/ask.py        问答编排：Dify → agent → 本地抽取式；三态判定
-src/server.py     标准库 HTTP 服务：/api/ask、/api/health、静态页
+src/server.py     标准库 HTTP 服务：/api/ask、/api/health、/api/diagnose、/api/quiz、/api/grade
 web/index.html    助教聊天界面
+data/curriculum.json 课程目标、能力维度、知识点、题型与难度的对应关系（可编辑）
+data/diagnosis.json  诊断阈值、状态文案、错因匹配规则、补练动作（可编辑）
 tests/test_kb.py  知识库结构测试（覆盖、来源、分母、检索命中）
+tests/test_learning.py 四库诊断测试（关联键、阈值、归因证据、旧数据迁移）
 ```
 
 ## 已实现的三条"不翻车"设计
@@ -168,14 +173,32 @@ ZQ_RATE_PER_HOUR=60      # 单 IP 每小时提问上限，防刷模型额度
 - `data/learner.json` 是旧版单文件，只在建库时导入成示例桶，之后不再写入；
 - 没有 cookie 的调用（curl、脚本）落到共享的 `local` 桶，学情不能当个人证据用。
 
+**四库联动（逻辑数据集，一个 SQLite + 两份 JSON，不建四套库）**
+
+| 库 | 存放 | 主键 | 关联 |
+|---|---|---|---|
+| 课程知识点库 | `data/curriculum.json` | `knowledge_point_id` | 能力维度 `dimension_id`；题型 → 知识点 `type_to_kp` |
+| 题目与评分库 | `learners.db` 的 `quiz_items` 表 | `item_id` | `quiz_id`、`knowledge_point_id`、标准答案、难度、出处 |
+| 学习证据库 | `learners.db` 的 `attempts` 表 | `attempt_id` | `vid`（匿名）、`item_id`、`knowledge_point_id`、正误、时间 |
+| 诊断与干预库 | `data/diagnosis.json` | `cause_id` | 匹配规则（题型/正误/差值）、提示、讲解、补练动作 |
+
+- 评阅以服务端 `quiz_items` 的答案为准，客户端回传的 `answer_index` 不参与判分；
+- 旧数据（`learner.json` 里的 attempts，没有题目与选项）在首次诊断时迁进 `attempts` 表，
+  补 `kp_id`（按题型映射）、`item_id` 记 `legacy.*`；这类记录只能按题型归因，错因统一标
+  「暂无法归因」，不硬编；
+- 阈值和状态文案全在 `data/diagnosis.json`：`min_evidence=3`、`solid_evidence=5`、
+  `mastery_acc=80`、`weak_acc=60`，改配置即可调整，页面不写死；
+- 大模型只拿聚合摘要（知识点状态、错因计数、错字），不拿逐题作答明细，也不许改数字。
+
 ## 下一步（按 A2 验收点）
 
-- [x] `/api/diagnose` 学情诊断：作答正确率、能力维度（构件分析/字义理解/字形笔画）、课程字覆盖、高频错字、错题构件、给建议
-- [x] `/api/quiz` 按学情自动组卷（题型轮转：构件 / 字义 / 字形笔画，错题优先）
-- [x] `/api/grade` 评阅 + 逐题讲解 + 回写 attempts
+- [x] `/api/diagnose` 学情诊断：本次练习概览、按知识点的作答/正确/错误与状态、错题证据、错因与补练建议
+- [x] `/api/quiz` 按学情自动组卷（题型轮转：构件 / 字义 / 字形笔画，错题优先；可按 `kp_id` 单点补练）
+- [x] `/api/grade` 服务端判分 + 逐题讲解 + 写回证据表（`quiz_id` 可选，兼容旧调用）
 - [x] 前端三页签：问答 / 学情 / 练习，形成"问 → 诊 → 练 → 评"闭环
 - [ ] 接入大模型（可选，接口已留：ZQ_LLM_KEY / ZQ_LLM_BASE / ZQ_LLM_MODEL）
 - [ ] 教师端班级汇总（A2 提到的"AI 通识实验室"改造方向）
+- [ ] 「构件与字义」「释读依据」「殷商生活背景」三个知识点暂无题型，需要教师提供题目后才能纳入诊断
 
 ## 两种大模型接法
 

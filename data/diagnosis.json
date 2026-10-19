@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "updated": "2026-10-19",
+  "note": "诊断与干预库。阈值、状态文案、错因匹配规则、提示与补练动作全部集中在这里，页面和接口只读这份配置，不写死数字。",
+  "thresholds": {
+    "min_evidence": 3,
+    "solid_evidence": 5,
+    "mastery_acc": 80,
+    "weak_acc": 60,
+    "recent_n": 10,
+    "max_wrong_items": 8,
+    "max_causes": 4,
+    "note": "min_evidence 以下一律「证据不足」；3–4 题只能说「仅反映本次练习」；5 题以上才给初步判断。"
+  },
+  "status": {
+    "insufficient": {
+      "label": "证据不足",
+      "hint": "这个知识点只有 {answered} 题作答，少于 {min} 题，暂不下掌握结论。"
+    },
+    "limited_weak": {
+      "label": "建议巩固",
+      "hint": "目前 {answered} 题错 {wrong} 题，样本还少，只能反映这一小段练习；先按提示补一遍。"
+    },
+    "limited_ok": {
+      "label": "初步掌握",
+      "hint": "目前 {answered} 题对 {ok} 题，只能说明这一小段练习做得不错。"
+    },
+    "weak": {
+      "label": "建议巩固",
+      "hint": "累计 {answered} 题错 {wrong} 题，正确率 {acc}%，是目前证据最明确的一处短板。"
+    },
+    "emerging": {
+      "label": "初步掌握",
+      "hint": "累计 {answered} 题对 {ok} 题，正确率 {acc}%，可以进入下一类题。"
+    },
+    "steady": {
+      "label": "继续观察",
+      "hint": "正确率 {acc}%，还看不出稳定倾向，再积累几题。"
+    },
+    "no_items": {
+      "label": "本课暂无题目",
+      "hint": "这个知识点目前没有可自动判分的题目，需要教师补充后才会出现在诊断里。"
+    }
+  },
+  "causes": [
+    {
+      "cause_id": "cause.comp.off",
+      "name": "构件组合没对上",
+      "applies": {"types": ["comp"], "wrong_only": true},
+      "why": "这一题的正确组合是「{right}」，你选的是「{your}」。构件题只考字形内部的部件组成，按印象拼部件会拼错。",
+      "hint": "先照字形把字分成左右或上下两半，再逐个认部件，不要先想意思。",
+      "drill": "用同知识点的构件题再练 3 道，做完逐题对照拆分。"
+    },
+    {
+      "cause_id": "cause.form.object",
+      "name": "字形与实物对不上",
+      "applies": {"types": ["form"], "wrong_only": true},
+      "why": "这一题的正确项是「{right}」，你选的是「{your}」。象形字画的正是那个实物，选错说明这个字形的取象还没认准。",
+      "hint": "把字形拆成几笔，先看它外轮廓像什么，再回看条目里的「构形」。",
+      "drill": "先看这个字的知识库条目，再做 3 道同类象形题。"
+    },
+    {
+      "cause_id": "cause.stroke.near",
+      "name": "笔画数与标注差一两笔",
+      "applies": {"types": ["stroke"], "wrong_only": true, "variant": "near"},
+      "why": "标注是 {right}，你选的是 {your}，只差一点。常见原因是按现代通行笔画数，或在数的时候漏/多算了一个连接笔画。",
+      "hint": "回看这个甲骨字形，只数图中实际画出的线段，不按现代笔顺补笔。",
+      "drill": "再用同知识点的笔画题练 3 道，每题先自己数再对答案。"
+    },
+    {
+      "cause_id": "cause.stroke.far",
+      "name": "笔画数与标注差得较多",
+      "applies": {"types": ["stroke"], "wrong_only": true, "variant": "far"},
+      "why": "标注是 {right}，你选的是 {your}，差距较大。这通常不是数错一两笔，而是把另一个字形或另一个字的笔画记混了。",
+      "hint": "先确认题目问的是哪个字的甲骨字形，再逐段数。",
+      "drill": "回到该字条目核对字形，再练 3 道不同字的笔画题。"
+    }
+  ],
+  "unattributed": {
+    "cause_id": "cause.unattributed",
+    "name": "暂无法归因",
+    "why": "这道题的作答与现有规则都不吻合，仅凭一次作答不足以判断原因。",
+    "hint": "先回看题目对应的知识库条目，再练同知识点的一两道题，看是否重复出现。"
+  },
+  "actions": {
+    "insufficient": "再练 {n} 道「{kp}」题，才够判断这个知识点。",
+    "weak": "{hint}",
+    "emerging": "这个知识点可以先放下，把练习时间放到「{next}」上。",
+    "no_items": "「{kp}」暂无题目，需要教师补充后才能纳入诊断。",
+    "no_record": "还没有作答记录。先做一组随堂练习（3 题即可），诊断会按知识点给出证据。"
+  }
+}

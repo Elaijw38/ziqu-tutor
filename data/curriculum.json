@@ -1,0 +1,115 @@
+{
+  "course_id": "zzu-hanzi-culture",
+  "course_title": "《汉字与中国文化》通识课",
+  "version": 2,
+  "updated": "2026-10-19",
+  "note": "课程知识点库。只描述课程要教什么，不含任何学生数据；改这个文件就能调整知识点与题型的对应关系，不用改代码。",
+  "goals": [
+    "看到常用甲骨文字形，能说出它描摹的对象与主要构件。",
+    "能按构件拆分，解释一个字为什么这样写。",
+    "能引用课程材料说明释读依据，不凭印象猜。"
+  ],
+  "dimensions": [
+    {
+      "dimension_id": "dim.glyph",
+      "name": "字形辨识",
+      "note": "看到甲骨字形，能认出它描摹的对象或笔画特征。"
+    },
+    {
+      "dimension_id": "dim.component",
+      "name": "构件观察",
+      "note": "能把一个字拆成构件，并认出每个构件。"
+    },
+    {
+      "dimension_id": "dim.structure",
+      "name": "构形分析",
+      "note": "能说明构件与字义之间的关系，而不只是把字拆开。"
+    },
+    {
+      "dimension_id": "dim.reading",
+      "name": "释读依据",
+      "note": "能引用材料说明为什么这样释读，区分证据与推测。"
+    },
+    {
+      "dimension_id": "dim.culture",
+      "name": "商文化背景",
+      "note": "能把字放进殷商的生活、祭祀与器物情境里理解。"
+    }
+  ],
+  "knowledge_points": [
+    {
+      "knowledge_point_id": "kp.form.pictograph",
+      "name": "象形字辨识",
+      "dimension_id": "dim.glyph",
+      "goal": "看到一个甲骨文字形，能说出它像什么、代表什么实物。",
+      "question_types": ["form"],
+      "has_items": true,
+      "note": "题目直接来自知识库的「本义」字段，一题对应一个课程字。"
+    },
+    {
+      "knowledge_point_id": "kp.glyph.strokes",
+      "name": "甲骨字形笔画",
+      "dimension_id": "dim.glyph",
+      "goal": "能按甲骨字形数笔画，知道它和现代通行笔画不一定相同。",
+      "question_types": ["stroke"],
+      "has_items": true,
+      "note": "笔画数取自字形数据集标注，不是现代字典笔画。"
+    },
+    {
+      "knowledge_point_id": "kp.comp.split",
+      "name": "构件拆分",
+      "dimension_id": "dim.component",
+      "goal": "能把字拆成两个构件，说出构件名称。",
+      "question_types": ["comp"],
+      "has_items": true,
+      "note": "题目来自课程条目的「构件」字段；没有标注构件的字不出这类题。"
+    },
+    {
+      "knowledge_point_id": "kp.comp.meaning",
+      "name": "构件与字义",
+      "dimension_id": "dim.structure",
+      "goal": "能说明构件组合为什么能表达这个字的意思。",
+      "question_types": [],
+      "has_items": false,
+      "note": "现有题库没有对应题型，需要教师补充「构件→字义」的题目后才可诊断。"
+    },
+    {
+      "knowledge_point_id": "kp.reading.evidence",
+      "name": "释读依据",
+      "dimension_id": "dim.reading",
+      "goal": "能指出某条释读依据来自哪份材料，区分证据与推测。",
+      "question_types": [],
+      "has_items": false,
+      "note": "问答里会带出处，但没有可自动判分的题目，因此不纳入掌握度统计。"
+    },
+    {
+      "knowledge_point_id": "kp.culture.context",
+      "name": "殷商生活背景",
+      "dimension_id": "dim.culture",
+      "goal": "能把字与殷商时期的器物、祭祀、城邑生活联系起来。",
+      "question_types": [],
+      "has_items": false,
+      "note": "需要教师提供情境题（如「这个字出现在什么场景」）后才能纳入诊断。"
+    }
+  ],
+  "type_to_kp": {
+    "form": "kp.form.pictograph",
+    "comp": "kp.comp.split",
+    "stroke": "kp.glyph.strokes"
+  },
+  "difficulty_by_type": {
+    "form": "intro",
+    "comp": "core",
+    "stroke": "extend"
+  },
+  "difficulty_label": {
+    "intro": "入门",
+    "core": "巩固",
+    "extend": "拓展"
+  },
+  "evidence_policy": {
+    "only_graded_answers": true,
+    "ignore_chat": true,
+    "note": "诊断只统计实际作答与评分结果，不根据聊天内容推断长期能力。"
+  }
+}

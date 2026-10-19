@@ -197,6 +197,81 @@
   .comp{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;
     background:#fff;border:1px solid var(--line);font-size:13px;margin:0 6px 6px 0}
   .comp b{color:var(--zzu-blue);font-weight:600}
+  /* 学情 · 本次练习概览（先给范围，再给结论） */
+  .ov{display:flex;gap:16px;flex-wrap:wrap;align-items:stretch;border:1px solid var(--line);
+    border-radius:12px;background:linear-gradient(180deg,#fff,#f8fbff);padding:14px 16px;margin:0 0 6px}
+  .ov-l{flex:1 1 260px;min-width:0}
+  .ov-t{font-size:15.5px;font-weight:600;color:var(--zzu-blue)}
+  .ov-s{font-size:12.5px;color:var(--ink-2);margin-top:4px;line-height:1.6}
+  .ov-n{display:flex;gap:18px;align-items:center}
+  .ov-c{text-align:center;min-width:56px}
+  .ov-c b{display:block;font-size:22px;color:var(--ink);line-height:1.2}
+  .ov-c span{font-size:11.5px;color:var(--ink-2)}
+  /* 知识点卡片：状态 + 作答数 + 错题入口 + 补练 */
+  .kplist{display:flex;flex-direction:column;gap:10px}
+  .kp{border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px 14px}
+  .kp-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .kp-h b{font-size:14.5px}
+  .dim{font-size:11.5px;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;
+    padding:0 7px;white-space:nowrap}
+  .badge{font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+  .badge.weak{color:var(--zzu-red);border-color:#f0d3d0;background:#fdf4f3}
+  .badge.ok{color:var(--ok);border-color:#cfe4d6;background:#f3faf5}
+  .badge.gap{color:#7a5c1e;border-color:#efdfc2;background:#fff8ec}
+  .badge.none{color:#8a97ab;border-style:dashed;background:#fff}
+  .kp-act{margin-left:auto}
+  .kp-meta{font-size:12.5px;color:var(--ink-2);margin-top:7px}
+  .kp-hint{font-size:12.5px;color:var(--ink-2);margin-top:3px;line-height:1.6}
+  .kp-wrong{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:8px}
+  .kw-t{font-size:12px;color:var(--ink-2)}
+  .kchip{padding:1px 9px;border-radius:8px;border:1px solid #f0d3d0;background:#fdf4f3;
+    color:var(--zzu-red);font:inherit;font-size:13px;cursor:pointer}
+  .kchip:hover{border-color:var(--zzu-red)}
+  /* 错题卡：你选 / 正确 / 判断依据 / 归因 / 证据编号 */
+  .wrong{border:1px solid var(--line);border-left:3px solid var(--zzu-red);border-radius:10px;
+    background:#fff;padding:12px 14px;margin-bottom:10px}
+  .w-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+  .w-h b{font-size:19px;line-height:1.2}
+  .w-no{font-size:11.5px;color:#93a1b4}
+  .w-q{font-size:14px;font-weight:600;margin:4px 0 6px;line-height:1.6}
+  .w-pick{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+  .w-pick .bad{color:var(--zzu-red)}
+  .w-pick .good{color:var(--ok)}
+  .w-why{font-size:13px;color:var(--ink-2);margin-top:7px;line-height:1.65}
+  .w-cause{margin-top:8px;padding:7px 10px;border-radius:8px;background:#f8fbff;
+    border:1px dashed #cfe0f5;font-size:13px}
+  .w-cl{font-size:11.5px;color:var(--ink-2);margin-right:6px}
+  .w-cv{color:var(--zzu-blue);font-weight:600}
+  .w-ev{font-size:11px;color:#93a1b4;margin-top:6px;font-family:Consolas,monospace}
+  /* 建议 */
+  .acts{display:flex;flex-direction:column;gap:8px}
+  .act{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;background:#fff;font-size:13.5px}
+  .act.primary{border-color:#cfe0f5;background:#f6faff}
+  .act-t{flex:1 1 240px;line-height:1.65}
+  .btn.small{padding:7px 14px;font-size:13px;letter-spacing:0}
+  /* 空状态 */
+  .empty{text-align:center;padding:20px 12px 18px;border:1px dashed var(--line);border-radius:12px;
+    background:#fbfdff;margin:6px 0 4px}
+  .empty img{width:56px;height:56px;object-fit:contain}
+  .empty-t{font-size:15px;font-weight:600;margin-top:6px}
+  .empty-s{font-size:12.5px;color:var(--ink-2);margin:6px auto 12px;max-width:56ch;line-height:1.7}
+  /* 练习：知识点 / 难度 / 出处 */
+  .q .kp-tag{font-size:11px;letter-spacing:.5px;color:var(--zzu-blue);background:#eef4fd;
+    border:1px solid #cfe0f5;border-radius:5px;padding:1px 6px;margin-right:6px}
+  .q .df-tag{font-size:11px;color:var(--ink-2);border:1px solid var(--line);border-radius:5px;
+    padding:1px 6px;margin-right:7px}
+  .q .src{margin-top:8px;font-size:11.5px;color:#93a1b4}
+  @media (max-width:760px){
+    .ov{padding:12px}
+    .ov-n{gap:12px;width:100%;justify-content:space-between}
+    .ov-c b{font-size:19px}
+    .kp-act{margin-left:0;width:100%;min-height:40px}
+    .mini-btn{min-height:36px}
+    .kchip{min-height:32px;padding:2px 10px}
+    .act .btn.small{width:100%;min-height:42px}
+    .w-pick{gap:6px;flex-direction:column}
+  }
   /* 练习 */
   .q{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;background:#fff}
   .q p{margin:0 0 10px;font-weight:600}
@@ -252,8 +327,8 @@
 
   <nav>
     <button class="tab on" data-tab="chat"><b>问答</b><span>问字形、字义、构形，答案附出处</span></button>
-    <button class="tab" data-tab="diag"><b>学情诊断</b><span>正确率、能力维度、错题与建议</span></button>
-    <button class="tab" data-tab="quiz"><b>随堂练习</b><span>按学情组卷，交卷即评讲</span></button>
+    <button class="tab" data-tab="diag"><b>学情诊断</b><span>按知识点看证据、错因与补练</span></button>
+    <button class="tab" data-tab="quiz"><b>随堂练习</b><span>按知识点组卷，交卷即评讲</span></button>
   </nav>
 
   <section class="card" id="p-chat">
@@ -280,13 +355,13 @@
 
   <section class="card hide" id="p-diag">
     <div class="card-h"><h2>学情诊断</h2>
-      <span class="tag" id="diagTag">按课程字表计</span></div>
+      <span class="tag" id="diagTag">按知识点统计</span></div>
     <div class="pad" id="diagBox">加载中…</div>
   </section>
 
   <section class="card hide" id="p-quiz">
     <div class="card-h"><h2>随堂练习</h2>
-      <span class="tag">按学情出题 · 交卷即评讲</span></div>
+      <span class="tag">题目带知识点与出处 · 交卷即评讲</span></div>
     <div class="pad">
       <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px">
         <button class="btn" id="mk">按学情出一套题（3 题）</button>
@@ -313,11 +388,11 @@ const $ = s => document.querySelector(s);
 const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c;
   if (x != null) n.textContent = x; return n; };
 
-function showTab(name){
+function showTab(name, noAuto){
   document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x.dataset.tab === name));
   ['chat','diag','quiz'].forEach(k => $('#p-' + k).classList.toggle('hide', k !== name));
-  if (name === 'diag') loadDiag();
-  if (name === 'quiz' && !PAPER) $('#mk').click();   // 点练习页签就直接给一套题
+  if (name === 'diag') loadDiag(LAST_QUIZ);
+  if (name === 'quiz' && !PAPER && !noAuto) $('#mk').click();   // 点练习页签就直接给一套题
   if (name === 'chat') setTimeout(() => input.focus({preventScroll: true}), 80);
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
@@ -456,18 +531,39 @@ async function ask(q){
 }
 form.addEventListener('submit', e => { e.preventDefault(); ask(input.value); });
 
-async function loadDiag(){
+let DIAG = null;
+
+function badgeClass(key){
+  if (key === 'weak' || key === 'limited_weak') return 'weak';
+  if (key === 'emerging' || key === 'limited_ok') return 'ok';
+  if (key === 'no_items') return 'none';
+  return 'gap';
+}
+function jumpToChar(ch){
+  const t = document.querySelector('.wrong[data-char="' + ch + '"]');
+  if (t) t.scrollIntoView({behavior:'smooth', block:'center'});
+}
+/* 从诊断页直接跳到练习：带知识点出题，回来的证据就落在这个知识点上 */
+async function practiceFor(kpId, n){
+  showTab('quiz', true);
+  await makePaper({n: n || 3, kp_id: kpId || ''});
+}
+
+async function loadDiag(quizId){
   const box = $('#diagBox'); box.textContent = '加载中…';
   try{
-    const d = await (await fetch('/api/diagnose')).json();
+    const qs = quizId ? ('?quiz_id=' + encodeURIComponent(quizId)) : '';
+    const d = await (await fetch('/api/diagnose' + qs)).json();
     if (d.error){ box.textContent = '出错了：' + d.error; return; }
+    DIAG = d;
     box.innerHTML = '';
+    const ov = d.overview || {};
     if (d.total_chars)
-      $('#diagTag').textContent = '只统计当前浏览器 · 课程字表 ' + d.total_chars + ' 字' +
-        (d.lexicon_chars ? ' · 字形库 ' + d.lexicon_chars + ' 字' : '');
-    // 归属说明：学情按浏览器分开存，这里必须让人看得懂「这些数字是谁的」
-    const sc = el('div','scope' + (d.seeded ? ' em' : ''));
-    sc.appendChild(el('div','grow', d.seeded
+      $('#diagTag').textContent = '课程字表 ' + d.total_chars + ' 字 · 按知识点统计';
+
+    // 归属说明：这些数字是谁的、怎么清掉；示例数据必须标出来
+    const sc = el('div','scope' + (ov.seeded ? ' em' : ''));
+    sc.appendChild(el('div','grow', ov.seeded
       ? '当前含示例学情（课堂演示用，不是你的真实作答）。做一轮练习会累加到这份数据上，点右侧即可从零开始。'
       : '这份记录只属于当前浏览器，不含任何个人信息；换设备或清理浏览器数据会重新开始。'));
     const call = async (url) => {
@@ -477,109 +573,172 @@ async function loadDiag(){
         loadDiag();
       }catch(e){ alert('操作失败：连不上服务。'); }
     };
-    if (d.seeded || d.attempts_total){
-      const b = el('button','mini-btn', d.seeded ? '清空，从头开始' : '清空我的记录'); b.type = 'button';
+    if (ov.seeded || d.attempts_total){
+      const b = el('button','mini-btn', ov.seeded ? '清空，从头开始' : '清空我的记录'); b.type = 'button';
       b.onclick = () => { if (confirm('只清空当前浏览器的学情记录，题目和知识库不受影响。继续？')) call('/api/reset'); };
       sc.appendChild(b);
     }
-    if (!d.seeded){
+    if (!ov.seeded){
       const b = el('button','mini-btn','载入示例学情'); b.type = 'button';
       if (d.attempts_total) b.title = '会用示例数据覆盖当前记录';
       b.onclick = () => { if (!d.attempts_total || confirm('载入示例会覆盖当前记录，继续？')) call('/api/seed-demo'); };
       sc.appendChild(b);
     }
     box.appendChild(sc);
-    const noAtt = !d.attempts_total;
-    const row = el('div','row');
-    const mk = (v,s,red) => { const c = el('div','stat' + (red?' red':''));
-      c.appendChild(el('b',null,v)); c.appendChild(el('span',null,s)); return c; };
-    row.appendChild(mk(noAtt ? '—' : Math.round(d.accuracy) + '%', '练习正确率'));
-    row.appendChild(mk(d.learned + '/' + d.total_chars, '课程字覆盖 · ' + d.coverage + '%'));
-    row.appendChild(mk(d.attempts_total || 0, '累计作答次数'));
-    row.appendChild(mk((d.wrong_top || []).length, '待复习字', !noAtt));
-    box.appendChild(row);
 
-    const bw = el('div');
-    bw.appendChild(el('div',null,'课程字表覆盖（只表示「见过」，不等于会做）'));
-    const bar = el('div','bar'); const i = el('i');
-    i.style.width = Math.min(100,d.coverage) + '%';
-    bar.appendChild(i); bw.appendChild(bar); box.appendChild(bw);
+    // ① 本次练习概览：先讲清分析范围，再谈掌握
+    const ovc = el('div','ov');
+    const left = el('div','ov-l');
+    left.appendChild(el('div','ov-t', ov.range_text || '还没有作答记录'));
+    if (ov.at_text) left.appendChild(el('div','ov-s','最近一次作答 ' + ov.at_text));
+    if (ov.basis) left.appendChild(el('div','ov-s', ov.basis));
+    ovc.appendChild(left);
+    const nums = el('div','ov-n');
+    const cell = (v,s) => { const c = el('div','ov-c');
+      c.appendChild(el('b',null,String(v))); c.appendChild(el('span',null,s)); return c; };
+    const touched = (d.knowledge_points || []).filter(k => k.in_this_practice > 0).length;
+    nums.appendChild(cell(ov.answered || 0, '完成题数'));
+    nums.appendChild(cell(ov.correct || 0, '答对'));
+    nums.appendChild(cell(touched, '涉及知识点'));
+    ovc.appendChild(nums);
+    box.appendChild(ovc);
 
-    // 能力维度：按题型分开算，这是看「弱在哪类题」最直接的一层
-    if ((d.by_kind || []).length){
-      const h = el('h3',null,'能力维度');
-      h.appendChild(el('span','h-sub','按题型分别统计（答对 / 作答），看得出弱在哪类题'));
-      box.appendChild(h);
-      const tb = el('table','zt');
-      d.by_kind.forEach(k => {
-        const tr = el('tr');
-        tr.appendChild(el('td',null,k.label));
-        tr.appendChild(el('td',null,k.ok + ' / ' + k.total));
-        const td = el('td');
-        const pb = el('div','pb'); const bi = el('i');
-        bi.style.width = Math.max(2,k.acc) + '%'; pb.appendChild(bi);
-        td.appendChild(pb);
-        const sp = el('span',null,' ' + Math.round(k.acc) + '%'); sp.style.marginLeft = '8px';
-        td.appendChild(sp); tr.appendChild(td); tb.appendChild(tr);
-      });
-      box.appendChild(tb);
-      if (d.recent && d.recent.n >= 3){
-        const diff = d.recent.acc - d.accuracy;
-        box.appendChild(el('p','hint','最近 ' + d.recent.n + ' 次作答正确率 ' +
-          Math.round(d.recent.acc) + '%，' +
-          (diff > 3 ? '比总体在上升。'
-            : diff < -3 ? '比总体偏低，注意别在同一类题上反复出错。'
-            : '与总体大体持平。')));
+    // 没有作答：先引导做练习，不编掌握结论
+    if (!ov.answered){
+      const em = el('div','empty');
+      const img = el('img'); img.src = 'assets/guibao.png'; img.alt = '';
+      em.appendChild(img);
+      em.appendChild(el('div','empty-t','还没有可分析的作答'));
+      em.appendChild(el('div','empty-s','诊断只依据实际作答，不根据聊天推断。先做一组 3 题的练习，这里就会出现按知识点的证据、错因和补练建议。'));
+      const b = el('button','btn','去做一组练习（3 题）'); b.type = 'button';
+      b.onclick = () => practiceFor('', 3);
+      em.appendChild(b);
+      box.appendChild(em);
+    }
+
+    // ② 按知识点：状态、作答题数、错题入口
+    const h = el('h3',null,'按知识点看（累计作答）');
+    h.appendChild(el('span','h-sub','状态只看实际作答；样本不足时不下掌握结论'));
+    box.appendChild(h);
+    const list = el('div','kplist');
+    (d.knowledge_points || []).forEach(k => {
+      const card = el('div','kp');
+      const head = el('div','kp-h');
+      head.appendChild(el('b',null,k.name));
+      head.appendChild(el('span','dim',k.dimension_name));
+      head.appendChild(el('span','badge ' + badgeClass(k.status_key), k.status));
+      if (k.has_items){
+        const b = el('button','mini-btn kp-act','再练 3 题'); b.type = 'button';
+        b.title = '按「' + k.name + '」出一组题';
+        b.onclick = () => practiceFor(k.knowledge_point_id, 3);
+        head.appendChild(b);
       }
-    } else {
-      box.appendChild(el('p','hint','还没有作答记录，能力维度要做过一轮练习才会出现。'));
-    }
+      card.appendChild(head);
+      if (k.status_key === 'no_items'){
+        card.appendChild(el('div','kp-meta','本课可用题源 0 字 · 暂不参与诊断'));
+      } else if (k.answered){
+        card.appendChild(el('div','kp-meta','作答 ' + k.answered + ' 题 · 对 ' + k.ok +
+          ' · 错 ' + k.wrong + '（正确率 ' + Math.round(k.accuracy) + '%）· 本课可考 ' +
+          k.available_chars + ' 字'));
+      } else {
+        card.appendChild(el('div','kp-meta','还没有作答 · 本课可考 ' + k.available_chars + ' 字'));
+      }
+      if (k.status_hint && k.status_key !== 'no_items')
+        card.appendChild(el('div','kp-hint', k.status_hint));
+      if (k.status_key === 'no_items' && k.note) card.appendChild(el('div','kp-hint', k.note));
+      if ((k.wrong_chars || []).length){
+        const w = el('div','kp-wrong');
+        w.appendChild(el('span','kw-t','错题：'));
+        k.wrong_chars.slice(0, 8).forEach(ch => {
+          const b = el('button','kchip', ch); b.type = 'button'; b.title = '跳到这道错题';
+          b.onclick = () => jumpToChar(ch);
+          w.appendChild(b);
+        });
+        card.appendChild(w);
+      }
+      list.appendChild(card);
+    });
+    box.appendChild(list);
 
-    if ((d.wrong_top || []).length){
-      const h = el('h3',null,'高频错字');
-      h.appendChild(el('span','h-sub','错得越多，越该先回看字形与构形'));
-      box.appendChild(h);
-      const p = el('div');
-      d.wrong_top.forEach(w => {
-        const t = el('span','comp'); t.appendChild(el('b',null,w.char));
-        t.appendChild(el('span',null,'×' + w.times)); p.appendChild(t);
+    // ③ 错题与判断依据：每一条都能对上一次作答
+    if ((d.wrong_items || []).length){
+      const wh = el('h3',null,'错题与判断依据');
+      wh.appendChild(el('span','h-sub','每题对应一次作答记录，可核对'));
+      box.appendChild(wh);
+      d.wrong_items.forEach((w, i) => {
+        const c = el('div','wrong'); c.dataset.char = w.char || '';
+        const hh = el('div','w-h');
+        hh.appendChild(el('span','w-no','错题 ' + (i + 1)));
+        hh.appendChild(el('b',null,w.char || '—'));
+        if (w.knowledge_point) hh.appendChild(el('span','dim',w.knowledge_point));
+        c.appendChild(hh);
+        c.appendChild(el('div','w-q', w.question || ('「' + (w.char || '?') + '」的旧记录没有保存题干')));
+        const pick = el('div','w-pick');
+        pick.appendChild(el('span','bad','你选：' + (w.your || '未作答')));
+        pick.appendChild(el('span','good','正确：' + (w.right || '—')));
+        c.appendChild(pick);
+        c.appendChild(el('div','w-why', w.why || ''));
+        const cs = el('div','w-cause');
+        cs.appendChild(el('span','w-cl', w.attributed ? '错因' : '归因'));
+        cs.appendChild(el('span','w-cv', w.cause || '暂无法归因'));
+        c.appendChild(cs);
+        if (w.legacy) c.appendChild(el('div','w-ev','旧记录没有保存选项，只能按题型归因。'));
+        if (w.attempt_id) c.appendChild(el('div','w-ev','证据 ' + w.attempt_id));
+        box.appendChild(c);
       });
-      box.appendChild(p);
     }
 
-    if (d.weak_comps.length){
-      const h = el('h3',null,'错题涉及的构件');
-      h.appendChild(el('span','h-sub','从答错的字反查，不是「没学过的字」'));
-      box.appendChild(h);
-      const p = el('div');
-      d.weak_comps.forEach(c => {
-        const t = el('span','comp'); t.appendChild(el('b',null,c.comp));
-        t.appendChild(el('span',null,'「' + c.chars.join('」「') + '」×' + c.times));
-        p.appendChild(t);
-      });
-      box.appendChild(p);
+    // ④ 一条可执行建议
+    const ah = el('h3',null,'下一步');
+    ah.appendChild(el('span','h-sub','按现有证据给动作，可以只做这一条'));
+    box.appendChild(ah);
+    const acts = el('div','acts');
+    (d.actions || []).forEach((a, i) => {
+      const row = el('div','act' + (i === 0 ? ' primary' : ''));
+      row.appendChild(el('div','act-t', a.text || ''));
+      if (a.cta === 'practice' && a.knowledge_point_id){
+        const b = el('button','btn small','针对「' + a.knowledge_point + '」再练');
+        b.type = 'button'; b.onclick = () => practiceFor(a.knowledge_point_id, a.n || 3);
+        row.appendChild(b);
+      } else if (a.cta === 'quiz'){
+        const b = el('button','btn small','去做一组练习'); b.type = 'button';
+        b.onclick = () => practiceFor('', a.n || 3);
+        row.appendChild(b);
+      }
+      acts.appendChild(row);
+    });
+    if (!(d.actions || []).length){
+      acts.appendChild(el('div','act','现有证据还看不出稳定倾向，再做一组练习即可更新诊断。'));
     }
-
-    box.appendChild(el('h3',null,'助教建议'));
-    const ul = el('ul','tips');
-    d.suggestions.forEach(s => ul.appendChild(el('li',null,s)));
-    box.appendChild(ul);
+    box.appendChild(acts);
   }catch(e){ box.textContent = '连不上服务。'; }
 }
-
 let PAPER = null;
-$('#mk').onclick = async () => {
+let LAST_QUIZ = '';
+
+async function makePaper(opts){
+  opts = opts || {};
+  const n = opts.n || 3, kpId = opts.kp_id || '';
   const box = $('#paper'); box.textContent = '出题中…'; $('#gradeBox').textContent = '';
   try{
-    PAPER = await (await fetch('/api/quiz',{method:'POST',
-      headers:{'Content-Type':'application/json'},body:JSON.stringify({n:3})})).json();
-    if (PAPER.error){ box.textContent = '出错了：' + PAPER.error; return; }
-    $('#quizHint').textContent = '共 ' + PAPER.count + ' 题 · 构件 / 字义 / 字形笔画 · 优先考答错过的字';
+    const body = {n: n, kp_id: kpId};
+    if (!kpId) body.seed = 20261104;        // 同一份进度出同一套题，便于复盘
+    const r = await (await fetch('/api/quiz',{method:'POST',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})).json();
+    if (r.error){ box.textContent = '出错了：' + r.error; return; }
+    PAPER = r;
+    const names = [];
+    (r.items || []).forEach(it => { if (it.kp_name && names.indexOf(it.kp_name) < 0) names.push(it.kp_name); });
+    $('#quizHint').textContent = '共 ' + r.count + ' 题 · ' +
+      (names.length ? names.join(' / ') : '混合知识点') + ' · 优先考答错过的字';
     box.innerHTML = '';
-    PAPER.items.forEach((it, qi) => {
+    (r.items || []).forEach((it, qi) => {
       const q = el('div','q');
-      const p = el('p'); p.appendChild(el('span','kind', it.type_label));
-      p.appendChild(document.createTextNode((qi+1) + '. ' + it.question));
+      const p = el('p');
+      p.appendChild(el('span','kind', it.type_label));
+      if (it.kp_name) p.appendChild(el('span','kp-tag', it.kp_name));
+      if (it.difficulty_label) p.appendChild(el('span','df-tag', it.difficulty_label));
+      p.appendChild(document.createTextNode((qi + 1) + '. ' + it.question));
       q.appendChild(p);
       it.options.forEach((opt, oi) => {
         const b = el('button','opt', opt); b.type = 'button';
@@ -589,35 +748,48 @@ $('#mk').onclick = async () => {
         };
         q.appendChild(b);
       });
+      if (it.source) q.appendChild(el('div','src','材料：' + String(it.source).split(' · ')[0]));
       box.appendChild(q);
     });
     const submit = el('button','btn','提交评阅'); submit.onclick = () => doGrade();
     box.appendChild(submit);
   }catch(e){ box.textContent = '连不上服务。'; }
-};
+}
+$('#mk').onclick = () => makePaper({n: 3});
 
 async function doGrade(){
   if (!PAPER) return;
-  const answers = PAPER.items.map(it => ({char: it.char, choice: it._choice}));
+  const answers = PAPER.items.map(it => ({item_id: it.item_id, char: it.char, choice: it._choice}));
   if (answers.some(a => a.choice == null)){ $('#gradeBox').textContent = '还有题没答。'; return; }
-  const g = await (await fetch('/api/grade',{method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({quiz:PAPER, answers})})).json();
+  let g;
+  try{
+    g = await (await fetch('/api/grade',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({quiz_id: PAPER.quiz_id, answers})})).json();
+  }catch(e){ $('#gradeBox').textContent = '连不上服务。'; return; }
   const box = $('#gradeBox'); box.innerHTML = '';
   if (g.error){ box.textContent = '评阅失败：' + g.error; return; }
+  LAST_QUIZ = PAPER.quiz_id || '';
   const head = el('div','res');
   head.innerHTML = '<b>得分 ' + g.score + '</b>（' + g.correct + '/' + g.total + '）· ' + g.advice;
   box.appendChild(head);
+  if ((g.by_kp || []).length){
+    box.appendChild(el('div','hint','按知识点：' +
+      g.by_kp.map(k => k.kp_name + ' ' + k.ok + '/' + k.total).join(' · ')));
+  }
   document.querySelectorAll('#paper .q').forEach((q, qi) => {
     const r = g.results[qi]; if (!r) return;
     q.querySelectorAll('.opt').forEach((b, oi) => {
       if (oi === PAPER.items[qi].answer_index) b.classList.add('ok');
       else if (oi === PAPER.items[qi]._choice && !r.ok) b.classList.add('bad');
     });
-    const note = el('div','res', (r.ok ? '✓ 答对。' : '✗ 你选了「' + r.your + '」，正确答案是「' + r.right + '」。') + r.why);
+    const note = el('div','res', (r.ok ? '✓ 答对。' : '✗ 你选了「' + r.your + '」，正确答案是「' + r.right + '」。')
+      + r.why);
     q.appendChild(note);
   });
-  loadDiag();
+  const go = el('button','btn small','看这次练习的诊断'); go.type = 'button';
+  go.onclick = () => { showTab('diag'); loadDiag(LAST_QUIZ); };
+  box.appendChild(go);
 }
 
 ['甲骨文是什么','日为什么写成圆的','六书是哪六种','家为什么是屋顶下有猪'].forEach(q => {

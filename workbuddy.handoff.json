@@ -159,61 +159,172 @@
         "course_chars": 146,
         "llm": true,
         "model": "deepseek-chat",
-        "llm_base": "https://api.deepseek.com/v1",
         "dify": false,
-        "dify_base": "",
         "dify_error": "",
         "store": {
           "attempts": 38,
           "learned": 9,
+          "seeded": false,
+          "visitors": 3,
           "error": ""
-        }
+        },
+        "note": "公开自检只回答「能不能用」：不输出模型地址、密钥或学生作答明细"
       }
     },
     {
       "method": "GET",
       "path": "/api/diagnose",
+      "query": {
+        "quiz_id": "可选；带上就是「本次练习」口径，不带则取最近一次有作答的套题"
+      },
       "response_example": {
+        "ok": true,
+        "course": {
+          "course_id": "zzu-hanzi-culture",
+          "title": "《汉字与中国文化》通识课",
+          "goals": [
+            "看到常用甲骨文字形，能说出它描摹的对象与主要构件。"
+          ],
+          "dimensions": [
+            {
+              "dimension_id": "dim.component",
+              "name": "构件观察",
+              "note": "能把一个字拆成构件，并认出每个构件。"
+            }
+          ]
+        },
+        "overview": {
+          "range_type": "quiz",
+          "range_text": "本次练习 · 3/3 题",
+          "quiz_id": "qz405941690a",
+          "answered": 3,
+          "total_items": 3,
+          "correct": 1,
+          "at": 1792405941.0,
+          "at_text": "10-19 18:32",
+          "seeded": false,
+          "basis": "概览只描述这一次练习（3 题）；知识点统计用累计 12 题——两者范围不同，别相加。"
+        },
+        "knowledge_points": [
+          {
+            "knowledge_point_id": "kp.comp.split",
+            "name": "构件拆分",
+            "dimension_id": "dim.component",
+            "dimension_name": "构件观察",
+            "goal": "能把字拆成两个构件，说出构件名称。",
+            "note": "题目来自课程条目的「构件」字段；没有标注构件的字不出这类题。",
+            "has_items": true,
+            "available_chars": 6,
+            "answered": 12,
+            "ok": 6,
+            "wrong": 6,
+            "accuracy": 50.0,
+            "evidence_level": "solid",
+            "status_key": "weak",
+            "status": "建议巩固",
+            "status_hint": "累计 12 题错 6 题，正确率 50%，是目前证据最明确的一处短板。",
+            "in_this_practice": 3,
+            "wrong_chars": ["焚", "鹿"]
+          },
+          {
+            "knowledge_point_id": "kp.comp.meaning",
+            "name": "构件与字义",
+            "dimension_id": "dim.structure",
+            "dimension_name": "构形分析",
+            "has_items": false,
+            "available_chars": 0,
+            "answered": 0,
+            "ok": 0,
+            "wrong": 0,
+            "accuracy": 0.0,
+            "evidence_level": "none",
+            "status_key": "no_items",
+            "status": "本课暂无题目",
+            "status_hint": "这个知识点目前没有可自动判分的题目，需要教师补充后才会出现在诊断里。",
+            "in_this_practice": 0,
+            "wrong_chars": []
+          }
+        ],
+        "wrong_items": [
+          {
+            "attempt_id": "at385b0c7d8a9d4270",
+            "item_id": "qz405941690a.01",
+            "quiz_id": "qz405941690a",
+            "char": "焚",
+            "knowledge_point_id": "kp.comp.split",
+            "knowledge_point": "构件拆分",
+            "question": "「焚」由哪两个构件组成？",
+            "kind": "comp",
+            "your": "女 + 止",
+            "right": "木 + 火",
+            "why": "这一题的正确组合是「木 + 火」，你选的是「女 + 止」。构件题只考字形内部的部件组成，按印象拼部件会拼错。",
+            "cause_id": "cause.comp.off",
+            "cause": "构件组合没对上",
+            "attributed": true,
+            "ts": 1792405941.0,
+            "legacy": false
+          }
+        ],
+        "causes": [
+          {
+            "cause_id": "cause.comp.off",
+            "name": "构件组合没对上",
+            "why": "这一题的正确组合是「木 + 火」，你选的是「女 + 止」。构件题只考字形内部的部件组成，按印象拼部件会拼错。",
+            "hint": "先照字形把字分成左右或上下两半，再逐个认部件，不要先想意思。",
+            "drill": "用同知识点的构件题再练 3 道，做完逐题对照拆分。",
+            "attributed": true,
+            "count": 2,
+            "evidence": [
+              {
+                "attempt_id": "at385b0c7d8a9d4270",
+                "char": "焚",
+                "your": "女 + 止",
+                "right": "木 + 火",
+                "ts": 1792405941.0
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "text": "先照字形把字分成左右或上下两半，再逐个认部件，不要先想意思。（构件拆分）",
+            "cta": "practice",
+            "knowledge_point_id": "kp.comp.split",
+            "knowledge_point": "构件拆分",
+            "n": 3
+          }
+        ],
+        "compat_fields_note": "以下字段为旧页面/旧调用保留，口径未变",
         "coverage": 6.2,
         "level": "入门",
         "learned": 9,
         "total_chars": 146,
-        "attempts_total": 38,
-        "accuracy": 78.9,
+        "attempts_total": 12,
+        "accuracy": 50.0,
         "recent": {
-          "n": 10,
-          "acc": 80.0
+          "n": 3,
+          "acc": 33.3
         },
         "by_kind": [
           {
             "kind": "comp",
             "label": "构件分析",
             "total": 12,
-            "ok": 10,
-            "acc": 83.3
-          }
-        ],
-        "weak_comps": [
-          {
-            "comp": "宀",
-            "chars": [
-              "家",
-              "安"
-            ],
-            "times": 2
+            "ok": 6,
+            "acc": 50.0
           }
         ],
         "wrong_top": [
           {
-            "char": "鼎",
-            "times": 1
+            "char": "焚",
+            "times": 2
           }
         ],
         "suggestions": [
-          "「鼎」累计答错 1 次，先回看这个字的字形与构形，比继续刷新题有效。"
+          "「焚」「鹿」累计答错 4 次，先回看这几个字的字形与构形，比继续刷新题有效。"
         ],
         "lexicon_chars": 1179,
-        "total_chars_note": "课程字表；lexicon_chars 是字形库规模，两者不能混用；不再按王邑区域（天象/山川等）统计，那不是学习诊断的维度"
+        "total_chars_note": "课程字表；lexicon_chars 是字形库规模，两者不能混用；不按王邑区域（天象/山川等）统计，那不是学习诊断的维度"
       }
     },
     {
@@ -283,15 +394,24 @@
       "path": "/api/quiz",
       "request": {
         "n": 3,
-        "seed": 20261104
+        "seed": 20261104,
+        "kp_id": "可选：只出这个知识点的题，例如 kp.comp.split"
       },
+      "request_note": "kp_id 必须是 data/curriculum.json 里存在且有 question_types 的知识点；无对应题型时返回 400 与 error，不拿别的题凑数",
       "response_example": {
+        "quiz_id": "qz405941690a",
         "items": [
           {
+            "item_id": "qz405941690a.01",
+            "quiz_id": "qz405941690a",
+            "kp_id": "kp.comp.split",
+            "kp_name": "构件拆分",
+            "difficulty": "core",
+            "difficulty_label": "巩固",
             "char": "涉",
             "type": "comp",
             "type_label": "构件",
-            "question": "「涉」由哪两块构件组成？",
+            "question": "「涉」由哪两个构件组成？",
             "options": [
               "水 + 止",
               "火 + 女",
@@ -299,46 +419,72 @@
               "宀 + 口"
             ],
             "answer": "水 + 止",
-            "answer_index": 0
+            "answer_index": 0,
+            "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946"
           }
         ],
         "count": 3,
-        "seed": 20261104
-      }
+        "seed": 20261104,
+        "kp_id": ""
+      },
+      "side_effect": "题目连同标准答案写入 data/learners.db 的 quiz_items 表（保留 6 小时），评阅以这里的答案为准"
     },
     {
       "method": "POST",
       "path": "/api/grade",
       "request": {
-        "quiz": {
-          "items": [
-            "…上一步返回的原样对象…"
-          ]
-        },
+        "quiz_id": "qz405941690a",
         "answers": [
           {
+            "item_id": "qz405941690a.01",
             "char": "涉",
             "choice": 0
           }
-        ]
+        ],
+        "legacy_request": {
+          "quiz": "旧调用可继续把整套题回传；没有 quiz_id 时按客户端题目判分（仅供兼容）",
+          "answers": [
+            {
+              "char": "涉",
+              "choice": 0
+            }
+          ]
+        }
       },
+      "request_note": "带 quiz_id 时忽略请求里的 quiz，避免改 answer_index 拿满分；quiz_id 已过期/伪造返回 410",
       "response_example": {
+        "quiz_id": "qz405941690a",
         "score": 33,
         "correct": 1,
         "total": 3,
+        "by_kp": [
+          {
+            "kp_id": "kp.comp.split",
+            "kp_name": "构件拆分",
+            "total": 1,
+            "ok": 1
+          }
+        ],
         "results": [
           {
+            "attempt_id": "at385b0c7d8a9d4270",
+            "item_id": "qz405941690a.01",
+            "quiz_id": "qz405941690a",
+            "kp_id": "kp.comp.split",
+            "kp_name": "构件拆分",
             "char": "涉",
             "type": "comp",
+            "type_label": "构件",
             "ok": true,
             "your": "水 + 止",
             "right": "水 + 止",
-            "why": "该字的构件就是它在第三关的可击破部位。"
+            "why": "构件拆分看的是字形内部结构，不是按笔画随意切开的。",
+            "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946"
           }
         ],
         "advice": "错的那几题集中在字义，回头把对应条目看一遍即可。"
       },
-      "side_effect": "写入 data/learners.db 中当前访客（zq_vid）的 attempts，并影响该访客下次出题与诊断；不同浏览器互不可见"
+      "side_effect": "写入 data/learners.db 的 attempts 表（attempt_id、item_id、kp_id、正误、选择、时间），并同步旧 JSON 记录；只属于当前 zq_vid"
     },
     {
       "method": "POST",

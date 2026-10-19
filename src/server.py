@@ -26,7 +26,9 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
 import ask as ask_mod          # noqa: E402
+import curriculum              # noqa: E402
 import learner                # noqa: E402
+import learning               # noqa: E402
 import quiz as quiz_mod       # noqa: E402
 from retrieval import get_index  # noqa: E402
 
@@ -166,8 +168,11 @@ class Handler(BaseHTTPRequestHandler):
             if not self._code_ok():
                 self._json({"error": "需要邀请码：请从带邀请码的链接进入"}, 401)
                 return
+            # quiz_id 可选：带上就是「本次练习」口径，不带则取最近一次/最近 N 次
+            qid = (urllib.parse.parse_qs(p.query).get("quiz_id") or [""])[0]
+            qid = "".join(ch for ch in qid[:40] if ch.isalnum() or ch in "-_.") 
             try:
-                self._json(learner.diagnose(get_index(), vid))
+                self._json(learning.diagnose(get_index(), vid, quiz_id=qid))
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
@@ -193,11 +198,11 @@ class Handler(BaseHTTPRequestHandler):
                 store = learner.stats(vid)
             except Exception as e:
                 store = {"error": str(e)[:120]}
+            # 公开自检只回答「能不能用」，不暴露模型地址、密钥或学生作答明细
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
                         "course_chars": course_n,
                         "llm": st["ready"], "model": st["model"],
-                        "llm_base": st["base"],
-                        "dify": ds["ready"], "dify_base": ds["base"],
+                        "dify": ds["ready"],
                         "dify_error": getattr(dify_mod, "LAST_ERROR", ""),
                         "store": store})
             return
@@ -257,15 +262,29 @@ class Handler(BaseHTTPRequestHandler):
             return
         if p.path == "/api/quiz":
             try:
-                self._json(quiz_mod.make_quiz(int(payload.get("n") or 3),
-                                              int(payload.get("seed") or 20261104), vid))
+                kp = (payload.get("kp_id") or "").strip()
+                if kp and kp not in curriculum.kp_index():
+                    self._json({"error": "未知知识点：%s" % kp[:40]}, 400)
+                    return
+                r = quiz_mod.make_quiz(int(payload.get("n") or 3),
+                                       int(payload.get("seed") or 20261104), vid, kp)
+                if r.get("error"):
+                    self._json(r, 400)
+                else:
+                    self._json(r)
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
         if p.path == "/api/grade":
             try:
+                qid = "".join(ch for ch in str(payload.get("quiz_id") or "")[:40]
+                              if ch.isalnum() or ch in "-_.")
+                if qid and not learner.get_quiz(qid):
+                    # 服务端不认这套题（过期/伪造）：不让客户端回传的题目参与判分
+                    self._json({"error": "这套题已过期，请重新出题后再交。"}, 410)
+                    return
                 self._json(quiz_mod.grade(payload.get("quiz") or {},
-                                          payload.get("answers") or [], vid))
+                                          payload.get("answers") or [], vid, qid))
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
