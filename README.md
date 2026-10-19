@@ -106,3 +106,21 @@ ZQ_LLM_KEY / ZQ_LLM_BASE / ZQ_LLM_MODEL
 - [x] 前端三页签：问答 / 学情 / 练习，形成"问 → 诊 → 练 → 评"闭环
 - [ ] 接入大模型（可选，接口已留：ZQ_LLM_KEY / ZQ_LLM_BASE / ZQ_LLM_MODEL）
 - [ ] 教师端班级汇总（A2 提到的"AI 通识实验室"改造方向）
+
+## 两种大模型接法
+
+| 接法 | 配置 | 适用 |
+|---|---|---|
+| 直连模型（OpenAI 兼容） | ZQ_LLM_BASE/KEY/MODEL | 想自己控编排、成本低 |
+| **Dify 应用** | ZQ_DIFY_BASE/KEY | 知识库与流程在 Dify 里做，回答自带检索来源 |
+
+优先级：**Dify → 直连模型 → 本地抽取式**，任一层失败自动降级。
+
+Dify 走的是原生 /chat-messages，因为它会返回 metadata.retriever_resources，
+我们把命中文档名、分段首行、相似度转成前端的「出处」条目；兼容端点只有纯文本，会把可溯源丢掉。
+
+另外两处工程处理：
+- **本地地址绕过系统代理**（否则 127.0.0.1 会被 http_proxy 拦成 502）；
+- **回答清洗**：去掉模型自带的结尾 //、答： 前缀等杂质。
+
+测试：python tests/test_dify.py（假 Dify 独立进程，不需要真 key）。

@@ -28,6 +28,17 @@ import os
 import urllib.error
 import urllib.request
 
+def _urlopen(req, timeout):
+    """本地地址绕过代理，外网地址沿用系统代理。"""
+    import urllib.request as _u
+    from urllib.parse import urlparse
+    host = (urlparse(req.full_url).hostname or "").lower()
+    if host in ("127.0.0.1", "localhost", "::1"):
+        opener = _u.build_opener(_u.ProxyHandler({}))
+        return opener.open(req, timeout=timeout)
+    return _u.urlopen(req, timeout=timeout)
+
+
 TIMEOUT = float(os.environ.get("ZQ_LLM_TIMEOUT") or 25)
 MAX_ROUNDS = 3
 
@@ -70,7 +81,7 @@ def chat(messages, tools=None, temperature=0.2, timeout=None):
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         headers={"Content-Type": "application/json",
                  "Authorization": "Bearer " + c["key"]})
-    with urllib.request.urlopen(req, timeout=timeout or TIMEOUT) as r:
+    with _urlopen(req, timeout or TIMEOUT) as r:
         data = json.loads(r.read().decode("utf-8"))
     return data["choices"][0]["message"], data
 

@@ -18,6 +18,7 @@ import urllib.request
 
 from retrieval import get_index
 import llm as llm_mod
+import dify as dify_mod
 
 _CJK = re.compile(r"[\u3400-\u9fff]")
 _LAST_LLM_ERROR = ""
@@ -83,6 +84,20 @@ def answer(question):
         return _refuse("你想问哪个字？直接说字，比如「家为什么是屋顶下有猪」。")
 
     idx = get_index()
+
+    # ⓪ 配了 Dify 就先走 Dify（知识库与编排在那边，回答自带检索来源）
+    if dify_mod.status()["ready"]:
+        got = None
+        try:
+            got = dify_mod.ask(q)
+        except Exception:
+            got = None
+        if got:
+            got.setdefault("grounded", True)
+            got.setdefault("refused", False)
+            got["citations"] = _dedup(got.get("citations") or [])
+            got["hits"] = [{"id": c["id"]} for c in got["citations"]]
+            return got
 
     # ① 配了大模型就走 agent（模型自己决定先检索还是先看学情）
     if llm_mod.status()["ready"]:

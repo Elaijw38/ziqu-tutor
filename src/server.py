@@ -73,9 +73,16 @@ class Handler(BaseHTTPRequestHandler):
                 st = llm_mod.status()
             except Exception:
                 st = {"ready": False, "model": "", "base": ""}
+            try:
+                import dify as dify_mod
+                ds = dify_mod.status()
+            except Exception:
+                ds = {"ready": False, "base": ""}
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
                         "llm": st["ready"], "model": st["model"],
-                        "llm_base": st["base"]})
+                        "llm_base": st["base"],
+                        "dify": ds["ready"], "dify_base": ds["base"],
+                        "dify_error": getattr(dify_mod, "LAST_ERROR", "")})
             return
         self._static(p.path)
 
