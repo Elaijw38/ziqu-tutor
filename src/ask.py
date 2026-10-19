@@ -12,6 +12,8 @@ LLM 是可选增强：设 ZQ_LLM_KEY / ZQ_LLM_BASE / ZQ_LLM_MODEL 才启用；
 没配就退化成抽取式回答。演示现场没网也不会白屏。
 """
 import json
+import random
+import glyphs as _glyphs
 import os
 import re
 import urllib.request
@@ -121,12 +123,128 @@ def _dedupe_by_char(hits, limit, intent="any"):
     return out[:limit]
 
 
-def answer(question, history=None, conversation_id="", session_id="", vid=""):
+
+_CJK_ONE = re.compile(r"[\u3400-\u9fff]")
+
+
+def _comps_of(idx, ch):
+    """取某个字在知识库里声明的构件（没有就返回 None）。"""
+    for r in idx.rows:
+        if r.get("char") == ch:
+            comps = (r.get("meta") or {}).get("comps")
+            if comps:
+                return [c for c in comps if c], r
+    return None, None
+
+
+def _false_premise(q, idx):
+    """识别"X 由 A 和 B 组成"这类断言，与知识库不符时返回纠正答案。
+
+    返回 dict（直接当作回答）或 None（交给模型）。
+    """
+    m = re.search(r"([\u3400-\u9fff])由([\u3400-\u9fff]{1,2})和([\u3400-\u9fff]{1,2})组成", q or "")
+    if not m:
+        m = re.search(r"([\u3400-\u9fff])\s*=\s*([\u3400-\u9fff]{1,2})\s*\+\s*([\u3400-\u9fff]{1,2})", q or "")
+    if not m:
+        return None
+    x, a, b = m.group(1), m.group(2), m.group(3)
+    comps, row = _comps_of(idx, x)
+    if not comps:
+        # 目标字在库里没有构件（独体字/只记字形）：
+        # 若这套构件其实属于另一个字，也要纠正——否则模型会顺着"木由宀和豕组成"答"对"
+        claimed0 = {a, b}
+        owner0 = owner_row0 = None
+        for r in idx.rows:
+            cs = (r.get("meta") or {}).get("comps") or []
+            if cs and set(cs) == claimed0 and r.get("char") != x:
+                owner0, owner_row0 = r.get("char"), r
+                break
+        if not owner0:
+            return None                  # 认不出这套构件是谁的，交回给模型
+        xrow = next((r for r in idx.rows if r.get("char") == x), None)
+        if not xrow:
+            return None
+        msg = ("不是。「%s」不是由 %s + %s 构成的。" % (x, a, b) +
+               "\n%s + %s 是「%s」的构件。" % (a, b, owner0) +
+               "\n先核对是哪个字的构件，再下结论。")
+        cites = [{"id": owner_row0.get("id"), "char": owner0,
+                  "source": owner_row0.get("source"),
+                  "title": _card_title(owner_row0),
+                  "snippet": (owner_row0.get("text") or "")[:160]}]
+        if (xrow.get("meta") or {}).get("comps"):
+            cites.insert(0, {"id": xrow.get("id"), "char": x, "source": xrow.get("source"),
+                             "title": _card_title(xrow),
+                             "snippet": (xrow.get("text") or "")[:160]})
+        return {"answer": msg, "citations": cites, "hits": [{"id": c["id"]} for c in cites],
+                "grounded": True, "refused": False, "mode": "premise-check"}
+    claimed = {a, b}
+    if set(comps) == claimed or claimed <= set(comps) or set(comps) <= claimed:
+        return None                      # 前提成立，交给模型细说
+
+    # 这套构成其实属于哪个字？
+    owner, owner_row = None, None
+    for r in idx.rows:
+        cs = (r.get("meta") or {}).get("comps") or []
+        if cs and set(cs) == claimed and r.get("char") != x:
+            owner, owner_row = r.get("char"), r
+            break
+
+    msg = "不是。\n「%s」的字形构成是 %s（见下方出处），不是 %s。" % (
+        x, " + ".join(comps), " + ".join(sorted(claimed)))
+    if owner:
+        msg += "\n%s + %s 是「%s」的构成。" % (a, b, owner)
+    msg += "\n这类问题先核构件再下结论，别顺着前提走。"
+
+    cites = []
+    if row:
+        cites.append({"id": row.get("id"), "char": x, "source": row.get("source"),
+                      "title": _card_title(row), "snippet": (row.get("text") or "")[:160]})
+    if owner_row:
+        cites.append({"id": owner_row.get("id"), "char": owner,
+                      "source": owner_row.get("source"),
+                      "title": _card_title(owner_row),
+                      "snippet": (owner_row.get("text") or "")[:160]})
+    return {"answer": msg, "citations": cites, "hits": [{"id": c["id"]} for c in cites],
+            "grounded": True, "refused": False, "mode": "premise-check"}
+
+
+
+_GLYPH_SOURCE = ("Oracle Bone Glyphs: Parametric Vector Dataset (v0.3)，"
+                 "CC BY 4.0，DOI 10.5281/zenodo.22467946")
+
+
+def _glyph_only_answer(chars):
+    """B 级：课程材料没收录，但字形数据集里有 —— 只给数据集能支撑的事实。"""
+    known = [c for c in chars if _glyphs.book.has(c)]
+    if not known:
+        return None
+    lines = []
+    for c in known[:3]:
+        info = _glyphs.book.info(c)
+        lines.append("「%s」在甲骨字形数据集里有对应字形，标注 %s 画（%s）。"
+                     % (c, info.get("n_strokes") or "若干", "甲骨字形笔画，非现代通行笔画"))
+    body = ("这个字不在本课课程材料里，所以**字义、释文和用法我不能讲**，"
+            "避免给你没有依据的说法。\n\n"
+            + "\n".join(lines) +
+            "\n\n以上只是字形数据集的事实，不是本课教学结论；要理解它，建议向任课教师核对。")
+    cites = [{"id": "dataset.glyph", "title": "甲骨字形数据集（非课程材料）",
+              "source": _GLYPH_SOURCE, "char": known[0],
+              "snippet": "数据集仅提供字形几何与笔画数标注，不含字义与释文。"}]
+    return {"answer": body, "citations": cites, "hits": [{"id": "dataset.glyph"}],
+            "grounded": True, "refused": False, "mode": "partial",
+            "scope": "outside_course_glyph_only"}
+
+def _answer_core(question, history=None, conversation_id="", session_id="", vid=""):
     q = (question or "").strip()
     if not q:
         return _refuse("你想问哪个字？直接说字，比如「家为什么是屋顶下有猪」。")
 
     idx = get_index()
+
+    # ⓪-预备：错误前提的确定性核对（评测 f02 暴露过：模型会顺着"木由宀和豕组成"答"对"）
+    _fp = _false_premise(q, idx)
+    if _fp:
+        return _fp
 
     # ⓪ 配了 Dify 就先走 Dify（知识库与编排在那边，回答自带检索来源）
     if dify_mod.status()["ready"]:
@@ -164,6 +282,9 @@ def answer(question, history=None, conversation_id="", session_id="", vid=""):
     chars = _chars_in(q)
 
     if not hits:
+        partial = _glyph_only_answer(chars)
+        if partial:
+            return partial
         return _refuse("这个问题在现有知识库里没有对应内容。可以问我某个字怎么写、"
                        "怎么打，或者它的甲骨字形像什么。", chars)
 
@@ -174,6 +295,10 @@ def answer(question, history=None, conversation_id="", session_id="", vid=""):
     if chars:
         # 出现了"像字"的词、但知识库里没有这个字 → 直接说没有，别拿别的字凑
         if not named:
+            # 课程材料没有，但字形数据集可能有（如「龜」「鹿」）→ 给 B 级回答
+            partial = _glyph_only_answer(chars)
+            if partial:
+                return partial
             return _refuse(
                 "知识库里没有%s这个字。目前能答 %d 个字，可以换个字试试。"
                 % ("「" + "」「".join(chars[:3]) + "」" if chars else "你说的", len(
@@ -193,7 +318,11 @@ def answer(question, history=None, conversation_id="", session_id="", vid=""):
     for row, score in picks:
         used.append({"id": row["id"], "score": score, "char": row.get("char"),
                      "kind": row.get("kind")})
-        cites.append({"id": row["id"], "source": row["source"], "char": row.get("char")})
+        # 材料卡：条目名 + 依据原文（蓝图 §6「出处做成可展开材料卡」）
+        cites.append({"id": row["id"], "source": row["source"],
+                      "char": row.get("char"),
+                      "title": _card_title(row),
+                      "snippet": (row.get("text") or "")[:160]})
         lines.append(row["text"])
 
     text = "查到的内容：\n" + "\n".join("· " + t for t in lines)
@@ -210,7 +339,58 @@ def answer(question, history=None, conversation_id="", session_id="", vid=""):
         "grounded": True,
         "mode": "llm" if polished else "extractive",
     }
+
+    # ---- 三种作答模式（蓝图 §6：直接解释 / 给我提示 / 考考我）----
+    mode = (mode or "").strip().lower()
+    if mode == "hint" and picks:
+        row = picks[0][0]
+        first = _first_sentence(row.get("text") or "")
+        got["answer"] = ("先只给一条线索：\n· " + first +
+                         "\n\n你可以顺着这条想——这个字画的是什么？由哪几块构成？"
+                         "\n想好了告诉我，或者说「看答案」。")
+        got["hint"] = True
+        got["full_answer"] = text          # 前端「看答案」时直接展开，不必再请求
+        got["mode"] = "hint"
+    elif mode == "quiz" and picks:
+        row = picks[0][0]
+        ch = row.get("char") or ""
+        meta = row.get("meta") or {}
+        comps = meta.get("comps") or []
+        if comps and len(comps) >= 2:
+            stem = "「%s」由哪两块构件组成？" % ch
+            answer_line = "正确答案：%s" % " + ".join(comps[:2])
+        elif meta.get("n_strokes") or meta.get("strokes"):
+            stem = "「%s」的甲骨字形有几笔？" % ch
+            answer_line = "正确答案：%s 笔（甲骨字形笔画，不等于现代通行笔画）" % (
+                meta.get("n_strokes") or meta.get("strokes"))
+        else:
+            stem = "「%s」在课程材料里代表什么？" % ch
+            answer_line = "正确答案：" + _first_sentence(row.get("text") or "")
+        got["answer"] = ("考考你：\n" + stem +
+                         "\n\n先自己答，再点「看答案」。")
+        got["quiz"] = {"stem": stem, "answer": answer_line,
+                       "char": ch, "knowledge_point_id": meta.get("knowledge_point_id") or ""}
+        got["mode"] = "quiz"
     return _settle(got, q)
+
+
+def _first_sentence(s):
+    """取第一句，用于提示模式（不能把整段答案直接给出去）。"""
+    s = (s or "").strip()
+    for sep in ("。", "；", "\n"):
+        i = s.find(sep)
+        if 6 <= i <= 80:
+            return s[:i + (1 if sep != "\n" else 0)]
+    return s[:60]
+
+
+def _card_title(row):
+    """材料卡的标题：条目类型 + 字（如「构件讨伐 · 家」）。"""
+    kind = {"wangyi": "王邑实物", "boss": "构件讨伐", "codex": "讨伐名录",
+            "glyph": "字形", "etymology": "字源", "general": "通用"}.get(
+                row.get("kind") or "", row.get("kind") or "条目")
+    ch = row.get("char") or ""
+    return "%s · %s" % (kind, ch) if ch else kind
 
 
 def _settle(got, question=""):
@@ -308,3 +488,112 @@ if __name__ == "__main__":
         print(a["answer"])
         for c in a["citations"]:
             print("  出处:", c["id"], "|", c["source"][:60])
+
+# ============ 统一入口：任何链路返回后，统一补材料卡 + 套三态模式 ============
+def answer(question, history=None, conversation_id="", session_id="", vid="",
+           mode=""):
+    got = _answer_core(question, history=history, conversation_id=conversation_id,
+                       session_id=session_id, vid=vid)
+    try:
+        return _shape_answer(got, question, mode)
+    except Exception as e:
+        # 以前这里静默兜底，导致"模式改了没效果也不报错"；现在至少留一条痕迹
+        import sys as _sys
+        _sys.stderr.write("[ask] _shape_answer failed: %s: %s\n" % (type(e).__name__, e))
+        return got
+
+
+def _rows_for(idx, ids_chars):
+    """按 id 或字把知识库行捞回来，用于补材料卡字段。"""
+    out = []
+    for r in idx.rows:
+        if r.get("id") in ids_chars or (r.get("char") and r.get("char") in ids_chars):
+            out.append(r)
+    return out
+
+
+def _shape_answer(got, question, mode):
+    idx = get_index()
+    cites = got.get("citations") or []
+
+    # ① 材料卡：缺 title/snippet 的，用本地知识库补上（Dify 链路本来就有）
+    keys = set()
+    for c in cites:
+        keys.add(c.get("id"))
+        if c.get("char"):
+            keys.add(c["char"])
+    rows = _rows_for(idx, keys)
+    by_id = {r.get("id"): r for r in rows}
+    by_char = {}
+    for r in rows:
+        by_char.setdefault(r.get("char"), r)
+    for c in cites:
+        if not c.get("title") or not c.get("snippet"):
+            r = by_id.get(c.get("id")) or by_char.get(c.get("char"))
+            if r:
+                c.setdefault("title", _card_title(r))
+                c.setdefault("snippet", (r.get("text") or "")[:160])
+
+    # ② 三态模式
+    mode = (mode or "").strip().lower()
+    if mode not in ("hint", "quiz") or got.get("refused"):
+        return got
+
+    first = None
+    for c in cites:
+        r = by_id.get(c.get("id")) or by_char.get(c.get("char"))
+        if r:
+            first = r
+            break
+    if not first:
+        return got
+
+    ch = first.get("char") or ""
+    meta = first.get("meta") or {}
+
+    if mode == "hint":
+        got["full_answer"] = got.get("answer") or ""
+        got["answer"] = ("先只给一条线索：\n· " + _first_sentence(first.get("text") or "") +
+                         "\n\n顺着这条想一想：这个字画的是什么？由哪几块构成？"
+                         "\n想好了可以直接说，或者点「看答案」。")
+        got["hint"] = True
+        # 提示模式也不该把出处标题（含字名）直接摆出来
+        got["reveal_citations"] = got.get("citations") or []
+        got["citations"] = []
+        got["mode"] = "hint"
+    else:
+        # —— 辨形题：只给甲骨字形，四选一 ——
+        # 关键：目标字不能是问句里提到的字，否则"问了家、又考家"等于送答案
+        asked = set(_CJK.findall(question or ""))
+        course = [r for r in idx.rows
+                  if r.get("char") and r.get("kind") in ("wangyi", "boss", "codex")
+                  and r["char"] not in asked]
+        if not course:
+            course = [r for r in idx.rows
+                      if r.get("char") and r.get("kind") in ("wangyi", "boss", "codex")]
+        target = random.Random((hash(question) if question else 0) & 0xFFFF).choice(course)["char"]
+        ch = target
+        chars = [r["char"] for r in course]
+        rnd = random.Random(hash(question) & 0xFFFF)
+        pool = [c for c in dict.fromkeys(chars) if c != ch]
+        rnd.shuffle(pool)
+        opts = [ch] + pool[:3]
+        rnd.shuffle(opts)
+        got["answer"] = ("考考你：这个甲骨字形是哪个字？\n\n"
+                         "选项：" + "、".join(opts) +
+                         "\n\n先自己认，再点「看答案」。")
+        # 解释与出处必须是**目标字**的，不能沿用问句那个字
+        trow = next((r for r in idx.rows if r.get("char") == ch), None) or first
+        got["quiz"] = {"stem": "这个甲骨字形是哪个字？", "options": opts,
+                       "answer": ch,
+                       "explain": _first_sentence(trow.get("text") or "")}
+        # 作答前：不出出处、不显示字形标签
+        got["reveal_citations"] = [{"id": trow.get("id"), "char": ch,
+                                    "source": trow.get("source"),
+                                    "title": _card_title(trow),
+                                    "snippet": (trow.get("text") or "")[:160]}]
+        got["citations"] = []
+        got["mask_glyphs"] = True
+        got["full_answer"] = got.get("full_answer") or ""
+        got["mode"] = "quiz"
+    return got

@@ -79,22 +79,24 @@
   /* .welcome 自带 display:flex，写在 .hide 之后会盖掉它，这里单独再压一次 */
   .welcome.hide{display:none}
   /* 问答：空对话显示欢迎区，发出第一条消息后整块收起 */
-  .welcome{display:flex;gap:14px;align-items:flex-start;padding:16px 18px 10px;
-    background:linear-gradient(180deg,#ffffff,#fafcff)}
-  .welcome .fig{width:82px;height:82px;flex:none;object-fit:contain;
-    filter:drop-shadow(0 4px 8px rgba(60,70,90,.12))}
-  .welcome .hi b{font-size:15px;letter-spacing:.5px;color:var(--ink)}
-  .welcome .hi p{margin:4px 0 0;font-size:13px;line-height:1.7;color:var(--ink-2)}
-  .quick{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-  .q-chip{padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;
-    color:var(--ink-2);font-size:12.5px;cursor:pointer}
-  .q-chip:hover{border-color:var(--gold);color:var(--ink)}
+  .welcome{display:flex;gap:12px;align-items:center;padding:14px 18px;
+    border-bottom:1px solid var(--line);background:linear-gradient(180deg,#ffffff,#fafcff)}
+  .welcome .fig{width:56px;height:56px;flex:none;object-fit:contain;
+    filter:drop-shadow(0 2px 5px rgba(60,70,90,.10))}
+  .welcome .hi{min-width:0}
+  .welcome .hi b{font-size:15px;letter-spacing:.3px;color:var(--ink)}
+  .welcome .hi p{margin:3px 0 0;font-size:13px;line-height:1.6;color:var(--ink-2)}
+  .welcome-label{display:block;margin-top:7px;font-size:11.5px;color:#8794a7}
+  .quick{display:flex;gap:7px;flex-wrap:wrap;margin-top:5px}
+  .q-chip{padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:#fff;
+    color:var(--ink-2);font-size:12px;line-height:1.45;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+  .q-chip:hover{border-color:#b9cbe5;color:var(--zzu-blue);background:#f6f9fe}
   /* 对话态：消息区是主体，输入框钉在聊天区底部 */
   .chat-wrap{display:flex;flex-direction:column;min-height:0}
   .main-col{display:flex;flex-direction:column;min-width:0}
   .log{flex:1;padding:16px 18px;min-height:34vh;max-height:52vh;overflow:auto}
   /* 还没开始对话时不要留一大片空白 */
-  .log:empty{min-height:8vh;max-height:8vh}
+  .log:empty{min-height:24px;max-height:24px;padding-top:0;padding-bottom:0}
   .msg{margin:0 0 14px}
   .who{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:1px;
     color:var(--ink-2);margin-bottom:5px}
@@ -127,12 +129,13 @@
     .hero{padding:0;margin-bottom:10px}
     .hero p{font-size:12.5px;line-height:1.55}
     nav{margin-bottom:10px}
-    .welcome{padding:12px 14px 10px;gap:11px}
-    .welcome .fig{width:56px;height:56px}
+    .welcome{padding:11px 13px;gap:9px;align-items:flex-start}
+    .welcome .fig{width:46px;height:46px;margin-top:2px}
     .welcome .hi p{font-size:12px;line-height:1.55}
-    .q-chip{font-size:11.5px;padding:3px 8px}
+    .welcome-label{margin-top:6px}
+    .q-chip{font-size:11.5px;padding:4px 8px}
     .log{min-height:26vh;max-height:44vh;padding:14px}
-    .log:empty{min-height:6vh;max-height:6vh}
+    .log:empty{min-height:16px;max-height:16px;padding-top:0;padding-bottom:0}
     .ans-row .mini{width:34px;height:34px}
   }
   .ask .bubble{background:#eef4fd;border:1px solid var(--line);border-radius:12px;
@@ -141,10 +144,19 @@
     border-radius:12px;padding:11px 14px;white-space:pre-wrap}
 
   /* 甲骨字形条：回答下面直接给出字形，可点开下载 SVG */
+
+  /* 三态：直接解释 / 给我提示 / 考考我 */
+  .modes{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px 0}
+  .modebtn{padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;
+    color:var(--ink-2);font-size:13px;cursor:pointer;transition:.15s}
+  .modebtn:hover{border-color:var(--zzu-blue);color:var(--zzu-blue)}
+  .modebtn.on{background:var(--zzu-blue);border-color:var(--zzu-blue);color:#fff}
+  .reveal{margin:8px 0 2px}
   .glyphrow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px}
   .glyphcell{display:flex;flex-direction:column;align-items:center;gap:3px;
     padding:7px 9px 5px;border:1px solid var(--line);border-radius:10px;background:#fff;
     text-decoration:none;transition:.15s}
+  .glyphcell.masked{cursor:default}
   .glyphcell:hover{border-color:var(--zzu-blue);box-shadow:0 2px 8px rgba(22,51,107,.10)}
   .glyphcell img{width:66px;height:66px;display:block}
   .glyphcap{font-size:11.5px;color:var(--ink-2);letter-spacing:.5px}
@@ -165,6 +177,11 @@
   input[type=text]{flex:1;padding:11px 14px;border:1px solid var(--line);border-radius:10px;
     font-size:14.5px;background:#fff;color:var(--ink);outline:none}
   input[type=text]:focus{border-color:var(--zzu-blue);box-shadow:0 0 0 3px rgba(22,51,107,.12)}
+  :focus-visible{outline:3px solid rgba(31,74,143,.45);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;
+      animation-iteration-count:1!important;transition-duration:.01ms!important}
+  }
   /* 按钮 */
   .btn{padding:10px 22px;border:0;border-radius:9px;background:var(--zzu-blue);color:#fff;
     font-size:14px;letter-spacing:1px;cursor:pointer;transition:.15s}
@@ -334,8 +351,8 @@
     <p>看懂字形、依据材料、边学边练——答案只来自知识库，查不到直说。</p>
   </div>
 
-  <nav>
-    <button class="tab on" data-tab="chat"><b>问答</b><span>问字形、字义、构形，答案附出处</span></button>
+  <nav aria-label="学习功能">
+    <button class="tab on" data-tab="chat" aria-current="page"><b>问答</b><span>问字形、字义、构形，答案附出处</span></button>
     <button class="tab" data-tab="diag"><b>学情诊断</b><span>按知识点看证据、错因与补练</span></button>
     <button class="tab" data-tab="quiz"><b>随堂练习</b><span>按知识点组卷，交卷即评讲</span></button>
   </nav>
@@ -345,17 +362,24 @@
       <span class="tag">答案只来自知识库，附原文出处</span></div>
     <div class="chat-wrap">
       <div class="welcome" id="welcome">
-        <img class="fig" src="assets/guibao.png" alt="龟宝——甲骨小向导">
+        <img class="fig" src="assets/guibao.png" alt="龟宝">
         <div class="hi">
-          <b>我是龟宝，甲骨文助教</b>
-          <p>问字形、字义、构形、读法都行。答案只来自知识库并附出处，查不到会直说。</p>
+          <b>你好，我是龟宝</b>
+          <p>从一个字开始，一起看字形、找材料，再用练习检验理解。回答会附出处；证据不足时我会说明。</p>
+          <span class="welcome-label">可以这样问</span>
           <div class="quick" id="quick"></div>
         </div>
       </div>
       <div class="main-col">
-        <div class="log" id="log"></div>
+        <div class="log" id="log" aria-label="对话记录" aria-live="polite" aria-relevant="additions text"></div>
+        <div class="modes" id="modes">
+        <button class="modebtn on" type="button" data-mode="">直接解释</button>
+        <button class="modebtn" type="button" data-mode="hint">给我提示</button>
+        <button class="modebtn" type="button" data-mode="quiz">考考我</button>
+      </div>
+
         <form id="f">
-          <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off" enterkeyhint="send">
+          <input type="text" id="q" aria-label="输入你想了解的甲骨文问题" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off" enterkeyhint="send">
           <button class="btn" type="submit" id="send">提问</button>
         </form>
       </div>
@@ -397,13 +421,19 @@ const $ = s => document.querySelector(s);
 const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c;
   if (x != null) n.textContent = x; return n; };
 
-function showTab(name, noAuto){
-  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x.dataset.tab === name));
+function showTab(name){
+  document.querySelectorAll('.tab').forEach(x => {
+    const active = x.dataset.tab === name;
+    x.classList.toggle('on', active);
+    if (active) x.setAttribute('aria-current', 'page');
+    else x.removeAttribute('aria-current');
+  });
   ['chat','diag','quiz'].forEach(k => $('#p-' + k).classList.toggle('hide', k !== name));
   if (name === 'diag') loadDiag(LAST_QUIZ);
-  if (name === 'quiz' && !PAPER && !noAuto) $('#mk').click();   // 点练习页签就直接给一套题
+  // 切换页签只导航；组卷由学生点击按钮明确发起。
   if (name === 'chat') setTimeout(() => input.focus({preventScroll: true}), 80);
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({top: 0, behavior: reduceMotion ? 'auto' : 'smooth'});
 }
 document.querySelectorAll('.tab').forEach(t => t.onclick = () => showTab(t.dataset.tab));
 
@@ -454,19 +484,65 @@ function addGlyphs(body, a){
   const list = a.glyphs || [];
   if (!list.length) return;
   const row = el('div','glyphrow');
+  const masked = !!a.mask_glyphs;   // 辨形题作答前：不露字名、不给下载（文件名会泄题）
   list.forEach(g => {
-    const link = document.createElement('a');
-    link.className = 'glyphcell';
-    link.href = g.download || g.url;
-    link.title = '下载「' + g.char + '」的甲骨字形（SVG）';
+    const link = masked ? document.createElement('div') : document.createElement('a');
+    link.className = 'glyphcell' + (masked ? ' masked' : '');
+    if (!masked){
+      link.href = g.download || g.url;
+      link.title = '下载「' + g.char + '」的甲骨字形（SVG）';
+    }
     const img = document.createElement('img');
     img.src = g.url; img.alt = '甲骨文「' + g.char + '」'; img.loading = 'lazy';
     img.onerror = () => { link.remove(); };
     link.appendChild(img);
-    link.appendChild(el('span','glyphcap', g.char + (g.strokes ? ' · ' + g.strokes + ' 笔' : '')));
+    if (!masked)
+      link.appendChild(el('span','glyphcap', g.char + (g.strokes ? ' · ' + g.strokes + ' 笔' : '')));
+    else
+      link.appendChild(el('span','glyphcap','这是哪个字？'));
     row.appendChild(link);
   });
   if (row.children.length) body.appendChild(row);
+}
+
+
+/* 「看答案」：hint / quiz 模式下把服务端给的 full_answer / quiz.answer 展开 */
+function addReveal(body, a){
+  if (!a.hint && !a.quiz) return;
+  const wrap = el('div','reveal');
+  const btn = el('button','btn small','看答案');
+  btn.type = 'button';
+  let shown = false;
+  btn.onclick = () => {
+    if (shown) return;
+    shown = true;
+    btn.remove();
+    let text;
+    if (a.quiz) {
+      text = '答案是「' + (a.quiz.answer || '') + '」。' +
+             (a.quiz.explain ? '\n' + a.quiz.explain : '');
+    } else {
+      text = a.full_answer || '';
+    }
+    const box = el('div','bubble', text);
+    box.style.marginTop = '6px';
+    wrap.appendChild(box);
+    // 揭示后补出处（作答前是隐藏的）
+    const cs = a.reveal_citations || [];
+    if (cs.length){
+      const d = el('details','cite');
+      d.appendChild(el('summary',null,'出处 · ' + cs.length + ' 条（点开核对原文）'));
+      const ol = el('ol');
+      cs.forEach(c => {
+        const li = el('li');
+        li.appendChild(el('span',null, (c.title ? c.title + ' · ' : '') + c.source));
+        ol.appendChild(li);
+      });
+      d.appendChild(ol); wrap.appendChild(d);
+    }
+  };
+  wrap.appendChild(btn);
+  body.appendChild(wrap);
 }
 
 function addAnswer(a){
@@ -505,6 +581,7 @@ function addAnswer(a){
     });
     d.appendChild(ol); body.appendChild(d);
   }
+  addReveal(body, a);
   const fu = followUps(a); if (fu) body.appendChild(fu);
   row.appendChild(miniAvatar()); row.appendChild(body);
   m.appendChild(row);
@@ -528,6 +605,23 @@ function followUps(a){
   });
   return box;
 }
+
+/* 问答三态：默认直接解释；hint/quiz 先不给答案，点「看答案」才展开 */
+let ASK_MODE = '';
+(function(){
+  const box = document.getElementById('modes');
+  if (!box) return;
+  box.querySelectorAll('.modebtn').forEach(b => {
+    b.onclick = () => {
+      box.querySelectorAll('.modebtn').forEach(x => x.classList.toggle('on', x === b));
+      ASK_MODE = b.dataset.mode || '';
+      const i = document.getElementById('q');
+      if (i) i.placeholder = ASK_MODE === 'hint' ? '想让我先给一条线索？说一个字'
+        : (ASK_MODE === 'quiz' ? '想让我考考你？说一个字' : '例如：家为什么是屋顶下有猪');
+    };
+  });
+})();
+
 let BUSY = false;      // 请求进行中不再接受新提问，防连按 Enter 重复提交
 async function ask(q){
   q = (q||'').trim(); if(!q || BUSY) return;
@@ -548,7 +642,7 @@ async function ask(q){
   log.appendChild(wait); log.scrollTop = 1e9;
   try{
     const r = await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({question:q, history:CTX.slice(-6), conversation_id:CONV, session_id:SID})});
+      body:JSON.stringify({question:q, history:CTX.slice(-6), conversation_id:CONV, session_id:SID, mode:ASK_MODE})});
     const a = await r.json();
     if (!a.error){
       CONV = a.conversation_id || CONV;
@@ -576,7 +670,7 @@ function jumpToChar(ch){
 }
 /* 从诊断页直接跳到练习：带知识点出题，回来的证据就落在这个知识点上 */
 async function practiceFor(kpId, n){
-  showTab('quiz', true);
+  showTab('quiz');
   await makePaper({n: n || 3, kp_id: kpId || ''});
 }
 
@@ -823,7 +917,7 @@ async function doGrade(){
   box.appendChild(go);
 }
 
-['甲骨文是什么','日为什么写成圆的','六书是哪六种','家为什么是屋顶下有猪'].forEach(q => {
+['日为什么写成圆的','家为什么是屋顶下有猪','六书是哪六种'].forEach(q => {
   const b = el('button','q-chip', q); b.type = 'button'; b.onclick = () => ask(q);
   $('#quick').appendChild(b);
 });

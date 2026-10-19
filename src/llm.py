@@ -134,6 +134,8 @@ TOOLS = [
                 "properties": {
                     "n": {"type": "integer", "description": "题量，1-5，默认 3"},
                     "seed": {"type": "integer", "description": "可选。固定后同一套题可复现，便于课堂对照"},
+                    "kp": {"type": "string",
+                           "description": "可选。只出某个知识点的题，取 get_learner_state 里的 kp 名称"},
                 },
             },
         },
@@ -290,7 +292,18 @@ def _exec_tool(name, args, idx, learner_mod, session_id="", vid=""):
         import quiz as quiz_mod
         n = max(1, min(5, int((args or {}).get("n") or 3)))
         seed = (args or {}).get("seed")
-        quiz = quiz_mod.make_quiz(n, int(seed) if seed else 20261104, vid)
+        kp_name = ((args or {}).get("kp") or "").strip()
+        kp_id = ""
+        if kp_name:
+            try:
+                import learning as _L
+                for _k in (_L.diagnose(idx, vid).get("knowledge_points") or []):
+                    if kp_name in (_k.get("name") or ""):
+                        kp_id = _k.get("knowledge_point_id") or ""
+                        break
+            except Exception:
+                kp_id = ""
+        quiz = quiz_mod.make_quiz(n, int(seed) if seed else 20261104, vid, kp_id=kp_id)
         qid = _remember_quiz(quiz, session_id)
         items = [{"char": it["char"], "type": it["type_label"],
                   "question": it["question"], "options": it["options"]}
@@ -350,6 +363,27 @@ def _history_messages(history):
     return out
 
 
+
+def _pending_hint(session_id):
+    """如果本会话有未评阅的题，返回一段 system 提示（只含题面，不含答案）。"""
+    qid = _SESSION_QUIZ.get(session_id or "")
+    if not qid:
+        return ""
+    quiz = _QUIZ_STORE.get(qid)
+    if not quiz:
+        return ""
+    lines = []
+    for i, it in enumerate(quiz.get("items") or [], 1):
+        opts = " / ".join("%s. %s" % (chr(65 + j), o) for j, o in enumerate(it.get("options") or []))
+        lines.append("%d. 「%s」%s\n   %s" % (i, it.get("char"), it.get("question"), opts))
+    return ("【当前会话有一套未评阅的练习】quiz_id=%s，共 %d 题：\n%s\n\n"
+            "如果学生这条消息是在作答（例如「第一题选 A」「都选 B」「鸣的答案是 口+隹」），"
+            "请把作答换算成 answers=[{\"char\": 题面里的字, \"choice\": 选项下标(从0起)}]，"
+            "然后调用 submit_answers(quiz_id=\"%s\", answers=[...]) 完成评阅；"
+            "换算不确定时先问清楚，不要猜。"
+            % (qid, len(lines) or 0, "\n".join(lines), qid))
+
+
 def agent_answer(question, idx, learner_mod, history=None, session_id="", vid=""):
     """带工具调用的问答。返回 dict；任何失败都返回 None 让上层降级。
 
@@ -357,6 +391,9 @@ def agent_answer(question, idx, learner_mod, history=None, session_id="", vid=""
     这样「它怎么打」里的「它」才能指回上一句说的字。
     """
     messages = [{"role": "system", "content": SYSTEM}]
+    _hint = _pending_hint(session_id)
+    if _hint:
+        messages.append({"role": "system", "content": _hint})
     messages.extend(_history_messages(history))
     messages.append({"role": "user", "content": question})
 
@@ -412,3 +449,16 @@ def status():
     c = config()
     return {"ready": c["ready"], "model": c["model"] or "",
             "base": c["base"] or ""}
+
+# ============ 出题/判分的硬规则（模型不得自己编题、自己判分）============
+_RULES_TEXT = (
+    "\n"
+    "【出题与判分的硬规则】\n"
+    "1. 出题只能调用 generate_quiz；禁止自己编写题面、选项、答案或所谓巩固题。\n"
+    "2. 判分只能调用 submit_answers；禁止自己算分、禁止自己判断对错。\n"
+    "3. 判分后若需要再练，再调用一次 generate_quiz（可带 kp 指定薄弱知识点），不要手写题目。\n"
+    "4. 工具返回的题面与选项要原样转给学生：不改写、不增删选项、不提前给答案。\n"
+    "5. 学生说「再来一组 / 巩固一下 / 针对我弱的再出」都算要题，必须走 generate_quiz。\n"
+)
+if "【出题与判分的硬规则】" not in SYSTEM:
+    SYSTEM = SYSTEM.replace("【证据】", _RULES_TEXT + "【证据】", 1)

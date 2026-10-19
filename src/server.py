@@ -378,8 +378,10 @@ class Handler(BaseHTTPRequestHandler):
         sid = "".join(ch for ch in (sid if isinstance(sid, str) else "")[:64]
                       if ch.isalnum() or ch in "-_")
         try:
+            mode = payload.get("mode")
+            mode = mode.strip().lower()[:10] if isinstance(mode, str) else ""
             res = ask_mod.answer(q, history=hist, conversation_id=conv,
-                                 session_id=sid, vid=vid)
+                                 session_id=sid, vid=vid, mode=mode)
             # 选字：先取出处对应的字（这才是"回答用到的"），没有出处才退回问句里的课程字
             course_chars = {r.get("char") for r in get_index().rows
                             if r.get("char") and r.get("kind") in ("wangyi", "boss", "codex")}
@@ -390,6 +392,10 @@ class Handler(BaseHTTPRequestHandler):
                     seen.add(ch)
                     picked.append(ch)
 
+            # 辨形题：只出目标字这一个字形（出处已被隐藏，不能靠出处挑字）
+            _quiz = res.get("quiz") or {}
+            if _quiz.get("answer") and glyph_mod.book.has(_quiz["answer"]):
+                _push(_quiz["answer"])
             for c in (res.get("citations") or []):
                 ch = c.get("char") or str(c.get("id") or "").split(".")[-1]
                 if len(ch) == 1:

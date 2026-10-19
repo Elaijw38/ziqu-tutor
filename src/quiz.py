@@ -95,7 +95,9 @@ def make_quiz(n=3, seed=20261104, vid="", kp_id=""):
     # 拿它出「本义/构件」题会变成无意义的填空。
     rows = [r for r in idx.rows if r.get("char")
             and ((r.get("meta") or {}).get("course")
-                 or r.get("kind") in learner.COURSE_KINDS)]
+                 or r.get("kind") in learner.COURSE_KINDS
+                 # 构件是逐条核对过的，有构件就该能出构件题
+                 or len((r.get("meta") or {}).get("comps") or []) >= 2)]
     by_char = {}
     for r in rows:
         by_char.setdefault(r["char"], r)

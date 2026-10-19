@@ -23,3 +23,12 @@ data/learners.db
 data/learners.db-wal
 data/learners.db-shm
 data/corrupt/
+
+# 运行期临时文件（不提交）
+_server.err
+_server.out
+_p*.py
+_fix_*.py
+_clean_*.py
+_check/
+data/_kb.before_comps.jsonl
