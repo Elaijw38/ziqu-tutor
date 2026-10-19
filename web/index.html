@@ -139,6 +139,15 @@
     padding:9px 13px;display:inline-block;max-width:100%}
   .ans .bubble{background:#fff;border:1px solid var(--line);border-left:3px solid var(--zzu-blue);
     border-radius:12px;padding:11px 14px;white-space:pre-wrap}
+
+  /* 甲骨字形条：回答下面直接给出字形，可点开下载 SVG */
+  .glyphrow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px}
+  .glyphcell{display:flex;flex-direction:column;align-items:center;gap:3px;
+    padding:7px 9px 5px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    text-decoration:none;transition:.15s}
+  .glyphcell:hover{border-color:var(--zzu-blue);box-shadow:0 2px 8px rgba(22,51,107,.10)}
+  .glyphcell img{width:66px;height:66px;display:block}
+  .glyphcap{font-size:11.5px;color:var(--ink-2);letter-spacing:.5px}
   .cite{margin-top:8px;border-top:1px dashed var(--line);padding-top:7px}
   .cite summary{cursor:pointer;font-size:12.5px;color:var(--ink-2)}
   .cite ol{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--ink-2)}
@@ -439,6 +448,27 @@ function stateOf(a){
 function miniAvatar(){
   const av = el('img','mini'); av.src = 'assets/guibao.png'; av.alt = '龟宝'; return av;
 }
+
+/* 甲骨字形：服务端返回 glyphs 时渲染成可点击的字形卡 */
+function addGlyphs(body, a){
+  const list = a.glyphs || [];
+  if (!list.length) return;
+  const row = el('div','glyphrow');
+  list.forEach(g => {
+    const link = document.createElement('a');
+    link.className = 'glyphcell';
+    link.href = g.download || g.url;
+    link.title = '下载「' + g.char + '」的甲骨字形（SVG）';
+    const img = document.createElement('img');
+    img.src = g.url; img.alt = '甲骨文「' + g.char + '」'; img.loading = 'lazy';
+    img.onerror = () => { link.remove(); };
+    link.appendChild(img);
+    link.appendChild(el('span','glyphcap', g.char + (g.strokes ? ' · ' + g.strokes + ' 笔' : '')));
+    row.appendChild(link);
+  });
+  if (row.children.length) body.appendChild(row);
+}
+
 function addAnswer(a){
   const m = el('div','msg ans');
   const row = el('div','ans-row');
@@ -449,6 +479,7 @@ function addAnswer(a){
   if (st) w.appendChild(el('span','state ' + st[0], st[1]));
   body.appendChild(w);
   body.appendChild(el('div','bubble', a.answer));
+  addGlyphs(body, a);
   if (a.trace && a.trace.length){
     const tr = el('div','trace');
     traceTexts(a.trace).forEach(x => tr.appendChild(el('span','tchip', x)));

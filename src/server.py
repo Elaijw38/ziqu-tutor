@@ -29,7 +29,8 @@ import ask as ask_mod          # noqa: E402
 import curriculum              # noqa: E402
 import learner                # noqa: E402
 import learning               # noqa: E402
-import quiz as quiz_mod       # noqa: E402
+import quiz as quiz_mod
+import glyphs as glyph_mod  # 甲骨字形渲染（上游 1203 字形）       # noqa: E402
 from retrieval import get_index  # noqa: E402
 
 WEB = os.path.join(ROOT, "web")
@@ -65,6 +66,8 @@ LOGIN_HTML = """<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
   <input name="code" type="password" placeholder="邀请码" autofocus required>
   <button type="submit">进入</button>
   <div class="err">__ERR__</div>
+  <p style="margin:14px 0 0;font-size:12px;color:#8a97a8">
+    没有邀请码？向任课教师索取，或直接打开老师发的带码链接。</p>
 </form></body></html>"""
 
 
@@ -176,6 +179,31 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:
                 self._json({"error": "internal: %s" % e}, 500)
             return
+        if p.path.startswith("/api/glyph/"):
+            qs = urllib.parse.parse_qs(p.query)
+            ch = urllib.parse.unquote(p.path.split("/api/glyph/", 1)[1] or "")[:1]
+            try:
+                size = int((qs.get("size") or ["120"])[0])
+            except ValueError:
+                size = 120
+            size = max(40, min(size, 1024))
+            svg = glyph_mod.book.svg(ch, width=size) if glyph_mod.book.has(ch) else None
+            if not svg:
+                self._json({"error": "该字暂无甲骨字形", "char": ch,
+                            "glyphs": len(glyph_mod.book.by_char)}, 404)
+                return
+            body = svg.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "image/svg+xml; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.send_header("Cache-Control", "public, max-age=86400")
+            if qs.get("download"):
+                fn = urllib.parse.quote("甲骨文字形-%s.svg" % ch)
+                self.send_header("Content-Disposition",
+                                 "attachment; filename*=UTF-8''%s" % fn)
+            self.end_headers()
+            self.wfile.write(body)
+            return
         if p.path == "/api/health":
             idx = get_index()
             chars = {r.get("char") for r in idx.rows if r.get("char")}
@@ -210,6 +238,23 @@ class Handler(BaseHTTPRequestHandler):
                         "dify_error": getattr(dify_mod, "LAST_ERROR", ""),
                         "store": store})
             return
+        # 分享用的直达链接：/?code=xxx 校验通过就种 cookie 再跳到干净地址。
+        # 否则每发一条链接，对方都要先手输一次邀请码。
+        if p.path in ("/", "/index.html") and ACCESS_CODE:
+            code = (urllib.parse.parse_qs(p.query).get("code") or [""])[0].strip()
+            if code:
+                if code != ACCESS_CODE:
+                    self._login_page("链接里的邀请码不对，请向任课教师重新索取。")
+                    return
+                self.send_response(303)
+                # 与表单登录一致：口令只放 HttpOnly cookie，前端脚本读不到
+                self.send_header("Set-Cookie",
+                                 "zq_code=%s; Path=/; HttpOnly; SameSite=Lax; Max-Age=604800"
+                                 % urllib.parse.quote(code))
+                self.send_header("Location", "/")
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return
         # 首页要过邀请码；校徽/龟宝等静态图放行（页面本身拿不到就没意义）
         if p.path in ("/", "/index.html") and not self._code_ok():
             self._login_page()
@@ -318,8 +363,34 @@ class Handler(BaseHTTPRequestHandler):
         sid = "".join(ch for ch in (sid if isinstance(sid, str) else "")[:64]
                       if ch.isalnum() or ch in "-_")
         try:
-            self._json(ask_mod.answer(q, history=hist, conversation_id=conv,
-                                     session_id=sid, vid=vid))
+            res = ask_mod.answer(q, history=hist, conversation_id=conv,
+                                 session_id=sid, vid=vid)
+            # 选字：先取出处对应的字（这才是"回答用到的"），没有出处才退回问句里的课程字
+            course_chars = {r.get("char") for r in get_index().rows
+                            if r.get("char") and r.get("kind") in ("wangyi", "boss", "codex")}
+            picked, seen = [], set()
+
+            def _push(ch):
+                if len(picked) < 4 and ch and ch not in seen and glyph_mod.book.has(ch):
+                    seen.add(ch)
+                    picked.append(ch)
+
+            for c in (res.get("citations") or []):
+                ch = c.get("char") or str(c.get("id") or "").split(".")[-1]
+                if len(ch) == 1:
+                    _push(ch)
+            if not picked:
+                for ch in q:
+                    if ch in course_chars:
+                        _push(ch)
+            res["glyphs"] = [
+                {"char": c,
+                 "strokes": glyph_mod.book.info(c).get("n_strokes"),
+                 "url": "/api/glyph/" + urllib.parse.quote(c),
+                 "download": "/api/glyph/" + urllib.parse.quote(c) + "?size=512&download=1"}
+                for c in picked
+            ]
+            self._json(res)
         except Exception as e:
             self._json({"error": "internal: %s" % e}, 500)
 
