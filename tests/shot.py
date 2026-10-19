@@ -4,6 +4,7 @@ import io
 import json
 import os
 import subprocess
+import sys
 import time
 import urllib.request
 
@@ -12,6 +13,8 @@ os.makedirs(OUT, exist_ok=True)
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 NODE = r"C:\Users\32058\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe"
 URL = "http://127.0.0.1:8770/"
+W = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
+H = int(sys.argv[2]) if len(sys.argv) > 2 else 900
 
 JS = r'''
 const ws = new WebSocket(process.argv[2]);
@@ -25,7 +28,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 ws.addEventListener('open', async () => {
   await send('Page.enable');
   await send('Emulation.setDeviceMetricsOverride',
-    {width: 1000, height: 900, deviceScaleFactor: 1, mobile: false});
+    {width: +process.argv[5], height: +process.argv[6], deviceScaleFactor: 1, mobile: +process.argv[5] < 700});
   await send('Page.navigate', {url: URL});
   await sleep(3500);
   const click = "(function(){var b=[].slice.call(document.querySelectorAll('.chip'))" +
@@ -35,7 +38,7 @@ ws.addEventListener('open', async () => {
   console.log('CLICK ' + (r.result && r.result.value));
   await sleep(1600);
   const s = await send('Page.captureScreenshot', {format: 'png'});
-  require('fs').writeFileSync(OUTDIR + '/tutor.png', Buffer.from(s.data, 'base64'));
+  require('fs').writeFileSync(OUTDIR + '/tutor-' + process.argv[5] + 'x' + process.argv[6] + '.png', Buffer.from(s.data, 'base64'));
   ws.close(); process.exit(0);
 });
 '''
@@ -61,7 +64,8 @@ for _ in range(80):
         pass
 page = [t for t in (targets or []) if t.get("type") == "page"
         and t.get("webSocketDebuggerUrl")][0]
-r = subprocess.run([NODE, js_path, page["webSocketDebuggerUrl"], OUT, URL],
+r = subprocess.run([NODE, js_path, page["webSocketDebuggerUrl"], OUT, URL,
+                    str(W), str(H)],
                    capture_output=True, text=True, encoding="utf-8",
                    errors="replace", timeout=180)
 child.kill()

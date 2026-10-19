@@ -78,9 +78,19 @@
   .msg{margin:0 0 14px}
   .who{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:1px;
     color:var(--ink-2);margin-bottom:5px}
-  .avatar{width:26px;height:26px;border-radius:50%;background:#fff;border:1px solid var(--line);
-    object-fit:cover;flex:none}
-  .avatar.lg{width:44px;height:44px}
+  /* 龟宝：整身站在对话左侧，不做圆形头像 */
+  .chat-wrap{display:flex;align-items:stretch}
+  .guide-col{width:214px;flex:none;padding:6px 0 12px 14px;display:flex;
+    flex-direction:column;justify-content:flex-end;gap:10px}
+  .guide-fig{width:100%;max-width:200px;margin:0 auto;display:block;
+    filter:drop-shadow(0 10px 16px rgba(60,70,90,.14))}
+  .guide-say{font-size:12.5px;line-height:1.65;color:var(--ink-2);background:#fff;
+    border:1px solid var(--line);border-radius:12px;padding:9px 11px;position:relative}
+  .guide-say::after{content:'';position:absolute;left:16px;bottom:-6px;width:10px;height:10px;
+    background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+    transform:rotate(45deg)}
+  .guide-say b{color:var(--ink)}
+  .main-col{flex:1;min-width:0;display:flex;flex-direction:column}
   /* 等待态：龟宝翻书中 */
   .typing .bubble{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);
     background:#f4f8fd;border:1px dashed #bcd2ee;border-radius:12px;padding:9px 13px}
@@ -89,9 +99,13 @@
   .dots i:nth-child(2){animation-delay:.18s}
   .dots i:nth-child(3){animation-delay:.36s}
   @keyframes bl{0%,100%{opacity:.22}50%{opacity:1}}
-  .guide{display:flex;gap:12px;align-items:flex-start;padding:14px 16px 4px}
-  .guide .say{font-size:13.5px;color:var(--ink-2);line-height:1.7}
-  .guide b{color:var(--ink)}
+  @media (max-width:760px){
+    .chat-wrap{flex-direction:column}
+    .guide-col{width:auto;flex-direction:row;align-items:center;gap:12px;
+      padding:12px 14px 0;justify-content:flex-start}
+    .guide-fig{width:104px;flex:none;margin:0}
+    .guide-say::after{left:50%;bottom:-6px;margin-left:-5px}
+  }
   .ask .bubble{background:#eef4fd;border:1px solid var(--line);border-radius:12px;
     padding:9px 13px;display:inline-block;max-width:100%}
   .ans .bubble{background:#fff;border:1px solid var(--line);border-left:3px solid var(--zzu-blue);
@@ -197,20 +211,24 @@
   </nav>
 
   <section class="card" id="p-chat">
-    <div class="card-h"><img class="avatar" src="assets/guibao.png" alt="龟宝"><h2>问龟宝</h2>
+    <div class="card-h"><h2>问龟宝</h2>
       <span class="tag">答案只来自课程知识库，附原文出处</span></div>
-    <div class="guide">
-      <img class="avatar lg" src="assets/guibao.png" alt="龟宝">
-      <div class="say"><b>我是龟宝，甲骨小向导。</b><br>
-      字形怎么来的、某个字在第三关怎么打、我这段时间弱在哪 —— 都可以问我。
-      我只看课程知识库回答，答完会给出处，查不到就直接说没有。</div>
+    <div class="chat-wrap">
+      <aside class="guide-col">
+        <img class="guide-fig" src="assets/guibao.png" alt="龟宝——甲骨小向导">
+        <div class="guide-say"><b>我是龟宝，甲骨小向导。</b><br>
+          字形怎么来的、某个字在第三关怎么打、我这段时间弱在哪，都可以问我。
+          答完会给出处，查不到就直接说没有。</div>
+      </aside>
+      <div class="main-col">
+        <div class="quick" id="quick"></div>
+        <div class="log" id="log"></div>
+        <form id="f">
+          <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off">
+          <button class="btn" type="submit" id="send">提问</button>
+        </form>
+      </div>
     </div>
-    <div class="quick" id="quick"></div>
-    <div class="log" id="log"></div>
-    <form id="f">
-      <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off">
-      <button class="btn" type="submit" id="send">提问</button>
-    </form>
   </section>
 
   <section class="card hide" id="p-diag">
@@ -255,20 +273,13 @@ document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
 });
 
 const log = $('#log'), form = $('#f'), input = $('#q'), send = $('#send');
-function avatar(cls){
-  const i = document.createElement('img');
-  i.className = 'avatar' + (cls ? ' ' + cls : '');
-  i.src = 'assets/guibao.png'; i.alt = '龟宝';
-  return i;
-}
 function addAsk(q){ const m = el('div','msg ask');
   const w = el('div','who'); w.appendChild(el('span',null,'学生'));
   m.appendChild(w); m.appendChild(el('div','bubble',q));
   log.appendChild(m); log.scrollTop = 1e9; }
 function addAnswer(a){
   const m = el('div','msg ans');
-  const w = el('div','who'); w.appendChild(avatar()); w.appendChild(el('span',null,'龟宝'));
-  m.appendChild(w);
+  m.appendChild(el('div','who','龟宝'));
   m.appendChild(el('div','bubble', a.answer));
   if (a.citations && a.citations.length){
     const d = el('details','cite');
@@ -284,8 +295,7 @@ async function ask(q){
   addAsk(q); input.value=''; send.disabled = true;
   // 龟宝"翻书"等待态：先给反馈，避免看起来卡住
   const wait = el('div','msg ans typing');
-  const ww = el('div','who'); ww.appendChild(avatar()); ww.appendChild(el('span',null,'龟宝'));
-  wait.appendChild(ww);
+  wait.appendChild(el('div','who','龟宝'));
   const bb = el('div','bubble');
   bb.appendChild(document.createTextNode('正在翻书'));
   const dots = el('span','dots');
