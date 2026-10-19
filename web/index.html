@@ -210,7 +210,7 @@
 <div class="wrap">
   <div class="hero">
     <h1>甲骨文 <em>AI 助教</em></h1>
-    <p>面向郑大汉字通识课：学生问字形、问打法，助教答得出来源；再按学情诊断、自动组卷、评讲回写——教、学、评一条线走完。</p>
+    <p>面向甲骨文学习：问字形、字义、构形、读音，也可以问甲骨文的历史与常识。答得出来源，查不到直说；再按学情诊断、自动组卷、评讲回写——教、学、评一条线走完。</p>
   </div>
 
   <nav>
@@ -221,12 +221,12 @@
 
   <section class="card" id="p-chat">
     <div class="card-h"><h2>问龟宝</h2>
-      <span class="tag">答案只来自课程知识库，附原文出处</span></div>
+      <span class="tag">答案只来自知识库，附原文出处</span></div>
     <div class="chat-wrap">
       <aside class="guide-col">
         <img class="guide-fig" src="assets/guibao.png" alt="龟宝——甲骨小向导">
-        <div class="guide-say"><b>我是龟宝，甲骨小向导。</b><br>
-          字形怎么来的、某个字在第三关怎么打、我这段时间弱在哪，都可以问我。
+        <div class="guide-say"><b>我是龟宝，甲骨文助教。</b><br>
+          字形怎么来的、某个字怎么读、几画、在甲骨文里是什么样子，或者甲骨文是什么、怎么断代，都可以问我。
           答完会给出处，查不到就直接说没有。</div>
       </aside>
       <div class="main-col">
@@ -242,7 +242,7 @@
 
   <section class="card hide" id="p-diag">
     <div class="card-h"><h2>学情诊断</h2>
-      <span class="tag" id="diagTag">按课程知识库 146 个字计</span></div>
+      <span class="tag" id="diagTag">按课程字表计</span></div>
     <div class="pad" id="diagBox">加载中…</div>
   </section>
 
@@ -264,7 +264,7 @@
       <span><b>郑州大学</b> 首届 AI 智能体创新应用大赛 · 参赛作品</span>
       <span class="dot">·</span><span>非商业教学演示</span><span class="dot">·</span><span>校徽版权归郑州大学所有</span><span class="dot">·</span><span>龟宝形象为本项目原创</span>
       <span class="dot">·</span>
-      <span>字形数据：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946</span>
+      <span>字形数据：Oracle Bone Glyphs v0.3（Li &amp; Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946</span>
     </div>
     <div class="line"><span>答案不编造：问不到会直接说没有；王邑地图为教学示意图，非考古复原。</span></div>
   </footer>
@@ -379,6 +379,9 @@ async function loadDiag(){
     const d = await (await fetch('/api/diagnose')).json();
     if (d.error){ box.textContent = '出错了：' + d.error; return; }
     box.innerHTML = '';
+    if (d.total_chars)
+      $('#diagTag').textContent = '按课程字表 ' + d.total_chars + ' 字计' +
+        (d.lexicon_chars ? ' · 字形库 ' + d.lexicon_chars + ' 字' : '');
     const row = el('div','row');
     const mk = (v,s,red) => { const c = el('div','stat' + (red?' red':''));
       c.appendChild(el('b',null,v)); c.appendChild(el('span',null,s)); return c; };
@@ -482,12 +485,13 @@ async function doGrade(){
   loadDiag();
 }
 
-['日为什么写成圆的','家为什么是屋顶下有猪','虎怎么打','宀是什么意思'].forEach(q => {
+['甲骨文是什么','日为什么写成圆的','六书是哪六种','家为什么是屋顶下有猪'].forEach(q => {
   const b = el('button','q-chip', q); b.type = 'button'; b.onclick = () => ask(q);
   $('#quick').appendChild(b);
 });
 fetch('/api/health').then(r => r.json()).then(h => {
-  $('#meta').textContent = '知识库 ' + h.kb_rows + ' 条 / ' + h.chars + ' 字 · ' +
+  $('#meta').textContent = '知识库 ' + h.kb_rows + ' 条 / ' + h.chars + ' 字' +
+    (h.course_chars ? '（课程字表 ' + h.course_chars + '）' : '') + ' · ' +
     (h.llm ? '大模型已接入' : '本地检索模式');
 }).catch(()=>{});
 ask('日为什么写成圆的');

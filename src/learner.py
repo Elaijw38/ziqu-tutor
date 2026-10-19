@@ -2,7 +2,9 @@
 """学情：进度存取 + 诊断。
 
 诊断口径（每一句都能对上数据，不编"你很棒"这种话）：
-  覆盖度   = 已学字数 / 知识库字数
+  覆盖度   = 已学课程字数 / 课程字表字数
+             （课程字表与 1,168 字的字形库分开：否则字库一扩，
+              覆盖率就从 20% 掉到 2%，诊断失去意义）
   分片掌握 = 按王邑五片看各片完成比例，找出最弱的一片
   构件短板 = 从「合体字」条目里抽出构件（宀+豕 这种），
              统计哪些构件所在的字还没学 → 这是最有价值的诊断，
@@ -112,6 +114,25 @@ def learned_chars(d):
     return out
 
 
+COURSE_KINDS = ("wangyi", "boss", "codex")
+
+
+def course_chars(rows):
+    """课程字表：只含课程层，不含 1,168 字的通用字形库。
+
+    学情分母必须用它。字形库是"能查多少字"的能力边界，不是教学进度。
+    兼容旧数据：没有 meta.course 时按 kind 判断。
+    """
+    out = set()
+    for r in rows:
+        ch = r.get("char")
+        if not ch:
+            continue
+        if (r.get("meta") or {}).get("course") or r.get("kind") in COURSE_KINDS:
+            out.add(ch)
+    return out
+
+
 def diagnose(idx):
     """返回可直接渲染的诊断对象。"""
     from retrieval import get_kb_meta
@@ -119,9 +140,12 @@ def diagnose(idx):
     rows = idx.rows
     meta = get_kb_meta()
 
-    all_chars = {r["char"] for r in rows if r.get("char")}
-    learned = learned_chars(d) & all_chars
-    coverage = round(len(learned) / max(1, len(all_chars)) * 100, 1)
+    course = course_chars(rows)
+    if not course:                       # 兜底：老知识库没有课程标记
+        course = {r["char"] for r in rows if r.get("char")}
+    lexicon = {r["char"] for r in rows if r.get("char")}
+    learned = learned_chars(d) & course
+    coverage = round(len(learned) / max(1, len(course)) * 100, 1)
 
     # 分片掌握
     zones = []
@@ -173,7 +197,8 @@ def diagnose(idx):
         "coverage": coverage,
         "level": level,
         "learned": len(learned),
-        "total_chars": len(all_chars),
+        "total_chars": len(course),
+        "lexicon_chars": len(lexicon),
         "zones": zones,
         "weakest_zone": weakest_zone,
         "weak_comps": [{"comp": c, "total": v["total"], "missing": v["missing"]} for c, v in weak_comps],

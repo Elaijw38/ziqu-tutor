@@ -10,8 +10,12 @@
 
 郑州大学首届 AI 智能体创新应用大赛的参赛作品原型（对应附件1 的 **A2：AI 助教 · 教、学、评闭环**）。
 
-一句话：**面向汉字通识课的 AI 助教**，学生问字形/字义/打法，它只依据课程知识库作答并给出处；
+一句话：**独立的甲骨文 AI 助教**，学生问字形、读音、笔画、字义与甲骨文通识，它只依据知识库作答并给出处；
 再读学习记录做学情诊断，按薄弱点组卷，评阅后回写画像 —— 形成「问 → 诊 → 练 → 评」闭环。
+
+> **定位（改过一次，别再改回去）**：这不是字趣的游戏配套。
+> 字趣的课程内容只是知识来源之一（146 字）；助教的覆盖面由上游字形库（1,168 字）
+> 与甲骨文通识层决定。任何“只会答游戏里出现过的字”的写法都是倒退。
 
 - 助教形象：**龟宝**（背行囊的甲骨小向导，取自本人另一件作品「字趣」）
 - 界面语言：**郑大校园应用**（校徽、深宝蓝、双语校名、求是担当水印）
@@ -51,16 +55,18 @@ src/
   quiz.py        出题（题型轮转、错题优先）+ 评阅（讲解 + 回写）
   dify.py        Dify 接入（原生 chat-messages，解析 retriever_resources）
   llm.py         OpenAI 兼容客户端 + 工具调用 agent：search_kb / get_learner_state / generate_quiz / submit_answers
-  build_kb.py    从 ../字趣 只读导出知识库
+  build_kb.py    三源合并知识库：上游字形全集 + 通识/字源 + 课程案例（字趣只读）
 web/
   index.html     单文件前端（三页签、整身龟宝、出处折叠条）
   assets/        校徽、龟宝
 data/
-  kb.jsonl       知识库 243 条（每条带 source）
+  kb.jsonl       知识库 1,391 条 / 1,179 字（每条带 source）
+  upstream/      上游 1,203 字形数据集 + ATTRIBUTION.md（CC BY 4.0）
+  general.jsonl  通识 24 条 + 字源 29 条（人工整理，逐条标出处）
   learner.json   学习记录（删掉即重置演示状态）
 out/
-  dify-kb-merged.md   Dify 用单文件知识库（243 段，分隔符 ---）
-  dify-prompt-v3.txt  Dify LLM 节点提示词（含少样本示例）
+  dify-kb-merged.md   Dify 用单文件知识库（1,391 段，分隔符 ---）
+  dify-prompt-v3.txt  Dify LLM 节点提示词（v4，含通识与字形示例）
   dify-appearance.txt Dify 开场白与建议问题文案
  申报表-郑大甲骨文AI助教.docx  已填写的申报表（个人信息留空待填）
 ```
@@ -71,8 +77,8 @@ out/
 
 | 方法 | 路径 | request | response 关键字段 |
 |---|---|---|---|
-| GET | `/api/health` | — | `kb_rows, chars, llm, model, dify, dify_error, store{attempts,learned,error}` |
-| GET | `/api/diagnose` | — | `coverage, level, zones[], weak_comps[], wrong_top[], suggestions[]` |
+| GET | `/api/health` | — | `kb_rows, chars, course_chars, llm, model, dify, dify_error, store{attempts,learned,error}` |
+| GET | `/api/diagnose` | — | `coverage, level, total_chars(课程字表), lexicon_chars(总字表), zones[], weak_comps[], wrong_top[], suggestions[]` |
 | POST | `/api/ask` | `{question, history?, conversation_id?, session_id?}` | `answer, citations[{id,source,title?,snippet?}], status(answer/refuse/clarify), refused, trace[], rounds, mode(dify/agent/extractive/refuse)` |
 | POST | `/api/quiz` | `{n,seed}` | `items[{char,type,question,options[],answer,answer_index}]` |
 | POST | `/api/grade` | `{quiz,answers[{char,choice}]}` | `score, results[{ok,your,right,why}], advice`（并写入 attempts） |
@@ -100,7 +106,10 @@ out/
 | 并发交卷丢记录 | 两个人几乎同时提交，先交的那份记录消失 | 学情是「读-改-写」，服务多线程且无锁（实测 8 并发只剩 1 条）。写路径必须走 `learner.transaction()`，不要自己 `load()` 改完再 `save()` |
 | 学情突然全空且无报错 | 覆盖度归零，`learner.json` 内容只剩半截 | `save` 直接覆写，崩在中途就留下半截 JSON，`load` 捕获异常后静默返回空。现改为 `.tmp` + `os.replace` 原子写；损坏时留 `.corrupt` 并写 `LAST_LOAD_ERROR`，`/api/health` 的 `store.error` 可见 |
 | 作答记录无限增长 | 一学期后 `learner.json` 持续变大、诊断变慢 | `learner.MAX_ATTEMPTS` 保留最近 500 条（只用于错题排行，不需要全量） |
-| 字形层整层丢失 | 知识库里 `kind=glyph` 一条都没有，“这个字几笔”永远答不出 | 数据集 v0.3 把字段从 `glyphs` 改成了 `parts`，`build_kb.load_glyph_chars` 只认旧名，解析成功但取到空 `{}`。已兼容 `parts/glyphs/data` 并改用 `pieceCount`；顺带补回只出现在字形数据里的 4 个字（尊彝爵絲） |
+| 字形层整层丢失（历史） | 知识库里 `kind=glyph` 一条都没有，“这个字几笔”永远答不出 | 根因是数据集 v0.3 把 `App.glyphs` 的字段从 `glyphs` 改成 `parts`，旧解析器取到空 `{}` 却不报错。现已**不再从字趣转手**，直接读上游 `data/upstream/jgw_1203_labeled.json`，并在 `build_kb` 里检查字数（<1000 会告警） |
+| 字库扩容把诊断打穿 | 覆盖率从 20% 掉到 2%，学生一学期也“未入门” | 学情分母不能是全部字表。`learner.course_chars()` 只取课程层（146 字），`diagnose` 另给 `lexicon_chars` 表示能力边界 |
+| 笔画数说错 | 学生问“日几笔”，答 4 笔；甲骨字形其实是 3 画 | 上游 `n_strokes` 是**甲骨字形**笔画数，与现代通行笔画不同。文案必须写“甲骨字形 N 画”，不能冒充现代笔画 |
+| 简体字查不到繁体字形 | 问“龟几画”查不到「龜」的条目 | 上游 203 个字标为繁体/异体。`build_kb.SIMPLIFIED` 收常见无争议的简繁对应，写进 `meta.aliases`；`retrieval` 用别名建 `char_to_docs` 索引 |
 | 部分可答被判成拒答 | 模型说“知识库里只有尊的字形，字义没有”，前端标成拒答还把出处清空 | `_classify(text, question, cites)`：若问题指向的那个字确实在检索结果里，判 `answer` 保留出处；问字表（“有哪些”）或该字根本不在库里才判 `refuse` |
 | 上下文被前端塞脏 | 有人往 `history` 里塞 `system` 或超长文本 | `_history_messages()` 只认 `user/assistant`，最多 6 条、每条 600 字；`server.py` 再校验一次类型 |
 | agent 说“知识库里没有”却报 `refused=false` | 前端显示成“答了但不给出处” | `ask.py::_classify` 统一 answer/refuse/clarify 三态，非 answer 一律清空出处 |
@@ -114,7 +123,8 @@ out/
 2. **引用来源分两条**：Dify 用 `metadata.retriever_resources`；直连模型用工具返回的知识库条目。两者都归一成 `citations[{id,source}]`，前端只认一种结构。
 3. **不编造**：答案只来自知识库；超纲问题返回固定拒答句；知识库没有的会意解释，宁可补“常见解释”并注明学界另有讨论。
 4. **诊断落到构件颗粒度**：因为合体字的构件正是字趣第三关 Boss 的破防部位——诊断能直接指导练什么，而不是只报一个覆盖率。
-5. **题库由知识库生成**：不预置题库，知识库一换，题目和讲解同步变化，换课程只需换知识库。
+5. **题库由知识库生成，但只在课程层出题**：不预置题库，课程层一换，题目和讲解同步变化；
+   字形库的 1,168 字多数只有形/音/笔画，拿它出“本义/构件/打法”题会变成无意义填空。
 6. **agent 的工具边界就是能力边界**：四个工具分别对应「查知识 / 看学情 / 出题 / 评阅」，
    学生的四类诉求全落在工具上，模型只负责决定调哪个、调几次（上限 4 轮）。
 7. **答案与题目分开存**：`generate_quiz` 只把题目和选项交给模型，答案留在服务端进程里，
@@ -126,6 +136,8 @@ out/
 
 **能**：
 - 三页签完整可用；真实 DeepSeek 已验证（工具调用、2.3 秒/问、5 条出处、`trace` 可看调了什么）
+- **知识面独立**：1,168 个字的字形/读音/笔画（上游 CC BY 4.0 数据集）+ 24 条甲骨文通识 + 29 条字源，
+  问“甲骨文是什么”“谁发现的”“六书是哪六种”“日怎么读”“龟几画”都有出处
 - **多轮对话**：前端带最近 3 轮，问「那它怎么打」能接住上一句的字（已实测）
 - **教学闭环进对话**：学生说「出两道题」→ agent 调 `generate_quiz` 出题（不含答案）→
   学生口述选项 → `submit_answers` 评阅并把错题写回学情（已实测 50 分、逐题错因）
@@ -156,7 +168,10 @@ out/
 
 ## 9. 合规与署名（**不要删**）
 
-- 字形数据：hanzi-glyphs-svg / Zenodo，**CC BY 4.0**，DOI `10.5281/zenodo.22467946`，界面与文档均署名
+- 字形数据：**Oracle Bone Glyphs: Parametric Vector Dataset v0.3**（Li & Bian, npj Heritage Science 2026），
+  **CC BY 4.0**，DOI `10.5281/zenodo.22467946`；署名与字段口径见 `data/upstream/ATTRIBUTION.md`
+- 通识与字源：逐条标注文献（王宇信《甲骨学通论》、裘锡圭《文字学概要》、董作宾《甲骨文断代研究例》、
+  许慎《说文解字·叙》、《周礼·地官·保氏》、郭沫若主编《甲骨文合集》），转述不改原意
 - 王邑地图、Boss 形象：教学示意，**非考古复原**
 - 校徽：版权归郑州大学；龟宝形象为本项目原创
 - **不使用**学校内部数据与个人信息；界面中课程名与班级标为“示例，可配置”
@@ -169,6 +184,8 @@ out/
 ```
 你在接手项目 ziqu-tutor（甲骨文 AI 助教·龟宝），路径 C:\DSH\ziqu-tutor。
 先读 workbuddy.handoff.json 了解接口与文件职责，再读 AGENT_HANDOFF.md 了解已踩过的坑。
-约束：只改本仓库，不动 C:\DSH\字趣；答案不得编造，只用知识库内容并给出处；
-任何新增外部依赖需先说明理由。启动：python src/server.py 8770。
+这是一个**独立**的甲骨文助教，不是字趣的配套：知识面由上游字形库（1168 字）与通识层决定，
+字趣只作为课程案例来源（146 字，只读，不改 C:\DSH\字趣）。
+约束：只改本仓库；答案不得编造，只用知识库内容并给出处；任何新增外部依赖需先说明理由。
+启动：python src/server.py 8770。
 ```

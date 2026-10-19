@@ -46,7 +46,11 @@ class Index:
         self.doc_len = []
         self.char_to_docs = {}      # 单字 -> [doc_idx]（用于"用户直接问了某个字"）
         for i, r in enumerate(rows):
-            toks = tokenize((r.get("text") or "") + " " + (r.get("char") or ""))
+            m = r.get("meta") or {}
+            bits = [r.get("text") or "", r.get("char") or "",
+                    m.get("topic") or ""]
+            bits.extend(m.get("aliases") or [])
+            toks = tokenize(" ".join(b for b in bits if b))
             self.doc_len.append(len(toks) or 1)
             tf = {}
             for t in toks:
@@ -56,6 +60,9 @@ class Index:
             ch = r.get("char")
             if ch:
                 self.char_to_docs.setdefault(ch, []).append(i)
+                # 繁体字形的简体别名也建索引：学生打「龟」，要能命中「龜」
+                for alias in (r.get("meta") or {}).get("aliases") or []:
+                    self.char_to_docs.setdefault(alias, []).append(i)
         n = len(rows)
         self.idf = {t: math.log(1 + n / (1 + len(p))) for t, p in self.postings.items()}
         self.avg_len = sum(self.doc_len) / max(1, n)
@@ -75,9 +82,23 @@ class Index:
                 s = idf * (tf * (k1 + 1)) / (tf + k1 * (1 - b + b * dl / self.avg_len))
                 scores[i] = scores.get(i, 0.0) + s
         # 用户问的字若正好是某条目的字，直接加权（问答里最常见的意图）
-        for ch in set(_CJK.findall(query)):
+        qchars = set(_CJK.findall(query))
+        for ch in qchars:
             for i in self.char_to_docs.get(ch, []):
                 scores[i] = scores.get(i, 0.0) + 6.0
+
+        # 意图加权：问读音/笔画时，字形层的字段本身就是答案，
+        # 不该让课程案例（打法、形象）抢在它前面。只在问题涉及的字上加。
+        want_read = any(w in query for w in ("读", "拼音", "发音", "念"))
+        want_stroke = any(w in query for w in ("几画", "几笔", "多少画", "多少笔", "笔画"))
+        if want_read or want_stroke:
+            for ch in qchars:
+                for i in self.char_to_docs.get(ch, []):
+                    m = self.rows[i].get("meta") or {}
+                    if want_read and m.get("pinyin"):
+                        scores[i] = scores.get(i, 0.0) + 9.0
+                    if want_stroke and m.get("strokes"):
+                        scores[i] = scores.get(i, 0.0) + 9.0
         top = sorted(scores.items(), key=lambda x: -x[1])[:k]
         return [(self.rows[i], round(s, 3)) for i, s in top if s > 0]
 

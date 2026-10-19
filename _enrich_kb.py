@@ -15,7 +15,7 @@ import json
 import os
 import re
 
-ROOT = r"C:\DSH\ziqu-tutor"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 KB = os.path.join(ROOT, "data", "kb.jsonl")
 
 EXPLAIN = {

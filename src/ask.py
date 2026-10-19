@@ -65,6 +65,11 @@ def _classify(text, question="", cites=None):
             return "answer"
         return "refuse"
     if any(w in t for w in _CLARIFY_WORDS):
+        # 模型常在完整回答末尾补一句“告诉我具体是哪个字”，这不是反问。
+        # 真正的反问通常很短、且没有检索命中；有实质内容就按 answer 处理，
+        # 否则会出现“答了、有出处，却标成没听清”的误判。
+        if len(t) >= 80 or len(cites or []) >= 3:
+            return "answer"
         return "clarify"
     return "answer"
 

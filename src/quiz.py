@@ -53,7 +53,11 @@ def make_quiz(n=3, seed=20261104):
     d = learner.load()
     wrong = [a["char"] for a in (d.get("attempts") or []) if not a.get("ok") and a.get("char")]
     learned = learner.learned_chars(d)
-    rows = [r for r in idx.rows if r.get("char")]
+    # 只在课程层里出题：字形库有 1,168 字，但多数只有形/音/笔画，
+    # 拿它出「本义/构件/打法」题会变成无意义的填空。
+    rows = [r for r in idx.rows if r.get("char")
+            and ((r.get("meta") or {}).get("course")
+                 or r.get("kind") in learner.COURSE_KINDS)]
     by_char = {}
     for r in rows:
         by_char.setdefault(r["char"], r)

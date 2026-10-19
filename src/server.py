@@ -141,6 +141,11 @@ class Handler(BaseHTTPRequestHandler):
             idx = get_index()
             chars = {r.get("char") for r in idx.rows if r.get("char")}
             try:
+                import learner as learner_mod
+                course_n = len(learner_mod.course_chars(idx.rows))
+            except Exception:
+                course_n = 0
+            try:
                 import llm as llm_mod
                 st = llm_mod.status()
             except Exception:
@@ -160,6 +165,7 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:
                 store = {"error": str(e)[:120]}
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
+                        "course_chars": course_n,
                         "llm": st["ready"], "model": st["model"],
                         "llm_base": st["base"],
                         "dify": ds["ready"], "dify_base": ds["base"],

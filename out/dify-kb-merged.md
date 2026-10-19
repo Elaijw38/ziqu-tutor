@@ -1,1460 +1,8349 @@
-# 字趣 · 甲骨文课程知识库
+# 甲骨文 AI 助教 · 知识库
 
+三个来源相互独立：甲骨字形数据集（CC BY 4.0）、甲骨文通识与字源（标注文献）、课程教学案例。
 每条一个分段，以单独一行 --- 分隔；每段末尾带出处。
 ## 王邑实物 · 日（天象）
 
 「日」在殷商王邑图卷的天象区域，代表一轮圆日。构形：象日之形：一个圆，中间一点或一横，是太阳的轮廓。（该区域主题：日月雨火：抬头看天）
 
-出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 月（天象）
 
 「月」在殷商王邑图卷的天象区域，代表一弯弦月。构形：象月之形：一弯新月，中间一竖表示月面的暗影。（该区域主题：日月雨火：抬头看天）
 
-出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 雨（天象）
 
 「雨」在殷商王邑图卷的天象区域，代表云脚落下的雨丝。构形：象雨之形：上面一横是天，下面几点是落下的雨滴。（该区域主题：日月雨火：抬头看天）
 
-出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 火（天象）
 
 「火」在殷商王邑图卷的天象区域，代表升腾的火焰。构形：象火之形：一簇上腾的火焰，两旁有火星。（该区域主题：日月雨火：抬头看天）
 
-出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》天象区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 山（山川）
 
 「山」在殷商王邑图卷的山川区域，代表并列的峰峦。构形：象山之势：三座并立的山峰，中峰最高。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 丘（山川）
 
 「丘」在殷商王邑图卷的山川区域，代表低缓的圆丘。构形：象丘之形：比「山」低平的两座土丘。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 谷（山川）
 
 「谷」在殷商王邑图卷的山川区域，代表两坡之间的低谷。构形：从「水」从「口」：山口处两坡夹出的一道低地。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 石（山川）
 
 「石」在殷商王邑图卷的山川区域，代表河滩上的大石。构形：从「厂」从「口」：山崖下一块石头。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 土（山川）
 
 「土」在殷商王邑图卷的山川区域，代表隆起的一堆土。构形：象土之形：地面上隆起的一堆土块。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 泉（山川）
 
 「泉」在殷商王邑图卷的山川区域，代表石间涌出的水。构形：象泉之形：石穴里涌出的水，细流不断。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 川（山川）
 
 「川」在殷商王邑图卷的山川区域，代表宽阔的主河道。构形：象川之形：两岸之间宽阔的水流，是与「水」相别的大水道。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 水（山川）
 
 「水」在殷商王邑图卷的山川区域，代表较窄的溪流。构形：象水之形：中间一条主流，两旁几点水花。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 田（山川）
 
 「田」在殷商王邑图卷的山川区域，代表格状的田亩。构形：象田之形：一块方田，中间纵横的田埂划出阡陌。（该区域主题：山丘谷石土泉川水田：脚下的地与水）
 
-出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》山川区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 木（草木）
 
 「木」在殷商王邑图卷的草木区域，代表左侧的独立大树。构形：象木之形：上为枝、下为根、中为干。（该区域主题：木林竹禾米屮：身边的草木）
 
-出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 林（草木）
 
 「林」在殷商王邑图卷的草木区域，代表成片的树林。构形：从二「木」：两棵树并立，表示成片的树林。（该区域主题：木林竹禾米屮：身边的草木）。常见解释：二木为「林」，表示成片的树。
 
-出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 竹（草木）
 
 「竹」在殷商王邑图卷的草木区域，代表丛生的竹子。构形：象竹之形：两枝并生的竹竿，下垂的叶片。（该区域主题：木林竹禾米屮：身边的草木）
 
-出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 禾（草木）
 
 「禾」在殷商王邑图卷的草木区域，代表低垂的谷穗。构形：象禾之形：一株成熟下垂的谷子。（该区域主题：木林竹禾米屮：身边的草木）
 
-出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 米（草木）
 
 「米」在殷商王邑图卷的草木区域，代表成堆的米粒。构形：象米之形：谷粒散落的许多小点。（该区域主题：木林竹禾米屮：身边的草木）
 
-出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 屮（草木）
 
 「屮」在殷商王邑图卷的草木区域，代表初生的小草。构形：象草之形：一株刚出土的草，只有两片叶。（该区域主题：木林竹禾米屮：身边的草木）
 
-出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》草木区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 豕（禽兽虫鱼）
 
 「豕」在殷商王邑图卷的禽兽虫鱼区域，代表体肥耳大的家豕。构形：象豕之形：肥腹短足的家猪，长吻大耳。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 鹿（禽兽虫鱼）
 
 「鹿」在殷商王邑图卷的禽兽虫鱼区域，代表枝角分歧的鹿。构形：象鹿之形：头上一对分枝的鹿角最醒目。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 牛（禽兽虫鱼）
 
 「牛」在殷商王邑图卷的禽兽虫鱼区域，代表双角横张的牛。构形：象牛之形：正面牛头，一对角向上弯。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 羊（禽兽虫鱼）
 
 「羊」在殷商王邑图卷的禽兽虫鱼区域，代表角向下弯的羊。构形：象羊之形：与「牛」同为头形，角向下卷曲。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 犬（禽兽虫鱼）
 
 「犬」在殷商王邑图卷的禽兽虫鱼区域，代表卷尾的犬。构形：象犬之形：侧身的狗，长身卷尾。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 虎（禽兽虫鱼）
 
 「虎」在殷商王邑图卷的禽兽虫鱼区域，代表张口有纹的虎。构形：象虎之形：巨口利爪，身上有斑纹。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 虫（禽兽虫鱼）
 
 「虫」在殷商王邑图卷的禽兽虫鱼区域，代表蜷曲的蛇。构形：象蛇之形：一条蜷曲的长虫，是「虫」的本形。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 鱼（禽兽虫鱼）
 
 「鱼」在殷商王邑图卷的禽兽虫鱼区域，代表水中的鱼。构形：象鱼之形：一头一尾，身上有鳞纹。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 隹（禽兽虫鱼）
 
 「隹」在殷商王邑图卷的禽兽虫鱼区域，代表短尾的鸟。构形：象鸟之形：短尾的鸟，「隹」与「鸟」本是一类。（该区域主题：豕鹿牛羊犬虎虫鱼隹：走动的生灵）
 
-出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》禽兽虫鱼区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 邑（人居器物）
 
 「邑」在殷商王邑图卷的人居器物区域，代表环壕围绕的城邑。构形：从「囗」从「卩」：围起来的一块地方，人聚居之处。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 郭（人居器物）
 
 「郭」在殷商王邑图卷的人居器物区域，代表城邑的外墙。构形：从「邑」从「𩫏」：城邑外围的墙。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 门（人居器物）
 
 「门」在殷商王邑图卷的人居器物区域，代表城邑的城门。构形：象门之形：两扇对开的门板。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 宀（人居器物）
 
 「宀」在殷商王邑图卷的人居器物区域，代表屋舍的屋顶。构形：象屋顶之形：两面坡的屋顶，是房屋的初文。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 囗（人居器物）
 
 「囗」在殷商王邑图卷的人居器物区域，代表围起来的地域。构形：象围合之形：一圈边界。图中取井口那一圈方形石圈。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 鼎（人居器物）
 
 「鼎」在殷商王邑图卷的人居器物区域，代表三足两耳的鼎。构形：象鼎之形：上有耳、下有腹与三足。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 缶（人居器物）
 
 「缶」在殷商王邑图卷的人居器物区域，代表大腹小口的陶缶。构形：象缶之形：小口大腹的瓦器。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 皿（人居器物）
 
 「皿」在殷商王邑图卷的人居器物区域，代表盛物的浅盘。构形：象皿之形：浅而宽的盛器。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 酉（人居器物）
 
 「酉」在殷商王邑图卷的人居器物区域，代表窄口深腹的青铜酒器。构形：象酒器之形：窄口、大腹、尖底的盛酒器。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 玉（人居器物）
 
 「玉」在殷商王邑图卷的人居器物区域，代表散落的玉片。构形：象玉之形：一根绳上串起的几片玉。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 井（人居器物）
 
 「井」在殷商王邑图卷的人居器物区域，代表带木栏的水井。构形：象井口之形：井栏交叉的木框。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 舟（人居器物）
 
 「舟」在殷商王邑图卷的人居器物区域，代表水边的木舟。构形：象舟之形：中空的长方形船身，两边有船舷。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 卜（人居器物）
 
 「卜」在殷商王邑图卷的人居器物区域，代表作坊地上的骨片。构形：象卜之形：骨面上灼出的纵横裂纹，即兆。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 贝（人居器物）
 
 「贝」在殷商王邑图卷的人居器物区域，代表散落的海贝。构形：象贝之形：两扇相合的海贝。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 糸（人居器物）
 
 「糸」在殷商王邑图卷的人居器物区域，代表一束丝。构形：象丝之形：绞在一起的一束丝线。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 弓（人居器物）
 
 「弓」在殷商王邑图卷的人居器物区域，代表张开的弓。构形：象弓之形：弯曲的弓身与弦。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 矢（人居器物）
 
 「矢」在殷商王邑图卷的人居器物区域，代表平放的直箭。构形：象矢之形：一支箭，前为镞、后为羽。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 刀（人居器物）
 
 「刀」在殷商王邑图卷的人居器物区域，代表青铜小刀。构形：象刀之形：刀身与短柄。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 斧（人居器物）
 
 「斧」在殷商王邑图卷的人居器物区域，代表横刃的斧。构形：象斧之形：宽刃的劈砍工具。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 斤（人居器物）
 
 「斤」在殷商王邑图卷的人居器物区域，代表窄刃的斤。构形：象斤之形：横刃的斧斤，用于削平木料。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 戈（人居器物）
 
 「戈」在殷商王邑图卷的人居器物区域，代表长柄横刃的戈。构形：象戈之形：长柄横装的勾兵。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 衣（人居器物）
 
 「衣」在殷商王邑图卷的人居器物区域，代表祭祀者身上的衣。构形：象衣之形：上衣的领与两袖。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 大（人居器物）
 
 「大」在殷商王邑图卷的人居器物区域，代表正面张臂的大人。构形：象大人之形：正面站立、双臂张开的人。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 力（人居器物）
 
 「力」在殷商王邑图卷的人居器物区域，代表翻土的耒耜。构形：象耒之形：下端入土的尖头农具，用力翻土。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 人（人居器物）
 
 「人」在殷商王邑图卷的人居器物区域，代表侧身站立的人。构形：象人之形：侧身站立、垂手的人。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 目（人居器物）
 
 「目」在殷商王邑图卷的人居器物区域，代表正面人物的眼睛。构形：象目之形：一只横过来的眼睛，中有瞳。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 耳（人居器物）
 
 「耳」在殷商王邑图卷的人居器物区域，代表侧身人物的耳朵。构形：象耳之形：耳朵的轮廓与耳孔。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 口（人居器物）
 
 「口」在殷商王邑图卷的人居器物区域，代表正面人物的嘴。构形：象口之形：张开的嘴，是「口」的本形。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 止（人居器物）
 
 「止」在殷商王邑图卷的人居器物区域，代表人的脚趾。构形：象足趾之形：脚掌与三个脚趾。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 又（人居器物）
 
 「又」在殷商王邑图卷的人居器物区域，代表人的右手。构形：象右手之形：三指伸开的一只右手。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 女（人居器物）
 
 「女」在殷商王邑图卷的人居器物区域，代表跪坐的女子。构形：象女子之形：跪坐、双手交叉于身前。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 子（人居器物）
 
 「子」在殷商王邑图卷的人居器物区域，代表小童。构形：象小儿之形：头大、双臂上举的幼儿。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 王邑实物 · 足（人居器物）
 
 「足」在殷商王邑图卷的人居器物区域，代表人的脚。构形：从「口」从「止」：连着小腿的整只脚。（该区域主题：邑郭门屋、陶铜玉石、人的身体）
 
-出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《殷商王邑》人居器物区实物点 · 教学示意图（非考古复原）· 字形 Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 涉（一阶 · 合体字）
 
 「涉」（shè）属于一阶 · 合体字，字形构成：构件 水+止。形象：涉水怪，水波中浮着两只脚印。打法：先引水流改道（暴露脚印），再依“步”的节奏踩双印（对应“涉”字水＋二止），怪脱水而溃。常见解释：水旁加止（脚），表示徒步涉水。
 
-出处：字趣《构件讨伐》一阶 · 合体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》一阶 · 合体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 鸣（一阶 · 合体字）
 
 「鸣」属于一阶 · 合体字，字形构成：构件 口+隹。本阶打法：身体由构件拼成。拆掉构件就破——止封走位、口封印技能、水火消属性。
 
-出处：字趣《构件讨伐》一阶 · 合体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》一阶 · 合体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 焚（一阶 · 合体字）
 
 「焚」属于一阶 · 合体字，字形构成：构件 木+火。本阶打法：身体由构件拼成。拆掉构件就破——止封走位、口封印技能、水火消属性。常见解释：木上有火即「焚」，表示烧林。
 
-出处：字趣《构件讨伐》一阶 · 合体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》一阶 · 合体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 逐（一阶 · 合体字）
 
 「逐」（zhú）属于一阶 · 合体字，字形构成：构件 止+豕。形象：逐豕怪，一只脚印巨兽追逐一头野豕。打法：先放跑野豕（对应“逐”止＋豕），脚印追之不及、节奏错乱，再踏碎脚印。常见解释：止（脚）在豕后，表示追赶野猪，引申为追逐。
 
-出处：字趣《构件讨伐》一阶 · 合体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》一阶 · 合体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 安（一阶 · 合体字）
 
 「安」（ān）属于一阶 · 合体字，字形构成：构件 宀+女。形象：屋中女怪，屋顶压顶、门户紧闭、女子蜷于屋下。打法：先破门户（对应“安”屋中有女）——屋内女怪欲逃，趁机掀屋顶，再擒女形。常见解释：宀是屋顶、女是女子，女子安坐屋内即「安」，表示安定、安适。
 
-出处：字趣《构件讨伐》一阶 · 合体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》一阶 · 合体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 家（一阶 · 合体字）
 
 「家」（jiā）属于一阶 · 合体字，字形构成：构件 宀+豕。形象：屋中巨豕，屋顶压身、门户紧闭。打法：先破门户（对应“家”字宀下豕），豕拱破屋而出；再击豕身，屋顶塌落作终击。常见解释：宀是屋顶、豕是猪，屋下养猪——定居下来养猪之处即为「家」。这是教学上常用的会意解释。（学界对「家」的本义另有讨论，此处不展开。）
 
-出处：字趣《构件讨伐》一阶 · 合体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》一阶 · 合体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 山（二阶 · 独体字）
 
 「山」属于二阶 · 独体字，字形构成：笔画 1 段。本阶打法：独体象形，身上没有可拆的构件。直接拆它的笔画，几笔就散。
 
-出处：字趣《构件讨伐》二阶 · 独体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》二阶 · 独体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 人（二阶 · 独体字）
 
 「人」属于二阶 · 独体字，字形构成：笔画 2 段。本阶打法：独体象形，身上没有可拆的构件。直接拆它的笔画，几笔就散。
 
-出处：字趣《构件讨伐》二阶 · 独体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》二阶 · 独体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 木（二阶 · 独体字）
 
 「木」（mù）属于二阶 · 独体字，字形构成：笔画 3 段。形象：树精，枝如臂、干如躯、根如足。打法：先断枝（失攻击），再斩根（定身），主干暴露后击年轮心（对应“木”字上枝下根）。
 
-出处：字趣《构件讨伐》二阶 · 独体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》二阶 · 独体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 日（二阶 · 独体字）
 
 「日」属于二阶 · 独体字，字形构成：笔画 3 段。本阶打法：独体象形，身上没有可拆的构件。直接拆它的笔画，几笔就散。
 
-出处：字趣《构件讨伐》二阶 · 独体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》二阶 · 独体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 月（二阶 · 独体字）
 
 「月」属于二阶 · 独体字，字形构成：笔画 2 段。本阶打法：独体象形，身上没有可拆的构件。直接拆它的笔画，几笔就散。
 
-出处：字趣《构件讨伐》二阶 · 独体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》二阶 · 独体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 水（二阶 · 独体字）
 
 「水」属于二阶 · 独体字，字形构成：笔画 5 段。本阶打法：独体象形，身上没有可拆的构件。直接拆它的笔画，几笔就散。
 
-出处：字趣《构件讨伐》二阶 · 独体字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》二阶 · 独体字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 象（终极 · 繁复字）
 
 「象」（xiàng）属于终极 · 繁复字，字形构成：笔画 6 段。形象：巨象怪，长鼻如吊索、双耳如蒲扇、獠牙如弯月、四柱粗腿。打法：先以甲骨符卡住象鼻（对应“象”字长鼻）令卷击失灵；断牙止冲挑；卸耳后击象躯核心。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 龍（终极 · 繁复字）
 
 「龍」属于终极 · 繁复字，字形构成：笔画 9 段。本阶打法：构件混同、拆分模糊的图画型古字。硬拆构件无效——只能用笔画斩，一段一段断它的纹路护甲。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 鳥（终极 · 繁复字）
 
 「鳥」属于终极 · 繁复字，字形构成：笔画 11 段。本阶打法：构件混同、拆分模糊的图画型古字。硬拆构件无效——只能用笔画斩，一段一段断它的纹路护甲。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 鼓（终极 · 繁复字）
 
 「鼓」属于终极 · 繁复字，字形构成：笔画 11 段。本阶打法：构件混同、拆分模糊的图画型古字。硬拆构件无效——只能用笔画斩，一段一段断它的纹路护甲。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 馬（终极 · 繁复字）
 
 「馬」属于终极 · 繁复字，字形构成：笔画 12 段。本阶打法：构件混同、拆分模糊的图画型古字。硬拆构件无效——只能用笔画斩，一段一段断它的纹路护甲。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 龜（终极 · 繁复字）
 
 「龜」（guī）属于终极 · 繁复字，字形构成：笔画 14 段。形象：巨龟，甲壳如岩、头尾可缩、四足如柱。打法：缩壳时无敌——引其伸头咬击、出足爬行时攻击；断四足后掀翻龟壳击腹（龟甲亦是占卜道具，与贞人主题呼应）。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 舞（终极 · 繁复字）
 
 「舞」属于终极 · 繁复字，字形构成：笔画 16 段。本阶打法：构件混同、拆分模糊的图画型古字。硬拆构件无效——只能用笔画斩，一段一段断它的纹路护甲。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 車（终极 · 繁复字）
 
 「車」（chē）属于终极 · 繁复字，字形构成：笔画 17 段。形象：战车怪，双轮如磨、辕木横突、舆厢载刃。打法：车冲阵直线碾轧——侧闪后砍辕令其转向失灵，卸双轮失速，最后击舆厢。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 构件讨伐 · 虎（终极 · 繁复字）
 
 「虎」属于终极 · 繁复字，字形构成：笔画 17 段。本阶打法：构件混同、拆分模糊的图画型古字。硬拆构件无效——只能用笔画斩，一段一段断它的纹路护甲。
 
-出处：字趣《构件讨伐》终极 · 繁复字 · hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣《构件讨伐》终极 · 繁复字 · Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 龜
 
 「龜」（guī，picto类）形象：巨龟，甲壳如岩、头尾可缩、四足如柱。破解：缩壳时无敌——引其伸头咬击、出足爬行时攻击；断四足后掀翻龟壳击腹（龟甲亦是占卜道具，与贞人主题呼应）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 魚
 
 「魚」（yú，picto类）形象：巨鱼，鳞甲如盾、背鳍如帆、尾鳍如扇。破解：鳞甲有减伤——先逐片剥鳞（对应“鱼”字鳞纹），断尾鳍失速，再击鱼首。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 鳳
 
 「鳳」（fèng，picto类）形象：凤凰，高冠如焰、尾翎如屏、双翼遮天。破解：先断尾翎止火雨，再剪冠羽，双翼尽折后击喙（可联动假借字“风”做双形态）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 燕
 
 「燕」（yàn，picto类）形象：玄燕，双翼如剪、尾分两叉如剪刀。破解：燕掠袭有轨迹——预判后斩双翼；断分叉尾（对应“燕”字叉尾），再击喙。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 兕
 
 「兕」（sì，picto类）形象：独角犀兽，独角如矛、皮厚如甲、四足如柱。破解：兕低头突刺有直线轨迹——侧闪后砍角（对应“兕”字的独角）；失角后狂暴但头部露出弱点，击巨首。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 虹
 
 「虹」（hóng，picto类）形象：双首虹龙，首尾皆头、拱身横跨。破解：双首互应难同时防——先破拱身中段（对应甲骨“虹”的拱形身），再同时断双首（甲骨“虹”正作双首龙形）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 象
 
 「象」（xiàng，picto类）形象：巨象怪，长鼻如吊索、双耳如蒲扇、獠牙如弯月、四柱粗腿。破解：先以甲骨符卡住象鼻（对应“象”字长鼻）令卷击失灵；断牙止冲挑；卸耳后击象躯核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 鹿
 
 「鹿」（lù，picto类）形象：灵鹿怪，角枝如杈、鹿身修长、四蹄轻踏——甲骨“鹿”即象角、身、足之形。破解：先断角杈（对应“鹿”字枝杈角）失其撞刺，鹿首低垂；再斩四蹄令其倒地硬直；最后击鹿身中段核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 車
 
 「車」（chē，picto类）形象：战车怪，双轮如磨、辕木横突、舆厢载刃。破解：车冲阵直线碾轧——侧闪后砍辕令其转向失灵，卸双轮失速，最后击舆厢。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 舟
 
 「舟」（zhōu，picto类）形象：独木舟怪，舱腹中空、两舷如弧壁、首尾上翘。破解：先拆舷板（对应“舟”字两舷弧线），再断首尾翘端（失转向），舱腹暴露后击核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 戈
 
 「戈」（gē，picto类）形象：戈兵灵，援刃上扬、内柄横出、柲长如臂。破解：弹反援刃使其崩断，再折内柄，最后击柲柄（对应“戈”字三部件）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 弓
 
 「弓」（gōng，picto类）形象：弓灵，弓臂如月、弦光如线。破解：弦是弱点——用甲骨刃割弦（弦断则弓无力），再折弓臂；对应“弓”字一臂一弦。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 矢
 
 「矢」（shǐ，picto类）形象：箭灵，镞尖如锥、杆直、尾羽交叉。破解：尾羽是平衡点——先拔尾羽令其失准乱飞，再折箭杆，镞落地可回收为武器。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 网
 
 「网」（wǎng，picto类）形象：罗网怪，网绳纵横、网眼透光、经纬如格。破解：先割网绳（对应“网”字经纬交织），网眼逐一失张力收缩，最后击网心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 貝
 
 「貝」（bèi，picto类）形象：宝贝怪，巨贝壳纹如轮、齿缘如锯、内蕴宝光。破解：先破壳缘锯齿；再撬壳纹护甲；露贝口时射符引宝光反噬，炸裂外壳。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 木
 
 「木」（mù，picto类）形象：树精，枝如臂、干如躯、根如足。破解：先断枝（失攻击），再斩根（定身），主干暴露后击年轮心（对应“木”字上枝下根）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 禾
 
 「禾」（hé，picto类）形象：禾灵，穗垂如帘、叶如刃、根须如足。破解：先断穗（对应“禾”字垂穗，失其“丰收”增益），再斩叶，根须收缩后击秆。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 火
 
 「火」（huǒ，picto类）形象：火灵怪，人形火柱、焰舌如臂、火光如目、足下腾炎。破解：先断焰舌止喷火，再射符入火心（对应“火”字火苗形）令其冷却炸裂。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 雨
 
 「雨」（yǔ，picto类）形象：雨云怪，云头翻滚、雨滴如箭成幕。破解：雨幕遮挡视野——先射穿云头（对应“雨”字云层），雨滴失去来源消散，再击云心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 雷
 
 「雷」（léi，picto类）形象：雷鼓怪，鼓面如轮、闪电如鞭、雷声震地。破解：雷声是预警——按鼓点节奏闪避，弹反闪电劈回鼓面（对应“雷”字轮形），鼓破雷止。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 雲
 
 「雲」（yún，picto类）形象：云灵，卷云如团、回旋成涡。破解：云会飘移换位——用甲骨片定住云团（对应“云”字回旋形），再击云旋核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 門
 
 「門」（mén，picto类）形象：门神，双扇闭合、门环如目、门枢吱呀。破解：门开时攻击门枢（合页）——先破坏门枢，双扇失去联动，再击门环，最后破门心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 武
 
 「武」（wǔ，huiyi类）形象：戈灵与脚印巨怪：半身为戈、半身为足印。破解：口诀“止戈为武”——先踏灭脚印（止）令戈失去驱动，再断戈刃，武躯瓦解。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 戍
 
 「戍」（shù，huiyi类）形象：持戈戍卒，人形＋戈影相伴。破解：戈影先攻——弹反戈影，人影显露，再击人形（对应“戍”字人持戈）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 獲
 
 「獲」（huò，huiyi类）形象：巨手捉鸟怪，利爪攥住一只隹鸟。破解：先击巨手救鸟（对应“獲”字手捉鸟），鸟获释后盘旋助战；鸟飞走后破巨手核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 羅
 
 「羅」（luó，huiyi类）形象：网鸟怪，网覆其上、鸟困其中。破解：先撕网（对应“羅”字网＋隹），困鸟挣脱后反啄怪物；再击本体。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 鳴
 
 「鳴」（míng，huiyi类）形象：鸟形＋巨口怪，张口啼鸣震地。破解：鸣叫是大范围攻击——先封口（射符堵嘴，对应“鳴”字口在鸟旁），再击鸟身。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 牧
 
 「牧」（mù，huiyi类）形象：持鞭牧人＋牛，鞭如长蛇。破解：先断鞭——牛脱离控制反而冲撞牧人（对应“牧”字持杖驱牛），趁乱击牧人。常见解释：手持鞭（攴）驱牛，表示放牧。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 家
 
 「家」（jiā，huiyi类）形象：屋中巨豕，屋顶压身、门户紧闭。破解：先破门户（对应“家”字宀下豕），豕拱破屋而出；再击豕身，屋顶塌落作终击。常见解释：宀是屋顶、豕是猪，屋下养猪——定居下来养猪之处即为「家」。这是教学上常用的会意解释。（学界对「家」的本义另有讨论，此处不展开。）
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 男
 
 「男」（nán，huiyi类）形象：田垄怪＋耒力怪，力如耕牛。破解：先在田块上布甲骨符阵束缚其足，再断耒（对应“男”字田＋力），男躯失去劳作之力。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 步
 
 「步」（bù，huiyi类）形象：双脚印巨灵，一前一后。破解：按“步”字二止顺序踩踏——先踏后印再踏前印，节奏对则巨灵踉跄，趁机击核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 涉
 
 「涉」（shè，huiyi类）形象：涉水怪，水波中浮着两只脚印。破解：先引水流改道（暴露脚印），再依“步”的节奏踩双印（对应“涉”字水＋二止），怪脱水而溃。常见解释：水旁加止（脚），表示徒步涉水。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 取
 
 「取」（qǔ，huiyi类）形象：巨手＋巨耳怪，耳大如盾。破解：巨耳会“听”玩家方位——先射符干扰听力，再斩巨手（对应“取”字手取耳），耳随之坠落。常见解释：手（又）执耳，古代战利以割耳计数，故为「取」。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 見
 
 「見」（jiàn，huiyi类）形象：巨目人怪，目大如轮、凝视石化。破解：巨目有凝视攻击——先用甲骨片封目（对应“見”字目在人上），再击人身。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 化
 
 「化」（huà，huiyi类）形象：正倒双身怪，一正一倒相连。破解：正倒互映、必须同时攻击（对应“化”字正倒二人）；单打一边则另一边回血。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 囚
 
 「囚」（qiú，huiyi类）形象：囚笼怪，囗笼困人。破解：先破笼（对应“囚”字人在囗中），囚人脱困反噬怪物；再击笼心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 死
 
 「死」（sǐ，huiyi类）形象：亡骸怪，跪人伏于朽骨旁。破解：先移开朽骨（对应“死”字人旁枯骨），跪人失去凭依，再击跪人。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 年
 
 「年」（nián，huiyi类）形象：负禾丰年怪，人背巨穗。破解：先摘穗（对应“年”字人负禾）——失穗则怪瘦弱；再击负禾人，谷粒洒落为收集奖励。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 出
 
 「出」（chū，huiyi类）形象：穴居怪，凵穴＋脚印。破解：先堵穴口断其归路（对应“出”字止出穴），脚印无处落脚，再击穴灵。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 明
 
 「明」（míng，huiyi类）形象：日月双面怪，一面日一面月。破解：日面放光、月面放寒——按昼夜切换攻击对应面（对应“明”字日月），同击双面。常见解释：日与月并出，明也——「明」用日月表示光亮。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 从
 
 「从」（cóng，huiyi类）形象：连体双人怪，二人前后相随。破解：后身紧跟前身——先绊倒后身（对应“从”字二人相从），前身孤立再击。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 及
 
 「及」（jí，huiyi类）形象：追及怪，巨手前伸抓人。破解：巨手伸来抓人——弹反抓击（对应“及”字手及人），再击人身。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 休
 
 「休」（xiū，huiyi类）形象：倚树巨人怪，一人背靠巨木、树冠如伞、人半身入树。破解：先斩树根（对应“休”人倚木）令树倒，人怪失去支撑瘫软，再击人形。常见解释：人靠在树（木）旁歇息，即「休」，本义是休息。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 好
 
 「好」（hǎo，huiyi类）形象：抱婴母怪，女形怀中抱着圆头子灵、眉眼温柔。破解：先引开子灵（对应“好”女＋子），母怪失护暴怒露破绽，再击女身。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 采
 
 「采」（cǎi，huiyi类）形象：摘果树灵，巨手伸向树冠、爪中攥果。破解：先射果落地引其伸手去接（对应“采”手在木上），趁手滞空斩爪，再断树冠。常见解释：手（爪）在木上，表示摘取。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 集
 
 「集」（jí，huiyi类）形象：栖鸟树怪，树枝上落满隹鸟、群鸟齐鸣。破解：先惊鸟离枝（对应“集”隹在木上），鸟散后木桩失势，再击木干。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 安
 
 「安」（ān，huiyi类）形象：屋中女怪，屋顶压顶、门户紧闭、女子蜷于屋下。破解：先破门户（对应“安”屋中有女）——屋内女怪欲逃，趁机掀屋顶，再擒女形。常见解释：宀是屋顶、女是女子，女子安坐屋内即「安」，表示安定、安适。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 光
 
 「光」（guāng，huiyi类）形象：擎火人怪，人头顶举一团烈焰、火光如冠。破解：先断其举火之手令火坠地（对应“光”人顶火），火光熄灭后怪显本体，再击人形。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 析
 
 「析」（xī，huiyi类）形象：劈木斧怪，一手持斤斧、一手按木、正欲劈下。破解：斧落前侧闪——趁其举斧射符卡入木缝（对应“析”斤劈木），斧陷木中拔不出，再破斧、击怪。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 相
 
 「相」（xiàng，huiyi类）形象：观木目怪，一只巨目长在树干上、凝视扫视。破解：先以符遮其目（对应“相”目在木上）令其失视，再破树干。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 保
 
 「保」（bǎo，huiyi类）形象：负子人怪，成人背负襁褓子灵、转身护子。破解：先卸子灵（对应“保”人负子），成人失牵绊、攻速大降，再击成人。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 逐
 
 「逐」（zhú，huiyi类）形象：逐豕怪，一只脚印巨兽追逐一头野豕。破解：先放跑野豕（对应“逐”止＋豕），脚印追之不及、节奏错乱，再踏碎脚印。常见解释：止（脚）在豕后，表示追赶野猪，引申为追逐。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 牢
 
 「牢」（láo，huiyi类）形象：圈牛栏怪，栏圈如笼、圈内困着一头牛灵。破解：先拆栏门（对应“牢”栏中圈牛）放牛，牛灵挣脱反冲，趁乱破栏心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 森
 
 「森」（sēn，huiyi类）形象：三木合体树精，三株巨树盘根错节、共结一体。破解：三木互援——逐一断根（对应“森”三木），每断一木其势弱一分，三木尽折后击树心。常见解释：三木为「森」，比「林」更密，表示树木繁盛。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 眾
 
 「眾」（zhòng，huiyi类）形象：日头众影怪，头顶一轮巨瞳（日）高悬，其下三具人形前后相叠、共进退（甲骨“眾”正为日＋三人）。破解：先射符破头顶巨瞳（对应“眾”日＋三人，日去则众散）令其“聚众”之势瓦解；三人失势后再逐个击破（对应“众”三人），每倒一人余者破绽更大，击尽后现核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 北
 
 「北」（běi，jiajie类）形象：背向双人怪，二人背靠背、各防一面。破解：二人背靠、正面近战难破——绕背逐个击破（对应“北”本义相背）。提示：北原指背，借为方位之北。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 西
 
 「西」（xī，jiajie类）形象：鸟巢怪，巢体如笼、编纹交错。破解：编纹是巢的骨架——先破编纹（对应“西”本义鸟巢的编巢纹），巢体散架，再击巢心。提示：西原为鸟巢，借为方位之西。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 東
 
 「東」（dōng，jiajie类）形象：大囊怪，囊口吞物、束绳如蛇。破解：先松束绳令囊口大开（对应“東”象囊橐之形，一说），射甲骨符入囊引爆。提示：东原为囊袋，借为方位之东。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 來
 
 「來」（lái，jiajie类）形象：麦灵，穗芒如针、秆身翠绿。破解：借“来”义——需引它主动“来”近身，趁机斩根定身（对应“來”本义为麦），再摘穗。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 自
 
 「自」（zì，jiajie类）形象：巨鼻怪，鼻梁如山、鼻孔喷息。破解：喷息前有吸气蓄力——趁吸气射符堵鼻（对应“自”本义鼻），憋气硬直，击鼻梁。提示：自原指鼻，借为自称之自。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 風
 
 「風」（fēng，jiajie类）形象：凤形风灵，凤身裹风旋。破解：风由凤生——先断双翼止风（对应“风”借“凤”而来），再击凤身。提示：风字本借凤鸟之形。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 我
 
 「我」（wǒ，jiajie类）形象：我兵灵，锯齿刃、柄、銎俱全。破解：借“我”义——最后一击必须由玩家亲自完成；先折柄銎，锯齿刃留作终击（“我”本为兵器）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 其
 
 「其」（qí，jiajie类）形象：箕怪，箕口大张、编纹如网。破解：箕会簸出小怪——先撕编纹（对应“其”本义箕），再拍扁箕斗。提示：其原为簸箕，借为代词。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 萬
 
 「萬」（wàn，jiajie类）形象：巨蝎，双螯如钳、尾钩如鞭、身节嶙峋。破解：尾钩蜇击前红光计数递增——闪避后斩尾；侧足牵动身节，先断一侧侧足令其失衡，再逐节破身（对应“萬”象蝎之形，或说虿）。提示：万原为蝎类，借为数名。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 莫
 
 「莫」（mò，jiajie类）形象：落日怪，日沉草丛、暮色笼罩。破解：借“莫”否定——日落则全屏黑暗，先射日令其升回（对应“莫”本义暮），再烧草丛驱散黑暗。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 無
 
 「無」（wú，jiajie类）形象：舞人怪，持牛尾而舞、残影重重。破解：残影惑敌——先断牛尾令舞止（对应“無”本义舞），本体现形。提示：无原为“舞”，借为有无之无。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 舊
 
 「舊」（jiù，jiajie类）形象：鸮怪，圆面大眼、羽翼如袍。破解：鸮夜间出没——先断双爪（落地迟缓），再剪羽翼，击鸮面。提示：旧或说本为鸱鸮，借为新旧之旧。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 南
 
 「南」（nán，jiajie类）形象：钟镈怪，乐器如钟、悬于空中。破解：钟声震荡——按节奏弹反钟舌止鸣（对应“南”或说象钟镈类乐器），再击钟体。提示：南原为乐器，借为方位之南。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 卿
 
 「卿」（qīng，jiajie类）形象：对食双人怪，二人相向就食。破解：二人互喂回血——先打翻食器（对应“卿”本义飨食）断其补给，再逐个击破。提示：卿原为相向就食，借为卿相。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 朕
 
 「朕」（zhèn，jiajie类）形象：漏舟补缝怪，乘一艘四处渗水的破舟，双手持凿不断往船缝里填塞补漏。破解：船缝渗漏——先轰击船身、把缝隙越撬越大（对应 “朕” 本义舟缝），让它一路漏水持续失血；再震落它手里的补缝凿，使其无法自救。提示：朕本义为舟之缝隙，引申为 “朕兆”（征兆、端倪），后假借为第一人称代词，自秦始皇起专为帝王自称。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 而
 
 「而」（ér，jiajie类）形象：虬髯脸怪，一张半隐的面孔，下巴垂满可自由伸长、卷人缠物的长须。破解：须髯缠卷——它甩出颊毛般的长须把敌人卷住拖拽，先迎光斩断其须髯（对应“而”本义颊毛）破掉缠绕，再直取面颌核心。提示：而本义为面颊两侧之毛（颊毛），借为连词（而且、然而、而已），又借作第二人称代词（如“而翁”即你父亲）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 朋
 
 「朋」（péng，jiajie类）形象：双串贝怪（本义贝串），两串海贝悬空交绕、贝壳开合如齿。破解：借“朋”为朋友——两串贝同气连枝，须同时毁两串方解：先断系绳，射符同破左右。提示：朋本为二串贝，借为朋友。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 之
 
 「之」（zhī，jiajie类）形象：足迹前行怪（本义足往），一只巨足印踏地而行、步步生尘。破解：借“之”为助词——需“之”（往）而击：引它踩向指定符点，落足瞬间断其足印（对应“之”止＋一）。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 不
 
 「不」（bù，jiajie类）形象：花萼怪（本义花萼），一朵巨花托于枝、萼片如爪包合。破解：借“不”为否定——破法要“反其道”：萼合时攻、萼开时守（对应“不”花萼形），趁合拢僵直断萼。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 勿
 
 「勿」（wù，jiajie类）形象：旗帜怪（本义旗／物），旗杆如矛、旗幅卷扬、旗尾飘带。破解：借“勿”为禁止——Boss会“勿动”读条（对应“勿”本义旗），须在读条前斩旗幅，断旗后击杆。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 弗
 
 「弗」（fú，jiajie类）形象：煣木矫直怪（本义矫／矫正），一木条先浸水火烤弯曲、再急冷定型、以韦索绑缚矫直（甲骨“弗”正作两竖笔被矫物、中“己”形韦索捆缚之形）。破解：借“弗”为否定——先断中腰韦索（对应“弗”矫曲之缚）令矫力尽失，两竖脱索反弹，再折矫木，架失则崩解。提示：弗本义为矫（煣木矫直），假借为否定。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 易
 
 「易」（yì，jiajie类）形象：双手捧酒器倾注怪（本义变易、赐给），两酒器相倾注、酒液承接流转，或省两手、再省一器（甲骨“易”正作两手捧两酒器倾注承受之形，终作“𣄪”形）。破解：借“易”为变易——其酒液倾注、变化莫测，需以“易”（变）制变：先断倾注酒液（对应“易”倾注之形），再破酒器，两手失器后击躯。提示：易本义为变易、赐给（两手捧两酒器倾注承受），假借为平易、容易、踢；旧说蜥蜴乃《说文》误释，不从。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 且
 
 「且」（qiě，jiajie类）形象：俎案祖灵（本义俎／荐物之器），一方带柱足俎案、案面有横格、案上供牲（甲骨“且”正作俎案俯视之形）。破解：借“且”为神祖——俎案即祖灵所凭：引它推移俎案（对应“且”俎形），趁移案时断柱足，案倒后击灵。提示：且本义为俎（荐物之器），假借为神祖。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 若
 
 「若」（ruò，jiajie类）形象：跪跽顺服人怪（本义顺），一人跪跽、披头散发、双手上举作顺服之状（甲骨“若”正象人跪跽顺服之形）。破解：借“若”为如果——谜题提示“若X则Y”：须按提示动作，先斩上举双手（对应“若”顺服举手之形），断披发后击本体。提示：若本义为顺（象人跪跽顺服之状），《说文》释“择菜”乃引申，借为如果。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 它
 
 「它」（tā，jiajie类）形象：盘蛇它灵（本义蛇），蛇身盘绕、信子如叉、目光如烛。破解：借“它”为代词——提示“它”就在脚下：先引蛇抬头，射符入七寸（对应“它”蛇形），再绞断蛇身。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 耳
 
 「耳」（ěr，jiajie类）形象：巨耳怪（本义耳），一张大耳如盾、耳廓沟壑纵横、听觉灵敏。破解：借“耳”为语气词——需“堵耳”而行：先以符封其耳（对应“耳”本义），失听后怪乱撞露破绽，再斩耳根。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 既
 
 「既」（jì，jiajie类）形象：饱食人怪（本义食毕），一人背对食案、口作饱嗝、腹满如鼓。破解：借“既”为已经——其食毕转身背对（对应“既”食毕转头），趁机射符断其回首，再击腹。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 孰
 
 「孰」（shú，jiajie类）形象：烹熟献食怪（本义烹熟／生熟之熟），人形跪于鼎前、双手持肉献入沸鼎、鼎下生火（甲骨“孰”从丮从享，象人持食于火上烹）。破解：借“孰”为谁——提示“谁在鼎中”：先扑鼎下之火（对应“孰”烹煮），鼎凉肉僵；再夺其手中祭肉，最后击持肉人形。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 亡
 
 「亡」（wáng，jiajie类）形象：匿形亡影怪（本义藏匿／逃亡），人形藏于掩蔽之下、若隐若现、刀刃微露（甲骨“亡”从人从曲笔，象人藏匿之形）。破解：借“亡”为亡失——Boss会“藏匿”消失（对应“亡”本义逃匿），需以符定位其影，露刃瞬间击其真身。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 亦
 
 「亦」（yì，jiajie类）形象：点腋人形怪：正面巨立之人形，双腋下各悬一团发光“腋点”（甲骨“亦”即“大”下两点指腋）。破解：借“亦”为副词“也”——破法须“亦”（同此）：先点灭一侧腋点，另一侧必随之同灭（对应“亦”两点俱指），再击人形核心。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 何
 
 「何」（hé，jiajie类）形象：荷担人怪，肩横担、担中垂物。破解：先卸肩担（对应“何”本义负荷），“何”之疑问读条消散，再击人形。提示：何原为负荷之“荷”，借为疑问代词。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 喪
 
 「喪」（sāng，jiajie类）形象：桑灵亡失怪（本义亡失／失去），桑树盘错、枝挂白幡、树干隐现“亡”形（甲骨文假借“桑”字加“口”形分化，西周加“走”旁强化亡失）。破解：摘白幡令丧气减弱（对应“喪”本义亡失），断桑干（喪假借桑字加口分化）令其失凭，再击本体。提示：喪本义为亡失、失去，假借桑字加口形为分化符号。
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
 ## 讨伐名录 · 猶
 
 「猶」（yóu，jiajie类）形象：猱兽灵怪：长尾攀枝、性多疑、频频回头张望。破解：先断长尾令其失攀→再击犬身→拆酋符现核心；提示：猶本义玃属善登木之兽（从犬酋声），性好疑故引申“犹豫”，假借为“犹如”
 
-出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：字趣讨伐名录（依据《Boss（象形会意假借）》字表整理）· Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 日
+## 甲骨字形 · 㓞
 
-「日」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「㓞」读音 qia（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 月
+## 甲骨字形 · 㶳
 
-「月」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「㶳」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 雨
+## 甲骨字形 · 一
 
-「雨」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「一」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 8 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 水
+## 甲骨字形 · 丁
 
-「水」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丁」读音 ding（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 8 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 火
+## 甲骨字形 · 丂
 
-「火」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丂」读音 kao（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 山
+## 甲骨字形 · 七
 
-「山」的甲骨字形在 CC BY 4.0 数据集中由 1 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「七」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 14 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 田
+## 甲骨字形 · 三
 
-「田」的甲骨字形在 CC BY 4.0 数据集中由 8 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「三」读音 san（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 木
+## 甲骨字形 · 上
 
-「木」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「上」读音 shang（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 人
+## 甲骨字形 · 下
 
-「人」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「下」读音 xia（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 大
+## 甲骨字形 · 不
 
-「大」的甲骨字形在 CC BY 4.0 数据集中由 4 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「不」读音 bu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 女
+## 甲骨字形 · 丑
 
-「女」的甲骨字形在 CC BY 4.0 数据集中由 4 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丑」读音 chou（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 子
+## 甲骨字形 · 且
 
-「子」的甲骨字形在 CC BY 4.0 数据集中由 11 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「且」读音 qie（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 目
+## 甲骨字形 · 丘
 
-「目」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丘」读音 qiu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 耳
+## 甲骨字形 · 丙
 
-「耳」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丙」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 口
+## 甲骨字形 · 丞
 
-「口」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丞」读音 cheng（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 又
+## 甲骨字形 · 丩
 
-「又」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丩」读音 jiu（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 止
+## 甲骨字形 · 中
 
-「止」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「中」读音 zhong（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 牛
+## 甲骨字形 · 丮
 
-「牛」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丮」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 羊
+## 甲骨字形 · 丰
 
-「羊」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丰」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。该字在数据集中有 2 个字形（glyph_id 472、1004），属异体或整理上的区分。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 犬
+## 甲骨字形 · 丹
 
-「犬」的甲骨字形在 CC BY 4.0 数据集中由 8 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「丹」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 豕
+## 甲骨字形 · 主
 
-「豕」的甲骨字形在 CC BY 4.0 数据集中由 10 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「主」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 隹
+## 甲骨字形 · 举
 
-「隹」的甲骨字形在 CC BY 4.0 数据集中由 8 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「举」读音 ju（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。该字在数据集中有 2 个字形（glyph_id 763、1203），属异体或整理上的区分。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 鱼
+## 甲骨字形 · 乂
 
-「鱼」的甲骨字形在 CC BY 4.0 数据集中由 16 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乂」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 14 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 禾
+## 甲骨字形 · 乃
 
-「禾」的甲骨字形在 CC BY 4.0 数据集中由 8 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乃」读音 nai（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 屮
+## 甲骨字形 · 之
 
-「屮」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「之」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 宀
+## 甲骨字形 · 乍
 
-「宀」的甲骨字形在 CC BY 4.0 数据集中由 4 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乍」读音 zha（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 门
+## 甲骨字形 · 乎
 
-「门」的甲骨字形在 CC BY 4.0 数据集中由 11 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乎」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 酉
+## 甲骨字形 · 乑
 
-「酉」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乑」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 斤
+## 甲骨字形 · 乘
 
-「斤」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乘」读音 cheng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 戈
+## 甲骨字形 · 乙
 
-「戈」的甲骨字形在 CC BY 4.0 数据集中由 4 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乙」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 14 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 矢
+## 甲骨字形 · 九
 
-「矢」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「九」读音 jiu（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 糸
+## 甲骨字形 · 乡
 
-「糸」的甲骨字形在 CC BY 4.0 数据集中由 8 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乡」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 力
+## 甲骨字形 · 乳
 
-「力」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「乳」读音 ru（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 贝
+## 甲骨字形 · 事
 
-「贝」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「事」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 舟
+## 甲骨字形 · 二
 
-「舟」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「二」读音 er（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 14 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 卜
+## 甲骨字形 · 亏
 
-「卜」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亏」读音 kui（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 土
+## 甲骨字形 · 五
 
-「土」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「五」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 石
+## 甲骨字形 · 井
 
-「石」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「井」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 川
+## 甲骨字形 · 亘
 
-「川」的甲骨字形在 CC BY 4.0 数据集中由 7 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亘」读音 gen（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 泉
+## 甲骨字形 · 亞
 
-「泉」的甲骨字形在 CC BY 4.0 数据集中由 11 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亞」读音 ya（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 丘
+## 甲骨字形 · 亟
 
-「丘」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亟」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 谷
+## 甲骨字形 · 亡
 
-「谷」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亡」读音 wang（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 林
+## 甲骨字形 · 亢
 
-「林」的甲骨字形在 CC BY 4.0 数据集中由 10 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亢」读音 kang（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 竹
+## 甲骨字形 · 交
 
-「竹」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「交」读音 jiao（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 米
+## 甲骨字形 · 亥
 
-「米」的甲骨字形在 CC BY 4.0 数据集中由 7 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亥」读音 hai（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 虎
+## 甲骨字形 · 亦
 
-「虎」的甲骨字形在 CC BY 4.0 数据集中由 17 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亦」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 鹿
+## 甲骨字形 · 京
 
-「鹿」的甲骨字形在 CC BY 4.0 数据集中由 17 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「京」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 虫
+## 甲骨字形 · 亯
 
-「虫」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亯」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 足
+## 甲骨字形 · 亳
 
-「足」的甲骨字形在 CC BY 4.0 数据集中由 7 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「亳」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 刀
+## 甲骨字形 · 人
 
-「刀」的甲骨字形在 CC BY 4.0 数据集中由 2 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「人」读音 ren（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 斧
+## 甲骨字形 · 仁
 
-「斧」的甲骨字形在 CC BY 4.0 数据集中由 7 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「仁」读音 ren（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 弓
+## 甲骨字形 · 今
 
-「弓」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「今」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 衣
+## 甲骨字形 · 介
 
-「衣」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「介」读音 jie（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 皿
+## 甲骨字形 · 从
 
-「皿」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「从」读音 cong（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 鼎
+## 甲骨字形 · 仔
 
-「鼎」的甲骨字形在 CC BY 4.0 数据集中由 11 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「仔」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 缶
+## 甲骨字形 · 令
 
-「缶」的甲骨字形在 CC BY 4.0 数据集中由 5 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「令」读音 ling（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 玉
+## 甲骨字形 · 任
 
-「玉」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「任」读音 ren（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 井
+## 甲骨字形 · 企
 
-「井」的甲骨字形在 CC BY 4.0 数据集中由 4 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「企」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 邑
+## 甲骨字形 · 伇
 
-「邑」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伇」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 郭
+## 甲骨字形 · 伊
 
-「郭」的甲骨字形在 CC BY 4.0 数据集中由 13 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伊」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 車
+## 甲骨字形 · 伏
 
-「車」的甲骨字形在 CC BY 4.0 数据集中由 17 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伏」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 舞
+## 甲骨字形 · 伐
 
-「舞」的甲骨字形在 CC BY 4.0 数据集中由 16 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伐」读音 fa（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 龜
+## 甲骨字形 · 休
 
-「龜」的甲骨字形在 CC BY 4.0 数据集中由 14 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「休」读音 xiu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 馬
+## 甲骨字形 · 伯
 
-「馬」的甲骨字形在 CC BY 4.0 数据集中由 12 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伯」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 龍
+## 甲骨字形 · 伲
 
-「龍」的甲骨字形在 CC BY 4.0 数据集中由 9 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伲」读音 ni（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 鼓
+## 甲骨字形 · 伴
 
-「鼓」的甲骨字形在 CC BY 4.0 数据集中由 11 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「伴」读音 ban（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。数据集标注为繁体或异体写法。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 鳥
+## 甲骨字形 · 但
 
-「鳥」的甲骨字形在 CC BY 4.0 数据集中由 11 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「但」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 爵
+## 甲骨字形 · 佐
 
-「爵」的甲骨字形在 CC BY 4.0 数据集中由 10 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「佐」读音 zuo（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 彝
+## 甲骨字形 · 何
 
-「彝」的甲骨字形在 CC BY 4.0 数据集中由 10 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「何」读音 he（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 尊
+## 甲骨字形 · 余
 
-「尊」的甲骨字形在 CC BY 4.0 数据集中由 10 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「余」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 絲
+## 甲骨字形 · 作
 
-「絲」的甲骨字形在 CC BY 4.0 数据集中由 10 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「作」读音 zuo（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 象
+## 甲骨字形 · 使
 
-「象」的甲骨字形在 CC BY 4.0 数据集中由 6 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「使」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
 ---
-## 字形 · 囗
+## 甲骨字形 · 來
 
-「囗」的甲骨字形在 CC BY 4.0 数据集中由 3 段几何路径构成，可据此临写；段数是矢量分解结果，不等同于传统笔画数。
+「來」读音 lai（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
 
-出处：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 侚
+
+「侚」读音 xun（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 依
+
+「依」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。该字在数据集中有 2 个字形（glyph_id 596、885），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 侮
+
+「侮」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 侯
+
+「侯」读音 hou（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 侵
+
+「侵」读音 qin（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 侸
+
+「侸」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 係
+
+「係」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 俎
+
+「俎」读音 zu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 俔
+
+「俔」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 俘
+
+「俘」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 保
+
+「保」读音 bao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 倉
+
+「倉」读音 cang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 倗
+
+「倗」读音 peng（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 倞
+
+「倞」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 偁
+
+「偁」读音 cheng（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 傳
+
+「傳」读音 chuan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 僕
+
+「僕」读音 pu（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 158 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 僤
+
+「僤」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 儐
+
+「儐」读音 bin（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兀
+
+「兀」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 允
+
+「允」读音 yun（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 元
+
+「元」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兄
+
+「兄」读音 xiong（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兆
+
+「兆」读音 zhao（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兇
+
+「兇」读音 xiong（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 先
+
+「先」读音 xian（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 光
+
+「光」读音 guang（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 克
+
+「克」读音 ke（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 免
+
+「免」读音 mian（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兑
+
+「兑」读音 dui（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兒
+
+「兒」读音 er（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兔
+
+「兔」读音 tu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兢
+
+「兢」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 入
+
+「入」读音 ru（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 16 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 八
+
+「八」读音 ba（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 公
+
+「公」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 六
+
+「六」读音 liu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兮
+
+「兮」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 共
+
+「共」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兵
+
+「兵」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 其
+
+「其」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 具
+
+「具」读音 ju（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 典
+
+「典」读音 dian（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 兹
+
+「兹」读音 zi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冄
+
+「冄」读音 ran（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 内
+
+「内」读音 nei（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 册
+
+「册」读音 ce（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 再
+
+「再」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冎
+
+「冎」读音 gua（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冏
+
+「冏」读音 jiong（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冓
+
+「冓」读音 gou（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冟
+
+「冟」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冥
+
+「冥」读音 ming（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冬
+
+「冬」读音 dong（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。该字在数据集中有 2 个字形（glyph_id 828、1181），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 冰
+
+「冰」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 凍
+
+「凍」读音 dong（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 凡
+
+「凡」读音 fan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 出
+
+「出」读音 chu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 函
+
+「函」读音 han（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 刀
+
+「刀」读音 dao（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 刃
+
+「刃」读音 ren（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 分
+
+「分」读音 fen（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 切
+
+「切」读音 qie（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 刖
+
+「刖」读音 yue（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 列
+
+「列」读音 lie（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 刜
+
+「刜」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 初
+
+「初」读音 chu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 删
+
+「删」读音 shan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 利
+
+「利」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 剌
+
+「剌」读音 la（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 前
+
+「前」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 剐
+
+「剐」读音 gua（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 剛
+
+「剛」读音 gang（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 剥
+
+「剥」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 副
+
+「副」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 力
+
+「力」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 劦
+
+「劦」读音 xie（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 勹
+
+「勹」读音 bao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 勽
+
+「勽」读音 bao（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 勿
+
+「勿」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 匈
+
+「匈」读音 xiong（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 匕
+
+「匕」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 化
+
+「化」读音 hua（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 北
+
+「北」读音 bei（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 匚
+
+「匚」读音 fang（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 匡
+
+「匡」读音 kuang（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 匬
+
+「匬」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 医
+
+「医」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 區
+
+「區」读音 qu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 十
+
+「十」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 8 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 千
+
+「千」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卅
+
+「卅」读音 sa（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 升
+
+「升」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 午
+
+「午」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卑
+
+「卑」读音 bei（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卒
+
+「卒」读音 zu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 協
+
+「協」读音 xie（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。数据集标注为繁体或异体写法，今简化为「协」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 南
+
+「南」读音 nan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卜
+
+「卜」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 16 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 占
+
+「占」读音 zhan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卣
+
+「卣」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卩
+
+「卩」读音 jie（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卯
+
+「卯」读音 mao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。该字在数据集中有 2 个字形（glyph_id 667、1044），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 印
+
+「印」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 危
+
+「危」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 即
+
+「即」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 卿
+
+「卿」读音 qing（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 102 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 厂
+
+「厂」读音 chang（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 16 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 厚
+
+「厚」读音 hou（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 去
+
+「去」读音 qu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 叀
+
+「叀」读音 zhuan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 又
+
+「又」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 及
+
+「及」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 友
+
+「友」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 反
+
+「反」读音 fan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 叔
+
+「叔」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 取
+
+「取」读音 qu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 受
+
+「受」读音 shou（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 叙
+
+「叙」读音 xu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 叜
+
+「叜」读音 sou（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 口
+
+「口」读音 kou（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 古
+
+「古」读音 gu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 句
+
+「句」读音 ju（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 召
+
+「召」读音 zhao（数据集拼音，未标声调）。甲骨字形：数据集标注 24 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 166 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 可
+
+「可」读音 ke（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 史
+
+「史」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 右
+
+「右」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 司
+
+「司」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 各
+
+「各」读音 ge（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 合
+
+「合」读音 he（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 吉
+
+「吉」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 同
+
+「同」读音 tong（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 名
+
+「名」读音 ming（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 后
+
+「后」读音 hou（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 吏
+
+「吏」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 向
+
+「向」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 吕
+
+「吕」读音 lv（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 君
+
+「君」读音 jun（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 吝
+
+「吝」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 启
+
+「启」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 吹
+
+「吹」读音 chui（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 呈
+
+「呈」读音 cheng（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 呉
+
+「呉」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 告
+
+「告」读音 gao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 周
+
+「周」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 呼
+
+「呼」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 命
+
+「命」读音 ming（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 咎
+
+「咎」读音 jiu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 咸
+
+「咸」读音 xian（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 品
+
+「品」读音 pin（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 員
+
+「員」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 哭
+
+「哭」读音 ku（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 唐
+
+「唐」读音 tang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 唬
+
+「唬」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 唯
+
+「唯」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 商
+
+「商」读音 shang（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 問
+
+「問」读音 wen（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 啓
+
+「啓」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 啚
+
+「啚」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 啮
+
+「啮」读音 nie（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 喙
+
+「喙」读音 hui（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 喜
+
+「喜」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 喪
+
+「喪」读音 sang（数据集拼音，未标声调）。甲骨字形：数据集标注 23 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 158 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 單
+
+「單」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嗇
+
+「嗇」读音 se（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嗣
+
+「嗣」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嘉
+
+「嘉」读音 jia（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 噪
+
+「噪」读音 zao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嚃
+
+「嚃」读音 ta（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嚚
+
+「嚚」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 囚
+
+「囚」读音 qiu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 四
+
+「四」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 因
+
+「因」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 囧
+
+「囧」读音 jiong（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 困
+
+「困」读音 kun（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。该字在数据集中有 2 个字形（glyph_id 478、1103），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 囻
+
+「囻」读音 guo（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 囿
+
+「囿」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 圂
+
+「圂」读音 hun（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 圉
+
+「圉」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 土
+
+「土」读音 tu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 圣
+
+「圣」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 在
+
+「在」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 圻
+
+「圻」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 執
+
+「執」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 基
+
+「基」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 堆
+
+「堆」读音 dui（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 堇
+
+「堇」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 堯
+
+「堯」读音 yao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法，今简化为「尧」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 報
+
+「報」读音 bao（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 塞
+
+「塞」读音 sai（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 壬
+
+「壬」读音 ren（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。该字在数据集中有 2 个字形（glyph_id 624、1035），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 壳
+
+「壳」读音 ke（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 壴
+
+「壴」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 壺
+
+「壺」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夆
+
+「夆」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 备
+
+「备」读音 bei（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夊
+
+「夊」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夌
+
+「夌」读音 ling（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 复
+
+「复」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夒
+
+「夒」读音 nao（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夔
+
+「夔」读音 kui（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 外
+
+「外」读音 wai（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夗
+
+「夗」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夙
+
+「夙」读音 su（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 多
+
+「多」读音 duo（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夢
+
+「夢」读音 meng（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 130 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 大
+
+「大」读音 da（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夨
+
+「夨」读音 ze（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 天
+
+「天」读音 tian（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夫
+
+「夫」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夭
+
+「夭」读音 yao（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 央
+
+「央」读音 yang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夷
+
+「夷」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夸
+
+「夸」读音 kua（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 夾
+
+「夾」读音 jia（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 奀
+
+「奀」读音 en（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 奎
+
+「奎」读音 kui（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 奏
+
+「奏」读音 zou（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。该字在数据集中有 2 个字形（glyph_id 1156、1182），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 奚
+
+「奚」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 奠
+
+「奠」读音 dian（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 女
+
+「女」读音 nv（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 奻
+
+「奻」读音 nuan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 好
+
+「好」读音 hao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 如
+
+「如」读音 ru（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妃
+
+「妃」读音 fei（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妊
+
+「妊」读音 ren（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妌
+
+「妌」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妝
+
+「妝」读音 zhuang（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妞
+
+「妞」读音 niu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妟
+
+「妟」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妣
+
+「妣」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妤
+
+「妤」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妥
+
+「妥」读音 tuo（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妸
+
+「妸」读音 e（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妹
+
+「妹」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 妾
+
+「妾」读音 qie（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姌
+
+「姌」读音 ran（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姓
+
+「姓」读音 xing（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 委
+
+「委」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姜
+
+「姜」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姪
+
+「姪」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姬
+
+「姬」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姷
+
+「姷」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 姼
+
+「姼」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 娀
+
+「娀」读音 song（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 娕
+
+「娕」读音 chuo（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 娘
+
+「娘」读音 niang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 娥
+
+「娥」读音 e（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 娶
+
+「娶」读音 qu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 婐
+
+「婐」读音 wo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 婢
+
+「婢」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 婦
+
+「婦」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 婪
+
+「婪」读音 lan（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 婭
+
+「婭」读音 ya（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法，今简化为「娅」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 媚
+
+「媚」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 媟
+
+「媟」读音 xie（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 122 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 媿
+
+「媿」读音 kui（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嬉
+
+「嬉」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嬪
+
+「嬪」读音 pin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。数据集标注为繁体或异体写法，今简化为「嫔」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嬰
+
+「嬰」读音 ying（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 子
+
+「子」读音 zi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 孕
+
+「孕」读音 yun（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 孚
+
+「孚」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 孝
+
+「孝」读音 xiao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 季
+
+「季」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 孫
+
+「孫」读音 sun（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 學
+
+「學」读音 xue（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宀
+
+「宀」读音 mian（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宁
+
+「宁」读音 ning（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 它
+
+「它」读音 ta（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宅
+
+「宅」读音 zhai（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宇
+
+「宇」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 安
+
+「安」读音 an（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宋
+
+「宋」读音 song（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宕
+
+「宕」读音 dang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宗
+
+「宗」读音 zong（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 官
+
+「官」读音 guan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宙
+
+「宙」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 定
+
+「定」读音 ding（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宛
+
+「宛」读音 wan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宜
+
+「宜」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宣
+
+「宣」读音 xuan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 室
+
+「室」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宫
+
+「宫」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宰
+
+「宰」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 害
+
+「害」读音 hai（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 家
+
+「家」读音 jia（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 宿
+
+「宿」读音 su（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寅
+
+「寅」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寍
+
+「寍」读音 ning（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寐
+
+「寐」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寖
+
+「寖」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寝
+
+「寝」读音 qin（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寧
+
+「寧」读音 ning（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法，今简化为「宁」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寮
+
+「寮」读音 liao（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 寳
+
+「寳」读音 bao（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 封
+
+「封」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尃
+
+「尃」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 射
+
+「射」读音 she（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 將
+
+「將」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 專
+
+「專」读音 zhuan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尊
+
+「尊」读音 zun（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尋
+
+「尋」读音 xun（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。该字在数据集中有 2 个字形（glyph_id 227、1072），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 對
+
+「對」读音 dui（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 小
+
+「小」读音 xiao（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 少
+
+「少」读音 shao（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尞
+
+「尞」读音 liao（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尤
+
+「尤」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尨
+
+「尨」读音 mang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尸
+
+「尸」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。该字在数据集中有 2 个字形（glyph_id 236、634），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尹
+
+「尹」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 尾
+
+「尾」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 屮
+
+「屮」读音 che（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 屯
+
+「屯」读音 tun（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 屰
+
+「屰」读音 ni（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 山
+
+「山」读音 shan（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 崋
+
+「崋」读音 hua（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 嵒
+
+「嵒」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 川
+
+「川」读音 chuan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 州
+
+「州」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 工
+
+「工」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 左
+
+「左」读音 zuo（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 巫
+
+「巫」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 己
+
+「己」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 16 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 已
+
+「已」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 1 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 巳
+
+「巳」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 巴
+
+「巴」读音 ba（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 巾
+
+「巾」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 币
+
+「币」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 帆
+
+「帆」读音 fan（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 师
+
+「师」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 帚
+
+「帚」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 帛
+
+「帛」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 帝
+
+「帝」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 干
+
+「干」读音 gan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。该字在数据集中有 2 个字形（glyph_id 147、912），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 年
+
+「年」读音 nian（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 并
+
+「并」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 幸
+
+「幸」读音 xing（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 幼
+
+「幼」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 幽
+
+「幽」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 庚
+
+「庚」读音 geng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 庭
+
+「庭」读音 ting（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 庸
+
+「庸」读音 yong（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 庻
+
+「庻」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 廌
+
+「廌」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 廣
+
+「廣」读音 guang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 延
+
+「延」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 廼
+
+「廼」读音 nai（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 廿
+
+「廿」读音 nian（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 16 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弄
+
+「弄」读音 nong（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弋
+
+「弋」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弓
+
+「弓」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弔
+
+「弔」读音 diao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弗
+
+「弗」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弘
+
+「弘」读音 hong（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弜
+
+「弜」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 弟
+
+「弟」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彈
+
+「彈」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彊
+
+「彊」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 录
+
+「录」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彗
+
+「彗」读音 hui（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彘
+
+「彘」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彝
+
+「彝」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彡
+
+「彡」读音 shan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彭
+
+「彭」读音 peng（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 彶
+
+「彶」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 往
+
+「往」读音 wang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。该字在数据集中有 2 个字形（glyph_id 126、465），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 征
+
+「征」读音 zheng（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 律
+
+「律」读音 lv（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 後
+
+「後」读音 hou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 徒
+
+「徒」读音 tu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 得
+
+「得」读音 de（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 徙
+
+「徙」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 從
+
+「從」读音 cong（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 御
+
+「御」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 復
+
+「復」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。数据集标注为繁体或异体写法，今简化为「复」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 德
+
+「德」读音 de（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 徹
+
+「徹」读音 che（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。数据集标注为繁体或异体写法，今简化为「彻」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 心
+
+「心」读音 xin（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 必
+
+「必」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 怨
+
+「怨」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 恒
+
+「恒」读音 heng（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 悋
+
+「悋」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 悔
+
+「悔」读音 hui（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 惟
+
+「惟」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 慶
+
+「慶」读音 qing（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 懋
+
+「懋」读音 mao（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戈
+
+「戈」读音 ge（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戉
+
+「戉」读音 yue（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戊
+
+「戊」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戌
+
+「戌」读音 xu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戍
+
+「戍」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戎
+
+「戎」读音 rong（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 成
+
+「成」读音 cheng（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 我
+
+「我」读音 wo（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戒
+
+「戒」读音 jie（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戔
+
+「戔」读音 jian（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戕
+
+「戕」读音 qiang（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 或
+
+「或」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戚
+
+「戚」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戠
+
+「戠」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 戣
+
+「戣」读音 kui（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 户
+
+「户」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 才
+
+「才」读音 cai（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 扔
+
+「扔」读音 reng（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 扜
+
+「扜」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 扶
+
+「扶」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 折
+
+「折」读音 zhe（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 拕
+
+「拕」读音 tuo（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 挤
+
+「挤」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 振
+
+「振」读音 zhen（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 162 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 排
+
+「排」读音 pai（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 掔
+
+「掔」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 掤
+
+「掤」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 搏
+
+「搏」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 摯
+
+「摯」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 136 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 撣
+
+「撣」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 攴
+
+「攴」读音 pu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 攸
+
+「攸」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 改
+
+「改」读音 gai（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 攻
+
+「攻」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 政
+
+「政」读音 zheng（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 效
+
+「效」读音 xiao（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 敉
+
+「敉」读音 mi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 敋
+
+「敋」读音 ge（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 敏
+
+「敏」读音 min（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 敗
+
+「敗」读音 bai（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 教
+
+「教」读音 jiao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 敝
+
+「敝」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 敭
+
+「敭」读音 yang（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 斄
+
+「斄」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 文
+
+「文」读音 wen（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 斝
+
+「斝」读音 jia（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 斤
+
+「斤」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 斧
+
+「斧」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 斫
+
+「斫」读音 zhuo（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 新
+
+「新」读音 xin（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 方
+
+「方」读音 fang（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旁
+
+「旁」读音 pang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旅
+
+「旅」读音 lv（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旋
+
+「旋」读音 xuan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 族
+
+「族」读音 zu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旡
+
+「旡」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 既
+
+「既」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 日
+
+「日」读音 ri（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旦
+
+「旦」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旨
+
+「旨」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 旬
+
+「旬」读音 xun（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昃
+
+「昃」读音 ze（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昆
+
+「昆」读音 kun（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 明
+
+「明」读音 ming（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昏
+
+「昏」读音 hun（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 易
+
+「易」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昔
+
+「昔」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昕
+
+「昕」读音 xin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昜
+
+「昜」读音 yang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 星
+
+「星」读音 xing（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。该字在数据集中有 2 个字形（glyph_id 144、514），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 春
+
+「春」读音 chun（数据集拼音，未标声调）。甲骨字形：数据集标注 23 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 150 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 昱
+
+「昱」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 時
+
+「時」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 晉
+
+「晉」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 晝
+
+「晝」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 晦
+
+「晦」读音 hui（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 晨
+
+「晨」读音 chen（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 晵
+
+「晵」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 晶
+
+「晶」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 暈
+
+「暈」读音 yun（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 曰
+
+「曰」读音 yue（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 曲
+
+「曲」读音 qu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 更
+
+「更」读音 geng（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 曹
+
+「曹」读音 cao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。该字在数据集中有 2 个字形（glyph_id 346、457），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 曾
+
+「曾」读音 ceng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 會
+
+「會」读音 hui（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 月
+
+「月」读音 yue（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 18 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 有
+
+「有」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 16 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 朋
+
+「朋」读音 peng（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 服
+
+「服」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。该字在数据集中有 2 个字形（glyph_id 207、640），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 朕
+
+「朕」读音 zhen（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 朢
+
+「朢」读音 wang（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 木
+
+「木」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。该字在数据集中有 2 个字形（glyph_id 428、445），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 未
+
+「未」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 朱
+
+「朱」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 朿
+
+「朿」读音 ci（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 李
+
+「李」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杏
+
+「杏」读音 xing（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杕
+
+「杕」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杗
+
+「杗」读音 mang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杜
+
+「杜」读音 du（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杞
+
+「杞」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 束
+
+「束」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 東
+
+「東」读音 dong（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杲
+
+「杲」读音 gao（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 杳
+
+「杳」读音 yao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 析
+
+「析」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 林
+
+「林」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 枚
+
+「枚」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 枼
+
+「枼」读音 ye（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 柄
+
+「柄」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 柏
+
+「柏」读音 bai（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 柳
+
+「柳」读音 liu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 栅
+
+「栅」读音 zha（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 校
+
+「校」读音 xiao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 格
+
+「格」读音 ge（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 桑
+
+「桑」读音 sang（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 條
+
+「條」读音 tiao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。该字在数据集中有 2 个字形（glyph_id 436、1107），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 棃
+
+「棃」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 142 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 棄
+
+「棄」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 116 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 棊
+
+「棊」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 森
+
+「森」读音 sen（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 椎
+
+「椎」读音 chui（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 楒
+
+「楒」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 楚
+
+「楚」读音 chu（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 槀
+
+「槀」读音 gao（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 槃
+
+「槃」读音 pan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 樂
+
+「樂」读音 le（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 樹
+
+「樹」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 橐
+
+「橐」读音 tuo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 櫛
+
+「櫛」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 櫟
+
+「櫟」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 欠
+
+「欠」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 次
+
+「次」读音 ci（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。该字在数据集中有 2 个字形（glyph_id 653、1202），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 止
+
+「止」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 正
+
+「正」读音 zheng（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 此
+
+「此」读音 ci（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 步
+
+「步」读音 bu（数据集拼音，未标声调）。甲骨字形：数据集标注 20 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 132 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 武
+
+「武」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 歳
+
+「歳」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 歷
+
+「歷」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 歸
+
+「歸」读音 gui（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 死
+
+「死」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 殈
+
+「殈」读音 xu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 殳
+
+「殳」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 殷
+
+「殷」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 殺
+
+「殺」读音 sha（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 毌
+
+「毌」读音 guan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 母
+
+「母」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 每
+
+「每」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 比
+
+「比」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 氏
+
+「氏」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 民
+
+「民」读音 min（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 氒
+
+「氒」读音 jue（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 氣
+
+「氣」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 水
+
+「水」读音 shui（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 永
+
+「永」读音 yong（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 汓
+
+「汓」读音 qiu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 汜
+
+「汜」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 汝
+
+「汝」读音 ru（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 汰
+
+「汰」读音 tai（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沁
+
+「沁」读音 qin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沈
+
+「沈」读音 shen（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沉
+
+「沉」读音 chen（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沐
+
+「沐」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沓
+
+「沓」读音 da（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沖
+
+「沖」读音 chong（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沚
+
+「沚」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沛
+
+「沛」读音 pei（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沝
+
+「沝」读音 zhui（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沫
+
+「沫」读音 mo（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 182 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 沮
+
+「沮」读音 ju（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 河
+
+「河」读音 he（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 油
+
+「油」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 況
+
+「況」读音 kuang（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 泉
+
+「泉」读音 quan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 泊
+
+「泊」读音 po（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洎
+
+「洎」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洒
+
+「洒」读音 sa（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洚
+
+「洚」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洛
+
+「洛」读音 luo（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洧
+
+「洧」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洫
+
+「洫」读音 xu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洱
+
+「洱」读音 er（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 洹
+
+「洹」读音 huan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。该字在数据集中有 2 个字形（glyph_id 782、1070），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 派
+
+「派」读音 pai（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 浿
+
+「浿」读音 pei（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 涂
+
+「涂」读音 tu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 涉
+
+「涉」读音 she（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 涵
+
+「涵」读音 han（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 涿
+
+「涿」读音 zhuo（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 淡
+
+「淡」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 淮
+
+「淮」读音 huai（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 淵
+
+「淵」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 游
+
+「游」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。该字在数据集中有 2 个字形（glyph_id 305、508），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 湀
+
+「湀」读音 gui（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 湄
+
+「湄」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 湌
+
+「湌」读音 can（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 溦
+
+「溦」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 溪
+
+「溪」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 溺
+
+「溺」读音 ni（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 溼
+
+「溼」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 滋
+
+「滋」读音 zi（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 122 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 漁
+
+「漁」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 144 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 漅
+
+「漅」读音 chao（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 演
+
+「演」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 潢
+
+「潢」读音 huang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 潦
+
+「潦」读音 lao（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 濘
+
+「濘」读音 ning（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 濤
+
+「濤」读音 tao（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 濩
+
+「濩」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 濼
+
+「濼」读音 luo（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 灂
+
+「灂」读音 zhuo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 火
+
+「火」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 灾
+
+「灾」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 炎
+
+「炎」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 炘
+
+「炘」读音 xin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 烄
+
+「烄」读音 jiao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 烈
+
+「烈」读音 lie（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 烕
+
+「烕」读音 mie（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 烖
+
+「烖」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 焚
+
+「焚」读音 fen（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 焛
+
+「焛」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 焱
+
+「焱」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。该字在数据集中有 2 个字形（glyph_id 507、745），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 熊
+
+「熊」读音 xiong（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 132 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 熟
+
+「熟」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 熹
+
+「熹」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 燕
+
+「燕」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 燮
+
+「燮」读音 xie（数据集拼音，未标声调）。甲骨字形：数据集标注 19 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 142 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爪
+
+「爪」读音 zhao（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。该字在数据集中有 2 个字形（glyph_id 187、197），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爭
+
+「爭」读音 zheng（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爯
+
+「爯」读音 cheng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爰
+
+「爰」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爲
+
+「爲」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爵
+
+「爵」读音 jue（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。该字在数据集中有 2 个字形（glyph_id 390、1188），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 父
+
+「父」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爻
+
+「爻」读音 yao（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爼
+
+「爼」读音 zu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 爽
+
+「爽」读音 shuang（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 片
+
+「片」读音 pian（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 牛
+
+「牛」读音 niu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 牝
+
+「牝」读音 pin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 牡
+
+「牡」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 132 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 牢
+
+「牢」读音 lao（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 牧
+
+「牧」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 物
+
+「物」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 牲
+
+「牲」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 犅
+
+「犅」读音 gang（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 犬
+
+「犬」读音 quan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 狂
+
+「狂」读音 kuang（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 狄
+
+「狄」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 狐
+
+「狐」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 狩
+
+「狩」读音 shou（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 狼
+
+「狼」读音 lang（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 狽
+
+「狽」读音 bei（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 猟
+
+「猟」读音 lie（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 猶
+
+「猶」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 獲
+
+「獲」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 獸
+
+「獸」读音 shou（数据集拼音，未标声调）。甲骨字形：数据集标注 20 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 134 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 獻
+
+「獻」读音 xian（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 率
+
+「率」读音 lv（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 玉
+
+「玉」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 王
+
+「王」读音 wang（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 玨
+
+「玨」读音 jue（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 瓭
+
+「瓭」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 甘
+
+「甘」读音 gan（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 生
+
+「生」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 用
+
+「用」读音 yong（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 甫
+
+「甫」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 田
+
+「田」读音 tian（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 由
+
+「由」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 甲
+
+「甲」读音 jia（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 申
+
+「申」读音 shen（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 甶
+
+「甶」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 男
+
+「男」读音 nan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 甹
+
+「甹」读音 ping（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 甾
+
+「甾」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畀
+
+「畀」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畋
+
+「畋」读音 tian（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畏
+
+「畏」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畐
+
+「畐」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畑
+
+「畑」读音 tian（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畕
+
+「畕」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畜
+
+「畜」读音 chu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 番
+
+「番」读音 fan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畯
+
+「畯」读音 jun（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 異
+
+「異」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 畵
+
+「畵」读音 hua（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 疆
+
+「疆」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 疇
+
+「疇」读音 chou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 疋
+
+「疋」读音 pi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 疐
+
+「疐」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 疒
+
+「疒」读音 ne（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 疾
+
+「疾」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 癸
+
+「癸」读音 gui（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 癹
+
+「癹」读音 ba（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 登
+
+「登」读音 deng（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 114 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 白
+
+「白」读音 bai（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 百
+
+「百」读音 bai（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 皀
+
+「皀」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 皿
+
+「皿」读音 min（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 盂
+
+「盂」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 益
+
+「益」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 盛
+
+「盛」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 盟
+
+「盟」读音 meng（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 盡
+
+「盡」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 監
+
+「監」读音 jian（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 盥
+
+「盥」读音 guan（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 盧
+
+「盧」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 目
+
+「目」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 直
+
+「直」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 相
+
+「相」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 省
+
+「省」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 眉
+
+「眉」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 眣
+
+「眣」读音 die（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 眷
+
+「眷」读音 juan（数据集拼音，未标声调）。甲骨字形：数据集标注 19 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 130 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 督
+
+「督」读音 du（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 120 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 瞋
+
+「瞋」读音 chen（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 矢
+
+「矢」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 石
+
+「石」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 砅
+
+「砅」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 114 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 硪
+
+「硪」读音 wo（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 硵
+
+「硵」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 磬
+
+「磬」读音 qing（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 示
+
+「示」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 20 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祀
+
+「祀」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祈
+
+「祈」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祉
+
+「祉」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祏
+
+「祏」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祐
+
+「祐」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祓
+
+「祓」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祖
+
+「祖」读音 zu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祜
+
+「祜」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祝
+
+「祝」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祟
+
+「祟」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。该字在数据集中有 2 个字形（glyph_id 28、208），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祠
+
+「祠」读音 ci（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祥
+
+「祥」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。该字在数据集中有 2 个字形（glyph_id 13、1149），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祭
+
+「祭」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。该字在数据集中有 2 个字形（glyph_id 17、1099），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 祸
+
+「祸」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禄
+
+「禄」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禍
+
+「禍」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 福
+
+「福」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 116 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禘
+
+「禘」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禦
+
+「禦」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禫
+
+「禫」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禮
+
+「禮」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禽
+
+「禽」读音 qin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 禾
+
+「禾」读音 he（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 秉
+
+「秉」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 秋
+
+「秋」读音 qiu（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 142 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 秝
+
+「秝」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 秦
+
+「秦」读音 qin（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 120 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 秫
+
+「秫」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 穅
+
+「穅」读音 kang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 穆
+
+「穆」读音 mu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 穗
+
+「穗」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 穧
+
+「穧」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 102 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 穫
+
+「穫」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 突
+
+「突」读音 tu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 立
+
+「立」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 竝
+
+「竝」读音 bing（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 竟
+
+「竟」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 童
+
+「童」读音 tong（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 競
+
+「競」读音 jing（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 竹
+
+「竹」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 箕
+
+「箕」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 箙
+
+「箙」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 箪
+
+「箪」读音 dan（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 簋
+
+「簋」读音 gui（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 籋
+
+「籋」读音 nie（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 米
+
+「米」读音 mi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 粟
+
+「粟」读音 su（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 粤
+
+「粤」读音 yue（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 粦
+
+「粦」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 糞
+
+「糞」读音 fen（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法，今简化为「粪」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 糸
+
+「糸」读音 mi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 系
+
+「系」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 26 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 200 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 紂
+
+「紂」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 紊
+
+「紊」读音 wen（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 紟
+
+「紟」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 索
+
+「索」读音 suo（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 紹
+
+「紹」读音 shao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 終
+
+「終」读音 zhong（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 絲
+
+「絲」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 絶
+
+「絶」读音 jue（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。数据集标注为繁体或异体写法，今简化为「绝」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 綏
+
+「綏」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 緑
+
+「緑」读音 lv（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 編
+
+「編」读音 bian（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 縲
+
+「縲」读音 lei（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 續
+
+「續」读音 xu（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。数据集标注为繁体或异体写法，今简化为「续」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 纯
+
+「纯」读音 chun（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 纲
+
+「纲」读音 gang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 细
+
+「细」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 缄
+
+「缄」读音 jian（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 缶
+
+「缶」读音 fou（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 罇
+
+「罇」读音 zun（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 108 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 罍
+
+「罍」读音 lei（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 114 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 罔
+
+「罔」读音 wang（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羅
+
+「羅」读音 luo（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羊
+
+「羊」读音 yang（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羌
+
+「羌」读音 qiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 美
+
+「美」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羔
+
+「羔」读音 gao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羞
+
+「羞」读音 xiu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 義
+
+「義」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羴
+
+「羴」读音 shan（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 羽
+
+「羽」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 翊
+
+「翊」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 習
+
+「習」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 翟
+
+「翟」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 翼
+
+「翼」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 老
+
+「老」读音 lao（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 考
+
+「考」读音 kao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 耋
+
+「耋」读音 die（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 而
+
+「而」读音 er（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 耑
+
+「耑」读音 duan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 耤
+
+「耤」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 耳
+
+「耳」读音 er（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聑
+
+「聑」读音 tie（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聖
+
+「聖」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聞
+
+「聞」读音 wen（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聯
+
+「聯」读音 lian（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聲
+
+「聲」读音 sheng（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 122 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聴
+
+「聴」读音 ting（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聽
+
+「聽」读音 ting（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 聾
+
+「聾」读音 long（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 168 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 肄
+
+「肄」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。该字在数据集中有 2 个字形（glyph_id 216、613），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 肇
+
+「肇」读音 zhao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 肉
+
+「肉」读音 rou（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 22 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 肜
+
+「肜」读音 rong（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 育
+
+「育」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 胄
+
+「胄」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 胶
+
+「胶」读音 jiao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 胾
+
+「胾」读音 zi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 腹
+
+「腹」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 膏
+
+「膏」读音 gao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臝
+
+「臝」读音 luo（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臣
+
+「臣」读音 chen（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臤
+
+「臤」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臧
+
+「臧」读音 zang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 自
+
+「自」读音 zi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臬
+
+「臬」读音 nie（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臭
+
+「臭」读音 chou（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 至
+
+「至」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。该字在数据集中有 2 个字形（glyph_id 119、846），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臽
+
+「臽」读音 xian（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 臾
+
+「臾」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 舂
+
+「舂」读音 chong（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 興
+
+「興」读音 xing（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 舊
+
+「舊」读音 jiu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 舌
+
+「舌」读音 she（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 舞
+
+「舞」读音 wu（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 舟
+
+「舟」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 般
+
+「般」读音 ban（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 良
+
+「良」读音 liang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 艱
+
+「艱」读音 jian（数据集拼音，未标声调）。甲骨字形：数据集标注 21 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 150 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 艿
+
+「艿」读音 nai（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 芈
+
+「芈」读音 mi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 芻
+
+「芻」读音 chu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 苟
+
+「苟」读音 gou（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 30 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 若
+
+「若」读音 ruo（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 苴
+
+「苴」读音 ju（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 140 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 茀
+
+「茀」读音 fu（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 莫
+
+「莫」读音 mo（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 莽
+
+「莽」读音 mang（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 萁
+
+「萁」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 萌
+
+「萌」读音 meng（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 萑
+
+「萑」读音 huan（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。该字在数据集中有 2 个字形（glyph_id 39、283），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 萦
+
+「萦」读音 ying（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 萬
+
+「萬」读音 wan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 落
+
+「落」读音 luo（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 葬
+
+「葬」读音 zang（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蒸
+
+「蒸」读音 zheng（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 102 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蒿
+
+「蒿」读音 hao（数据集拼音，未标声调）。甲骨字形：数据集标注 20 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 126 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蓐
+
+「蓐」读音 ru（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蓺
+
+「蓺」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蔑
+
+「蔑」读音 mie（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蔖
+
+「蔖」读音 cuo（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蔡
+
+「蔡」读音 cai（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 薶
+
+「薶」读音 mai（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虍
+
+「虍」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虎
+
+「虎」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 136 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虐
+
+「虐」读音 nve（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 106 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虘
+
+「虘」读音 cuo（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 126 个折线点构成。该字在数据集中有 2 个字形（glyph_id 202、367），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虤
+
+「虤」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虫
+
+「虫」读音 chong（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虹
+
+「虹」读音 hong（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 虽
+
+「虽」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蛳
+
+「蛳」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蜀
+
+「蜀」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 蠱
+
+「蠱」读音 gu（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 血
+
+「血」读音 xue（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 衆
+
+「衆」读音 zhong（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 行
+
+「行」读音 xing（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 衍
+
+「衍」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 衛
+
+「衛」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。数据集标注为繁体或异体写法，今简化为「卫」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 衣
+
+「衣」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 32 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 袁
+
+「袁」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 袧
+
+「袧」读音 gou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 裘
+
+「裘」读音 qiu（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 襄
+
+「襄」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 西
+
+「西」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 要
+
+「要」读音 yao（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 116 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 覃
+
+「覃」读音 tan（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 94 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 見
+
+「見」读音 jian（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 視
+
+「視」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 觀
+
+「觀」读音 guan（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 角
+
+「角」读音 jiao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 解
+
+「解」读音 jie（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 134 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 觳
+
+「觳」读音 hu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 言
+
+「言」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 訊
+
+「訊」读音 xun（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 訢
+
+「訢」读音 xin（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 誖
+
+「誖」读音 bei（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 誨
+
+「誨」读音 hui（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 谷
+
+「谷」读音 gu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豆
+
+「豆」读音 dou（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豐
+
+「豐」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 116 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豕
+
+「豕」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豚
+
+「豚」读音 tun（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 象
+
+「象」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豢
+
+「豢」读音 huan（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。该字在数据集中有 2 个字形（glyph_id 694、1083），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豩
+
+「豩」读音 bin（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豭
+
+「豭」读音 jia（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豰
+
+「豰」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 豸
+
+「豸」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 貝
+
+「貝」读音 bei（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 貞
+
+「貞」读音 zhen（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 責
+
+「責」读音 ze（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 貯
+
+「貯」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 買
+
+「買」读音 mai（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 賓
+
+「賓」读音 bin（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 賖
+
+「賖」读音 she（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 賞
+
+「賞」读音 shang（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 赤
+
+「赤」读音 chi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 走
+
+「走」读音 zou（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 足
+
+「足」读音 zu（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 跽
+
+「跽」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 踏
+
+「踏」读音 ta（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 身
+
+「身」读音 shen（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 28 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 車
+
+「車」读音 che（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 140 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 載
+
+「載」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 24 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 輦
+
+「輦」读音 nian（数据集拼音，未标声调）。甲骨字形：数据集标注 20 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 158 个折线点构成。数据集标注为繁体或异体写法，今简化为「辇」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 輿
+
+「輿」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 轡
+
+「轡」读音 pei（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 转
+
+「转」读音 zhuan（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 载
+
+「载」读音 zai（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 辛
+
+「辛」读音 xin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 辟
+
+「辟」读音 pi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 辥
+
+「辥」读音 xue（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 辰
+
+「辰」读音 chen（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 農
+
+「農」读音 nong（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 辵
+
+「辵」读音 chuo（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 迂
+
+「迂」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 迪
+
+「迪」读音 di（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 追
+
+「追」读音 zhui（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 44 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逆
+
+「逆」读音 ni（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逐
+
+「逐」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 124 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 途
+
+「途」读音 tu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 通
+
+「通」读音 tong（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逢
+
+「逢」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 進
+
+「進」读音 jin（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逴
+
+「逴」读音 chuo（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逸
+
+「逸」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逹
+
+「逹」读音 da（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 逺
+
+「逺」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 54 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 遂
+
+「遂」读音 sui（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 遘
+
+「遘」读音 gou（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 遝
+
+「遝」读音 ta（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 遠
+
+「遠」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 遣
+
+「遣」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 避
+
+「避」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 還
+
+「還」读音 hai（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 邑
+
+「邑」读音 yi（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 邕
+
+「邕」读音 yong（数据集拼音，未标声调）。甲骨字形：数据集标注 2 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 26 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 邦
+
+「邦」读音 bang（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 郭
+
+「郭」读音 guo（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鄙
+
+「鄙」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 酉
+
+「酉」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 配
+
+「配」读音 pei（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 酒
+
+「酒」读音 jiu（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 醜
+
+「醜」读音 chou（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 108 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 采
+
+「采」读音 cai（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 野
+
+「野」读音 ye（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 量
+
+「量」读音 liang（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 錫
+
+「錫」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 38 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鐡
+
+「鐡」读音 tie（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鑄
+
+「鑄」读音 zhu（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 120 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鑿
+
+「鑿」读音 zao（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 钳
+
+「钳」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 铅
+
+「铅」读音 qian（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 34 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 铣
+
+「铣」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 锾
+
+「锾」读音 huan（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 镍
+
+「镍」读音 nie（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 镬
+
+「镬」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 116 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 長
+
+「長」读音 zhang（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 門
+
+「門」读音 men（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 降
+
+「降」读音 jiang（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 陟
+
+「陟」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 陮
+
+「陮」读音 dui（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 陴
+
+「陴」读音 pi（数据集拼音，未标声调）。甲骨字形：数据集标注 25 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 156 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 陵
+
+「陵」读音 ling（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 陽
+
+「陽」读音 yang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 隂
+
+「隂」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 隊
+
+「隊」读音 dui（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 隶
+
+「隶」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 隹
+
+「隹」读音 zhui（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 隻
+
+「隻」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 64 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雀
+
+「雀」读音 que（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 集
+
+「集」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雇
+
+「雇」读音 gu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雉
+
+「雉」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雏
+
+「雏」读音 chu（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雚
+
+「雚」读音 guan（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雝
+
+「雝」读音 yong（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雞
+
+「雞」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 166 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 離
+
+「離」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雥
+
+「雥」读音 za（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 122 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雨
+
+「雨」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雩
+
+「雩」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。该字在数据集中有 2 个字形（glyph_id 837、838），属异体或整理上的区分。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雲
+
+「雲」读音 yun（数据集拼音，未标声调）。甲骨字形：数据集标注 3 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 雷
+
+「雷」读音 lei（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 震
+
+「震」读音 zhen（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霋
+
+「霋」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霍
+
+「霍」读音 huo（数据集拼音，未标声调）。甲骨字形：数据集标注 19 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 136 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霖
+
+「霖」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 18 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霝
+
+「霝」读音 ling（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霸
+
+「霸」读音 ba（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霽
+
+「霽」读音 ji（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 霾
+
+「霾」读音 mai（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 青
+
+「青」读音 qing（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 面
+
+「面」读音 mian（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 48 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鞘
+
+「鞘」读音 qiao（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 60 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 韋
+
+「韋」读音 wei（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 50 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 頁
+
+「頁」读音 ye（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 須
+
+「須」读音 xu（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 52 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 頭
+
+「頭」读音 tou（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。数据集标注为繁体或异体写法，今简化为「头」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 颌
+
+「颌」读音 he（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 風
+
+「風」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 114 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 食
+
+「食」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 飤
+
+「飤」读音 si（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 飨
+
+「飨」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 養
+
+「養」读音 yang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 餐
+
+「餐」读音 can（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。该字在数据集中有 2 个字形（glyph_id 1011、1101），属异体或整理上的区分。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 餗
+
+「餗」读音 su（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 136 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 饔
+
+「饔」读音 yong（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 82 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 饗
+
+「饗」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 80 个折线点构成。数据集标注为繁体或异体写法，今简化为「飨」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 饮
+
+「饮」读音 yin（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 108 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 首
+
+「首」读音 shou（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 馘
+
+「馘」读音 guo（数据集拼音，未标声调）。甲骨字形：数据集标注 6 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 馬
+
+「馬」读音 ma（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 102 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 馽
+
+「馽」读音 zhi（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 120 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 駁
+
+「駁」读音 bo（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 駛
+
+「駛」读音 shi（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 122 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 騽
+
+「騽」读音 xi（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 146 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 驅
+
+「驅」读音 qu（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 驟
+
+「驟」读音 zhou（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 驤
+
+「驤」读音 xiang（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。数据集标注为繁体或异体写法，今简化为「骧」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 驪
+
+「驪」读音 li（数据集拼音，未标声调）。甲骨字形：数据集标注 20 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 122 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 骨
+
+「骨」读音 gu（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 42 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 高
+
+「高」读音 gao（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬥
+
+「鬥」读音 dou（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬯
+
+「鬯」读音 chang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬱
+
+「鬱」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬲
+
+「鬲」读音 ge（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬳
+
+「鬳」读音 yan（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬼
+
+「鬼」读音 gui（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 46 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鬽
+
+「鬽」读音 mei（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 魚
+
+「魚」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 魯
+
+「魯」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鱼
+
+「鱼」读音 yu（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 124 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鳥
+
+「鳥」读音 niao（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鳳
+
+「鳳」读音 feng（数据集拼音，未标声调）。甲骨字形：数据集标注 22 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 170 个折线点构成。数据集标注为繁体或异体写法，今简化为「凤」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鳴
+
+「鳴」读音 ming（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 134 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鳶
+
+「鳶」读音 yuan（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 62 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鶾
+
+「鶾」读音 han（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 56 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鸿
+
+「鸿」读音 hong（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鹿
+
+「鹿」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 112 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麀
+
+「麀」读音 you（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 72 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麇
+
+「麇」读音 jun（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 102 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麉
+
+「麉」读音 jian（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麋
+
+「麋」读音 mi（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 124 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麐
+
+「麐」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麑
+
+「麑」读音 ni（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麓
+
+「麓」读音 lu（数据集拼音，未标声调）。甲骨字形：数据集标注 30 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 192 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麟
+
+「麟」读音 lin（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 104 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麤
+
+「麤」读音 cu（数据集拼音，未标声调）。甲骨字形：数据集标注 24 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 166 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 麥
+
+「麥」读音 mai（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 58 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 黄
+
+「黄」读音 huang（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 70 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 黍
+
+「黍」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 15 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 110 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 黑
+
+「黑」读音 hei（数据集拼音，未标声调）。甲骨字形：数据集标注 4 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 36 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 黽
+
+「黽」读音 mian（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 92 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鼍
+
+「鼍」读音 tuo（数据集拼音，未标声调）。甲骨字形：数据集标注 17 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 160 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鼎
+
+「鼎」读音 ding（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 78 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鼓
+
+「鼓」读音 gu（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 98 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鼠
+
+「鼠」读音 shu（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 鼻
+
+「鼻」读音 bi（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 76 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 齊
+
+「齊」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 13 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 齐
+
+「齐」读音 qi（数据集拼音，未标声调）。甲骨字形：数据集标注 12 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 96 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 齒
+
+「齒」读音 chi（数据集拼音，未标声调）。甲骨字形：数据集标注 8 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 66 个折线点构成。数据集标注为繁体或异体写法，今简化为「齿」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 齠
+
+「齠」读音 tiao（数据集拼音，未标声调）。甲骨字形：数据集标注 5 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 40 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龍
+
+「龍」读音 long（数据集拼音，未标声调）。甲骨字形：数据集标注 9 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 90 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龏
+
+「龏」读音 gong（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 84 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龐
+
+「龐」读音 pang（数据集拼音，未标声调）。甲骨字形：数据集标注 10 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 86 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龓
+
+「龓」读音 long（数据集拼音，未标声调）。甲骨字形：数据集标注 16 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 114 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龜
+
+「龜」读音 gui（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 100 个折线点构成。数据集标注为繁体或异体写法，今简化为「龟」，按简体也能查到。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龠
+
+「龠」读音 yue（数据集拼音，未标声调）。甲骨字形：数据集标注 7 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 68 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 龢
+
+「龢」读音 he（数据集拼音，未标声调）。甲骨字形：数据集标注 14 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 88 个折线点构成。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨字形 · 𠕋
+
+「𠕋」读音 ce（数据集拼音，未标声调）。甲骨字形：数据集标注 11 画，即甲骨字形的笔画数，与现代通行笔画数不一定相同；由 74 个折线点构成。数据集标注为繁体或异体写法。
+
+出处：Oracle Bone Glyphs v0.3（Li & Bian, npj Heritage Science 2026），CC BY 4.0，DOI 10.5281/zenodo.22467946
+---
+## 甲骨文通识（通识·总述）
+
+甲骨文是商代晚期（约公元前14—前11世纪）刻写在龟甲和兽骨上的占卜文字，是目前所见最早的成体系汉字。它长期埋藏于安阳殷墟，1899年以后才被学界认识和研究。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·名称）
+
+因为载体是“甲”（龟腹甲）和“骨”（多为牛肩胛骨），上面刻有文字，所以叫甲骨文；研究它的学问叫甲骨学。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 甲骨文通识（通识·发现）
+
+甲骨文最早的发现者通常认为是王懿荣：1899年他在中药“龙骨”上看到刻痕，首先判断为古文字，甲骨文由此进入学界视野；此后刘鹗、罗振玉、王国维等相继搜集、拓印与研究。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 甲骨文通识（通识·出土地）
+
+甲骨文主要出土于河南安阳小屯村一带的殷墟，那里是商代晚期都城遗址；其他商代遗址也有少量发现。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 甲骨文通识（通识·材料）
+
+刻辞甲骨以龟的腹甲和牛的肩胛骨为主，也有少量其他动物骨骼。牛肩胛骨需锯去骨臼、打磨平整后使用。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 甲骨文通识（通识·整治）
+
+甲骨在使用前要经过整治：锯截、削平、刮磨，并在背面钻出圆窝、凿出长槽（合称钻凿），使该处骨壁变薄，便于灼烧见兆。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 甲骨文通识（通识·占卜流程）
+
+占卜时在背面钻凿处灼烧，正面因受热爆裂出现裂纹，即“兆”；卜者据兆判断吉凶，并把占卜日期、贞人、事项与结果刻在甲骨上，这就是卜辞。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·卜辞结构）
+
+一条完整的卜辞通常包含四部分：前辞（记占卜日期与贞人）、贞辞（记所问之事）、占辞（记据兆作出的判断）、验辞（记事后应验情况）。实际卜辞常省略其中部分。
+
+出处：甲骨文通识 · 裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·断代）
+
+董作宾1933年提出以世系、书体等为标准，把殷墟甲骨分为五期：武丁；祖庚、祖甲；廪辛、康丁；武乙、文丁；帝乙、帝辛。五期断代是甲骨断代研究的基础框架之一。
+
+出处：甲骨文通识 · 董作宾《甲骨文断代研究例》（1933）
+---
+## 甲骨文通识（通识·字量）
+
+甲骨文已发现的单字约四千余个，其中学界公认已释读的约三分之一，其余多为人名、地名、族名等专名或尚待考释的字。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 甲骨文通识（通识·六书）
+
+“六书”是传统分析汉字构造的六种方式：象形、指事、会意、形声、转注、假借。名称见于《周礼·地官·保氏》，许慎在《说文解字·叙》中为每一书下了定义。
+
+出处：甲骨文通识 · 《周礼·地官·保氏》；许慎《说文解字·叙》
+---
+## 甲骨文通识（通识·六书·象形）
+
+象形：“画成其物，随体诘诎”，即按照事物的形体曲折描画，如日、月、山、水。
+
+出处：甲骨文通识 · 许慎《说文解字·叙》；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·六书·指事）
+
+指事：“视而可识，察而见意”，用抽象符号或在象形字上加标记来表意，如上、下、本、末。
+
+出处：甲骨文通识 · 许慎《说文解字·叙》；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·六书·会意）
+
+会意：“比类合谊，以见指撝”，把两个或以上字组合起来，会合其意义表示新义，如休（人依木）、采（手在木上）。
+
+出处：甲骨文通识 · 许慎《说文解字·叙》；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·六书·形声）
+
+形声：“以事为名，取譬相成”，由表意的形旁和表音的声旁组合而成，如江、河（水为形旁，工、可为声旁）。形声是汉字中最能产的造字方式。
+
+出处：甲骨文通识 · 许慎《说文解字·叙》；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·六书·转注）
+
+转注：“建类一首，同意相受”，指同一部首、意义相通、可以互相注释的一组字。转注历来解释分歧最大，通常视为字义关系与用字问题，而不是单一的造字法。
+
+出处：甲骨文通识 · 许慎《说文解字·叙》；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·六书·假借）
+
+假借：“本无其字，依声托事”，借用已有的同音字来记录新词，如借“其”（本义为畚箕）表示代词“其”。
+
+出处：甲骨文通识 · 许慎《说文解字·叙》；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·契刻）
+
+甲骨文多用青铜刀直接契刻，所以笔画细瘦、多方折，圆转较少；也有先以毛笔书写再刻的情况，个别甲骨上还留有朱书或墨书痕迹。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·构形特点）
+
+甲骨文的构形有四个明显特点：象形性强；字形方向不固定，可正写反写；部件位置可以移动；异体字多，同一个字常有多种写法。
+
+出处：甲骨文通识 · 裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·合文）
+
+合文是把两个或几个字合写在一个字位里的写法，多见于先公先王名号与数字；读时仍按原来的词读，不按合写的字位读。
+
+出处：甲骨文通识 · 裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·演变）
+
+汉字形体演变大体是：商代甲骨文→周代金文→秦代小篆→隶书→楷书。甲骨文与后世汉字一脉相承，但字形差异较大，不能直接按今天的写法去认。
+
+出处：甲骨文通识 · 裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 甲骨文通识（通识·总集）
+
+《甲骨文合集》由郭沫若主编，中华书局1978—1982年出版，共十三册，收录殷墟甲骨四万余片，是甲骨文研究最常用的总集。
+
+出处：甲骨文通识 · 郭沫若主编《甲骨文合集》（中华书局，1978—1982）
+---
+## 甲骨文通识（通识·卜字）
+
+“卜”字象灼骨后兆纹之形：竖画为兆干，横画为兆枝。卜辞中的“卜”常用作动词，表示占卜。
+
+出处：甲骨文通识 · 裘锡圭《文字学概要》（商务印书馆，1988）；许慎《说文解字·叙》
+---
+## 甲骨文通识（通识·内容）
+
+甲骨文绝大多数是占卜记录（卜辞），不是一般书籍，因此内容集中在祭祀、征伐、田猎、农业、天气、疾病、生育等商王关心的事项上，是研究商代史的第一手材料。
+
+出处：甲骨文通识 · 王宇信《甲骨学通论》（中国社会科学出版社，1989）
+---
+## 字源 · 日（字源）
+
+「日」甲骨文像太阳之形，多写作圆形轮廓，中间加一点或短横表示太阳的实体；后世字形由圆变方，成为今天的“日”。
+
+出处：甲骨文字形解读 · 参《说文解字》「日」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 月（字源）
+
+「月」甲骨文像半月之形，作弯月轮廓，中间加短画表示月体；因月亮缺时多于圆时，取缺月之形。
+
+出处：甲骨文字形解读 · 参《说文解字》「月」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 山（字源）
+
+「山」甲骨文像三峰并峙之形，中间主峰高、两侧山峰低，是典型的象形字。
+
+出处：甲骨文字形解读 · 参《说文解字》「山」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 水（字源）
+
+「水」甲骨文像水流之形：中间是水流，两侧的点或短画表示水滴与波纹。
+
+出处：甲骨文字形解读 · 参《说文解字》「水」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 火（字源）
+
+「火」甲骨文像火焰上腾之形，中间为主焰，两旁有火苗或火星。
+
+出处：甲骨文字形解读 · 参《说文解字》「火」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 木（字源）
+
+「木」甲骨文像树木之形：上为枝、下为根，中间为树干。
+
+出处：甲骨文字形解读 · 参《说文解字》「木」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 人（字源）
+
+「人」甲骨文像侧立的人形，头、身、腿俱全，突出人的侧面轮廓。
+
+出处：甲骨文字形解读 · 参《说文解字》「人」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 大（字源）
+
+「大」甲骨文像正面站立、张开双臂的人形，用张开的肢体表示“大”。
+
+出处：甲骨文字形解读 · 参《说文解字》「大」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 目（字源）
+
+「目」甲骨文像眼睛之形，早期横写，眼眶中画瞳孔；后来逐渐竖写并方化。
+
+出处：甲骨文字形解读 · 参《说文解字》「目」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 口（字源）
+
+「口」甲骨文像口之形，作方形或圆形轮廓；作为构件常表示与口、说话、饮食有关。
+
+出处：甲骨文字形解读 · 参《说文解字》「口」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 耳（字源）
+
+「耳」甲骨文像耳朵之形，画出耳廓与耳垂。
+
+出处：甲骨文字形解读 · 参《说文解字》「耳」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 牛（字源）
+
+「牛」甲骨文像牛头之形，突出向上弯曲的双角，后以角形代指牛。
+
+出处：甲骨文字形解读 · 参《说文解字》「牛」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 羊（字源）
+
+「羊」甲骨文像羊头之形，双角向下弯曲，与牛角上弯形成对照。
+
+出处：甲骨文字形解读 · 参《说文解字》「羊」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 犬（字源）
+
+「犬」甲骨文像狗侧视之形：头、身、腿、尾俱全，尾常上卷。
+
+出处：甲骨文字形解读 · 参《说文解字》「犬」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 豕（字源）
+
+「豕」甲骨文像猪之形，腹部肥圆、尾下垂，与“犬”的瘦腹长尾相区别。
+
+出处：甲骨文字形解读 · 参《说文解字》「豕」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 鱼（字源）
+
+「鱼」甲骨文像鱼之形，画出鱼头、鱼身、鱼尾和鳍。
+
+出处：甲骨文字形解读 · 参《说文解字》「鱼」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 鸟（字源）
+
+「鸟」甲骨文像鸟之形，有喙、翅、爪和尾羽。
+
+出处：甲骨文字形解读 · 参《说文解字》「鸟」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 龜（字源）
+
+「龜」甲骨文像龟之形，画出背甲、头尾与四足；今简化为“龟”。
+
+出处：甲骨文字形解读 · 参《说文解字》「龜」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 贝（字源）
+
+「贝」甲骨文像海贝之形，贝壳两扇、上有齿纹；商代以贝为货币，故从贝之字多与财货有关。
+
+出处：甲骨文字形解读 · 参《说文解字》「贝」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 田（字源）
+
+「田」甲骨文像田畴之形，外框为田界，内部十字或井字表示阡陌沟洫。
+
+出处：甲骨文字形解读 · 参《说文解字》「田」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 禾（字源）
+
+「禾」甲骨文像禾苗之形：上为下垂的谷穗，中为茎叶，下为根。
+
+出处：甲骨文字形解读 · 参《说文解字》「禾」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 雨（字源）
+
+「雨」甲骨文像雨自天降之形：上方一横表示天，下方数点表示雨滴。
+
+出处：甲骨文字形解读 · 参《说文解字》「雨」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 女（字源）
+
+「女」甲骨文像跪坐的人形，双手交叠于身前，突出女性的坐姿。
+
+出处：甲骨文字形解读 · 参《说文解字》「女」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 子（字源）
+
+「子」甲骨文像婴儿之形：头大，两臂上举，下肢裹在襁褓之中。
+
+出处：甲骨文字形解读 · 参《说文解字》「子」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 车（字源）
+
+「车」甲骨文像车之形，画出车轮、车厢与车辕。
+
+出处：甲骨文字形解读 · 参《说文解字》「车」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 門（字源）
+
+「門」甲骨文像两扇门扉之形，左右相对；今简化为“门”。
+
+出处：甲骨文字形解读 · 参《说文解字》「門」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 戈（字源）
+
+「戈」甲骨文像戈之形：横出的刃、长柄与下端的镦，是商周常见的兵器。
+
+出处：甲骨文字形解读 · 参《说文解字》「戈」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 鼎（字源）
+
+「鼎」甲骨文像鼎之形：有鼎腹、两耳与三足。
+
+出处：甲骨文字形解读 · 参《说文解字》「鼎」条；裘锡圭《文字学概要》（商务印书馆，1988）
+---
+## 字源 · 母（字源）
+
+「母」甲骨文在“女”形的胸部加两点，表示哺乳的母亲，与“女”相区别。
+
+出处：甲骨文字形解读 · 参《说文解字》「母」条；裘锡圭《文字学概要》（商务印书馆，1988）
