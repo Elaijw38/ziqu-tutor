@@ -50,7 +50,7 @@ src/
   learner.py     学情：存取 + 诊断（覆盖率/分片/构件短板/错题/建议）
   quiz.py        出题（题型轮转、错题优先）+ 评阅（讲解 + 回写）
   dify.py        Dify 接入（原生 chat-messages，解析 retriever_resources）
-  llm.py         OpenAI 兼容客户端 + 工具调用 agent（search_kb / get_learner_state）
+  llm.py         OpenAI 兼容客户端 + 工具调用 agent：search_kb / get_learner_state / generate_quiz / submit_answers
   build_kb.py    从 ../字趣 只读导出知识库
 web/
   index.html     单文件前端（三页签、整身龟宝、出处折叠条）
@@ -73,7 +73,7 @@ out/
 |---|---|---|---|
 | GET | `/api/health` | — | `kb_rows, chars, llm, model, dify, dify_error` |
 | GET | `/api/diagnose` | — | `coverage, level, zones[], weak_comps[], wrong_top[], suggestions[]` |
-| POST | `/api/ask` | `{question}` | `answer, citations[{id,source}], mode(dify/agent/extractive/refuse), refused` |
+| POST | `/api/ask` | `{question, history?, conversation_id?, session_id?}` | `answer, citations[{id,source,title?,snippet?}], status(answer/refuse/clarify), refused, trace[], rounds, mode(dify/agent/extractive/refuse)` |
 | POST | `/api/quiz` | `{n,seed}` | `items[{char,type,question,options[],answer,answer_index}]` |
 | POST | `/api/grade` | `{quiz,answers[{char,choice}]}` | `score, results[{ok,your,right,why}], advice`（并写入 attempts） |
 
@@ -96,6 +96,10 @@ out/
 | 死的 `import numpy` | `python src/server.py` 直接 `ModuleNotFoundError: numpy`，起不来 | `retrieval.py` 里既没用到 numpy 也不该依赖它（零依赖是卖点），已删该 import |
 | Dify 出处显示文件名 | 折叠条里写着 `dify-kb-merged.md`，等于没署名 | `dify.py::_split_segment` 取分段末尾 `出处：` 行作 source，标题/摘录/相似度另存 |
 | Dify 拒答仍报未拒答 | `refused=false`，还挂着无关出处 | `_looks_refused()` 认固定拒答句 → `refused=true` 且清空 citations |
+| 出题后下一句评阅不上 | 模型下一轮手里没有 `quiz_id`（它在上一轮的工具返回里） | `llm.py::_SESSION_QUIZ` 按 `session_id` 记住本会话最近一套题；`submit_answers` 的 `quiz_id` 改为可省略 |
+| 上下文被前端塞脏 | 有人往 `history` 里塞 `system` 或超长文本 | `_history_messages()` 只认 `user/assistant`，最多 6 条、每条 600 字；`server.py` 再校验一次类型 |
+| agent 说“知识库里没有”却报 `refused=false` | 前端显示成“答了但不给出处” | `ask.py::_classify` 统一 answer/refuse/clarify 三态，非 answer 一律清空出处 |
+| 工具轮次用尽后整段降级 | 答案质量突然掉到抽取式，用户无感 | `agent_answer` 收口时再要一次纯文本回答（不带 tools），尽量不出降级 |
 
 ---
 
@@ -106,14 +110,22 @@ out/
 3. **不编造**：答案只来自知识库；超纲问题返回固定拒答句；知识库没有的会意解释，宁可补“常见解释”并注明学界另有讨论。
 4. **诊断落到构件颗粒度**：因为合体字的构件正是字趣第三关 Boss 的破防部位——诊断能直接指导练什么，而不是只报一个覆盖率。
 5. **题库由知识库生成**：不预置题库，知识库一换，题目和讲解同步变化，换课程只需换知识库。
+6. **agent 的工具边界就是能力边界**：四个工具分别对应「查知识 / 看学情 / 出题 / 评阅」，
+   学生的四类诉求全落在工具上，模型只负责决定调哪个、调几次（上限 4 轮）。
+7. **答案与题目分开存**：`generate_quiz` 只把题目和选项交给模型，答案留在服务端进程里，
+   所以模型没有机会“顺手把答案念出来”；评阅只能通过 `submit_answers` 走服务端算分。
 
 ---
 
 ## 7. 现在能做什么 / 还不能做什么
 
 **能**：
-- 三页签完整可用；真实 DeepSeek 已验证（工具调用、约 3 秒/问、4 条出处）
-- 超纲问题拒答；学情诊断与组卷评阅闭环
+- 三页签完整可用；真实 DeepSeek 已验证（工具调用、2.3 秒/问、5 条出处、`trace` 可看调了什么）
+- **多轮对话**：前端带最近 3 轮，问「那它怎么打」能接住上一句的字（已实测）
+- **教学闭环进对话**：学生说「出两道题」→ agent 调 `generate_quiz` 出题（不含答案）→
+  学生口述选项 → `submit_answers` 评阅并把错题写回学情（已实测 50 分、逐题错因）
+- 三态口径统一：`answer / refuse / clarify`，拒答与反问都不挂出处
+- 学情诊断与组卷评阅闭环（页签版照旧可用）
 - Dify 链路已用假服务验证通过：回答、去重、`//` 清洗、**真署名出处**（标题 + `出处：` 行 + 摘录 + 相似度）、
   拒答标记 `refused=true` 且不挂无关出处
 

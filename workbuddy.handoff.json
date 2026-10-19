@@ -32,12 +32,12 @@
 
   "files": [
     {"path": "src/server.py", "role": "HTTP 服务（标准库 ThreadingHTTPServer），5 个接口 + 静态页", "lines_approx": 150},
-    {"path": "src/ask.py", "role": "问答编排：Dify → 大模型 agent → 本地抽取式；拒答/反问/按字去重/意图分流", "lines_approx": 210},
+    {"path": "src/ask.py", "role": "问答编排：Dify → 大模型 agent → 本地抽取式；三态判定（answer/refuse/clarify）、按字去重、意图分流", "lines_approx": 250},
     {"path": "src/retrieval.py", "role": "中文检索：字符 1-gram + 2-gram + TF-IDF（可解释、零依赖）；get_kb_meta 供诊断", "lines_approx": 120},
     {"path": "src/learner.py", "role": "学情存取与诊断：覆盖率/分片/构件短板/错题/建议", "lines_approx": 130},
     {"path": "src/quiz.py", "role": "出题（题型轮转+错题优先）与评阅（逐题讲解+回写）", "lines_approx": 180},
     {"path": "src/dify.py", "role": "Dify 接入：原生 /chat-messages，解析 retriever_resources 并拆成标题/署名行/摘录/相似度；拒答识别；本地地址绕过代理；回答清洗", "lines_approx": 250},
-    {"path": "src/llm.py", "role": "OpenAI 兼容客户端 + 工具调用 agent（search_kb / get_learner_state）+ 龟宝人设", "lines_approx": 210},
+    {"path": "src/llm.py", "role": "OpenAI 兼容客户端 + 工具调用 agent（search_kb / get_learner_state / generate_quiz / submit_answers）+ 多轮 history + 工具 trace + 会话级题号", "lines_approx": 340},
     {"path": "src/build_kb.py", "role": "从 ../字趣 只读导出知识库（每条含 source）", "lines_approx": 160},
     {"path": "web/index.html", "role": "单文件前端：郑大深宝蓝 UI、三页签、整身龟宝向导、出处折叠条", "lines_approx": 320},
     {"path": "web/assets/zzu-logo.png", "role": "郑州大学校徽（等比缩放，不改色）"},
@@ -68,11 +68,22 @@
     },
     {
       "method": "POST", "path": "/api/ask",
-      "request": {"question": "家为什么是屋顶下有猪"},
+      "request": {
+        "question": "那它怎么打",
+        "history": [{"role": "user", "content": "家为什么是屋顶下有猪"}, {"role": "assistant", "content": "「家」是宀加豕……"}],
+        "conversation_id": "Dify 链路用，原样回传上轮返回值",
+        "session_id": "前端随机生成，用于把「出题→作答→评阅」串成一次会话"
+      },
+      "request_note": "history 只认 user/assistant，服务端截到 6 条 × 600 字；session_id 只允许字母数字与 -_",
       "response_example": {
-        "answer": "「家」由宀和豕两个构件组成……",
-        "citations": [{"id": "boss.家", "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946", "snippet": "…", "title": "构件讨伐 · 家（一阶 · 合体字）", "score": 0.82}],
-        "citations_note": "id/source 必有；title/snippet/score 为 Dify 链路的可选增强，本地链路没有，前端按有无 title 兼容两种结构",
+        "answer": "「家」是一阶·合体字，构件为宀+豕。打法：先破门户……",
+        "citations": [{"id": "boss.家", "source": "字趣《构件讨伐》一阶 · 合体字 · CC BY 4.0, DOI 10.5281/zenodo.22467946", "title": "家", "snippet": "「家」属于一阶 · 合体字，字形构成：构件 宀+豕。"}],
+        "citations_note": "id/source 必有；agent 链路补 title(=字) 与 snippet(=原文摘录)；Dify 链路另有 score。status 非 answer 时 citations 为空",
+        "status": "answer",
+        "status_values": ["answer", "refuse", "clarify"],
+        "trace": [{"tool": "search_kb", "label": "查知识库", "query": "家 构件", "found": 5}],
+        "trace_note": "工具轨迹，前端渲染成「查知识库 · 5 条」徽标；generate_quiz 会给 count 与 quiz_id，submit_answers 会给 score",
+        "rounds": 2,
         "hits": [{"id": "search_kb"}],
         "grounded": true, "refused": false, "mode": "agent"
       },
@@ -118,13 +129,21 @@
     {"id": "two-projects", "symptom": "改了内容却要同步两处", "cause": "kb.jsonl 与 dify-kb-merged.md 是派生物", "fix": "改 build_kb 后依次跑 _enrich_kb.py 与 _merge_kb.py"},
     {"id": "dead-numpy-import", "symptom": "python src/server.py 直接 ModuleNotFoundError: numpy，服务起不来", "cause": "retrieval.py 有一行从未使用的 import numpy", "fix": "已删除；本项目 zero-dependency 是卖点，任何第三方 import 都不该出现"},
     {"id": "dify-cite-filename", "symptom": "出处折叠条显示 dify-kb-merged.md，等于没署名", "cause": "document_name 只是上传文件名，不是出处", "fix": "dify.py::_split_segment 取分段末尾「出处：」行作 source，标题/摘录/相似度另存字段"},
-    {"id": "dify-refusal-flag", "symptom": "Dify 拒答却返回 refused=false 且挂无关出处", "cause": "Dify 拒答也是 200 + 固定句，代码没有识别", "fix": "dify.py::_looks_refused 匹配固定拒答句 → refused=true 且清空 citations"}
+    {"id": "dify-refusal-flag", "symptom": "Dify 拒答却返回 refused=false 且挂无关出处", "cause": "Dify 拒答也是 200 + 固定句，代码没有识别", "fix": "dify.py::_looks_refused 匹配固定拒答句 → refused=true 且清空 citations"},
+    {"id": "quiz-cross-turn", "symptom": "出了题，学生下一句报答案却评阅不上", "cause": "quiz_id 只在上一轮的工具返回里，模型下一轮拿不到", "fix": "llm.py::_SESSION_QUIZ 按 session_id 记住本会话最近一套题；submit_answers 的 quiz_id 改可选"},
+    {"id": "history-injection", "symptom": "有人往 history 里塞 system 或超长文本", "cause": "前端参数未校验", "fix": "llm.py::_history_messages 只认 user/assistant（6 条 × 600 字），server.py 再做一次类型校验"},
+    {"id": "soft-refusal", "symptom": "agent 说「知识库里没有」却返回 refused=false，还挂着无关出处", "cause": "只有布尔 refused，没有区分「答了/拒答/反问」", "fix": "ask.py::_classify 统一三态 status=answer/refuse/clarify；非 answer 清空 citations 与 hits"},
+    {"id": "rounds-exhausted", "symptom": "工具轮次用完，答案突然退化成抽取式，用户无感", "cause": "agent_answer 循环结束直接 return None", "fix": "收口再要一次纯文本回答（不带 tools），尽量不降级"}
   ],
 
   "state": {
     "works": [
       "三页签可用：问答（真模型 + 出处）、学情诊断、随堂练习",
       "真实 DeepSeek 已验证：工具调用 search_kb、约 3 秒/问、出处 4 条",
+      "多轮上下文：前端带最近 3 轮，实测「那它怎么打」能接住上一句的字",
+      "教学闭环进对话：generate_quiz 出题（不含答案）→ 学生口述选项 → submit_answers 评阅并写回学情（实测 50 分、逐题错因）",
+      "三态统一：status=answer/refuse/clarify，拒答与反问都不挂出处；接口新增 trace（工具轨迹）与 rounds",
+      "回答耗时实测 1.7–2.3 秒（2 轮工具）",
       "拒答可用：超纲问题返回固定句，不编造",
       "Dify 链路（假服务）验证通过，含 retriever_resources 转出处与 // 清洗",
       "Dify 出处已改为分段「出处：」署名行（另带标题/摘录/相似度），重复召回去重；拒答正确标记 refused",

@@ -31,6 +31,24 @@ MIN_SCORE = 7.0      # 低于这个分视为"知识库里没有"
 DOMAIN_WORDS = ("甲骨", "字形", "构形", "构件", "笔画", "王邑", "图卷", "讨伐",
                 "Boss", "boss", "象形", "会意", "假借", "字", "打", "通关", "几笔")
 
+# 三态口径：answer（答了）/ refuse（知识库确实没有）/ clarify（没听清，反问）
+# 之前只有 refused 布尔值，模型说"知识库里没有"时仍报 false，前端会显示成
+# "答了但不给出处"，答辩现场最容易被追问。统一在这里判定。
+_CLARIFY_WORDS = ("你想问哪个字", "你指的是", "是想问", "具体是哪个字",
+                  "哪一个字", "哪个字", "请告诉我你想问", "需要先知道",
+                  "还没出现过", "告诉我是哪个")
+_REFUSE_WORDS = ("知识库里没有", "知识库没有", "没有找到", "查不到", "无法回答",
+                 "不在知识库", "只回答与", "没有相关内容", "暂时没有")
+
+
+def _classify(text):
+    t = text or ""
+    if any(w in t for w in _CLARIFY_WORDS):
+        return "clarify"
+    if any(w in t for w in _REFUSE_WORDS):
+        return "refuse"
+    return "answer"
+
 
 # 领域词本身不是"要查的字"，先剥掉再取字，否则"构件是什么"会被判成在问「构」「件」
 DOMAIN_STRIP = ("甲骨文", "甲骨", "字形", "构形", "构件", "笔画", "王邑", "图卷",
@@ -78,7 +96,7 @@ def _dedupe_by_char(hits, limit, intent="any"):
     return out[:limit]
 
 
-def answer(question):
+def answer(question, history=None, conversation_id="", session_id=""):
     q = (question or "").strip()
     if not q:
         return _refuse("你想问哪个字？直接说字，比如「家为什么是屋顶下有猪」。")
@@ -89,13 +107,13 @@ def answer(question):
     if dify_mod.status()["ready"]:
         got = None
         try:
-            got = dify_mod.ask(q)
+            got = dify_mod.ask(q, conversation_id=conversation_id or "")
         except Exception:
             got = None
         if got:
             got.setdefault("grounded", True)
-            got.setdefault("refused", False)
             got["citations"] = _dedup(got.get("citations") or [])
+            _settle(got)
             got["hits"] = [{"id": c["id"]} for c in got["citations"]]
             return got
 
@@ -103,11 +121,12 @@ def answer(question):
     if llm_mod.status()["ready"]:
         try:
             import learner as learner_mod
-            got = llm_mod.agent_answer(q, idx, learner_mod)
+            got = llm_mod.agent_answer(q, idx, learner_mod, history=history,
+                                       session_id=session_id)
             if got:
                 got.setdefault("grounded", True)
-                got.setdefault("refused", False)
                 got["citations"] = _dedup(got.get("citations") or [])
+                _settle(got)
                 got["hits"] = got.get("tools") or []
                 return got
         except Exception as e:
@@ -160,14 +179,36 @@ def answer(question):
     if polished:
         text = polished + "\n\n出处见下方条目。"
 
-    return {
+    got = {
         "answer": text,
         "citations": _dedup(cites),
         "hits": used,
         "grounded": True,
         "mode": "llm" if polished else "extractive",
-        "refused": False,
     }
+    return _settle(got)
+
+
+def _settle(got):
+    """统一三态：任何链路返回后都过一遍，保证 status / refused / citations 自洽。
+
+    - status=answer  ：正常作答，出处保留；
+    - status=refuse  ：知识库确实没有，refused=True，出处清空；
+    - status=clarify ：没听清要反问，同样不挂出处。
+    refused 字段保留，兼容老前端与测试。
+    """
+    st = got.get("status") or _classify(got.get("answer"))
+    if st not in ("answer", "refuse", "clarify"):
+        st = "answer"
+    if got.get("refused") is True:      # Dify 链路自带拒答判定，优先采信
+        st = "refuse"
+    got["status"] = st
+    got["refused"] = (st == "refuse")
+    if st != "answer":
+        got["citations"] = []
+        got["hits"] = []
+    got.setdefault("mode", "agent")
+    return got
 
 
 def _refuse(msg, chars=None):
@@ -177,6 +218,7 @@ def _refuse(msg, chars=None):
         "hits": [],
         "grounded": True,
         "mode": "refuse",
+        "status": "refuse",
         "refused": True,
         "asked_chars": chars or [],
     }

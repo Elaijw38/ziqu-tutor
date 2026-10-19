@@ -213,8 +213,26 @@ class Handler(BaseHTTPRequestHandler):
         if not self._rate_ok():
             self._json({"error": "提问太快了：每个 IP 每小时 %d 次，请稍后再问。" % RATE_LIMIT}, 429)
             return
+        # 多轮上下文：只认 user/assistant，最多 6 条、每条 600 字（防止前端塞超长内容）
+        hist = []
+        raw_hist = payload.get("history")
+        if isinstance(raw_hist, list):
+            for m in raw_hist[-6:]:
+                if not isinstance(m, dict):
+                    continue
+                role = m.get("role")
+                content = m.get("content")
+                if role in ("user", "assistant") and isinstance(content, str) and content.strip():
+                    hist.append({"role": role, "content": content.strip()[:600]})
+        conv = payload.get("conversation_id")
+        conv = conv.strip()[:200] if isinstance(conv, str) else ""
+        # 会话标识：让"出题 → 下一句作答 → 评阅"能跨请求接上；只允许安全字符
+        sid = payload.get("session_id")
+        sid = "".join(ch for ch in (sid if isinstance(sid, str) else "")[:64]
+                      if ch.isalnum() or ch in "-_")
         try:
-            self._json(ask_mod.answer(q))
+            self._json(ask_mod.answer(q, history=hist, conversation_id=conv,
+                                     session_id=sid))
         except Exception as e:
             self._json({"error": "internal: %s" % e}, 500)
 
