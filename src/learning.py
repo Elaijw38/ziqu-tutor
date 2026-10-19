@@ -358,6 +358,7 @@ def diagnose(idx, vid="", quiz_id="", L=None):
         # ---- 以下为兼容旧页面/旧调用保留的字段，口径与原来一致 ----
         **{k: base.get(k) for k in
            ("coverage", "level", "learned", "total_chars", "lexicon_chars",
+            "kb_chars",
             "attempts_total", "accuracy", "recent", "by_kind", "weak_comps",
             "wrong_top", "suggestions", "scope", "seeded")},
     }

@@ -798,7 +798,7 @@ async function doGrade(){
 });
 fetch('/api/health').then(r => r.json()).then(h => {
   $('#meta').textContent = '已收录 ' + (h.course_chars || '—') + ' 个课程字 · 关联 ' + h.kb_rows +
-    ' 条材料 · 字形库 ' + h.chars + ' 字' + (h.llm ? '' : ' · 本地检索模式');
+    ' 条材料 · 字形库 ' + (h.glyph_chars || h.chars) + ' 字' + (h.llm ? '' : ' · 本地检索模式');
 }).catch(()=>{});
 // 不再自动首问：空对话要看到欢迎区，第一条消息由用户发起
 </script>

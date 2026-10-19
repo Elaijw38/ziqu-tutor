@@ -156,6 +156,7 @@
         "ok": true,
         "kb_rows": 1391,
         "chars": 1179,
+        "glyph_chars": 1168,
         "course_chars": 146,
         "llm": true,
         "model": "deepseek-chat",
@@ -323,8 +324,9 @@
         "suggestions": [
           "「焚」「鹿」累计答错 4 次，先回看这几个字的字形与构形，比继续刷新题有效。"
         ],
-        "lexicon_chars": 1179,
-        "total_chars_note": "课程字表；lexicon_chars 是字形库规模，两者不能混用；不按王邑区域（天象/山川等）统计，那不是学习诊断的维度"
+        "lexicon_chars": 1168,
+        "kb_chars": 1179,
+        "total_chars_note": "课程字表 146；lexicon_chars 只算真有甲骨字形数据的字（1,168），kb_chars 是知识库全部去重字数（1,179，多出的 11 个只有课程/通识描述）；三者不能混用；不按王邑区域（天象/山川等）统计，那不是学习诊断的维度"
       }
     },
     {

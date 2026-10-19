@@ -630,7 +630,11 @@ def diagnose(idx, vid=DEFAULT_VID):
     course = course_chars(rows)
     if not course:                       # 兜底：老知识库没有课程标记
         course = {r["char"] for r in rows if r.get("char")}
-    lexicon = {r["char"] for r in rows if r.get("char")}
+    # 口径要分开：kb_chars 是知识库出现过的字（含只有课程/通识描述的），
+    # lexicon 只算真有甲骨字形数据的字——说「字形库 N 字」时用后者。
+    kb_chars = {r["char"] for r in rows if r.get("char")}
+    lexicon = {r["char"] for r in rows
+               if r.get("char") and r.get("kind") == "glyph"}
     learned = learned_chars(d) & course
     coverage = round(len(learned) / max(1, len(course)) * 100, 1)
 
@@ -702,6 +706,7 @@ def diagnose(idx, vid=DEFAULT_VID):
         "learned": len(learned),
         "total_chars": len(course),
         "lexicon_chars": len(lexicon),
+        "kb_chars": len(kb_chars),
         "attempts_total": n_att,
         "accuracy": accuracy,
         "recent": {"n": recent_n, "acc": recent_acc},

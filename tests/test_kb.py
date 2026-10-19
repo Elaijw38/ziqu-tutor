@@ -63,6 +63,11 @@ def main():
     check("学过字形独有字不改覆盖率", d["coverage"] == 0.0, str(d["coverage"]))
     check("诊断分母是课程字表", d["total_chars"] == 146, str(d["total_chars"]))
     check("诊断同时给出字表规模", d["lexicon_chars"] >= 1150, str(d["lexicon_chars"]))
+    # 口径：lexicon_chars 必须是「真有甲骨字形数据」的字数，不能拿知识库去重字数顶替
+    real_glyph = {r["char"] for r in idx.rows if r.get("kind") == "glyph"}
+    check("字形库口径不含无字形字",
+          d["lexicon_chars"] == len(real_glyph) and d["lexicon_chars"] < d["kb_chars"],
+          "lexicon=%s kb=%s" % (d["lexicon_chars"], d["kb_chars"]))
 
     print("\n[4] 检索命中")
     def top(q, k=3):

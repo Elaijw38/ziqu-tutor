@@ -179,6 +179,9 @@ class Handler(BaseHTTPRequestHandler):
         if p.path == "/api/health":
             idx = get_index()
             chars = {r.get("char") for r in idx.rows if r.get("char")}
+            # 「字形库」只算真有甲骨字形数据的字，不能拿知识库去重字数顶替
+            glyph_chars = {r.get("char") for r in idx.rows
+                           if r.get("char") and r.get("kind") == "glyph"}
             try:
                 course_n = len(learner.course_chars(idx.rows))
             except Exception:
@@ -200,6 +203,7 @@ class Handler(BaseHTTPRequestHandler):
                 store = {"error": str(e)[:120]}
             # 公开自检只回答「能不能用」，不暴露模型地址、密钥或学生作答明细
             self._json({"ok": True, "kb_rows": len(idx.rows), "chars": len(chars),
+                        "glyph_chars": len(glyph_chars),
                         "course_chars": course_n,
                         "llm": st["ready"], "model": st["model"],
                         "dify": ds["ready"],

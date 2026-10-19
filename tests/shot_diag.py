@@ -66,8 +66,9 @@ ws.addEventListener('open', async () => {
   await sleep(3400);
   await ev("document.querySelector('[data-tab=diag]').click()");
   await sleep(2800);
-  await shot('diag-final5.png');
-  await shot('diag-mobile-final5.png', 844);
+  console.log('PILL=' + await ev("document.getElementById('meta').textContent"));
+  await shot('diag-meta.png');
+  await shot('diag-mobile-meta.png', 844);
   ws.close(); process.exit(0);
 });
 '''
