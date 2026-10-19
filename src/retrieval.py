@@ -99,3 +99,30 @@ if __name__ == "__main__":
         print("\n问：", q)
         for r, s in idx.search(q, k=3):
             print("  [%.2f] %-12s %s" % (s, r["id"], r["text"][:70]))
+
+_META_CACHE = {}
+
+
+def get_kb_meta(path=KB_PATH):
+    """分区与构件统计，给学情诊断用（懒构建，只算一次）。"""
+    if path in _META_CACHE:
+        return _META_CACHE[path]
+    rows = load_kb(path)
+    zones, zone_chars, comp_chars = [], {}, {}
+    seen_zone = set()
+    for r in rows:
+        m = r.get("meta") or {}
+        zid, zname = m.get("zone_id"), m.get("zone")
+        if zid and zid not in seen_zone:
+            seen_zone.add(zid)
+            zones.append((zid, zname or zid))
+        if zid and r.get("char"):
+            zone_chars.setdefault(zid, []).append(r["char"])
+        for c in (m.get("comps") or []):
+            if r.get("char"):
+                comp_chars.setdefault(c, [])
+                if r["char"] not in comp_chars[c]:
+                    comp_chars[c].append(r["char"])
+    out = {"zones": zones, "zone_chars": zone_chars, "comp_chars": comp_chars}
+    _META_CACHE[path] = out
+    return out

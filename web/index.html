@@ -5,52 +5,77 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>甲骨文助教 · 字趣 AI</title>
 <style>
-  :root{
-    --bone:#f4ecda; --bone-white:#fffdf8; --ink:#2f2618; --ink-soft:#6b5b44;
-    --edge:#ddd0b6; --cinnabar:#a8321e; --gold:#b98b3c;
-  }
+  :root{--bone:#f4ecda;--bone-white:#fffdf8;--ink:#2f2618;--ink-soft:#6b5b44;
+    --edge:#ddd0b6;--cinnabar:#a8321e;--gold:#b98b3c;--green:#4b7d4b}
   *{box-sizing:border-box}
-  body{
-    margin:0; min-height:100vh; color:var(--ink);
+  body{margin:0;min-height:100vh;color:var(--ink);
     font:15px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
-    background:
-      radial-gradient(ellipse at 20% 0%, #fffdf7 0%, transparent 58%),
-      linear-gradient(160deg,#f7f1e3,#efe4cd 60%,#e6d8bd);
-  }
-  .wrap{max-width:900px;margin:0 auto;padding:28px 18px 60px}
-  header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+    background:radial-gradient(ellipse at 20% 0%,#fffdf7 0%,transparent 58%),
+      linear-gradient(160deg,#f7f1e3,#efe4cd 60%,#e6d8bd)}
+  .wrap{max-width:940px;margin:0 auto;padding:26px 18px 56px}
+  header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
   h1{margin:0;font-size:22px;letter-spacing:1px}
-  .seal{display:inline-block;padding:2px 8px;border:1px solid var(--cinnabar);
-    color:var(--cinnabar);border-radius:3px;font-size:12px;letter-spacing:2px}
-  .sub{color:var(--ink-soft);font-size:13px;margin:6px 0 18px}
-  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-  .chip{padding:5px 11px;border:1px solid var(--edge);border-radius:999px;
-    background:var(--bone-white);font-size:12.5px;color:var(--ink-soft);
-    cursor:pointer;transition:.15s}
-  .chip:hover{border-color:var(--gold);color:var(--ink)}
-  .panel{background:var(--bone-white);border:1px solid var(--edge);border-radius:12px;
+  .seal{padding:2px 8px;border:1px solid var(--cinnabar);color:var(--cinnabar);
+    border-radius:3px;font-size:12px;letter-spacing:2px}
+  .sub{color:var(--ink-soft);font-size:13px;margin:6px 0 14px}
+  .tabs{display:flex;gap:6px;margin-bottom:14px}
+  .tab{padding:7px 15px;border:1px solid var(--edge);border-radius:9px 9px 0 0;
+    background:#f7efdd;color:var(--ink-soft);cursor:pointer;font-size:14px}
+  .tab.on{background:var(--bone-white);color:var(--ink);border-bottom-color:var(--bone-white);
+    font-weight:600}
+  .panel{background:var(--bone-white);border:1px solid var(--edge);border-radius:0 12px 12px 12px;
     box-shadow:0 2px 10px rgba(80,60,30,.06);overflow:hidden}
-  .log{padding:16px;max-height:52vh;overflow:auto}
-  .msg{margin:0 0 14px}
+  .hide{display:none}
+  /* 问答 */
+  .log{padding:16px;max-height:46vh;overflow:auto}
+  .msg{margin:0 0 13px}
   .who{font-size:11.5px;letter-spacing:1px;color:var(--ink-soft);margin-bottom:4px}
   .ask .bubble{background:#f0e7d3;border:1px solid var(--edge);border-radius:10px;
     padding:9px 12px;display:inline-block;max-width:100%}
   .ans .bubble{background:#fffefb;border:1px solid var(--edge);border-left:3px solid var(--gold);
     border-radius:10px;padding:11px 13px;white-space:pre-wrap}
-  .cite{margin-top:9px;border-top:1px dashed var(--edge);padding-top:8px}
+  .cite{margin-top:8px;border-top:1px dashed var(--edge);padding-top:7px}
   .cite summary{cursor:pointer;font-size:12.5px;color:var(--ink-soft)}
   .cite ol{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--ink-soft)}
   .cite li{margin:3px 0;word-break:break-all}
-  .mode{font-size:11px;color:var(--gold);margin-left:6px}
   form{display:flex;gap:9px;padding:12px;border-top:1px solid var(--edge);background:#fbf6ea}
   input[type=text]{flex:1;padding:11px 13px;border:1px solid var(--edge);border-radius:9px;
     font-size:14.5px;background:#fff;color:var(--ink);outline:none}
   input[type=text]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(185,139,60,.14)}
-  button{padding:11px 20px;border:0;border-radius:9px;background:var(--cinnabar);
-    color:#fff;font-size:14.5px;letter-spacing:1px;cursor:pointer}
-  button:disabled{opacity:.55;cursor:default}
+  button{border:0;cursor:pointer}
+  .btn{padding:10px 18px;border-radius:9px;background:var(--cinnabar);color:#fff;font-size:14px;
+    letter-spacing:1px}
+  .btn.ghost{background:#f1e7d2;color:var(--ink);border:1px solid var(--edge)}
+  .btn:disabled{opacity:.5;cursor:default}
+  /* 学情 */
+  .pad{padding:18px}
+  .row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+  .stat{flex:1 1 150px;border:1px solid var(--edge);border-radius:10px;padding:12px 14px;
+    background:#fdf9f0}
+  .stat b{display:block;font-size:24px;line-height:1.2}
+  .stat span{font-size:12.5px;color:var(--ink-soft)}
+  .bar{height:8px;border-radius:5px;background:#e8dcc4;overflow:hidden;margin-top:8px}
+  .bar i{display:block;height:100%;background:var(--gold)}
+  .zt{width:100%;border-collapse:collapse;font-size:13.5px}
+  .zt td{padding:6px 4px;border-bottom:1px dashed var(--edge)}
+  .zt td:last-child{text-align:right;color:var(--ink-soft);white-space:nowrap}
+  h3{font-size:15px;margin:18px 0 8px}
+  ul.tips{margin:0;padding-left:20px;font-size:14px}
+  ul.tips li{margin:5px 0}
+  .tag{display:inline-block;padding:1px 7px;border-radius:999px;background:#f1e7d2;
+    color:var(--ink-soft);font-size:12px;margin-right:5px}
+  /* 练习 */
+  .q{border:1px solid var(--edge);border-radius:10px;padding:13px 15px;margin-bottom:12px;
+    background:#fdf9f0}
+  .q p{margin:0 0 9px;font-weight:600}
+  .opt{display:block;width:100%;text-align:left;padding:9px 12px;margin:5px 0;border-radius:8px;
+    border:1px solid var(--edge);background:#fff;color:var(--ink);font-size:14px}
+  .opt:hover{border-color:var(--gold)}
+  .opt.sel{border-color:var(--cinnabar);background:#fdf0ec}
+  .opt.ok{border-color:var(--green);background:#eef6ee}
+  .opt.bad{border-color:var(--cinnabar);background:#fbeceb}
+  .res{font-size:14px;margin-top:6px}
   footer{margin-top:14px;font-size:12px;color:var(--ink-soft);line-height:1.8}
-  footer b{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -58,108 +83,214 @@
   <header>
     <h1>甲骨文助教</h1>
     <span class="seal">AI 智能体</span>
-    <span class="mode" id="mode"></span>
+    <span class="sub" id="meta" style="margin:0"></span>
   </header>
-  <p class="sub">问字形怎么来的、某个字怎么打、王邑图里代表什么。每条回答都附原文出处，可核对。</p>
+  <p class="sub">问字形怎么来的、某个字怎么打、王邑图里代表什么；再让助教看学情、出题、评讲。每条回答都附原文出处。</p>
 
-  <div class="chips" id="chips"></div>
+  <div class="tabs">
+    <button class="tab on" data-tab="chat">问答</button>
+    <button class="tab" data-tab="diag">学情</button>
+    <button class="tab" data-tab="quiz">练习</button>
+  </div>
 
-  <div class="panel">
+  <!-- 问答 -->
+  <section class="panel" id="p-chat">
     <div class="log" id="log"></div>
     <form id="f">
       <input type="text" id="q" placeholder="例如：家为什么是屋顶下有猪" autocomplete="off">
-      <button type="submit" id="send">问</button>
+      <button class="btn" type="submit" id="send">问</button>
     </form>
-  </div>
+  </section>
+
+  <!-- 学情 -->
+  <section class="panel hide" id="p-diag">
+    <div class="pad" id="diagBox">加载中…</div>
+  </section>
+
+  <!-- 练习 -->
+  <section class="panel hide" id="p-quiz">
+    <div class="pad">
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px">
+        <button class="btn" id="mk">按学情出一套题（3 题）</button>
+        <span class="sub" id="quizHint" style="margin:0"></span>
+      </div>
+      <div id="paper"></div>
+      <div id="gradeBox"></div>
+    </div>
+  </section>
 
   <footer>
-    答案只来自本地知识库，<b>不编造</b>；知识库覆盖 146 个汉字。<br>
+    答案只来自本地知识库，<b>不编造</b>；问不到会直接说没有。<br>
     字形数据：hanzi-glyphs-svg / Zenodo，CC BY 4.0，DOI 10.5281/zenodo.22467946。
   </footer>
 </div>
 
 <script>
-const EXAMPLES = [
-  "日为什么写成圆的",
-  "家为什么是屋顶下有猪",
-  "虎怎么打",
-  "宀是什么意思",
-  "构件是什么"
-];
-const log = document.getElementById('log');
-const form = document.getElementById('f');
-const input = document.getElementById('q');
-const send = document.getElementById('send');
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c;
+  if (x != null) n.textContent = x; return n; };
 
-function el(tag, cls, text){
-  const n = document.createElement(tag);
-  if (cls) n.className = cls;
-  if (text != null) n.textContent = text;
-  return n;
-}
-function scroll(){ log.scrollTop = log.scrollHeight; }
+/* ---------- 选项卡 ---------- */
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === t));
+  ['chat','diag','quiz'].forEach(k =>
+    $('#p-' + k).classList.toggle('hide', k !== t.dataset.tab));
+  if (t.dataset.tab === 'diag') loadDiag();
+});
 
-function addAsk(q){
-  const m = el('div','msg ask');
-  m.appendChild(el('div','who','你'));
-  m.appendChild(el('div','bubble', q));
-  log.appendChild(m); scroll();
-}
-
+/* ---------- 问答 ---------- */
+const log = $('#log'), form = $('#f'), input = $('#q'), send = $('#send');
+function addAsk(q){ const m = el('div','msg ask'); m.appendChild(el('div','who','你'));
+  m.appendChild(el('div','bubble',q)); log.appendChild(m); log.scrollTop = 1e9; }
 function addAnswer(a){
-  const m = el('div','msg ans');
-  m.appendChild(el('div','who','助教'));
+  const m = el('div','msg ans'); m.appendChild(el('div','who','助教'));
   m.appendChild(el('div','bubble', a.answer));
   if (a.citations && a.citations.length){
     const d = el('details','cite');
-    d.appendChild(el('summary', null, '出处 · ' + a.citations.length + ' 条（点开核对）'));
+    d.appendChild(el('summary',null,'出处 · ' + a.citations.length + ' 条（点开核对）'));
     const ol = el('ol');
-    a.citations.forEach(c => ol.appendChild(el('li', null, c.source)));
-    d.appendChild(ol);
-    m.appendChild(d);
+    a.citations.forEach(c => ol.appendChild(el('li',null,c.source)));
+    d.appendChild(ol); m.appendChild(d);
   }
-  log.appendChild(m); scroll();
+  log.appendChild(m); log.scrollTop = 1e9;
 }
-
 async function ask(q){
-  q = (q || '').trim();
-  if (!q) return;
-  addAsk(q);
-  input.value = '';
-  send.disabled = true;
+  q = (q||'').trim(); if(!q) return;
+  addAsk(q); input.value=''; send.disabled = true;
   try{
-    const r = await fetch('/api/ask', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({question: q})
-    });
+    const r = await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({question:q})});
     const a = await r.json();
-    if (a.error){ addAnswer({answer:'服务出错：' + a.error, citations:[]}); }
-    else addAnswer(a);
-  }catch(e){
-    addAnswer({answer:'连不上本地服务（是否启动了 src/server.py？）', citations:[]});
-  }finally{
-    send.disabled = false;
-    input.focus();
-  }
+    addAnswer(a.error ? {answer:'服务出错：'+a.error,citations:[]} : a);
+  }catch(e){ addAnswer({answer:'连不上本地服务（是否启动了 src/server.py？）',citations:[]}); }
+  finally{ send.disabled = false; input.focus(); }
 }
-
-const chips = document.getElementById('chips');
-EXAMPLES.forEach(q => {
-  const b = el('button','chip', q);
-  b.type = 'button';
-  b.onclick = () => ask(q);
-  chips.appendChild(b);
-});
-
 form.addEventListener('submit', e => { e.preventDefault(); ask(input.value); });
 
-fetch('/api/health').then(r => r.json()).then(h => {
-  document.getElementById('mode').textContent =
-    '知识库 ' + h.kb_rows + ' 条 / 覆盖 ' + h.chars + ' 字 · ' +
-    (h.llm ? '已接入大模型' : '本地检索模式');
-}).catch(() => {});
+/* ---------- 学情 ---------- */
+async function loadDiag(){
+  const box = $('#diagBox'); box.textContent = '加载中…';
+  try{
+    const d = await (await fetch('/api/diagnose')).json();
+    if (d.error){ box.textContent = '出错了：' + d.error; return; }
+    box.innerHTML = '';
+    const row = el('div','row');
+    const mk = (v, s) => { const c = el('div','stat');
+      c.appendChild(el('b',null,v)); c.appendChild(el('span',null,s)); return c; };
+    row.appendChild(mk(d.level, '学情等级'));
+    row.appendChild(mk(d.coverage + '%', '覆盖率（' + d.learned + '/' + d.total_chars + ' 字）'));
+    row.appendChild(mk(d.wrong_top.length, '答错过的字'));
+    row.appendChild(mk(d.weak_comps.length, '待补构件'));
+    box.appendChild(row);
 
+    const barWrap = el('div');
+    barWrap.appendChild(el('div','sub','覆盖进度'));
+    const bar = el('div','bar'); const i = el('i'); i.style.width = Math.min(100,d.coverage) + '%';
+    bar.appendChild(i); barWrap.appendChild(bar); box.appendChild(barWrap);
+
+    if (d.zones.length){
+      box.appendChild(el('h3',null,'分片掌握'));
+      const tb = el('table','zt');
+      d.zones.forEach(z => {
+        const tr = el('tr');
+        tr.appendChild(el('td',null,z.name));
+        tr.appendChild(el('td',null,z.done + ' / ' + z.total));
+        tr.appendChild(el('td',null,z.pct + '%'));
+        tb.appendChild(tr);
+      });
+      box.appendChild(tb);
+    }
+
+    if (d.weak_comps.length){
+      box.appendChild(el('h3',null,'构件短板（第三关的破防部位）'));
+      const p = el('div');
+      d.weak_comps.forEach(c => {
+        p.appendChild(el('span','tag',c.comp + ' 缺 ' + c.missing.length));
+      });
+      box.appendChild(p);
+    }
+
+    box.appendChild(el('h3',null,'助教建议'));
+    const ul = el('ul','tips');
+    d.suggestions.forEach(s => ul.appendChild(el('li',null,s)));
+    box.appendChild(ul);
+  }catch(e){ box.textContent = '连不上服务。'; }
+}
+
+/* ---------- 练习 ---------- */
+let PAPER = null;
+$('#mk').onclick = async () => {
+  const box = $('#paper'); box.textContent = '出题中…'; $('#gradeBox').textContent = '';
+  try{
+    PAPER = await (await fetch('/api/quiz',{method:'POST',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify({n:3})})).json();
+    if (PAPER.error){ box.textContent = '出错了：' + PAPER.error; return; }
+    $('#quizHint').textContent = '共 ' + PAPER.count + ' 题 · 一题一型（构件/字义/打法）· 按学情优先考答错过的字';
+    box.innerHTML = '';
+    PAPER.items.forEach((it, qi) => {
+      const q = el('div','q');
+      q.appendChild(el('p',null, (qi+1) + '. ' + it.question));
+      it.options.forEach((opt, oi) => {
+        const b = el('button','opt', opt); b.type = 'button';
+        b.dataset.qi = qi; b.dataset.oi = oi;
+        b.onclick = () => {
+          q.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+          b.classList.add('sel');
+          PAPER.items[qi]._choice = oi;
+        };
+        q.appendChild(b);
+      });
+      box.appendChild(q);
+    });
+    const submit = el('button','btn','提交评阅');
+    submit.onclick = () => doGrade();
+    box.appendChild(submit);
+  }catch(e){ box.textContent = '连不上服务。'; }
+};
+
+async function doGrade(){
+  if (!PAPER) return;
+  const answers = PAPER.items.map(it => ({char: it.char, choice: it._choice}));
+  if (answers.some(a => a.choice == null)){
+    $('#gradeBox').textContent = '还有题没答。'; return;
+  }
+  const g = await (await fetch('/api/grade',{method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({quiz:PAPER, answers})})).json();
+  const box = $('#gradeBox'); box.innerHTML = '';
+  if (g.error){ box.textContent = '评阅失败：' + g.error; return; }
+  const head = el('div','res');
+  head.innerHTML = '<b>得分 ' + g.score + '</b>（' + g.correct + '/' + g.total + '）· ' + g.advice;
+  box.appendChild(head);
+
+  document.querySelectorAll('#paper .q').forEach((q, qi) => {
+    const r = g.results[qi]; if (!r) return;
+    q.querySelectorAll('.opt').forEach((b, oi) => {
+      if (oi === PAPER.items[qi].answer_index) b.classList.add('ok');
+      else if (oi === PAPER.items[qi]._choice && !r.ok) b.classList.add('bad');
+    });
+    const note = el('div','res', (r.ok ? '✓ 答对。' : '✗ 你选了「' + r.your + '」，正确答案是「' + r.right + '」。') + r.why);
+    q.appendChild(note);
+  });
+  loadDiag();
+}
+
+/* ---------- 启动 ---------- */
+fetch('/api/health').then(r => r.json()).then(h => {
+  $('#meta').textContent = '知识库 ' + h.kb_rows + ' 条 / 覆盖 ' + h.chars + ' 字 · ' +
+    (h.llm ? '已接入大模型' : '本地检索模式');
+}).catch(()=>{});
+['日为什么写成圆的','家为什么是屋顶下有猪','虎怎么打','宀是什么意思'].forEach(q => {
+  const b = el('button','tag', q); b.type='button';
+  b.onclick = () => ask(q);
+  b.style.marginBottom = '8px';
+  const wrap = el('div'); wrap.style.padding = '10px 16px 0';
+  b.style.cursor = 'pointer';
+  if (!document.querySelector('#quick')){
+    const w = el('div'); w.id = 'quick'; w.style.padding = '10px 16px 0'; $('#log').before(w);
+  }
+  document.querySelector('#quick').appendChild(b);
+});
 ask('日为什么写成圆的');
 </script>
 </body>

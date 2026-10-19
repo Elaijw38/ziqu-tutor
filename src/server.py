@@ -19,6 +19,8 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
 import ask as ask_mod          # noqa: E402
+import learner                # noqa: E402
+import quiz as quiz_mod       # noqa: E402
 from retrieval import get_index  # noqa: E402
 
 WEB = os.path.join(ROOT, "web")
@@ -57,6 +59,12 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         p = urllib.parse.urlparse(self.path)
+        if p.path == "/api/diagnose":
+            try:
+                self._json(learner.diagnose(get_index()))
+            except Exception as e:
+                self._json({"error": "internal: %s" % e}, 500)
+            return
         if p.path == "/api/health":
             idx = get_index()
             chars = {r.get("char") for r in idx.rows if r.get("char")}
@@ -68,7 +76,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         p = urllib.parse.urlparse(self.path)
-        if p.path != "/api/ask":
+        if p.path not in ("/api/ask", "/api/quiz", "/api/grade"):
             self._json({"error": "not found"}, 404)
             return
         try:
@@ -78,6 +86,21 @@ class Handler(BaseHTTPRequestHandler):
         except Exception as e:
             self._json({"error": "bad json: %s" % e}, 400)
             return
+        if p.path == "/api/quiz":
+            try:
+                self._json(quiz_mod.make_quiz(int(payload.get("n") or 3),
+                                              int(payload.get("seed") or 20261104)))
+            except Exception as e:
+                self._json({"error": "internal: %s" % e}, 500)
+            return
+        if p.path == "/api/grade":
+            try:
+                self._json(quiz_mod.grade(payload.get("quiz") or {},
+                                          payload.get("answers") or []))
+            except Exception as e:
+                self._json({"error": "internal: %s" % e}, 500)
+            return
+
         q = (payload.get("question") or "").strip()
         if not q:
             self._json({"error": "question 不能为空"}, 400)

@@ -85,7 +85,8 @@ def main():
                 "text": text,
                 "source": "字趣《殷商王邑》%s区实物点 · 教学示意图（非考古复原）· 字形 %s"
                           % (zname, GLYPH_SRC),
-                "meta": {"zone": zname, "meaning": o.get("meaning"), "form": o.get("form")},
+                "meta": {"zone": zname, "zone_id": zone.get("id"),
+                          "meaning": o.get("meaning"), "form": o.get("form")},
             })
 
     # 2) 第三关 Boss（按字）—— 顺手把名录里同一字的形象/打法并进来，
@@ -120,7 +121,8 @@ def main():
                 "id": "boss.%s" % ch, "char": ch, "kind": "boss",
                 "text": text,
                 "source": "字趣《构件讨伐》%s · %s" % (tier.get("name"), GLYPH_SRC),
-                "meta": {"tier": tier.get("name"), "play": play, "form": form},
+                "meta": {"tier": tier.get("name"), "play": play, "form": form,
+                          "comps": comps, "tier_note": tier.get("note") or ""},
             })
 
     # 3) 讨伐名录（88 尊）

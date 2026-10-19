@@ -1,0 +1,76 @@
+{
+ "done": {},
+ "bossCleared": [],
+ "attempts": [
+  {
+   "char": "水",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "舞",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "涉",
+   "ok": true,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "車",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": false,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "逐",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": false,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "象",
+   "ok": true,
+   "kind": "play"
+  },
+  {
+   "char": "安",
+   "ok": false,
+   "kind": "comp"
+  },
+  {
+   "char": "鼎",
+   "ok": false,
+   "kind": "form"
+  },
+  {
+   "char": "龍",
+   "ok": false,
+   "kind": "play"
+  }
+ ]
+}
